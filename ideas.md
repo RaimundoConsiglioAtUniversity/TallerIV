@@ -1,7 +1,7 @@
 # ~~1 Archivist~~
 Organizing data and helping others find it
 
-# 2 Translator!
+# ~~2 Translator!~~
 Learning to decode ancient/alien languages
 
 # ~~3 Henchmen Simulator~~
@@ -19,7 +19,7 @@ Firefighter simulator, taking the old forms of them where you paid them for thei
 # 7 RetroMons
 Remember all those old playground rumours about hidden god pokemon, found with extremely weid methods wnd glitches? What if they were true?
 
-# 8 deurbanized
+# ~~8 deurbanized~~
 City sim where you reduce car dependency an pollution
 
 # 9 wrongness sim
@@ -27,3 +27,6 @@ A sim where the whole world feels wrong, alien, that leans heavily on the experi
 
 # ~~10 simulated town~~
 Maximize happiness instead of money, as an alternative to capitalism, what would a society that puts the good of its people before the economy? Strength in unity instead of violence?
+
+# 11 Lost Little Critters
+A non-violent, 2D platforming game where a group of three mythical creatures —a Unicorn, a Tarand, and a Hippaelectron— try to find their way home after being lost in early 19th century Britain. They journey through the land while working together, taking advantage of each of their unique abilities, avoiding hunters, and making friends along the way
