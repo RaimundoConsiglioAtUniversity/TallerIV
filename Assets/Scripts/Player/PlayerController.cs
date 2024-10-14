@@ -22,13 +22,19 @@ public class PlayerController : MonoBehaviour
 
     //Walk-Run Related Vars
     public bool isRunning => Input.GetButton("Run");
+    public float hAxis =>  Input.GetAxis("Horizontal");
+    public Axis hInput = new(0f, 0.2f);
+    public float vAxis => Input.GetAxis("Vertical");
+    public Axis vInput = new(0f, 0.2f);
+    public float accelPow = 2f;
+    public float minAccel = 3f;
+    [SerializeField] private float speedChange;
+    [SerializeField] private float moveSpeed = 0f;
+    
+    [SerializeField] private float currentTargetSpeed = 0f;
 
-    public float hInput =>  Input.GetAxis("Horizontal");
-    public float vInput => Input.GetAxis("Vertical");
-
-    public float hDeadZone, vDeadZone;
     public bool isLookingRight;
-    public Rigidbody2D character;
+    public Rigidbody2D charRB;
     public GroundCheck groundCheck;
 
 
@@ -51,15 +57,20 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        currentTargetSpeed = targetMoveSpeed;
         WalkInput();
         JumpInput();
 
-        character.ClampVelocity(30f, 50f);
+        charRB.ClampVelocity(30f, 50f);
     }
 
     void WalkInput()
     {
-        character.velocity = new(moveSpeed * hInput, character.velocity.y);
+        hInput.value = hAxis;
+        vInput.value = vAxis;
+
+        Accelerate();
+        charRB.velocity = new(moveSpeed, charRB.velocity.y);
     }
 
     void JumpInput()
@@ -77,14 +88,14 @@ public class PlayerController : MonoBehaviour
         if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f)
         {
             //audioS.PlayOneShot(jumpSFX);
-            character.velocity = new Vector2(character.velocity.x, 0);
-            character.velocity = new Vector2(character.velocity.x, jumpStrength);
+            charRB.velocity = new Vector2(charRB.velocity.x, 0);
+            charRB.velocity = new Vector2(charRB.velocity.x, jumpStrength);
 
             jumpBufferCounter = 0f;
         }
 
         //Changes Gravity for Tighter Jump Arc, and allows Short & High Jumps
-        if (character.velocity.y > 0)
+        if (charRB.velocity.y > 0)
         {
             if (Input.GetButton("Jump"))
                 Physics2D.gravity = new Vector2(Physics2D.gravity.x, -upGravity);
@@ -101,19 +112,44 @@ public class PlayerController : MonoBehaviour
     void ResetCoyoteTimer() => coyoteTimeCounter = coyoteTimeS;
     void DecrementCoyoteTimer() => coyoteTimeCounter -= Time.deltaTime;
 
-    float moveSpeed
+    float targetMoveSpeed
     {
         get
         {
-            if (Mathf.RoundToInt(Mathf.Abs(vInput)) == 1 && groundCheck.isGrounded)
-                return duckMultiplier * walkSpeed;
+            if (hInput.IsPressed)
+            {
+                if (vInput.SteppedValue == 1 && groundCheck.isGrounded)
+                    return duckMultiplier * walkSpeed * hInput.Sign;
             
-            else if (isRunning)
-                return runMultiplier * walkSpeed;
+                else if (isRunning)
+                    return runMultiplier * walkSpeed * hInput.Sign;
+
+                else
+                    return walkSpeed * hInput.Sign;
+            }
 
             else
-                return walkSpeed;
+                return 0f;
         }
+    }
+
+    void Accelerate()
+    {
+        float difference = Mathf.Abs(targetMoveSpeed - moveSpeed);
+        int sign = (int)Mathf.Sign(targetMoveSpeed - moveSpeed);
+        float accel = accelPow;
+
+        if (difference <= 0.5f)
+        {
+            moveSpeed = targetMoveSpeed;
+            return;
+        }
+
+        if (targetMoveSpeed == 0f)
+            accel += (accelPow / 2);
+
+        speedChange = Mathf.Clamp(Mathf.Pow(difference, accel), minAccel, 10000f);
+        moveSpeed += speedChange * Time.deltaTime * sign;
     }
 
     void OnGroundActions(GameObject gO)
