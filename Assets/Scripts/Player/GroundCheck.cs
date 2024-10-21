@@ -24,16 +24,12 @@ public class GroundCheck : MonoBehaviour
         if (isGrounded)
         {
             OnGroundActions(gameObject);
-
-            //coyoteTimeCounter = coyoteTimeS;
-
             //player.anim.SetBool("jump", false);
             //player.anim.SetBool("isFalling", false);
         }
         else
         {
             OnAirActions(gameObject);
-            //coyoteTimeCounter -= Time.deltaTime;
         }
     }
 }

@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
 
     //Jumping Vars
     public float jumpStrength;
+    public float flapStrength;
     public float upGravity;
     public float downGravity;
 
@@ -19,6 +20,15 @@ public class PlayerController : MonoBehaviour
 
     public float jumpBufferTimeS = 0.05f;
     float jumpBufferCounter;
+
+    public int currentAirJumps = 0;
+    public int maxAirJumps = 6;
+    public bool canFly;
+    public bool canThunder;
+    public bool canTeleport;
+    public bool canTK;
+    public bool canGroundPound;
+    public bool canPlant;
 
     //Walk-Run Related Vars
     public bool isRunning => Input.GetButton("Run");
@@ -60,8 +70,24 @@ public class PlayerController : MonoBehaviour
         currentTargetSpeed = targetMoveSpeed;
         WalkInput();
         JumpInput();
+        
+        if (moveSpeed > 0.1f)
+            OnLookingRight();
+        
+        if (moveSpeed < -0.1f)
+            OnLookingLeft();
 
         charRB.ClampVelocity(30f, 50f);
+    }
+
+    void OnLookingRight()
+    {
+        transform.localScale = new Vector3(1, 1, 1);
+    }
+
+    void OnLookingLeft()
+    {
+        transform.localScale = new Vector3(-1, 1, 1);
     }
 
     void WalkInput()
@@ -73,6 +99,35 @@ public class PlayerController : MonoBehaviour
         charRB.velocity = new(moveSpeed, charRB.velocity.y);
     }
 
+    void ActionInput()
+    {
+        if (Input.GetButtonDown("Action"))
+        {
+            if (canTeleport)
+            {
+                //getMopusePosition
+                //Create ray from pony to it
+                //Check if any nearby point is not ground
+                // Move Pony there
+            }
+            if (canTK)
+            {
+                //getMopusePosition
+                //Create ray from pony to it
+                //Check if any nearby point has movable object
+                //select object and follow cursor until reclicked
+            }
+            if (canPlant)
+            {
+                // if near a plant, interact with it
+            }
+            if (canThunder)
+            {
+                //getMopusePosition
+                //Summon from same x posuition until it hits ground
+            }
+        }
+    }
     void JumpInput()
     {
         if (Input.GetButtonDown("Jump"))
@@ -85,13 +140,15 @@ public class PlayerController : MonoBehaviour
             jumpBufferCounter -= Time.deltaTime;
         }
 
-        if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f)
+        if (jumpBufferCounter > 0f)
         {
-            //audioS.PlayOneShot(jumpSFX);
-            charRB.velocity = new Vector2(charRB.velocity.x, 0);
-            charRB.velocity = new Vector2(charRB.velocity.x, jumpStrength);
-
-            jumpBufferCounter = 0f;
+            if (coyoteTimeCounter > 0f)
+                DoJump(jumpStrength);
+            else if (canFly && currentAirJumps < maxAirJumps)
+            {
+                DoJump(flapStrength);
+                currentAirJumps++;
+            }
         }
 
         //Changes Gravity for Tighter Jump Arc, and allows Short & High Jumps
@@ -109,6 +166,15 @@ public class PlayerController : MonoBehaviour
             Physics2D.gravity = new Vector2(Physics2D.gravity.x, -downGravity);
     }
 
+    void DoJump(float jumpStrength)
+    {
+        //audioS.PlayOneShot(jumpSFX);
+        charRB.velocity = new Vector2(charRB.velocity.x, 0);
+        charRB.velocity = new Vector2(charRB.velocity.x, jumpStrength);
+
+        jumpBufferCounter = 0f;
+    }
+    void ResetAirJumps() => currentAirJumps = 0;
     void ResetCoyoteTimer() => coyoteTimeCounter = coyoteTimeS;
     void DecrementCoyoteTimer() => coyoteTimeCounter -= Time.deltaTime;
 
@@ -120,6 +186,11 @@ public class PlayerController : MonoBehaviour
             {
                 if (vInput.SteppedValue == 1 && groundCheck.isGrounded)
                     return duckMultiplier * walkSpeed * hInput.Sign;
+                else if (vInput.IsPressed && vInput.Sign == -1 && !groundCheck.isGrounded && canGroundPound)
+                {
+                        DoGroundPound();
+                    return 0;
+                }
             
                 else if (isRunning)
                     return runMultiplier * walkSpeed * hInput.Sign;
@@ -133,6 +204,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void DoGroundPound()
+    {
+        charRB.velocity = new Vector2(0f, -30f);
+    }
     void Accelerate()
     {
         float difference = Mathf.Abs(targetMoveSpeed - moveSpeed);
@@ -161,6 +236,7 @@ public class PlayerController : MonoBehaviour
         print($"{gameObject.name} Ground!");
 
         ResetCoyoteTimer();
+        ResetAirJumps();
     }
 
     void OnAirActions(GameObject gO)
