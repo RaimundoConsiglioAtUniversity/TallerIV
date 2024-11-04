@@ -1,53 +1,13 @@
 # Objetivo Principal
 
-'Diseñar un sidescroller 2D donde el jugador o jugadora navegue niveles que requieran de su pensamiento abstracto a través de la mecanica de cambiar entre 3 personajes de distintas habilidades, resolviendo así varios puzzles del entorno, y avanzando en una narrativa no-violenta de fantasía con personajes tiernos, en un entorno británico de inicios del 1800s
+Diseñar un videojuego 2D del género puzzle-platformer donde el jugador o jugadora navegue niveles cuyos entornos requieran su pensamiento abstracto. Esto se lograría alternando entre 3 personajes, cada uno con habilidades únicas. El juego se desenlazaría en un mundo inspirado en la Gran Bretaña de inicios del siglo 19, yuxtaponiendo el pensamiento mágico de los siglos anteriores —representado por los personajes con un aspecto dulce y pueril— con el pensamiento científico traído por la reciente revolución científica y la revolución industrial, manteniendo una narrativa no-violenta con la intención de comunicar que uno no tiene por qué dejar atrás a su niño o niña interior.
 
 ---
 
 # Objetivos Específicos
 
-Diseñar un sistema de movimiento satisfactorio, donde controlar los tres personajes con distintas habilidades se sienta intuitivo.
+Diseñar un sistema de movimiento satisfactorio, donde controlar los tres personajes con distintas habilidades se sienta intuitivo. Estas habilidades estarían balanceadas de tal modo que ninguno de estos personajes se sientan innecesarios o redundantes. Los niveles del juego estarían diseñados de tal modo que el jugador o la jugadora pueda explorar y explotar las habilidades de cada personaje para avanzar.
 
-Balancear las habilidades de los personajes, de modo que ninguno se sienta innecesario o redundante.
+Crear un mundo en el cual la yuxtaposición entre lo mágico y lo científico sirva de vehículo narrativo para contar una historia que explore el concepto de que no hay que perder el asombro —nuestro niño o niña interior— para vivir en un mundo adulto.
 
-Crear un mundo donde el jugador pueda explorar y explotar las habilidades de cada personaje para avanzar 
-
----
-
----
-
-# Objetivo Principal
-
-Representa la visión global del juego y su
-experiencia esperada.
-
-El Objetivo Principal en un videojuego define la experiencia general que se quiere ofrecer al jugador.
-
-¿Qué impacto o experiencia deseamos que tenga el jugador al finalizar el juego?
-
-Debe reflejar el propósito y el atractivo principal del juego.
-
-## Ejemplo
-
-'Crear una experiencia de aventura inmersiva que permita
-al jugador explorar y descubrir una historia oculta en un
-entorno post-apocalíptico'.
-
----
-
-# Objetivos Específicos
-
-Relacionados con la jugabilidad, narrativa y estética.
-
-Los Objetivos Específicos en videojuegos detallan las mecánicas, la narrativa y el diseño que harán posible el objetivo
-principal.
-
-Describen tareas concretas en diseño de niveles, narrativa, jugabilidad, etc.
-
-## Ejemplos
-
-- Diseñar mecánicas de exploración no lineales para incentivar la curiosidad del jugador.
-
-- Crear un sistema de progresión de habilidades que motive al jugador a avanzar en la historia.
-
-- Desarrollar una narrativa ambiental que revele detalles de la historia a través de la exploración visual del entorno.
+Desarrollar y evaluar los aspectos visuales, sonoros, narrativos, y jugables del juego, de modo que estos fortalezcan tanto el diseño mecánico como narrativo de este.

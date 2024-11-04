@@ -7,12 +7,13 @@ public class RouteRecords : MonoBehaviour
 {
     public bool IsRecording {get; private set; } = false;
     public PlayerController player;
-    public Vector3 [] positions = new Vector3[20];
+    public Vector3 [] positions;
     public int posIdx = 0;
+    public bool PositionIsValid => !player || !player.groundCheck.isGrounded || (positions[posIdx] == player.transform.position || Vector3.Distance(positions[posIdx], player.transform.position) < 0.1f);
 
     public void AddToRegister(PlayerController player)
     {
-        if (!player || !player.groundCheck.isGrounded || (positions[posIdx] == player.transform.position || Vector3.Distance(positions[posIdx], player.transform.position) < 0.1f))
+        if (PositionIsValid)
             return;
         
         positions[posIdx] = player.transform.position;
@@ -27,6 +28,7 @@ public class RouteRecords : MonoBehaviour
 
 	void Awake()
 	{
+        positions = new Vector3[20];
         for (int i = 0; i < positions.Length; i++)
         {
             positions[i] = player.transform.position;

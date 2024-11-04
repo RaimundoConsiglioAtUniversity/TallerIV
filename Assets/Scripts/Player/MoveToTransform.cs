@@ -10,15 +10,15 @@ public class MoveToTransform : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) > 0.9f)
+        if (records.PositionIsValid && Vector3.Distance(records.positions[recordIdx], player.transform.position) < 1.2f)
         {
             if(recordIdx < 19)
                 recordIdx++;
 
             else
                 recordIdx = 0;
-
-            gameObject.transform.position = records.positions[recordIdx];
         }
+
+        gameObject.transform.position = records.positions[recordIdx];
     }
 }
