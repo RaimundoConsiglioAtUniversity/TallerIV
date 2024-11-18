@@ -12,4 +12,4 @@ Diseñar un videojuego 2D del género puzzle-platformer donde el jugador o jugad
 
 - Crear un mundo en el cual la yuxtaposición entre lo mágico y lo científico sirva de vehículo narrativo para contar una historia que explore el concepto de que no hay que perder el asombro —nuestro niño o niña interior— para vivir en un mundo adulto.
 
-- Desarrollar y evaluar los aspectos visuales, sonoros, narrativos, y jugables del juego, de modo que estos fortalezcan tanto el diseño mecánico como narrativo de este.
+- Desarrollar y evaluar los aspectos visuales, sonoros, narrativos, y jugables del juego, de modo que estos fortalezcan tanto el diseño mecánico como narrativo de este. -> Desarrollaer Implementar y Evaluar
