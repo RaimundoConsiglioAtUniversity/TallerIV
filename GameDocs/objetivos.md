@@ -2,7 +2,7 @@
 
 ## Objetivo Principal
 
-Diseñar un videojuego 2D del género puzzle-platformer donde el jugador o jugadora navegue niveles cuyos entornos requieran su pensamiento abstracto. Esto se lograría alternando entre 3 personajes, cada uno con habilidades únicas. El juego se desenlazaría en un mundo inspirado en la Gran Bretaña de inicios del siglo 19, yuxtaponiendo el pensamiento mágico de los siglos anteriores —representado por los personajes con un aspecto dulce y pueril— con el pensamiento científico traído por la reciente revolución científica y la revolución industrial, manteniendo una narrativa no-violenta con la intención de comunicar que uno no tiene por qué dejar atrás a su niño o niña interior.
+Diseñar un videojuego 2D del género puzzle-platformer donde el jugador o jugadora navegue niveles cuyos entornos requieran su pensamiento abstracto. Esto se lograría alternando entre 3 personajes, cada uno con habilidades únicas. El juego se desenlazaría en un mundo inspirado en la Gran Bretaña de inicios del siglo 19, yuxtaponiendo el pensamiento mágico de los siglos anteriores —representado por los personajes con un aspecto dulce y pueril— con el pensamiento científico traído por la reciente revolución científica y la revolución industrial, manteniendo una narrativa no-violenta con la intención de comunicar que uno no tiene por qué dejar atrás a su niño o niña interior. _> Convertr en idea uncia
 
 ---
 
