@@ -1,5 +1,7 @@
 {
     "recommendations": [
-      "visualstudiotoolsforunity.vstuc"
+      "visualstudiotoolsforunity.vstuc",
+      "tintinweb.graphviz-interactive-preview",
+      "stephanvs.dot"
     ]
 }

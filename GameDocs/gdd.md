@@ -2,7 +2,7 @@
 
 ### Descripción general
 
-- A [non-violent](https://en.wikipedia.org/wiki/Nonviolent_video_game)[¹](https://en.wikipedia.org/wiki/Nonviolence), 2D platforming game where a group of three horsies —a Unicorn, a Pegasus, and a Chtonippos (pronounced /ˈθɒ.nɪp.ɒs/ from Greek χθών => Soil, Earth, and ίππος => Horse) try to find their way home after being lost in early 19th century Britain. They journey through the land while working together, taking advantage of each of their unique abilities, avoiding magic hunters who want to keep them for their collections, and making friends along the way. Rated E/E+10, for PC and consoles.
+- A [non-violent](https://en.wikipedia.org/wiki/Nonviolent_video_game)[¹](https://en.wikipedia.org/wiki/Nonviolence), 2D platforming game where a group of three horsies —a Unicorn, a Pegasus, and a Gaeahippos (pronounced /ˈɡe.ɪp.ɒs/ from Greek Γαῖα => Earth, and ίππος => Horse) try to find their way home after being lost in early 19th century Britain. They journey through the land while working together, taking advantage of each of their unique abilities, avoiding magic hunters who want to keep them for their collections, and making friends along the way. Rated E/E+10, for PC and consoles.
 
 ### Mecánicas
 
