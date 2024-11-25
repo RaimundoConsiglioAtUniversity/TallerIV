@@ -1,0 +1,17 @@
+{
+    "recommendations": [
+        "aaron-bond.better-comments",
+        "streetsidesoftware.code-spell-checker",
+        "davidkol.fastcompare",
+        "formulahendry.auto-rename-tag",
+        "bradgashler.htmltagwrap",
+        "ms-vscode.live-server",
+        "jebbs.markdown-extended",
+        "kortina.vscode-markdown-notes",
+        "shd101wyy.markdown-preview-enhanced",
+        "axetroy.vscode-markdown-script",
+        "tokiedokie.reveal-markdown",
+        "outofsync42.select-compare-tabs",
+        "streetsidesoftware.code-spell-checker-spanish"
+    ]
+}

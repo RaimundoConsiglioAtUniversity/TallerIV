@@ -1,0 +1,41 @@
+<%
+  require_relative '../_tools/languages'
+  
+  name = locals[:name]
+  link_text = locals[:link_text]
+  use_after_text = locals[:after_text]
+  icons = []
+  links = []
+  link_texts = []
+  after_texts = []
+  alt_texts = []
+
+  data.socials.each do |key, social|
+    if social.name == name || name.nil?
+      icons << social.icon
+      links << social.link
+      link_texts << (link_text || (translate_if_translatable(social.linkText)))
+      after_texts << (use_after_text.nil? || (use_after_text && social.afterText.nil?) ? "" : translate_if_translatable(social.afterText))
+      alt_texts << link_text == "" ? true : false
+    end
+  end
+%>
+
+<% if name.nil? && link_text.nil? %> <ul>
+<% elsif name.nil? %> <ul class="socialMedia"> <% end %>
+
+<% links.each_with_index do |link, index| %>
+  <% if name.nil? %> <li> <% end %>
+  <a href="<%= link %>"><img class="ui" src="/images/icons/<%= icons[index] %>.gif" alt="<%= alt_texts[index] ? icons[index] : '' %>" title="<%= alt_texts[index] ? icons[index] : '' %>" pixelated> <%= link_texts[index] %></a> <%= after_texts[index] %>
+  <% if name.nil? %> </li> <% end %>
+<% end %>
+
+<% if name.nil? %> </ul> <% end %>
+
+<%# the following have to be wrapped in divs to format correctly! %>
+<%# <%= partial(:"partials/social-links", :locals => {:name => "Youtube", :link_text => ""}) %>
+
+<%# Only icons %>
+<%# <%= partial(:"partials/social-links", :locals => {:link_text => ""}) %>
+
+<%# Fluttershy icon based off https://www.deviantart.com/sullindir/art/Fluttershy-Cursor-Set-267274999 and twilight icon based off r/place 202X %>

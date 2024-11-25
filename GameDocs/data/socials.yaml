@@ -1,0 +1,42 @@
+Twitter:
+  name: "Twitter"
+  icon: "Twitter"
+  link: "https://twitter.com/RyebuckCopper"
+  linkText: "Twitter"
+  afterText: :twt-after-txt
+
+Tumblr:
+  name: "Tumblr"
+  icon: "Tumblr"
+  link: "https://www.tumblr.com/spacefunk-ryebuck"
+  linkText: "Tumblr"
+
+Youtube:
+  name: "Youtube"
+  icon: "Youtube"
+  link: "https://www.youtube.com/@RyebuckCoppercap"
+  linkText: :youtube-link
+
+FiMFiction:
+  name: "FiMFiction"
+  icon: "FimFiction"
+  link: "https://www.fimfiction.net/user/474734/Ryebuck+Coppercap"
+  linkText: "FiMFiction"
+
+AO3:
+  name: "AO3"
+  icon: "AO3"
+  link: "https://archiveofourown.org/users/SpaceFunk02/pseuds/SpaceFunk02"
+  linkText: "AO3"
+
+Bluesky:
+  name: "Bluesky"
+  icon: "Bluesky"
+  link: "https://bsky.app/profile/ryebuck-coppercap.neocities.org"
+  linkText: "Bluesky"
+
+Discord:
+  name: "Discord"
+  icon: "Discord"
+  link: "https://discord.com/users/278679446930587649"
+  linkText: "Discord"

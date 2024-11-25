@@ -1,0 +1,839 @@
+---
+Name:
+Nicknames:
+Titles:
+Pronouns:
+    Subject:
+    Object:
+    Determiner:
+    Possessive:
+    Reflexive:
+Portrait:
+PortraitDesc:
+Cutiemark:
+CutiemarkPic:
+Species:
+Tribe:
+Birthdate:
+Weight:
+Height:
+---
+
+<%# info About This Template
+    This template is intended to be a guide of things about the characters.
+
+    As such it's not set in stone and should be written more descriptively rather than like a list when in proper use.
+%>
+
+<%
+    require_relative '../_tools/arrays'
+%>
+<% wrap_layout :layout do %>
+
+    <h1> <%= current_page.data.Name %> </h1>
+    <h2 style="display: none"> Aliases </h2>
+    <h3> Also Known As <%= as_list(current_page.data.Nicknames) %>, or by <%= current_page.data.Pronouns.Determiner %> <%= pluralize(current_page.data.Titles.count, "title").gsub(/[\d]/, "") %> as <%= as_list(current_page.data.Titles) %> </h3>
+
+    <img src="<%= current_page.data.Portrait %>" alt="<%= current_page.data.PortraitDesc %>">
+
+    <% if content_for?(:blurb) %>
+      <div> <%= yield_content :blurb %> </div>
+
+    <% else %>
+      <p>(Very short descriptive paragraph)</p>
+
+    <% end %>
+
+    <hr>
+
+    <h2> Table of Contents </h2>
+
+    <%# [TOC] %>
+
+    <hr>
+
+    <h2> Physical Appearance </h2>
+    <% if content_for?(:physical) %>
+      <div><%= yield_content :physical %></div>
+
+    <% else %>
+    <li> Species & Tribe: [Unicorn][Tribe] [Pony][Species] </li>
+    <li> Age & Birthdate </li>
+    <li> Weight & Height </li>
+    <li> Body Type & Facial Features </li>
+    <li> Usual Scent </li>
+    <li> Mane Colour & Style </li>
+    <li> Fur Colour, Markings, & Style </li>
+    <li> Hoof Colour & Fetlock Style </li>
+    <li> Eye Colour & Style </li>
+    <li> Other Markings (socks, spots, stripes, etc) </li>
+    <li> Usual Clothing & Preferred Styles </li>
+
+    <% end %>
+
+    <hr>
+
+    <h2>Wellness & Health</h2>
+    <% if content_for?(:health) %>
+      <div><%= yield_content :health %></div>
+
+    <% else %>
+      (Things Like Scars, Injuries, or Chronic conditions go here, as well as their physical level of fitness and mental wellness)
+
+    <% end %>
+
+    <hr>
+
+    <h2>Identity</h2>
+
+    <h3>Internal Identity</h3>
+    <% if content_for?(:internalId) %>
+      <div><%= yield_content :internalId %></div>
+
+    <% else %>
+      * AGAB: Male, Female (Can go on external if unaligned with self-Identity)
+      * Self-Identity: Mare, Stallion, Other
+      * Self-Expression: Masc, Femme, etc
+      * Preferred Pronouns: he, she, they
+
+    <% end %>
+
+    <h3>External Factors</h3>
+    <% if content_for?(:externalId) %>
+      <div><%= yield_content :externalId %></div>
+
+    <% else %>
+      (Sociology, mostly both how others see them and how they'd wish to be seen as, write about the conflicts that may arise between these 2. Include their role in their community, be it work, friends, family, and others)
+
+      * Perception by others: (How others see them)
+
+    <% end %>
+
+    <h2>Social Roles, Status & Belonging</h2>
+
+    <h3>Education & Knowledge</h3>
+    <% if content_for?(:education) %>
+      <div><%= yield_content :education %></div>
+
+    <% else %>
+      <p>(Level and formality of Education,  self-taught knowledge, and areas of expertise)</p>
+
+    <% end %>
+
+    <h3>Job</h3>
+    <% if content_for?(:job) %>
+      <div><%= yield_content :job %></div>
+
+    <% else %>
+      * Current Job: (What’s their job? Do they like it? What do others think of this job?)
+      * Financial Situation: (do they life comfortably or paycheque to paycheque? How does their financial status impact their life be it socially or internally?)
+      * Past Jobs
+
+    <% end %>
+
+    <h3>Personal Secrets</h3>
+    <% if content_for?(:secrets) %>
+      <div><%= yield_content :secrets %></div>
+
+    <% else %>
+      (Things they might be hiding. Detail anything the character might be keeping from others.)
+
+    <% end %>
+
+    <h3>Residence</h3>
+    <% if content_for?(:residence) %>
+      <div><%= yield_content :residence %></div>
+
+    <% else %>
+      Place of Birth: (and previous residences. How do other’s feel about their place of birth?)
+    
+      * Home Town
+      * Current Residence: (Describe the house, its style, the rooms (and their feelings about them), the neighbourhood (is it safe, big, quaint?), and how others see their place of residence)
+      * Neighbourhood Description
+      * House Description
+      * Favourite Room & Why
+
+    <% end %>
+
+    <hr>
+
+    <h2>Personality, Beliefs, & Behaviours</h2>
+
+    <h3>Backstory</h3>
+    <% if content_for?(:backstory) %>
+      <div><%= yield_content :backstory %></div>
+
+    <% else %>
+    Backstory goes here. (How did they get to where they are now? How was their Upbringing? Describe Meaningful Anecdotes and Events)
+
+    <% end %>
+
+    <h3>Cutiemark</h3>
+    <img href="<%= current_page.data.CutiemarkPic %>" alt="A picture of <%= current_page.data.Name %>'s Cutiemark">
+
+    <% if content_for?(:cutiemark) %>
+      <div><%= yield_content :cutiemark %></div>
+
+    <% else %>
+      Cutiemark Story goes here. (What does it represents for them? How does it Link into their abilities?)
+
+    <% end %>
+
+    <h3>Strengths, Quirks, & Weaknesses</h3>
+    <% if content_for?(:strengths) %>
+      <div><%= yield_content :strengths %></div>
+
+    <% else %>
+      (List some traits in bullet-point format, and include examples of how they interact with other traits of them and others. Don’t include things that they can DO: those go on the skills list)
+
+    <% end %>
+
+    <h4>Main Flaw / Fatal Flaw</h4>
+    <% if content_for?(:flaw) %>
+      <div><%= yield_content :flaw %></div>
+
+    <% else %>
+      (Which of their character traits —be they inherently bad or not— brings them the most trouble or conflict?)
+
+    <% end %>
+
+
+    <h4>Achievements & Failures</h4>
+    <% if content_for?(:achievements) %>
+      <div><%= yield_content :achievements %></div>
+
+    <% else %>
+      (The character’s past successes and failures, which can provide insight into their skills and personality)
+
+    <% end %>
+
+
+    <h3>Belief Structure</h3>
+    <% if content_for?(:beliefs) %>
+      <div><%= yield_content :beliefs %></div>
+
+    <% else %>
+      (Include thing such as Philosophy on Life, Beliefs About Love, Values & Ideals, Beliefs About Crime, Religious Beliefs, Prejudices, and other things that come to mind)
+
+    <% end %>
+
+
+    <h3>Needs & Wants</h3>
+    <% if content_for?(:needs) %>
+      <div><%= yield_content :needs %></div>
+
+    <% else %>
+      (Include things such as Ambitions, Motivations & Drives, Plans for the Future or Goals, What Stands in The Way of their goals, their Needs, and their fears)
+
+    <% end %>
+
+
+    <h3>Fears & Phobias</h3>
+    <% if content_for?(:fears) %>
+      <div><%= yield_content :fears %></div>
+
+    <% else %>
+      (What are their biggest fears, and why?)
+
+    <% end %>
+
+
+    <h3>Conflict Handling Strategies</h3>
+    <% if content_for?(:conflict) %>
+      <div><%= yield_content :conflict %></div>
+
+    <% else %>
+      (Coping mechanisms and when do they use them)
+
+    <% end %>
+
+
+    <h3>Temperament & Personality</h3>
+    <% if content_for?(:temperament) %>
+      <div><%= yield_content :temperament %></div>
+
+    <% else %>
+      (describe their temperament and their personality traits in detail: How is their mental state? How do they generally act? How do they handle conflict? What mental or personality traits do they have? How do these traits interact with one another?)
+
+    <% end %>
+
+
+    <h3>Personality Diamond</h3>
+    <% if content_for?(:diamond) %>
+      <div><%= yield_content :diamond %></div>
+
+    <% else %>
+      (4 Character Traits that create interesting tension, explained in detail)
+
+    <% end %>
+
+
+    <h3>[Personality Traits][Big5]</h3>
+
+    [Big5]: <h2>"Using the Big 5 Personality Traits"</h2>
+
+    <div class="flex">
+        <div class="TableShrink">
+            <h4>General</h4>
+            <%=
+            partial(:"partials/bar-chart", :locals =>
+            {
+                :rows =>
+                [
+                    ["Traits", "Score"],
+                    ["Neuroticism", 79, "#neuroticism"],
+                    ["Extraversion", 74, "#extraversion"],
+                    ["Openness To Experience", 87, "#openness"],
+                    ["Agreeableness", 91, "#agreeableness"],
+                    ["Conscientiousness", 113, "#conscientiousness"]
+                ],
+        
+                :percent => 120
+            })
+            %>
+        </div>
+    
+        <div class="TableShrink">
+            <h4 id="neuroticism">Neuroticism</h4>
+            <%=
+            partial(:"partials/bar-chart", :locals =>
+            {
+                :rows =>
+                [
+                    ["Traits", "Score"],
+                    ["Anxiety", 15],
+                    ["Frustration", 14],
+                    ["Depression", 4],
+                    ["Self-Consciousness", 12],
+                    ["Immoderation", 15],
+                    ["Vulnerability", 19]
+                ],
+        
+                :percent => 20
+            })
+            %>
+        </div>
+    
+        <div class="TableShrink">
+            <h4 id="extraversion">Extraversion</h4>
+            <%=
+            partial(:"partials/bar-chart", :locals =>
+            {
+                :rows =>
+                [
+                    ["Traits", "Score"],
+                    ["Friendliness", 15],
+                    ["Gregariousness", 14],
+                    ["Assertiveness", 4],
+                    ["Activity Level", 12],
+                    ["Excitement Seeking", 20],
+                    ["Cheerfulness", 19]
+                ],
+        
+                :percent => 20
+            })
+            %>
+        </div>
+    
+        <div class="TableShrink">
+            <h4 id="openness">Openness To Experience</h4>
+            <%=
+            partial(:"partials/bar-chart", :locals =>
+            {
+                :rows =>
+                [
+                    ["Traits", "Score"],
+                    ["Imagination", 15],
+                    ["Artistic Interest", 14],
+                    ["Emotionality", 4],
+                    ["Adventurousness", 12],
+                    ["Intellect", 20],
+                    ["Liberalism", 19]
+                ],
+        
+                :percent => 20
+            })
+            %>
+        </div>
+    
+        <div class="TableShrink">
+            <h4 id="agreeableness">Agreeableness</h4>
+            <%=
+            partial(:"partials/bar-chart", :locals =>
+            {
+                :rows =>
+                [
+                    ["Traits", "Score"],
+                    ["Trust", 15],
+                    ["Morality", 14],
+                    ["Altruism", 4],
+                    ["Cooperation", 12],
+                    ["Modesty", 20],
+                    ["Sympathy", 19]
+                ],
+        
+                :percent => 20
+            })
+            %>
+        </div>
+    
+        <div class="TableShrink">
+            <h4 id="conscientiousness">Conscientiousness</h4>
+            <%=
+            partial(:"partials/bar-chart", :locals =>
+            {
+                :rows =>
+                [
+                    ["Traits", "Score"],
+                    ["Self-Efficacy", 15],
+                    ["Orderliness", 14],
+                    ["Dutifulness", 4],
+                    ["Achievement-Striving", 12],
+                    ["Self-Discipline", 20],
+                    ["Cautiousness", 19]
+                ],
+        
+                :percent => 20
+            })
+            %>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>Mannerisms, Gestures, Habits & Stims</h2>
+    <% if content_for?(:habits) %>
+      <div><%= yield_content :habits %></div>
+
+    <% else %>
+      (How their body responds to their emotional state: Include mannerisms, gestures, tells, stims, and the emotions associated with them –Anger, sadness, confusion, happiness, thoughtfulness, anxiety, boredom, excitement, sheepishness, nervousness, or general idleness– and their frequency)
+
+    <% end %>
+
+
+    <h3>Usual Body Language</h3>
+    <% if content_for?(:bodylang) %>
+      <div><%= yield_content :bodylang %></div>
+
+    <% else %>
+      * Angry
+      * Sad
+      * Happy
+      * Confused
+      * Thinking
+      * Anxious
+      * Bored
+      * Excited
+      * Sheepish
+      * Idle
+
+    <% end %>
+
+
+    <h3>Usual Manners of Speech</h3>
+    <% if content_for?(:speech) %>
+      <div><%= yield_content :speech %></div>
+
+    <% else %>
+      * General Accent
+      * Pitch
+      * Loudness
+      * Cadance
+      * Speed
+      * Other Qualities
+      * Funny or Serious?
+      * Respectful or Irreverent?
+      * Polite or Blunt?
+      * Formal or Casual?
+      * Enthusiastic or Matter-of-Fact?
+      * In which situations do their manner of speech change, and how (maybe even include how it changes by to which individual they are speaking)?
+
+    <% end %>
+
+
+    <h4>Common Words Choices</h4>
+    <% if content_for?(:words) %>
+      <div><%= yield_content :words %></div>
+
+    <% else %>
+       (Pretty self explanatory lol, also include any interesting details about why they like those words)
+
+    <% end %>
+
+
+    <h4>Favourite Phrases</h4>
+    <% if content_for?(:phrases) %>
+      <div><%= yield_content :phrases %></div>
+
+    <% else %>
+       (Pretty self explanatory lol, also include any interesting details about why they like those phrases)
+
+    <% end %>
+
+
+    <h3>Stims & Nervous Habits</h3>
+    <% if content_for?(:stims) %>
+      <div><%= yield_content :stims %></div>
+
+    <% else %>
+      * Stims/Habits
+      * Triggers
+      * Frequency
+
+    <% end %>
+
+
+    <hr>
+
+    <h2>Interests & Hobbies</h2>
+    <% if content_for?(:hobbies) %>
+      <div><%= yield_content :hobbies %></div>
+
+    <% else %>
+      (Describe their hobbies & Interests (That includes sports they may practice!). Why do they like it?)
+
+    <% end %>
+
+
+    <hr>
+
+    <h2>Spells, Skills & Abilities</h2>
+    <% if content_for?(:skills) %>
+      <div><%= yield_content :skills %></div>
+
+    <% else %>
+      (Describe their spells, skills, and abilities; physical, mental, magical and social, in a bullet point format, starting by their cutiemark and what it represents for them. Take inspiration from the way D&D describes skills, so that a unicorn may have very precise telekinesis, but they may get tired very quickly)
+
+    <% end %>
+
+
+    <hr>
+
+    <h2>Relationships</h2>
+
+    <h3>Attraction</h3>
+    <% if content_for?(:attraction) %>
+      <div><%= yield_content :attraction %></div>
+
+    <% else %>
+      * Traits they find attractive in a friend
+      * Traits they find physically attractive in a partner
+      * Traits they find romantically attractive in a partner
+      * Traits they can't stand in a friend
+      * Traits they can't stand in a partner (dealbreakers)
+
+    <% end %>
+
+
+    <h3>Family</h3>
+    <% if content_for?(:family) %>
+      <div><%= yield_content :family %></div>
+
+    <% else %>
+      * Clan Name: (Sort of like your last name or an epithet, it’s a family name around which the members of the family are named after, and describe their general relationship dynamic; how’s their family life)
+      (Then go into Individual details)
+      * Character Name: What are they to each other? (dad and son, siblings, etc), How’s their relationship?
+      (Count Pets as well!)
+
+    <% end %>
+
+
+    <h3>Friends, Acquaintances and Others</h3>
+    <% if content_for?(:relationships) %>
+      <div><%= yield_content :relationships %></div>
+
+    <% else %>
+      * Character Name: What are they to each other? (friends, work colleagues, classmates, enemies, lovers, etc), How’s their relationship? (Be as detailed as you want!)
+      (Repeat this template as many times as needed)
+
+    <% end %>
+
+    <hr>
+
+    <h2>Likes, Dislikes, & Trivia</h2>
+
+    <%# To make all kinds of random stuff I might say about the characters consistent. %>
+
+    <h3>Foods & Drinks</h3>
+    * Favourite Food of all time
+    * Favourite Type of Fruit
+    * Favourite Cake Flavour
+    * Favourite Fast food restaurant
+    * Favourite Type of Vegetable
+    * Favourite Flower Flavour
+    * Favourite Ice Cream Flavour
+    * Favourite Dessert
+    * Favourite Thing to Cook
+    * Favourite Type of Candy
+    * Favourite Comfort Food
+    * Favourite Soda Brand
+    * Favourite Cookie
+    * Favourite Hay dish
+    * Favourite Alcoholic drink
+    * Favourite Cereal
+    * Favourite Cupcake Flavour
+    * Favourite Juice
+    * Favourite Breakfast Food
+    * Favourite Apple Dish
+    * Favourite Coffee Brew
+    * Favourite Pizza Topping
+    * Favourite Hearth's Warming Dish
+    * Favourite Herbal tea
+    * Favourite Drink
+
+    <h3>Music</h3>
+    * Favourite Song
+    * Favourite Band/Artist
+    * Favourite Disco song
+    * Favourite String instrument
+    * Favourite Music genre
+    * Songs that are Guilty Pleasures
+    * Favourite Instrument
+    * Favourite Style of dance
+    * Favourite Foreign band/artist
+
+    <h3>Stuff About Foalhood</h3>
+    * Nursery rhyme or lullaby
+    * Toy as a child
+    * Nightmare Night costume they've worn
+    * Childhood memory
+    * Teacher
+    * Thing to do during recess
+    * Board game
+    * Thing about school
+    * Superhero
+    * Game to play outside
+    * Hearth's Warming present
+    * Power Pony
+
+    <h3>Sports</h3>
+    * Sport
+    * Extreme sport they're too scared to do
+    * Sport in the Equestria Games
+    * Hoofball team
+    * Buckball team
+    * Winter sport
+    * Sport they wish they were a pro at
+    * Professional athlete
+    * Sport to watch in-pony
+
+    <h3>Travel & Recreation</h3>
+    * Town they’ve visited
+    * Town they want to visit
+    * Thing about Equestria
+    * Kind of vacation
+    * Way to travel
+    * Beach
+    * Place to go with friends
+    * Place to go with family
+    * Vacation they’ve taken
+    * Ride at a carnival
+    * Thing to do at the beach
+    * Thing about travelling
+
+    <h3>Stories & Arts</h3>
+    * Play
+    * Book
+    * A. K. Yearling book
+    * Fiction book
+    * Non-fiction book
+    * Campfire story
+    * Joke
+    * Myth or legend
+    * Celebrity
+    * Children's book
+    * Building material
+    * Kind of house
+    * Author
+    * Piece of Art
+    * Poem
+
+    <h3>Nature & Animals</h3>
+    * Animal
+    * Season
+    * Flower
+    * Bird
+    * Thing in the sky
+    * Thing about a rainy day
+    * Outdoors activity
+    * Sea creature
+    * Thing about spring
+    * Wild animal they'd like as a pet
+    * Phase of the Moon
+
+    <h3>Shopping & Style</h3>
+    * Boutique
+    * Store
+    * Type of store
+    * Outfit they have
+    * Perfume or cologne
+    * Soap scent
+    * Hair colour
+    * Hairstyle
+    * Make-up they can't live without
+    * Article of clothing
+    * Shoes or boots
+    * Piece of Jewellery
+    * Occasion to dress up for
+
+    <h3>Other</h3>
+    * Day of the week
+    * Holiday or festival
+    * Colours
+    * Newborn colt name
+    * Newborn filly name
+    * Thing to do when they're sick
+    * Way to cheer them up
+    * Pony they've never met
+    * Place to meet up with friends
+    * Kind of gift to receive
+    * Crafty thing to make
+    * Way to relax
+
+    <hr>
+
+    <h2>Appearances</h2>
+    <% if content_for?(:appearances) %>
+      <div><%= yield_content :appearances %></div>
+
+    <% else %>
+      (List of appearances in my fics, with a summary of their role in them, repeat as needed)
+    
+      <h3>Story A</h3>
+      (name of a story / arc)
+    
+      <h4>Small Scope Goals (One per each story/arc)</h4>
+    
+      <h4>Current Inventory (One per each story/arc)</h4>
+    
+      <h4>Character Growth</h4>
+    
+      <h4>Life-Changing Events</h4>
+
+    <% end %>
+
+    <hr>
+
+    <h2>Material Possessions</h2>
+    <% if content_for?(:things) %>
+      <div><%= yield_content :things %></div>
+
+    <% else %>
+      (Placed In General Order of Importance)
+      (Current Inventory goes inside their appearances section)
+
+    <% end %>
+
+    <hr>
+
+    <h3>Skill Stats</h3>
+    
+    <div class="flex">
+        <div class="TableShrink">
+            <%=
+            partial(:"partials/bar-chart", :locals =>
+            {
+                :rows =>
+                [
+                    ["", ""],
+                    ["Dexterity", 15],
+                    ["Acrobatics", 14],
+                    ["Sleight of Hand", 4],
+                    ["Stealth", 12]
+                ],
+        
+                :percent => 20
+            })
+            %>
+        </div>
+        
+        <div class="TableShrink">
+                <%=
+                partial(:"partials/bar-chart", :locals =>
+                {
+                    :rows =>
+                    [
+                        ["", ""],
+                        ["Strength", 15],
+                        ["Athletics", 14]
+                    ],
+            
+                :percent => 20
+                })
+                %>
+                <div style="height: 26px"></div>
+                <%=
+                partial(:"partials/bar-chart", :locals =>
+                {
+                    :rows =>
+                    [
+                        ["", ""],
+                        ["Constitution", 20]
+                    ],
+            
+                :percent => 20
+                })
+                %>
+        </div>
+        
+        <div class="TableShrink">
+            <%=
+            partial(:"partials/bar-chart", :locals =>
+            {
+                :rows =>
+                [
+                    ["", ""],
+                    ["Intelligence", 1],
+                    ["Arcana", 5],
+                    ["History", 10],
+                    ["Investigation", 15],
+                    ["Nature", 18],
+                    ["Religion", 20]
+                ],
+        
+            :percent => 20
+            })
+            %>
+        </div>
+
+        <div class="TableShrink">
+            <%=
+            partial(:"partials/bar-chart", :locals =>
+            {
+                :rows =>
+                [
+                    ["", ""],
+                    ["Wisdom", 1],
+                    ["Animal Handling", 5],
+                    ["Insight", 10],
+                    ["Medicine", 15],
+                    ["Perception", 18],
+                    ["Survival", 20]
+                ],
+        
+            :percent => 20
+            })
+            %>
+        </div>
+
+        <div class="TableShrink">
+            <%=
+            partial(:"partials/bar-chart", :locals =>
+            {
+                :rows =>
+                [
+                    ["", ""],
+                    ["Charisma", 4],
+                    ["Deception", 8],
+                    ["Intimidation", 12],
+                    ["Performance", 16],
+                    ["Persuasion", 20]
+                ],
+        
+            :percent => 20
+            })
+            %>
+        </div>
+
+    </div>
+<% end %>

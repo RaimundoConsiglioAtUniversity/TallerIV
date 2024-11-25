@@ -1,0 +1,41 @@
+<%
+  rows = locals[:rows]
+  percent = locals[:percent]
+  header = locals[:header] || true
+%>
+
+<table>
+  <thead>
+    <% rows.each do |cell|
+      if cell == rows[0] %>
+          <tr>
+            <th><%= cell[0].to_s %></th>
+            <th><%= cell[1].to_s %></th>
+          </tr>
+      <% end %>
+    <% end %>
+  </thead>
+
+  <tbody>
+    <% rows.each do |cell|
+      if cell != rows[0] %>
+        <tr>
+          <% if cell[2] != nil %>
+            <td><a href="<%= cell[2].to_s %>"><%= cell[0].to_s %></a></td>
+
+          <% else %>
+            <td><%= cell[0].to_s %></td>
+
+          <% end %>
+
+          <td class="bar">
+            <div class="barInside">
+              <div class="barFill" style="width: <%= cell[1].to_i * 100 / percent.to_i %>%"><%= cell[1].to_s %></div>
+            </div>
+          </td>
+
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>

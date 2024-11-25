@@ -1,0 +1,28 @@
+<%
+  require_relative '../_tools/base_convert'
+  require_relative '../_tools/tally_marks'
+  require_relative '../_tools/pony_numerals'
+
+  number = locals[:num]
+  base = locals[:base].nil? ? "" : locals[:base]
+
+  result = ""
+
+  if (base == "lEP") || (base == "eEP")
+    result = convert_to_tally(number)
+  else
+    main_radix = 60
+    sub_minor_radix = 6
+    sub_major_radix = 10
+
+    converted_base = convert_to_base(number, main_radix)
+    parsed_base = parse_base(converted_base)
+    result = get_sub_base(parsed_base, sub_minor_radix, sub_major_radix)
+  end
+
+  result.each_char do |char| %>
+  <img class="svg-font" src="/images/numerals/<%= numeral_sys_path(base) %>/<%= numeral_path(char) %>.svg"  alt="<%= numeral_alt(char) %> represented in <%= numeral_sys_alt(base) %>"/>
+    
+<% end %>
+
+<%# <p>1: <%= partial(:"partials/base-convert", :locals => {:num => 1, :base => "eEP"}) </p> %>

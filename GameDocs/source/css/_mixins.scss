@@ -1,0 +1,58 @@
+@use "sass:math";
+@use "colour.scss";
+
+@mixin text-stroke($size: 1, $stroke: colour.$shadow)
+{
+	text-shadow:
+		-1px * $size -1px * $size 0 $stroke,
+		1px * $size -1px * $size 0 $stroke,
+		-1px * $size 1px * $size 0 $stroke,
+		1px * $size 1px * $size 0 $stroke;
+}
+
+@mixin text-shade($size: 1, $shadow: colour.$shadow, $stroke: 0.4px)
+{
+	text-shadow:
+		$stroke * $size   0.2px * $size 0 $shadow,
+		$stroke * $size     0px * $size 0 $shadow,
+		$stroke * $size $stroke * $size 0 $shadow,
+		    0px * $size $stroke * $size 0 $shadow,
+		  0.1px * $size $stroke * $size 0 $shadow,
+		  0.2px * $size $stroke * $size 0 $shadow,
+		  0.3px * $size   0.1px * $size 0 $shadow,
+		  0.4px * $size   0.3px * $size 0 $shadow,
+		  0.5px * $size   0.5px * $size 0 $shadow,
+		  0.5px * $size   0.7px * $size 0 $shadow,
+		  0.4px * $size   0.8px * $size 0 $shadow,
+		  0.3px * $size   0.8px * $size 0 $shadow,
+		  0.2px * $size   0.7px * $size 0 $shadow,
+		  0.1px * $size   0.6px * $size 0 $shadow,
+		    0px * $size   0.4px * $size 0 $shadow;
+}
+
+@mixin balanced-text()
+{
+	text-align: center;
+	text-wrap: wrap;
+	text-wrap: balance;
+}
+
+@mixin border($size, $colour, $top: 0, $tr: 0, $right: 0, $br: 0, $bottom: 0, $bl: 0, $left: 0, $tl: 0, $radius: 0px)
+{
+	border: $size solid $colour;
+	
+	border-top-width: $size * $top;
+	border-top-left-radius: $radius * $tl;
+	border-left-width: $size * $left;
+	border-bottom-left-radius: $radius * $bl;
+	border-bottom-width: $size * $bottom;
+	border-bottom-right-radius: $radius * $br;
+	border-right-width: $size * $right;
+	border-top-right-radius: $radius * $tr;
+}
+
+@mixin gradient($colour1, $colour2)
+{
+
+	background-image: linear-gradient(to right, $colour1, mix($colour1, $colour2, 60%) 1%, $colour2 10%, $colour2 90%, mix($colour1, $colour2, 60%) 99%, $colour1);
+}

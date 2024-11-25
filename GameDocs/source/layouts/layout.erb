@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="<%= I18n.locale.to_s %>">
+  <head>
+    <%= partial "partials/head" %>
+  </head>
+
+  <body>
+    <div class="bgGradient"></div>
+    <div class="container">
+      <%# <%= partial "partials/header" %>
+
+      <div class="grid">
+        <%# <%= partial "partials/left-sidebar" %>
+  
+        <main>
+            <div class="slideFlex">
+              <%= yield %>
+            </div>
+        </main>
+  
+        <%# <%= partial "partials/right-sidebar" %>
+      </div>
+      
+      <%# <%= partial "partials/footer" %>
+    </div>
+  </body>
+</html>

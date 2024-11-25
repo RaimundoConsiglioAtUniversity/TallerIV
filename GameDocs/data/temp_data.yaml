@@ -1,0 +1,296 @@
+ProjectWinter:
+    Name: Project Winter
+    Genre: Survival, Social Deduction
+    Platforms: PC (Windows), PlayStation 4, Xbox One, Nintendo Switch
+    ReleaseYear: 2019
+    Modes: Online Multiplayer
+    Price: 19.99
+    DLC: Yes (Cosmetic Packs)
+    IAP: Yes (Cosmetics)
+    Subscriptions: No
+
+ProjectZomboid:
+    Name: Project Zomboid
+    Genre: Survival
+    Platforms: PC (Windows, Linux, macOS)
+    ReleaseYear: 2013 (Early Access)
+    Modes: Single-player, Online Multiplayer
+    Price: 14.99
+    DLC: No
+    IAP: No
+    Subscriptions: No
+
+PuyoPuyoTetris2:
+    Name: Puyo Puyo Tetris 2
+    Genre: Puzzle
+    Platforms: PC (Windows), PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, Nintendo Switch
+    ReleaseYear: 2020
+    Modes: Single-player, Local Multiplayer, Online Multiplayer
+    Price: 39.99
+    DLC: Yes (Cosmetic Packs)
+    IAP: No
+    Subscriptions: No
+
+Raft:
+    Name: Raft
+    Genre: Survival, Adventure
+    Platforms: PC (Windows)
+    ReleaseYear: 2018 (Early Access), 2022 (Full Release)
+    Modes: Single-player, Online Multiplayer
+    Price: 19.99
+    DLC: No
+    IAP: No
+    Subscriptions: No
+
+RagnarokOnline:
+    Name: Ragnarok Online
+    Genre: MMORPG
+    Platforms: PC (Windows, Linux)
+    ReleaseYear: 2002
+    Modes: Online Multiplayer
+    Price: Free-to-play with IAP
+    DLC: No
+    IAP: Yes (Cosmetics, Boosts)
+    Subscriptions: Yes (Optional VIP membership)
+
+RaymanLegends:
+    Name: Rayman Legends
+    Genre: Platformer, Action
+    Platforms: PC (Windows), PlayStation 3, PlayStation 4, Xbox 360, Xbox One, Nintendo Switch, Wii U
+    ReleaseYear: 2013
+    Modes: Single-player, Local Multiplayer
+    Price: 29.99
+    DLC: Yes (Cosmetics)
+    IAP: No
+    Subscriptions: No
+
+ReadyorNot:
+    Name: Ready or Not
+    Genre: First-Person Shooter, Tactical
+    Platforms: PC (Windows)
+    ReleaseYear: 2021 (Early Access)
+    Modes: Single-player, Online Multiplayer
+    Price: 39.99
+    DLC: No
+    IAP: No
+    Subscriptions: No
+
+RedDeadRedemption:
+    Name: Red Dead Redemption
+    Genre: Action-Adventure
+    Platforms: PlayStation 3, Xbox 360, PC (Windows - via emulation), PlayStation 4, Nintendo Switch
+    ReleaseYear: 2010 (PlayStation 3, Xbox 360), 2023 (PlayStation 4, Nintendo Switch)
+    Modes: Single-player, Online Multiplayer
+    Price: 49.99 (2023 re-release)
+    DLC: Yes (Undead Nightmare)
+    IAP: No
+    Subscriptions: No
+
+RedDeadRedemption2:
+    Name: Red Dead Redemption 2
+    Genre: Action-Adventure
+    Platforms: PC (Windows), PlayStation 4, Xbox One
+    ReleaseYear: 2018
+    Modes: Single-player, Online Multiplayer (Red Dead Online)
+    Price: 59.99
+    DLC: No (All updates for Red Dead Online are free)
+    IAP: Yes (Gold Bars for Red Dead Online)
+    Subscriptions: No
+
+REMNANTII:
+    Name: REMNANT II
+    Genre: Action RPG, Shooter
+    Platforms: PC (Windows), PlayStation 5, Xbox Series X/S
+    ReleaseYear: 2023
+    Modes: Single-player, Online Multiplayer
+    Price: 49.99
+    DLC: Yes (Season Pass, DLC Packs)
+    IAP: Yes (Cosmetics)
+    Subscriptions: No
+
+ResidentEvil4:
+    Name: Resident Evil 4
+    Genre: Survival Horror
+    Platforms: PC (Windows), PlayStation 2, PlayStation 3, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, Nintendo Switch
+    ReleaseYear: 2005 (original), 2023 (Remake)
+    Modes: Single-player
+    Price: 59.99 (Remake)
+    DLC: Yes (Additional Content for Remake)
+    IAP: No
+    Subscriptions: No
+
+RFOnline:
+    Name: RF Online
+    Genre: MMORPG
+    Platforms: PC (Windows)
+    ReleaseYear: 2006
+    Modes: Online Multiplayer
+    Price: Free-to-play with IAP
+    DLC: No
+    IAP: Yes (Cosmetics, Boosts)
+    Subscriptions: No
+
+RimWorld:
+    Name: RimWorld
+    Genre: Simulation, Strategy
+    Platforms: PC (Windows, macOS, Linux), PlayStation 4, Xbox One
+    ReleaseYear: 2018
+    Modes: Single-player
+    Price: 34.99
+    DLC: Yes (Royalty, Ideology, Biotech)
+    IAP: No
+    Subscriptions: No
+
+RiseofKingdomsLostCrusade:
+    Name: "Rise of Kingdoms: Lost Crusade"
+    Genre: Strategy, MMO
+    Platforms: iOS, Android
+    ReleaseYear: 2018
+    Modes: Online Multiplayer
+    Price: Free-to-play with IAP
+    DLC: No
+    IAP: Yes (Resources, Boosts, Cosmetics)
+    Subscriptions: No
+
+RiseOnline:
+    Name: Rise Online
+    Genre: MMORPG
+    Platforms: PC (Windows)
+    ReleaseYear: 2022
+    Modes: Online Multiplayer
+    Price: Free-to-play with IAP
+    DLC: No
+    IAP: Yes (Cosmetics, Boosts)
+    Subscriptions: No
+
+Roblox:
+    Name: Roblox
+    Genre: Sandbox, MMO
+    Platforms: PC (Windows, macOS), iOS, Android, Xbox One
+    ReleaseYear: 2006
+    Modes: Online Multiplayer
+    Price: Free-to-play with IAP
+    DLC: No
+    IAP: Yes (Robux, Cosmetics)
+    Subscriptions: Yes (Roblox Premium)
+
+RocketLeague:
+    Name: Rocket League
+    Genre: Sports, Action
+    Platforms: PC (Windows, macOS, Linux), PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, Nintendo Switch
+    ReleaseYear: 2015
+    Modes: Single-player, Local Multiplayer, Online Multiplayer
+    Price: Free-to-play with IAP
+    DLC: Yes (Car Packs, Cosmetics)
+    IAP: Yes (Credits, Rocket Pass)
+    Subscriptions: No
+
+RollanceAdventureBalls:
+    Name: "Rollance: Adventure Balls"
+    Genre: Puzzle, Casual
+    Platforms: iOS, Android
+    ReleaseYear: 2023
+    Modes: Single-player
+    Price: Free-to-play with IAP
+    DLC: No
+    IAP: Yes (Cosmetics, Boosts)
+    Subscriptions: No
+
+RussianFishing4:
+    Name: Russian Fishing 4
+    Genre: Simulation
+    Platforms: PC (Windows)
+    ReleaseYear: 2017
+    Modes: Single-player, Online Multiplayer
+    Price: Free-to-play with IAP
+    DLC: No
+    IAP: Yes (Fishing Gear, Premium Currency)
+    Subscriptions: No
+
+Rust:
+    Name: Rust
+    Genre: Survival
+    Platforms: PC (Windows, macOS, Linux), PlayStation 4, Xbox One
+    ReleaseYear: 2013 (Early Access), 2018 (Full Release)
+    Modes: Online Multiplayer
+    Price: 39.99
+    DLC: Yes (Cosmetics)
+    IAP: No
+    Subscriptions: No
+
+SaintsRowIVReElected:
+    Name: "Saints Row IV: Re-Elected"
+    Genre: Action-Adventure
+    Platforms: PC (Windows), PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, Nintendo Switch
+    ReleaseYear: 2013 (Original), 2020 (Re-Elected)
+    Modes: Single-player, Online Multiplayer
+    Price: 19.99
+    DLC: Yes (All DLC from the original game included)
+    IAP: No
+    Subscriptions: No
+
+SAINTSROWTHETHIRDTHEFULLPACKAGE:
+    Name: "SAINTS ROW: THE THIRD - THE FULL PACKAGE"
+    Genre: Action-Adventure
+    Platforms: PC (Windows), PlayStation 4, Xbox One, Nintendo Switch
+    ReleaseYear: 2011 (Original), 2020 (The Full Package)
+    Modes: Single-player, Online Multiplayer
+    Price: 39.99
+    DLC: Yes (All DLC from the original game included)
+    IAP: No
+    Subscriptions: No
+
+SAKURASchoolSimulator:
+    Name: SAKURA School Simulator
+    Genre: Simulation
+    Platforms: iOS, Android
+    ReleaseYear: 2018
+    Modes: Single-player
+    Price: Free-to-play with IAP
+    DLC: No
+    IAP: Yes (Cosmetics, Boosts)
+    Subscriptions: No
+
+Sandtrix:
+    Name: Sandtrix+
+    Genre: Puzzle, Casual
+    Platforms: iOS, Android
+    ReleaseYear: 2021
+    Modes: Single-player
+    Price: Free-to-play with IAP
+    DLC: No
+    IAP: Yes (Cosmetics, Boosts)
+    Subscriptions: No
+
+ScaryTeacher3D:
+    Name: Scary Teacher 3D
+    Genre: Simulation, Puzzle
+    Platforms: iOS, Android, PC (Windows)
+    ReleaseYear: 2017
+    Modes: Single-player
+    Price: Free-to-play with IAP
+    DLC: No
+    IAP: Yes (Cosmetics, Boosts)
+    Subscriptions: No
+
+ScottPilgrimvsTheWorldTheGameCompleteEdition:
+    Name: "Scott Pilgrim vs. The World: The Game — Complete Edition"
+    Genre: Beat 'em up
+    Platforms: PC (Windows), PlayStation 4, Xbox One, Nintendo Switch
+    ReleaseYear: 2010 (Original), 2021 (Complete Edition)
+    Modes: Single-player, Local Multiplayer, Online Multiplayer
+    Price: 14.99
+    DLC: Yes (Additional Characters)
+    IAP: No
+    Subscriptions: No
+
+ScribblenautsMegaPack:
+    Name: Scribblenauts Mega Pack
+    Genre: Puzzle, Action
+    Platforms: PC (Windows), PlayStation 4, Xbox One, Nintendo Switch
+    ReleaseYear: 2018
+    Modes: Single-player
+    Price: 39.99
+    DLC: No
+    IAP: No
+    Subscriptions: No

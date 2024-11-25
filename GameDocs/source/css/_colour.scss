@@ -1,0 +1,60 @@
+$pearl-grey: #fef7fb;
+$pale-lavender: #d0d1d3;
+$goose-grey: #bdc1c2;
+$squirrel-grey: #aaaeb1;
+$flint-grey: #787c86;
+$midnight-blue: #12162c;
+$vanilla: #f8ee9d;
+$wheat: #edd067;
+$gamboge: #ec9d46;
+$vermillion: #d47546;
+$fudge: #faba62;
+$tangelo: #f2853e;
+$salmon-red: #ef6f2f;
+$bold-red: #c94838;
+$light-amaranth: #f29fac;
+$light-crimson: #e87996;
+$poppy: #e64a57;
+$victoria-plum: #a32141;
+$light-violet: #cc9cdf;
+$light-heliotrope: #a46bbd;
+$moderate-indigo: #5e50a0;
+$dark-indigo: #4f2d75;
+$pale-cerulean: #9bdbf5;
+$cornflower-blue: #6babda;
+$cobalt-blue: #5075aa;
+$azure-blue: #363e7a;
+$pistachio: #c4e6b5;
+$light-malachite: #96ce7d;
+$bright-green: #56bd5b;
+$sea-green: #339433;
+$pale-raspberry: #f5b7d0;
+$light-rose: #e880b0;
+$brilliant-raspberry: #e7498c;
+$strong-cerise: #b72075;
+$wet-sand: #c0966d;
+$tan: #b8805e;
+$leaf-brown: #955b48;
+$chestnut: #603a2c;
+
+$alpha: #00000000;
+
+//Move to style.scss?
+$base1: $strong-cerise;
+$base2: $brilliant-raspberry;
+$base3: $pale-raspberry;
+$baseB: $midnight-blue;
+
+$focus1: $tan;
+$focus2: $tan;
+$focus3: $tan;
+$focusB: $tan;
+
+$accent1: $tan;
+$accent2: $tan;
+$accent3: $tan;
+$accent4: $tan;
+
+$text: $pearl-grey;
+$shadow: $midnight-blue;
+$shadow50: mix($shadow, $alpha, 60%);

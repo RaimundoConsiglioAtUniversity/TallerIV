@@ -1,0 +1,558 @@
+/* based off Sadgrl's Layout Builder style section, + a lot of learning CSS ^c^" */
+
+@use "sass:math";
+@use "mixins.scss" as *;
+@use "colour.scss";
+@use "size.scss";
+
+$Background: url("/images/train-bg.png");
+
+*
+{
+	box-sizing: border-box;
+	color: colour.$text;
+	margin: size.$nil;
+	padding: size.$nil;
+}
+
+:root
+{
+    interpolate-size: allow-keywords;
+}
+
+// <==CSS Layout==> //
+body
+{
+	background-color: colour.$base1;
+	// background-image: $Background;
+	background-size: size.$bg;
+	font-family: "Fresca", sans-serif;
+	margin: size.$nil auto;
+	max-width: 100%;
+	min-width: size.$slideW;
+	text-underline-offset: size.$underline;
+	width: size.$slideW;
+}
+
+.bgGradient
+{
+	@include gradient(mix(colour.$base1, colour.$baseB, 50%), colour.$alpha);
+	box-sizing: border-box;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+// the container wraps the entire website
+.container
+{
+	align-self: center;
+	display: grid;
+	width: size.$slideW;
+	grid-template-columns: 100%;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100vh;
+	min-height: 100svh;
+}
+
+.headerArea
+{
+	box-shadow: 0px 0px 7px 0px colour.$shadow;
+	margin-bottom: size.$margin-l;
+}
+
+.darkGradient
+{
+	@include border(size.$border-l, colour.$baseB, $left: 1, $right: 1);
+	
+	background-image: linear-gradient(colour.$shadow, #00000000);
+	box-sizing: border-box;
+	height: 20px;
+	margin-bottom: -20px;
+	position: sticky;
+	width: 100%;
+	z-index: 1;
+}
+
+.slideFlex
+{
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+	.slide
+	{
+		background-color: colour.$base2;
+		justify-items: center;
+		align-content: center;
+		width: size.$slideW;
+		height: size.$slideH;
+		margin-bottom: size.$margin-l;
+		padding: size.$margin-l;
+	}
+
+}
+
+
+header
+{
+	@include border(size.$border-l, colour.$baseB, $left: 1, $right: 1);
+
+	background-color: colour.$base1;
+	height: size.$header;
+
+	img
+	{
+		height: 100%;
+		object-fit: cover;
+		object-position: top right;
+	}
+}
+
+nav
+{
+	@include border(size.$border-l, colour.$baseB, $left: 1, $bottom:1, $right: 1, $bl:1, $br:1, $radius:size.$padding);
+
+	background-color: colour.$base3;
+	box-shadow: inset 0px 0px 6px 0px colour.$baseB;
+	height: fit-content;
+	margin: size.$nil;
+	padding-top: size.$padding;
+	container-type: inline-size;
+
+	ul
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		list-style-type: none;
+		margin: size.$nil size.$margin-s;
+		padding: size.$padding-s size.$nil;
+		position: relative;
+		text-align: center;
+		z-index: 2;
+		
+		li
+		{
+			margin: size.$nil;
+			padding: size.$padding-s;
+			min-width: 50%;
+			width: auto;
+			max-width: 100%;
+			
+			ul
+			{
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				padding: size.$nil;
+				
+				li
+				{
+					text-align: center;
+					width: fit-content;
+					&:first-child
+					{
+					align-self: flex-start;
+				}
+				&:last-child
+				{
+					text-align: left;
+				}
+				}
+			}
+		}
+	}
+}
+
+.grid
+{
+	display: grid;
+	gap: size.$nil;
+	grid-template-areas: 'left main right';
+	grid-template-columns: auto 1fr auto;
+}
+
+main
+{
+	grid-area: main;
+	margin: (size.$margin-l * 4) 0px;
+	min-width: 0px;
+}
+
+aside
+{
+	// 2 values: up/down, left/right
+	// 4 values: up, right, down, left
+
+	@include border(size.$border-l, colour.$baseB, 1, 1, 1, 1, 1, 1, 1, 1, size.$padding);
+
+	background-color: colour.$base2;
+	box-shadow: 0px 0px 7px 0px colour.$shadow, inset 0px 0px 8px 0px colour.$base3;
+	font-size: size.$smaller;
+	padding: size.$margin-l;
+	width: size.$sidebar;
+
+	&.left
+	{
+		grid-area: left;
+	}
+
+	&.right
+	{
+		grid-area: right;
+	}
+
+	h2
+	{
+		@include balanced-text();
+	}
+}
+
+footer
+{
+	@include balanced-text();
+	@include border(size.$border-l, colour.$baseB, 1, 1, 1, 0, 0, 0, 1, 1, size.$padding);
+
+	background-color: colour.$base3;
+	box-shadow: 0px 0px 7px 0px colour.$shadow, inset 0px 0px 6px 0px colour.$baseB;
+	height: auto;
+	margin-top: size.$margin-l;
+	padding: size.$margin-s;
+}
+
+.fic
+{
+	h2
+	{
+		@include balanced-text();
+	}
+}
+
+// <==Tag Attributes==> //
+p
+{
+	@include text-shade(1.2);
+
+	font-size: size.$paragraph;
+	padding: size.$padding;
+}
+
+strong
+{
+	/* this styles bold text */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	color: var(--color);
+}
+
+h1
+{
+	@include balanced-text();
+	@include text-shade(2);
+
+	font-size: size.$h1;
+	font-weight: bolder;
+	letter-spacing: 0.1px;
+	margin: size.$padding-l size.$nil;
+	text-transform: uppercase;
+}
+
+h2
+{
+	@include text-shade(1.8);
+	font-size: size.$h2;
+	font-weight: bolder;
+	letter-spacing: 0.1px;
+	margin: size.$padding size.$nil;
+	text-transform: uppercase;
+}
+
+h3
+{
+	@include text-shade(1.8);
+
+	font-size: size.$h3;
+	font-weight: bold;
+	letter-spacing: 0.1px;
+	margin: size.$padding size.$nil;
+	text-transform: uppercase;
+}
+
+h4
+{
+	@include text-shade(1.8);
+
+	font-size: size.$h3;
+	font-weight: 500;
+	letter-spacing: 0.1px;
+}
+
+a
+{
+	@include text-shade($shadow: colour.$midnight-blue);
+
+	color: colour.$accent1;
+	font-weight: bold;
+	text-decoration: none;
+	transition: 0.25s;
+	line-height: size.$paragraph + 5px;
+	
+	img
+	{
+		transform: scale(1);
+		filter:brightness(1) saturate(1) drop-shadow(0 0 0 colour.$alpha) drop-shadow(0.05rem 0.09rem 0 colour.$shadow);
+		transition: 0.25s;
+	}
+
+	&:hover
+	{
+		@include text-shade(1.6, colour.$midnight-blue);
+
+		font-size: 110%;
+		color: colour.$accent3;
+		text-decoration: underline;
+		transition: 0.15s;
+		
+		img
+		{
+			transform: scale(1.35);
+			filter:brightness(1.1) saturate(1.1) drop-shadow(0 0 0 colour.$shadow) drop-shadow(0.06rem 0.1rem 0 colour.$shadow);
+
+			transition: 0.15s;
+		}
+	}
+}
+
+ul
+{
+	list-style-type: none;
+	padding: size.$padding-l;
+}
+
+li
+{
+	@include text-shade(1.2);
+
+	font-size: size.$paragraph;
+	margin: size.$padding-s size.$nil size.$padding-s size.$padding-l;
+	text-decoration: none;
+}
+
+img
+{
+	filter: drop-shadow(0 0 0 colour.$shadow) drop-shadow(0.05rem 0.09rem 0 colour.$shadow);
+
+	max-height: 100%;
+	max-width: 100%;
+
+	&.ui
+	{
+		min-height: fit-content;
+		min-width: fit-content;
+	}
+}
+
+.svg-font
+{
+	filter: brightness(0) invert(1) drop-shadow(0 0 0 colour.$shadow) drop-shadow(0.05rem 0.09rem 0 colour.$shadow);
+	display: inline;
+	height: size.$paragraph * 0.7;
+	margin-left: -2px;
+	max-width: size.$paragraph * 0.7;
+	scale: 1.1 1;
+
+	img
+	{
+		display: inline;
+	}
+}
+
+.box
+{
+	@include border(size.$border-l, colour.$baseB, 1, 1, 1, 1, 1, 1, 1, 1, size.$padding);
+	background-color: colour.$base3;
+	margin: size.$margin-s size.$nil;
+	padding: size.$padding;
+}
+
+.socialMedia
+{
+	display: grid;
+	gap: auto;
+	grid-template-columns: auto auto auto auto;
+	margin: 0px;
+	padding: 0px;
+
+	li
+	{
+		min-height: 26px;
+		max-height: 26px;
+	}
+}
+
+.flex
+{
+	display: flex;
+	flex-wrap: wrap;
+	gap: size.$margin;
+	max-width: 100%;
+}
+
+.TableShrink
+{
+	flex: 1 1 46%;
+	min-width: 170px;
+	max-width: 100%;
+	height: 100%;
+	margin: size.$nil;
+	padding: 0px;
+	align-self:flex-end;
+
+	h4
+	{
+		margin-bottom: size.$padding;
+	}
+}
+
+table
+{
+	border: size.$border-l solid colour.$baseB;
+	border-spacing: 0;
+	border-collapse: separate;
+	border-radius: size.$padding;
+
+	color: colour.$pearl-grey;
+	
+	margin: 0px;
+	height: auto;
+	max-width: auto;
+	padding: 0px;
+	width: 100%;
+	
+	tbody
+	{
+		font-size: small;
+	}
+}
+
+tr
+{
+	height:1px;
+	margin: 0px;
+	padding: 0px;
+	
+	th
+	{
+		&:first-child
+		{
+			border-top-left-radius: size.$border-l;
+		}
+
+		&:last-child
+		{
+			border-top-right-radius: size.$border-l;
+		}
+	}
+
+	&:not(:last-child) td, th
+	{
+		border-bottom: size.$border solid colour.$baseB;
+	}
+
+	&:last-child td
+	{
+		&:first-child
+		{
+			border-bottom-left-radius: size.$border-l;
+		}
+
+		&:last-child
+		{
+			border-bottom-right-radius: size.$border-l;
+		}
+	}
+}
+
+td, th
+{
+	@include text-shade(1.4);
+
+	align-content: center;
+	margin: 0px;
+	min-height: 5px;
+	padding: size.$padding-s;
+	text-align: right;
+	width: min-content;
+}
+
+td
+{
+	background-color: colour.$base2;
+	background-image: linear-gradient(to right, colour.$base2, colour.$base3);
+	
+	&:not(:last-child)
+	{
+		border-right: size.$border solid colour.$baseB;
+	}
+
+	&.bar
+	{
+		background-color: colour.$base3;
+		background-image: linear-gradient(to right, colour.$base3, colour.$base2);
+		width: 100%;
+		height: inherit;
+		padding: 0px;
+		padding-right: size.$padding-s;
+		
+		.barInside
+		{
+			height: 100%;
+			padding: size.$border-l 0px;
+
+			.barFill
+			{
+				@include border(size.$border, colour.$base3, 1, 1, 1, 1, 1, $radius:5px);
+				@include text-shade(1.4);
+
+				margin: 0px;
+				align-content: center;
+				background-color: colour.$base1;
+				background-image: linear-gradient(to right, colour.$base2, colour.$base1);
+				min-width: 6%;
+				height: 100%;
+				padding: auto 0px;
+				padding-right: size.$padding-s;
+			}
+		}
+	}
+}
+
+th
+{	
+	font-size: size.$smaller;
+	
+	&:first-child
+	{
+		background-image: radial-gradient(farthest-side at 100% 100%, colour.$accent4, colour.$accent2);
+	}
+	
+	&:not(:first-child)
+	{
+		background-image: linear-gradient(colour.$accent2, colour.$accent4);
+		text-align: left;
+	}
+}

@@ -1,0 +1,40 @@
+{
+    "dictionaryDefinitions":
+    [
+        {
+            "name": "es-custom",
+            "path": "./dict/es.txt",
+            "description": "Mi diccionario Extra"
+        },
+        {
+            "name": "en-custom",
+            "path": "./dict/en.txt",
+            "description": "My Extra Dictionary"
+        },
+        {
+            "name": "pony",
+            "path": "./dict/pony.txt",
+            "description": "My Pony Dictionary"
+        },
+        {
+            "name": "nouns",
+            "path": "./dict/nouns.txt",
+            "description": "Noun Dictionary"
+        }
+    ],
+    "language": "en-GB",
+    "dictionaries": ["en-custom", "nouns", "pony"],
+    "overrides":
+    [
+        {
+            "language": "es",
+            "dictionaries": ["es-custom", "nouns", "pony"],
+            "filename": "*.es.*"
+        },
+        {
+            "language": "es, en-GB",
+            "dictionaries": ["en-custom", "es-custom", "nouns", "pony"],
+            "filename": ["*.js", "*.yaml"]
+        }
+    ]
+}

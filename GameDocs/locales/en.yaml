@@ -1,0 +1,28 @@
+---
+
+en:
+  twt-after-txt: " (Not calling it X lol)"
+  youtube-link: "Youtube Channel"
+  zero: "The number zero represented in "
+  one: "One unit represented in "
+  two: "Two units represented in "
+  three: "Three units represented in "
+  four: "Four units represented in "
+  five: "Five units represented in "
+  six: "Six units represented in "
+  one_hex: "One hexad represented in "
+  two_hex: "Two hexads represented in "
+  three_hex: "Three hexads represented in "
+  four_hex: "Four hexads represented in "
+  five_hex: Five" hexads represented in "
+  six_hex: "Six hexads represented in "
+  seven_hex: "Seven hexads represented in "
+  eight_hex: "Eight hexads represented in "
+  nine_hex: "Nine hexads represented in "
+
+  eepN: "early Earth Pony tally marks"
+  lepN: "late Earth Pony tally marks"
+  euN: "early unified numerals"
+  euniN: "early Unicornian numerals"
+  luniN: "late Unicornian numerals"
+  muN: "modern unified numerals"

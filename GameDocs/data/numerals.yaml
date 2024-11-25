@@ -1,0 +1,67 @@
+zero:
+  path: "0"
+  alt: :zero
+one:
+  path: "1"
+  alt: :one
+two:
+  path: "2"
+  alt: :two
+three:
+  path: "3"
+  alt: :three
+four:
+  path: "4"
+  alt: :four
+five:
+  path: "5"
+  alt: :five
+six:
+  path: "6"
+  alt: :six
+one_hex:
+  path: "1h"
+  alt: :one_hex
+two_hex:
+  path: "2h"
+  alt: :two_hex
+three_hex:
+  path: "3h"
+  alt: :three_hex
+four_hex:
+  path: "4h"
+  alt: :four_hex
+five_hex:
+  path: "5h"
+  alt: :five_hex
+six_hex:
+  path: "6h"
+  alt: :six_hex
+seven_hex:
+  path: "7h"
+  alt: :seven_hex
+eight_hex:
+  path: "8h"
+  alt: :eight_hex
+nine_hex:
+  path: "9h"
+  alt: :nine_hex
+
+eepn:
+  path: "early-earth-pony-tally"
+  alt: :eepN
+lepn:
+  path: "late-earth-pony-tally"
+  alt: :lepN
+eun:
+  path: "early-unified"
+  alt: :euN
+eunin:
+  path: "early-unicornian"
+  alt: :euniN
+lunin:
+  path: "late-unicornian"
+  alt: :luniN
+mun:
+  path: "modern-unified"
+  alt: :muN

@@ -1,0 +1,11 @@
+<%
+  require_relative '../_tools/languages'
+%>
+
+<% [:en, :es].each do |lang| %>
+  <li>
+    <a href="<%= change_language(lang) %>">
+      <%= lang.downcase %>
+    </a>
+  </li>
+<% end %>

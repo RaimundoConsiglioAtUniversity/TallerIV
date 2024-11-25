@@ -1,0 +1,32 @@
+<%
+  require_relative '../_tools/languages'
+%>
+
+<div class="headerArea">
+  <header>
+    <img src="/images/banner.png" alt='Banner image, showing a green cartoon unicorn pony with an indigo and orange mane, wearing a neckerchief and socks, all of them orange. There is text by their side reading: "Hullo! Original Artwork by Lady Lullaby Star, Adapted to Pixelart By Me", followed by a smily'>
+  </header>
+  <div class="darkGradient"></div>
+  <nav>
+    <ul>
+      <li>
+        <ul>
+          <li><a href="<%= localize_link('/') %>">Home</a></li>
+          <li><a href="<%= localize_link('/Fanfics/') %>">Fanfics</a></li>
+          <li><a href="<%= localize_link('/Blogs/') %>">Blogposts</a></li>
+          <li><a href="<%= localize_link('/Games/') %>">Games</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li><a href="<%= localize_link('/Other/') %>">Other&nbspWorks</a></li>
+          <li><a href="<%= localize_link('/About/') %>">About&nbspMe</a></li>
+          <li>
+            <a href="<%= change_language(:en) %>"><img class="ui" src="/images/icons/english-flag.gif" alt="Change Language to English" title="Change Language to English" pixelated></a>
+            <a href="<%= change_language(:es) %>"><img class="ui" src="/images/icons/spanish-flag.gif" alt="Cambiar el Idioma a Español" title="Cambiar el Idioma a Español" pixelated></a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>

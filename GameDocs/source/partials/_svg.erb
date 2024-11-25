@@ -1,0 +1,20 @@
+<% vec = locals[:vec] %>
+<% data.vectors.each do |key, vector| %>
+  <% if vector.name == vec %>
+    <svg
+      viewBox="0 0 <%= vector.viewBox.width %> <%= vector.viewBox.height %>"
+      width="<%= vector.vSize.width %>rem"
+      height="<%= vector.vSize.height %>rem"
+      role="graphics-symbol"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg"
+    >
+      <title><%= t(vector.altText) %></title>
+      <g transform="translate(<%= vector.transform %>)">
+        <% vector.d.each do |d| %>
+          <path fill="inherit" d="<%= d %>" />
+        <% end %>
+      </g>
+    </svg>
+  <% end %>
+<% end %>
