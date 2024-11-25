@@ -5,25 +5,32 @@
 @use "colour.scss";
 @use "size.scss";
 
-$Background: url("/images/train-bg.png");
+// $Background: url("/images/train-bg.png");
+$slide-bg: colour.$light-rose;
+$bg: colour.$moderate-indigo;
+$text: colour.$pearl-grey;
+$accent: colour.$strong-cerise;
+$shadow: colour.$midnight-blue;
+
 
 *
 {
 	box-sizing: border-box;
-	color: colour.$text;
+	color: $text;
 	margin: size.$nil;
 	padding: size.$nil;
+	@include balanced-text();
 }
 
 :root
 {
-    interpolate-size: allow-keywords;
+	interpolate-size: allow-keywords;
 }
 
 // <==CSS Layout==> //
 body
 {
-	background-color: colour.$base1;
+	background-color: $bg;
 	// background-image: $Background;
 	background-size: size.$bg;
 	font-family: "Fresca", sans-serif;
@@ -36,7 +43,7 @@ body
 
 .bgGradient
 {
-	@include gradient(mix(colour.$base1, colour.$baseB, 50%), colour.$alpha);
+	@include gradient(mix($bg, $shadow, 50%), colour.$alpha);
 	box-sizing: border-box;
 	height: 100%;
 	position: fixed;
@@ -60,15 +67,13 @@ body
 
 .headerArea
 {
-	box-shadow: 0px 0px 7px 0px colour.$shadow;
+	box-shadow: 0px 0px 7px 0px $shadow;
 	margin-bottom: size.$margin-l;
 }
 
 .darkGradient
 {
-	@include border(size.$border-l, colour.$baseB, $left: 1, $right: 1);
-	
-	background-image: linear-gradient(colour.$shadow, #00000000);
+	background-image: linear-gradient($shadow, #00000000);
 	box-sizing: border-box;
 	height: 20px;
 	margin-bottom: -20px;
@@ -79,7 +84,6 @@ body
 
 .slideFlex
 {
-	justify-content: center;
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -87,91 +91,60 @@ body
 
 	.slide
 	{
-		background-color: colour.$base2;
+		background-color: $slide-bg;
 		justify-items: center;
 		align-content: center;
 		width: size.$slideW;
 		height: size.$slideH;
 		margin-bottom: size.$margin-l;
 		padding: size.$margin-l;
-	}
+		min-width: 0px;
+		min-height: 0px;
+		overflow: hidden;
 
-}
-
-
-header
-{
-	@include border(size.$border-l, colour.$baseB, $left: 1, $right: 1);
-
-	background-color: colour.$base1;
-	height: size.$header;
-
-	img
-	{
-		height: 100%;
-		object-fit: cover;
-		object-position: top right;
-	}
-}
-
-nav
-{
-	@include border(size.$border-l, colour.$baseB, $left: 1, $bottom:1, $right: 1, $bl:1, $br:1, $radius:size.$padding);
-
-	background-color: colour.$base3;
-	box-shadow: inset 0px 0px 6px 0px colour.$baseB;
-	height: fit-content;
-	margin: size.$nil;
-	padding-top: size.$padding;
-	container-type: inline-size;
-
-	ul
-	{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		list-style-type: none;
-		margin: size.$nil size.$margin-s;
-		padding: size.$padding-s size.$nil;
-		position: relative;
-		text-align: center;
-		z-index: 2;
-		
-		li
+		.flex
 		{
-			margin: size.$nil;
-			padding: size.$padding-s;
-			min-width: 50%;
-			width: auto;
-			max-width: 100%;
+			display: flex;
+			min-width: 0px;
+			min-height: 0px;
+			max-height: inherit;
+			display: flex;
+			flex: 1 1 ;
+			gap: size.$padding-l;
+			flex-wrap: nowrap;
+			align-items: center;
 			
-			ul
+			&.cols
 			{
-				display: flex;
+				flex: 1 1 ;
+				flex-direction: column;
+			}
+			
+			&.rows
+			{
+				flex: 1 1 ;
 				flex-direction: row;
-				flex-wrap: nowrap;
-				padding: size.$nil;
-				
-				li
+			}
+			
+			> :has(img)
+			{
+				flex: 1 1 0;
+				min-width: 0px;
+				min-height: 0px;
+				height: auto;
+				width: auto;
+
+				img
 				{
-					text-align: center;
-					width: fit-content;
-					&:first-child
-					{
-					align-self: flex-start;
-				}
-				&:last-child
-				{
-					text-align: left;
-				}
+				height: auto;
+				width: auto;
 				}
 			}
 		}
 	}
 }
 
-.grid
+.bodyGrid
 {
 	display: grid;
 	gap: size.$nil;
@@ -186,59 +159,10 @@ main
 	min-width: 0px;
 }
 
-aside
-{
-	// 2 values: up/down, left/right
-	// 4 values: up, right, down, left
-
-	@include border(size.$border-l, colour.$baseB, 1, 1, 1, 1, 1, 1, 1, 1, size.$padding);
-
-	background-color: colour.$base2;
-	box-shadow: 0px 0px 7px 0px colour.$shadow, inset 0px 0px 8px 0px colour.$base3;
-	font-size: size.$smaller;
-	padding: size.$margin-l;
-	width: size.$sidebar;
-
-	&.left
-	{
-		grid-area: left;
-	}
-
-	&.right
-	{
-		grid-area: right;
-	}
-
-	h2
-	{
-		@include balanced-text();
-	}
-}
-
-footer
-{
-	@include balanced-text();
-	@include border(size.$border-l, colour.$baseB, 1, 1, 1, 0, 0, 0, 1, 1, size.$padding);
-
-	background-color: colour.$base3;
-	box-shadow: 0px 0px 7px 0px colour.$shadow, inset 0px 0px 6px 0px colour.$baseB;
-	height: auto;
-	margin-top: size.$margin-l;
-	padding: size.$margin-s;
-}
-
-.fic
-{
-	h2
-	{
-		@include balanced-text();
-	}
-}
-
 // <==Tag Attributes==> //
 p
 {
-	@include text-shade(1.2);
+	@include text-shade(1.5);
 
 	font-size: size.$paragraph;
 	padding: size.$padding;
@@ -261,8 +185,7 @@ h6
 
 h1
 {
-	@include balanced-text();
-	@include text-shade(2);
+	@include text-shade(4);
 
 	font-size: size.$h1;
 	font-weight: bolder;
@@ -303,34 +226,34 @@ h4
 
 a
 {
-	@include text-shade($shadow: colour.$midnight-blue);
+	@include text-shade($shadow: $shadow);
 
-	color: colour.$accent1;
+	color: $accent;
 	font-weight: bold;
 	text-decoration: none;
 	transition: 0.25s;
 	line-height: size.$paragraph + 5px;
-	
+
 	img
 	{
 		transform: scale(1);
-		filter:brightness(1) saturate(1) drop-shadow(0 0 0 colour.$alpha) drop-shadow(0.05rem 0.09rem 0 colour.$shadow);
+		filter: brightness(1) saturate(1) drop-shadow(0 0 0 colour.$alpha) drop-shadow(0.05rem 0.09rem 0 $shadow);
 		transition: 0.25s;
 	}
 
 	&:hover
 	{
-		@include text-shade(1.6, colour.$midnight-blue);
+		@include text-shade(1.6, $shadow);
 
 		font-size: 110%;
-		color: colour.$accent3;
+		color: $bg;
 		text-decoration: underline;
 		transition: 0.15s;
-		
+
 		img
 		{
 			transform: scale(1.35);
-			filter:brightness(1.1) saturate(1.1) drop-shadow(0 0 0 colour.$shadow) drop-shadow(0.06rem 0.1rem 0 colour.$shadow);
+			filter: brightness(1.1) saturate(1.1) drop-shadow(0 0 0 $shadow) drop-shadow(0.06rem 0.1rem 0 $shadow);
 
 			transition: 0.15s;
 		}
@@ -354,7 +277,7 @@ li
 
 img
 {
-	filter: drop-shadow(0 0 0 colour.$shadow) drop-shadow(0.05rem 0.09rem 0 colour.$shadow);
+	filter: drop-shadow(0 0 0 $shadow) drop-shadow(0.05rem 0.09rem 0 $shadow);
 
 	max-height: 100%;
 	max-width: 100%;
@@ -368,7 +291,7 @@ img
 
 .svg-font
 {
-	filter: brightness(0) invert(1) drop-shadow(0 0 0 colour.$shadow) drop-shadow(0.05rem 0.09rem 0 colour.$shadow);
+	filter: brightness(0) invert(1) drop-shadow(0 0 0 $shadow) drop-shadow(0.05rem 0.09rem 0 $shadow);
 	display: inline;
 	height: size.$paragraph * 0.7;
 	margin-left: -2px;
@@ -383,35 +306,13 @@ img
 
 .box
 {
-	@include border(size.$border-l, colour.$baseB, 1, 1, 1, 1, 1, 1, 1, 1, size.$padding);
-	background-color: colour.$base3;
+	@include border(size.$border-l, $shadow, 1, 1, 1, 1, 1, 1, 1, 1, size.$padding);
+	background-color: $bg;
 	margin: size.$margin-s size.$nil;
 	padding: size.$padding;
 }
 
-.socialMedia
-{
-	display: grid;
-	gap: auto;
-	grid-template-columns: auto auto auto auto;
-	margin: 0px;
-	padding: 0px;
-
-	li
-	{
-		min-height: 26px;
-		max-height: 26px;
-	}
-}
-
-.flex
-{
-	display: flex;
-	flex-wrap: wrap;
-	gap: size.$margin;
-	max-width: 100%;
-}
-
+/*
 .TableShrink
 {
 	flex: 1 1 46%;
@@ -430,12 +331,12 @@ img
 
 table
 {
-	border: size.$border-l solid colour.$baseB;
+	border: size.$border-l solid $shadow;
 	border-spacing: 0;
 	border-collapse: separate;
 	border-radius: size.$padding;
 
-	color: colour.$pearl-grey;
+	color: $text;
 	
 	margin: 0px;
 	height: auto;
@@ -470,7 +371,7 @@ tr
 
 	&:not(:last-child) td, th
 	{
-		border-bottom: size.$border solid colour.$baseB;
+		border-bottom: size.$border solid $shadow;
 	}
 
 	&:last-child td
@@ -556,3 +457,4 @@ th
 		text-align: left;
 	}
 }
+*/

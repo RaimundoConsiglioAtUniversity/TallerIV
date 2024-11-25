@@ -53,6 +53,5 @@
 
 @mixin gradient($colour1, $colour2)
 {
-
 	background-image: linear-gradient(to right, $colour1, mix($colour1, $colour2, 60%) 1%, $colour2 10%, $colour2 90%, mix($colour1, $colour2, 60%) 99%, $colour1);
 }

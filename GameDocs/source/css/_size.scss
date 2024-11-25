@@ -5,7 +5,7 @@ $nil: 0px;
 $border: 1px;
 $underline: 4px;
 $padding: 6px;
-$paragraph: 18px;
+$paragraph: 28pt;
 $margin: 20px;
 $header: 128px; //? Same size as Header Image
 $bg: 132px;
@@ -23,12 +23,12 @@ $slideH: $slideW * (3/4);
 $border-l: $border * 3;
 
 $smaller: $paragraph * 0.8;
-$h6: $paragraph * 1.1;
-$h5: $paragraph * 1.1;
-$h4: $paragraph * 1.2;
-$h3: $paragraph * 1.2;
-$h2: $paragraph * 1.5;
-$h1: $paragraph * 2.4;
+$h6: $paragraph * 1.2;
+$h5: $paragraph * 1.25;
+$h4: $paragraph * 1.33;
+$h3: $paragraph * 1.45;
+$h2: $paragraph * 1.66;
+$h1: $paragraph * 2.6;
 
 $margin-s: $margin * 0.7;
 $margin-l: $margin * 1.2;
