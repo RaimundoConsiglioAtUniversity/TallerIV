@@ -1,29 +1,61 @@
 <%= partial(:"partials/slide-reg", :locals => 
 {
-    :title => "Lost Little Horsies", 
-    :subtitle => "A game design project by Raimundo Consiglio",
-    :type => "cover"
+    :elements =>
+    [
+        ["Lost Little Horsies", "h1", "ti"],
+        ["A game design project by Raimundo Consiglio", "h3", "st"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'st st st st st st st st st st st st'"
 }) %>
 
 <%= partial(:"partials/slide-reg", :locals => 
 {
-    :title => "Lost Little Horsies", 
-    :text => 
+    :elements =>
     [
-        "Lost Little Horsies is a [non-violent](https://en.wikipedia.org/wiki/Nonviolent_video_game)[¹](https://en.wikipedia.org/wiki/Nonviolence), 2D platforming game where a group of three horsies —a Unicorn, a Pegasus, and a Gaeahippos (pronounced /ˈɡe.ɪp.ɒs/ from Greek Γαῖα => Earth, and ίππος => Horse) try to find their way home after being lost in early 19th century Britain.",
-
-        "They journey through the land while working together, taking advantage of each of their unique abilities, avoiding magic hunters who want to keep them for their collections, and making friends along the way. Rated E/E+10, for PC and consoles."
-    ], 
-    :image => "banner.png"
+        ["Lost Little Horsies", "h2", "ti"],
+        ["Lost Little Horsies is a 
+        <a href='https://en.wikipedia.org/wiki/Nonviolent_video_game'>non-violent</a>
+        <a href='https://en.wikipedia.org/wiki/Nonviolence'>¹</a>, 
+        2D platforming game where a&nbsp;group of three horsies 
+        —a Unicorn, a Pegasus, and a <span class='tooltip'>Gaeahippos</span>
+        <span class='rel'><span class='info'>
+            pronounced /ˈɡe.ɪp.ɒs/ from Greek Γαῖα (Earth), and ίππος (Horse)
+        </span></span>
+        try to find their way home after being lost in early 19th century Britain.", "p", "p1"],
+        ["They journey through the land while working together, taking advantage of each of their unique abilities, avoiding magic hunters who want to keep them for their collections, and making friends along the way.", "p", "p2"],
+        ["Rated E/E+10, for PC and consoles.", "p", "p3", "small"],
+        ["icons/english-flag.gif", "img", "im"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 im im im im im'
+                'p1 p1 p1 p1 p1 p1 p1 im im im im im'
+                'p1 p1 p1 p1 p1 p1 p1 im im im im im'
+                'p2 p2 p2 p2 p2 p2 p2 im im im im im'
+                'p2 p2 p2 p2 p2 p2 p2 im im im im im'
+                'p2 p2 p2 p2 p2 p2 p2 p3 p3 p3 p3 p3'"
 }) %>
 
 <%= partial(:"partials/slide-reg", :locals => 
 {
-    :title => "Game Mechanics", 
-    :text => 
+    :elements =>
     [
-        "Descripción de mecánicas principales (Se debe complementar con bocetos propios, imágenes y/o video de otros productos como juegos, animaciones, películas, etc)"
-    ]
+        ["Game Mechanics", "h2", "ti"],
+        ["Descripción de mecánicas principales (Se debe complementar con bocetos propios, imágenes y/o video de otros productos como juegos, animaciones, películas, etc)", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Section Tile", "h2", "ti"],
+        ["paragraph.", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
 }) %>
 
 - [Unicorns](https://bestiary.ca/beasts/beast140.htm)[¹](https://bestiary.ca/beasts/beast165.htm)[²](https://en.wikipedia.org/wiki/Unicorn) -> Abilities according to mythology?

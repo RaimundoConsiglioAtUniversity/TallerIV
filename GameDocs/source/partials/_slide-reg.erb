@@ -1,28 +1,16 @@
 <%
-  title = locals[:title]
-  subtitle = locals[:subtitle]
-  text = locals[:text]
-  image = locals[:image]
-  slideType = locals[:type]
+  elements = locals[:elements] || []
+  layout = locals[:layout]
 %>
-
-<div class="slide">
-  <% if slideType.to_s == "cover" %>
-   <h1><%= title.to_s %></h1>
-   <h3><%= subtitle ? subtitle.to_s : "" %></h3>
-
-  <% else %>
-   <h2><%= title.to_s %></h2>
-
-    <% if text %>
-      <% text.each do |t| %>
-        <p><%= t.to_s %></p>
-      <% end %>
+<%# el[0] -> content, el[1] -> tag, el[2] -> area, el[3] -> class/alt-text %>
+<div class="slide" style="grid-template-areas: <%= layout %>">
+  <% elements.each do |el| %>
+    <% if el[1] == "img" %>
+      <img src="/images/<%= el[0] %>" style="grid-area: <%= el[2] %>" alt="<%= el[3] %>" class="slide-img">
+    <% else %>
+      <<%= el[1] %> style="grid-area: <%= el[2] %>" class="<%= el[3] %>">
+        <%= el[0] %>
+      </<%= el[1] %>>
     <% end %>
-
-    <% if image %>
-      <img src="/images/<%= image.to_s %>">
-    <% end %>
-
   <% end %>
 </div>

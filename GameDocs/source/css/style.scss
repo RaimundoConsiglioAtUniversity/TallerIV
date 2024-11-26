@@ -92,6 +92,10 @@ body
 	.slide
 	{
 		background-color: $slide-bg;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-auto-rows: auto;
+		gap: size.$margin-l;
 		justify-items: center;
 		align-content: center;
 		width: size.$slideW;
@@ -102,44 +106,45 @@ body
 		min-height: 0px;
 		overflow: hidden;
 
-		.flex
+		p
 		{
-			display: flex;
-			min-width: 0px;
-			min-height: 0px;
-			max-height: inherit;
-			display: flex;
-			flex: 1 1 ;
-			gap: size.$padding-l;
-			flex-wrap: nowrap;
-			align-items: center;
-			
-			&.cols
-			{
-				flex: 1 1 ;
-				flex-direction: column;
-			}
-			
-			&.rows
-			{
-				flex: 1 1 ;
-				flex-direction: row;
-			}
-			
-			> :has(img)
-			{
-				flex: 1 1 0;
-				min-width: 0px;
-				min-height: 0px;
-				height: auto;
-				width: auto;
+			text-align: start;
+		}
+	}
+}
 
-				img
-				{
-				height: auto;
-				width: auto;
-				}
-			}
+.rel
+{
+	display:inline;
+	position: relative;
+}
+.info
+{
+	@include text-shade(1);
+	background-color: black;
+	font-size: size.$smaller;
+	display:inline;
+	position: absolute;
+	right: -180px;
+	top: size.$h5;
+	transition: 0.5s;
+	opacity: 0;
+	min-width: 300px;
+	max-width: 400px;
+}
+.tooltip
+{
+	font-style: italic;
+	font-weight: 400;
+	transition: 0.4s;
+	&:hover
+	{
+		font-size: size.$paragraph * 1.05;
+		transition: 0.2s;
+		& + .rel .info
+		{
+			opacity: 1;
+			transition: 0.2s;
 		}
 	}
 }
@@ -166,7 +171,14 @@ p
 
 	font-size: size.$paragraph;
 	padding: size.$padding;
+	line-height: size.$paragraph * 1.15;
+
+	&.small
+	{
+		font-size: size.$smaller;
+	}
 }
+
 
 strong
 {
@@ -286,6 +298,12 @@ img
 	{
 		min-height: fit-content;
 		min-width: fit-content;
+	}
+	&.slide-img
+	{
+		height: 100%;
+		width: 100%;
+		object-fit: contain;
 	}
 }
 
