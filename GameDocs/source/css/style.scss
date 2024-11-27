@@ -9,7 +9,8 @@
 $slide-bg: colour.$light-rose;
 $bg: colour.$moderate-indigo;
 $text: colour.$pearl-grey;
-$accent: colour.$strong-cerise;
+$link: colour.$brilliant-raspberry;
+$hover: colour.$strong-cerise;
 $shadow: colour.$midnight-blue;
 
 
@@ -120,8 +121,10 @@ body
 }
 .info
 {
-	@include text-shade(1);
-	background-color: black;
+	@include text-shade(1.4);
+	padding: size.$margin size.$padding-s;
+	border-radius: 6px;
+	background-color: colour.$dark-indigo;
 	font-size: size.$smaller;
 	display:inline;
 	position: absolute;
@@ -131,6 +134,13 @@ body
 	opacity: 0;
 	min-width: 300px;
 	max-width: 400px;
+	z-index: 1;
+}
+
+.ipa
+{
+	font-family: "Noto Sans", sans-serif;
+	font-size: size.$smaller;
 }
 .tooltip
 {
@@ -167,7 +177,7 @@ main
 // <==Tag Attributes==> //
 p
 {
-	@include text-shade(1.5);
+	@include text-shade(2.4);
 
 	font-size: size.$paragraph;
 	padding: size.$padding;
@@ -238,27 +248,27 @@ h4
 
 a
 {
-	@include text-shade($shadow: $shadow);
+	@include text-shade(2.4, $shadow: $shadow);
 
-	color: $accent;
+	color: $link;
 	font-weight: bold;
 	text-decoration: none;
 	transition: 0.25s;
-	line-height: size.$paragraph + 5px;
-
+	line-height: size.$paragraph + 6px;
+	
 	img
 	{
 		transform: scale(1);
 		filter: brightness(1) saturate(1) drop-shadow(0 0 0 colour.$alpha) drop-shadow(0.05rem 0.09rem 0 $shadow);
 		transition: 0.25s;
 	}
-
+	
 	&:hover
 	{
-		@include text-shade(1.6, $shadow);
-
+		@include text-shade(3, $shadow);
+		
 		font-size: 110%;
-		color: $bg;
+		color: $hover;
 		text-decoration: underline;
 		transition: 0.15s;
 

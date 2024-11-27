@@ -92,8 +92,10 @@ body {
 }
 
 .info {
-  text-shadow: 0.4px 0.2px 0 #12162c, 0.4px 0px 0 #12162c, 0.4px 0.4px 0 #12162c, 0px 0.4px 0 #12162c, 0.1px 0.4px 0 #12162c, 0.2px 0.4px 0 #12162c, 0.3px 0.1px 0 #12162c, 0.4px 0.3px 0 #12162c, 0.5px 0.5px 0 #12162c, 0.5px 0.7px 0 #12162c, 0.4px 0.8px 0 #12162c, 0.3px 0.8px 0 #12162c, 0.2px 0.7px 0 #12162c, 0.1px 0.6px 0 #12162c, 0px 0.4px 0 #12162c;
-  background-color: black;
+  text-shadow: 0.56px 0.28px 0 #12162c, 0.56px 0px 0 #12162c, 0.56px 0.56px 0 #12162c, 0px 0.56px 0 #12162c, 0.14px 0.56px 0 #12162c, 0.28px 0.56px 0 #12162c, 0.42px 0.14px 0 #12162c, 0.56px 0.42px 0 #12162c, 0.7px 0.7px 0 #12162c, 0.7px 0.98px 0 #12162c, 0.56px 1.12px 0 #12162c, 0.42px 1.12px 0 #12162c, 0.28px 0.98px 0 #12162c, 0.14px 0.84px 0 #12162c, 0px 0.56px 0 #12162c;
+  padding: 20px 3.9px;
+  border-radius: 6px;
+  background-color: #4f2d75;
   font-size: 18pt;
   display: inline;
   position: absolute;
@@ -103,6 +105,12 @@ body {
   opacity: 0;
   min-width: 300px;
   max-width: 400px;
+  z-index: 1;
+}
+
+.ipa {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18pt;
 }
 
 .tooltip {
@@ -133,7 +141,7 @@ main {
 }
 
 p {
-  text-shadow: 0.6px 0.3px 0 #12162c, 0.6px 0px 0 #12162c, 0.6px 0.6px 0 #12162c, 0px 0.6px 0 #12162c, 0.15px 0.6px 0 #12162c, 0.3px 0.6px 0 #12162c, 0.45px 0.15px 0 #12162c, 0.6px 0.45px 0 #12162c, 0.75px 0.75px 0 #12162c, 0.75px 1.05px 0 #12162c, 0.6px 1.2px 0 #12162c, 0.45px 1.2px 0 #12162c, 0.3px 1.05px 0 #12162c, 0.15px 0.9px 0 #12162c, 0px 0.6px 0 #12162c;
+  text-shadow: 0.96px 0.48px 0 #12162c, 0.96px 0px 0 #12162c, 0.96px 0.96px 0 #12162c, 0px 0.96px 0 #12162c, 0.24px 0.96px 0 #12162c, 0.48px 0.96px 0 #12162c, 0.72px 0.24px 0 #12162c, 0.96px 0.72px 0 #12162c, 1.2px 1.2px 0 #12162c, 1.2px 1.68px 0 #12162c, 0.96px 1.92px 0 #12162c, 0.72px 1.92px 0 #12162c, 0.48px 1.68px 0 #12162c, 0.24px 1.44px 0 #12162c, 0px 0.96px 0 #12162c;
   font-size: 24pt;
   padding: 6px;
   line-height: 27.6pt;
@@ -190,12 +198,12 @@ h4 {
 }
 
 a {
-  text-shadow: 0.4px 0.2px 0 #12162c, 0.4px 0px 0 #12162c, 0.4px 0.4px 0 #12162c, 0px 0.4px 0 #12162c, 0.1px 0.4px 0 #12162c, 0.2px 0.4px 0 #12162c, 0.3px 0.1px 0 #12162c, 0.4px 0.3px 0 #12162c, 0.5px 0.5px 0 #12162c, 0.5px 0.7px 0 #12162c, 0.4px 0.8px 0 #12162c, 0.3px 0.8px 0 #12162c, 0.2px 0.7px 0 #12162c, 0.1px 0.6px 0 #12162c, 0px 0.4px 0 #12162c;
-  color: #b72075;
+  text-shadow: 0.96px 0.48px 0 #12162c, 0.96px 0px 0 #12162c, 0.96px 0.96px 0 #12162c, 0px 0.96px 0 #12162c, 0.24px 0.96px 0 #12162c, 0.48px 0.96px 0 #12162c, 0.72px 0.24px 0 #12162c, 0.96px 0.72px 0 #12162c, 1.2px 1.2px 0 #12162c, 1.2px 1.68px 0 #12162c, 0.96px 1.92px 0 #12162c, 0.72px 1.92px 0 #12162c, 0.48px 1.68px 0 #12162c, 0.24px 1.44px 0 #12162c, 0px 0.96px 0 #12162c;
+  color: #e7498c;
   font-weight: bold;
   text-decoration: none;
   transition: 0.25s;
-  line-height: 27.75pt;
+  line-height: 28.5pt;
 }
 a img {
   transform: scale(1);
@@ -203,9 +211,9 @@ a img {
   transition: 0.25s;
 }
 a:hover {
-  text-shadow: 0.64px 0.32px 0 #12162c, 0.64px 0px 0 #12162c, 0.64px 0.64px 0 #12162c, 0px 0.64px 0 #12162c, 0.16px 0.64px 0 #12162c, 0.32px 0.64px 0 #12162c, 0.48px 0.16px 0 #12162c, 0.64px 0.48px 0 #12162c, 0.8px 0.8px 0 #12162c, 0.8px 1.12px 0 #12162c, 0.64px 1.28px 0 #12162c, 0.48px 1.28px 0 #12162c, 0.32px 1.12px 0 #12162c, 0.16px 0.96px 0 #12162c, 0px 0.64px 0 #12162c;
+  text-shadow: 1.2px 0.6px 0 #12162c, 1.2px 0px 0 #12162c, 1.2px 1.2px 0 #12162c, 0px 1.2px 0 #12162c, 0.3px 1.2px 0 #12162c, 0.6px 1.2px 0 #12162c, 0.9px 0.3px 0 #12162c, 1.2px 0.9px 0 #12162c, 1.5px 1.5px 0 #12162c, 1.5px 2.1px 0 #12162c, 1.2px 2.4px 0 #12162c, 0.9px 2.4px 0 #12162c, 0.6px 2.1px 0 #12162c, 0.3px 1.8px 0 #12162c, 0px 1.2px 0 #12162c;
   font-size: 110%;
-  color: #5e50a0;
+  color: #b72075;
   text-decoration: underline;
   transition: 0.15s;
 }
