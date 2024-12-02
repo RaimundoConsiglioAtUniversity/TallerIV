@@ -86,6 +86,18 @@
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
 }) %>
 
+<%# INVESTIGACIÓN: Escenarios sistémicos (diagrama de Venn) %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["", "h2", "ti"],
+        ["", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
 <%# INVESTIGACIÓN: Marco conceptual: Definicion de Conceptos/Mapa Conceptual %>
 <%= partial(:"partials/slide-reg", :locals => 
 {
@@ -110,18 +122,6 @@
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
 }) %>
 
-<%# INVESTIGACIÓN: Escenarios sistémicos (diagrama de Venn) %>
-<%= partial(:"partials/slide-reg", :locals => 
-{
-    :elements =>
-    [
-        ["", "h2", "ti"],
-        ["", "p", "p1"]
-    ],
-    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
-                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
-}) %>
-
 <%# INVESTIGACIÓN: Problemática y Oportunidad de diseño y producción, usar info de Marketing! %>
 <%= partial(:"partials/slide-reg", :locals => 
 {
@@ -139,7 +139,7 @@
 {
     :elements =>
     [
-        ["", "h2", "ti"],
+        ["Incluir Estado del Arte (juegos de los últimos 5 años que tengan alguna o varias características que se acercan a la propuesta presentada — entre más, mejor): Billie Bust Up, Deltarune, ", "h2", "ti"],
         ["", "p", "p1"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
@@ -153,6 +153,18 @@
     [
         ["", "h2", "ti"],
         ["", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# IDEACIÓN: Objetivo Principal %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Objetivo Principal", "h2", "ti"],
+        ["Diseñar un videojuego 2D del género puzzle-platformer que se desenlazaría en un mundo inspirado en la Gran Bretaña de inicios del siglo 19, donde el jugador o jugadora navega niveles cuyos entornos requieren de su pensamiento abstracto. Esto se lograría alternando entre 3 personajes, cada uno con habilidades únicas. La narrativa yuxtapondría el pensamiento mágico de los siglos anteriores —representado por los personajes mitológicos con un aspecto dulce y pueril— con el pensamiento científico traído por la reciente revolución científica y la revolución industrial, manteniendo una narrativa no-violenta con la intención de comunicar que uno no tiene por qué dejar atrás a su niño o niña interior.", "p", "p1"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
@@ -163,32 +175,68 @@
 {
     :elements =>
     [
-        ["", "h2", "ti"],
-        ["", "p", "p1"]
+        ["Objetivos específicos", "h2", "ti"],
+        ["Diseñar un sistema de movimiento satisfactorio, donde controlar los tres personajes con distintas habilidades se sienta intuitivo. Estas habilidades estarían balanceadas de tal modo que ninguno de estos personajes se sientan innecesarios o redundantes. Los niveles del juego estarían diseñados de tal modo que el jugador o la jugadora pueda explorar y explotar las habilidades de cada personaje para avanzar.", "p", "p1"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
 }) %>
 
-<%# IDEACIÓN: Público Objetivo %>
+<%# IDEACIÓN: Objetivos específicos %>
 <%= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
-        ["", "h2", "ti"],
-        ["", "p", "p1"]
+        ["Objetivos específicos", "h2", "ti"],
+        ["Crear un mundo cuyos aspectos narrativos y de jugabilidad yuxtapogan lo mágico y lo científico, usando este de vehículo narrativo para contar una historia que explore el concepto de que no hay que perder el asombro —nuestro niño o niña interior— para vivir en un mundo adulto.", "p", "p1"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
 }) %>
 
-<%# IDEACIÓN: Moodboard/Bocetaje del Juego %>
+<%# IDEACIÓN: Objetivos específicos %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Objetivos específicos", "h2", "ti"],
+        ["Desarrollar, implementar, y evaluar los aspectos visuales, sonoros, narrativos, y jugables del juego, de modo que estos fortalezcan tanto el diseño mecánico como narrativo de este.", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# IDEACIÓN: Moodboard/Bocetaje del Juego (Narrativo) %>
 <%= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
         ["", "h2", "ti"],
-        ["", "p", "p1"]
+        ["Mundo narrativo / construcción de mundo", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# IDEACIÓN: Moodboard/Bocetaje del Juego (Visual) %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["", "h2", "ti"],
+        ["Estética visual", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# IDEACIÓN: Moodboard/Bocetaje del Juego (Sonoro) %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["", "h2", "ti"],
+        ["Estética sonora y musical", "p", "p1"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
@@ -218,13 +266,13 @@
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
 }) %>
 
-<%# IDEACIÓN: Referentes de mecánicas %>
+<%# IDEACIÓN: Referentes de mecánicas: On-The-Fly Character Swapping %>
 <%= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
-        ["Game Mechanics — Character Swapping", "h2", "ti"],
-        ["One of the mechanics that will set apart Lost Little Horsies from the most other puzzle-platformers, is the fact that the player will switch between three different characters to use each of thir unique abilities, in a manner similar to the overworld exploration in the Mario & Luigi RPGs", "p", "p1"],
+        ["Game Mechanics — On-The-Fly Character Swapping", "h2", "ti"],
+        ["One of the mechanics that will set apart Lost Little Horsies from the most other puzzle-platformers, is the fact that the player will be able to switch between three different characters to use each of thir unique abilities, in a manner similar to the overworld exploration in the Mario & Luigi RPGs", "p", "p1"],
         [
             "(Mario & Luigi Gif 1)", "img", "i1"
         ],
@@ -237,17 +285,209 @@
                 'p1 p1 p1 p1 p1 p1 p1 p1 i2 i2 i2 i2'"
 }) %>
 
-<%# IDEACIÓN: Diseño de mecánicas %>
+<%# IDEACIÓN: Diseño de mecánicas: On-The-Fly Character Swapping %>
 <%= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
-        ["Game Mechanics — Character Swapping", "h2", "ti"],
+        ["Game Mechanics — On-The-Fly Character Swapping", "h2", "ti"],
         ["(How it works in my game)", "p", "p1"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
 }) %>
+
+<%# IDEACIÓN: Referentes de mecánicas: Pegasus Flight %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Game Mechanics — Pegasus Flight", "h2", "ti"],
+        ["(Multijumps like Pit or Kirby in SSB)", "p", "p1"],
+        [
+            "(SSB Gif 1)", "img", "i1"
+        ],
+        [
+            "(SSB Gif 2)", "img", "i2"
+        ]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 i1 i1 i1 i1'
+                'p1 p1 p1 p1 p1 p1 p1 p1 i2 i2 i2 i2'"
+}) %>
+
+<%# IDEACIÓN: Diseño de mecánicas: Pegasus Flight %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Game Mechanics — Pegasus Flight", "h2", "ti"],
+        ["(How it works in my game)", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+
+
+<%# IDEACIÓN: Referentes de mecánicas: Pegasus Thunder %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Game Mechanics — Pegasus Thunder", "h2", "ti"],
+        ["(Similar Mechanics in other games)", "p", "p1"],
+        [
+            "(SSB Gif 1)", "img", "i1"
+        ],
+        [
+            "(SSB Gif 2)", "img", "i2"
+        ]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 i1 i1 i1 i1'
+                'p1 p1 p1 p1 p1 p1 p1 p1 i2 i2 i2 i2'"
+}) %>
+
+<%# IDEACIÓN: Diseño de mecánicas: Pegasus Thunder %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Game Mechanics — Pegasus Thunder", "h2", "ti"],
+        ["(Description of use cases, and input)", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# IDEACIÓN: Referentes de mecánicas: Unicorn Teleportation %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Game Mechanics — Unicorn Teleportation", "h2", "ti"],
+        ["(Similar Mechanics in other games)", "p", "p1"],
+        [
+            "(SSB Gif 1)", "img", "i1"
+        ],
+        [
+            "(SSB Gif 2)", "img", "i2"
+        ]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 i1 i1 i1 i1'
+                'p1 p1 p1 p1 p1 p1 p1 p1 i2 i2 i2 i2'"
+}) %>
+
+<%# IDEACIÓN: Diseño de mecánicas: Unicorn Teleportation %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Game Mechanics — Unicorn Teleportation", "h2", "ti"],
+        ["(How it works in my game)", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+
+
+<%# IDEACIÓN: Referentes de mecánicas: Unicorn Telekinesis %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Game Mechanics — Unicorn Telekinesis", "h2", "ti"],
+        ["(Similar Mechanics in other games)", "p", "p1"],
+        [
+            "(Gif 1)", "img", "i1"
+        ],
+        [
+            "(Gif 2)", "img", "i2"
+        ]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 i1 i1 i1 i1'
+                'p1 p1 p1 p1 p1 p1 p1 p1 i2 i2 i2 i2'"
+}) %>
+
+<%# IDEACIÓN: Diseño de mecánicas: Unicorn Telekinesis %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Game Mechanics — Unicorn Telekinesis", "h2", "ti"],
+        ["(Description of use cases, and input)", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# IDEACIÓN: Referentes de mecánicas: Gæahippos Ground Pound %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Game Mechanics — Gæahippos Ground Pound", "h2", "ti"],
+        ["(Similar Mechanics in other games)", "p", "p1"],
+        [
+            "(Gif 1)", "img", "i1"
+        ],
+        [
+            "(Gif 2)", "img", "i2"
+        ]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 i1 i1 i1 i1'
+                'p1 p1 p1 p1 p1 p1 p1 p1 i2 i2 i2 i2'"
+}) %>
+
+<%# IDEACIÓN: Diseño de mecánicas: Gæahippos Ground Pound %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Game Mechanics — Gæahippos Ground Pound", "h2", "ti"],
+        ["(How it works in my game)", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# IDEACIÓN: Referentes de mecánicas: Gæahippos Phytoturgy %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Game Mechanics — Gæahippos Phytoturgy", "h2", "ti"],
+        ["(Similar Mechanics in other games)", "p", "p1"],
+        [
+            "(Gif 1)", "img", "i1"
+        ],
+        [
+            "(Gif 2)", "img", "i2"
+        ]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 i1 i1 i1 i1'
+                'p1 p1 p1 p1 p1 p1 p1 p1 i2 i2 i2 i2'"
+}) %>
+
+<%# IDEACIÓN: Diseño de mecánicas: Gæahippos Phytoturgy %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Game Mechanics — Gæahippos Phytoturgy", "h2", "ti"],
+        ["(Description of use cases, and input)", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# Descripción del resto de mecánicas principales, a traves de la repetición de las dos anteriores diapositivas (Se debe complementar con bocetos propios, imágenes y/o video de otros productos como juegos, animaciones, películas, etc) %>
 
 <%# IDEACIÓN: Referentes conceptuales y artísticos %>
 <%= partial(:"partials/slide-reg", :locals => 
@@ -297,72 +537,193 @@
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
 }) %>
 
-<%# IDEACIÓN: Modelo de negocio y escalabilidad del proyecto %>
+<%# IDEACIÓN: Modelo de negocio y escalabilidad del proyecto: Definición de parámetros de audiencia %>
 <%= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
         ["", "h2", "ti"],
-        ["(gestión de negocio, factibilidad, viabilidad, posicionamiento en el mercado y oportunidad de innovación u otros)", "p", "p1"]
+        ["(factibilidad, viabilidad, gestión de negocio, posicionamiento en el mercado y oportunidad de innovación u otros)", "p", "p1"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
 }) %>
 
-
-4. IMPLEMENTACIÓN (Dónde, cuándo y cómo): Implementación con placeholders
-- Resultados esperados e impacto de la propuesta
-4. Proceso de Producción
-4.1 Proceso de Animación
-4.2 Proceso de texturas, iluminación, shaders
-4.2 Diseño de niveles
-4.3 Programación final del prototipo
-5. Proceso de post - producción
-5.1 Desarrollo o propuesta de pipeline
-5.2 Definición de parámetros de audiencia (factibilidad, viabilidad, gestión de negocio y posicionamiento en el mercado)
-5.3 Proyecciones
-viabilidad, posicionamiento en el mercado y oportunidad de innovación u otros)
-
-5. PRODUCTO ACADÉMICO:
-- Prototipo con placeholders y mecánicas funcionales.
-
-6. CONCLUSIONES:
-- Grado de avance y potenciales desafíos del proceso, junto a posibles soluciones.
-6.1 Grado de efectividad de la propuesta
-6.2 Nivel de logro de los objetivos
-6.3 Proyección de nuevas etapas de desarrollo del proyecto.
-
-7. ANEXOS
-
-8. BIBLIOGRAFÍA
-
-
-
-
-
-
-
-
-Descripción de mecánicas principales (Se debe complementar con bocetos propios, imágenes y/o video de otros productos como juegos, animaciones, películas, etc)
-
+<%# IMPLEMENTACIÓN: PRODUCTO ACADÉMICO: Prototipo con placeholders y mecánicas funcionales/Ejemplos de Gameplay %>
 <%= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
-        ["Section Tile", "h2", "ti"],
-        ["paragraph.", "p", "p1"]
+        ["Gameplay", "h2", "ti"],
+        ["(Demo) Ejemplos de gameplay a partir de las mecánicas descritas anteriormente. (Especulación fundamentada)", "p", "p1"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
 }) %>
 
+<%# IMPLEMENTACIÓN: Implementación con placeholders: Resultados esperados e impacto de la propuesta %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["", "h2", "ti"],
+        ["", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# IMPLEMENTACIÓN: Proceso de Producción: Proceso de Animación %>
+<%# <%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["", "h2", "ti"],
+        ["", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# IMPLEMENTACIÓN: Proceso de Producción: Proceso de texturas, iluminación, shaders %>
+<%# <%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["", "h2", "ti"],
+        ["", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# IMPLEMENTACIÓN: Proceso de Producción: Diseño de niveles %>
+<%# <%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["", "h2", "ti"],
+        ["", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# IMPLEMENTACIÓN: Proceso de Producción: Programación final del prototipo %>
+<%# <%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["", "h2", "ti"],
+        ["", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# POST-PRODUCCIÓN: Desarrollo o propuesta de pipeline %>
+<%# <%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["", "h2", "ti"],
+        ["", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# CONCLUSIONES: Proyección de nuevas etapas de desarrollo del proyecto %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["", "h2", "ti"],
+        ["", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# CONCLUSIONES: Grado de avance y potenciales desafíos del proceso, junto a posibles soluciones %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["", "h2", "ti"],
+        ["", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# CONCLUSIONES: Grado de avance y potenciales desafíos del proceso, junto a posibles soluciones %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["", "h2", "ti"],
+        ["", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# CONCLUSIONES: Grado de efectividad de la propuesta %>
+<%# <%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["", "h2", "ti"],
+        ["", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# CONCLUSIONES: Nivel de logro de los objetivos %>
+<%# <%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["", "h2", "ti"],
+        ["", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# ANEXOS %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["", "h2", "ti"],
+        ["", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%# BIBLIOGRAFÍA %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["", "h2", "ti"],
+        ["", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+
+https://www.giantbomb.com/on-the-fly-character-switching/3015-4385/
+
+
 - [Unicorns](https://bestiary.ca/beasts/beast140.htm)[¹](https://bestiary.ca/beasts/beast165.htm)[²](https://en.wikipedia.org/wiki/Unicorn) -> Abilities according to mythology?
 - [Pegasi](https://bestiary.ca/beasts/beast477.htm)[¹](https://en.wikipedia.org/wiki/Pegasus)
 - [Chtonippos](https://en.wikipedia.org/wiki/Chthonic)[¹](https://en.wikipedia.org/wiki/Sleipnir)
-
-### Gameplay
-
-- Ejemplos de gameplay a partir de las mecánicas descritas anteriormente. (Especulación fundamentada)
 
 ### Referentes Culturales
 
@@ -372,15 +733,4 @@ Descripción de mecánicas principales (Se debe complementar con bocetos propios
 - [Isaac Newton and the Occult](https://en.wikipedia.org/wiki/Isaac_Newton%27s_occult_studies)
 (otros juegos, libros, películas, discos, etc) (indicar que es lo que se está referenciando de cada uno)
 
-### Estado del Arte
-
-- Billie Bust Up
-- Deltarune
-- (juegos de los últimos 5 años que tengan alguna o varias características que se acercan a la propuesta presentada — entre más, mejor)
-
-### Moodboard
-
-- Mundo narrativo / construcción de mundo
-- Estética visual
-- Estética sonora y musical
-|
+Añadir un archivo chiquito que permita ver los controles del juego
