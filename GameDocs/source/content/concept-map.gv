@@ -1,0 +1,467 @@
+# Place the cursor inside "graph" to get some refactoring options
+
+digraph
+{
+
+# To refactor nodes, place the cursor left to a node name
+
+"Lost Little Horsies" ->
+{
+    "Game Traits"
+    "References & Inspiration"
+}
+
+"References & Inspiration" ->
+{
+    "Gameplay Inspiration"
+    "Aesthetic Inspiration"
+    "Narrative Inspiration"
+    "Musical Inspiration"
+}
+
+"Game Traits" ->
+{
+    "Game Aesthetics"
+    "Game Narrative"
+    "Gameplay"
+    "Characters"
+    "Game Music"
+}
+"Game Aesthetics" ->
+{
+    "Pastel Colours"
+    "Cute & Approachable"
+    "Cartoonish"
+    "Pixel Art"
+    "Cosy"
+    "Non-Violence"
+    "Cuteness"
+    "Collaboration"
+    "Environmental Design"
+    "Sound Design"
+}
+
+"Environmental Design" ->
+{
+    "Georgian Architecture"
+}
+
+"Industrial Revolution" ->
+{
+    "Factories"
+    "Steam Power"
+    "Rise of Consumerism"
+    "Capitalism"
+    "Exploitation of Workers"
+    "Origin of Slums"
+}
+
+"Georgian Architecture" ->
+{
+    "Symmetrical Buildings"
+    "Classical Proportion"
+    "Classical Elements"
+    "Sash Windows"
+    "Woodwork"
+    "Brick/Stone Construction"
+    "Hipped & Side-Gabled Roofs"
+    "Fanlights"
+}
+"Georgian City Layouts" ->
+{
+    "Orderly"
+    "Grand Public Buildings"
+    "Grand Squares and Circles"
+    "Common Building in Georgian Cities"
+}
+"Common Building in Georgian Cities" ->
+{
+    "Terraced Houses"
+    "Stately Homes with Landscaped Gardens"
+    "Churches and Cathedrals with Columns and Domes"
+    "Marketplaces and Shop"
+}
+
+"Georgian Interior Design"
+->
+{
+    "Refined Elegance, with high attention to detail"
+    "Symmetry & Balance"
+    "Harmonious & Understated Ornamentation"
+}
+
+"Classical Elements" ->
+{
+    "Columns"
+    "Pediments"
+    "Cornices"
+    "Ancient Greek Architecture"
+}
+
+"Game Narrative" ->
+{
+    "Magic-Science Contrast"
+    "Sport Hunting"
+}
+
+"Characters" ->
+{
+    "Protagonists"
+    "Antagonists"
+    "Secondary Characters"
+}
+
+
+"Protagonists" ->
+{
+    Unicorn
+    Pegasus
+    Gæahippos
+}
+
+"Antagonists" ->
+{
+    "Sport Hunters"
+}
+
+"Secondary Characters" ->
+{
+    
+}
+
+"Gameplay" ->
+{
+    "Puzzle-Platformer (Genre)"
+    "Mechanics"
+    "Level Design"
+}
+
+"Mechanics" ->
+{
+    "Character-Swapping Mechanics"
+}
+
+"Aesthetic Inspiration" ->
+{
+    "My Little Pony"
+    "Georgian Era Britain"
+    "Game Aesthetics"
+}
+
+"Gameplay Inspiration" ->
+{
+    "My Little Pony"
+    "Super Mario Bros. (Platforming Game)"
+    "Mario & Luigi (RPG Series)"
+    "Gameplay"
+}
+
+"Narrative Inspiration" ->
+{
+    "World-building"
+    "Narrative Tone"
+    "Narrative Themes"
+    "Mario & Luigi (RPG Series)"
+    "My Little Pony"
+    "Game Narrative"
+}
+
+"Narrative Themes" ->
+{
+    "Game Narrative"
+    "Friendship"
+    "Acceptance & Diversity"
+    "Teamwork & Cooperation"
+    "Perseverance & Resilience"
+    "Adventure & Courage"
+    "Magic & Wonder"
+    "Empathy & Compassion"
+    "Curiosity & Creativity"
+    "Pacifism vs. Violence"
+    "Hope & Optimism"
+
+}
+"Undertale" ->
+{
+    "Pacifism vs. Violence"
+    "Consequence of Actions"
+    "Identity & Self-Discovery"
+    "Friendship"
+    "Understanding"
+    "Forgiveness & Redemption"
+    "Existentialism"
+    "Perseverance & Resilience"
+    "Empathy & Compassion"
+}
+"Deltarune" ->
+{
+    "Light vs. Dark"
+    "Friendship"
+    "Teamwork & Cooperation"
+    "Choice & Free Will"
+    "Identity & Self-Discovery"
+    "Morality & Ethics"
+    "Perseverance & Resilience"
+    "Hope & Optimism"
+}
+
+"World-building" ->
+{
+    "Religion & Mythology"
+    "My Little Pony"
+}
+
+"Narrative Tone" ->
+{
+    "Light-hearted & Playful"
+    "Humorous"
+    "Inclusive"
+    "Wholesome"
+    "Optimistic & Uplifting"
+    "Whimsical"
+    "Fantastical"
+    "Adventurous"
+    "Heartfelt"
+}
+
+"Mario & Luigi (RPG Series)" ->
+{
+    "Character-Swapping Mechanics"
+    "Light-hearted & Playful"
+    "Humorous"
+    "Whimsical"
+    "Adventurous"
+    "Heartfelt & Heartwarming"
+    "Parodical & Satirical"
+    "Brotherhood"
+    "Friendship"
+    "Loyalty"
+    "Teamwork & Cooperation"
+    "Perseverance & Resilience"
+    "Adventure & Courage"
+    "Heroism"
+    "Good vs. Evil"
+    "Fantastical"
+    "Magic & Wonder"
+    "Curiosity & Creativity"
+}
+
+"Action Games (Genre)" ->
+{
+    "2D Platformer (Genre)"
+}
+"2D Platformer (Genre)" ->
+{
+    "Puzzle-Platformer (Genre)"
+    "Super Mario Bros. (Platforming Game)"
+    "3D Platformer (Genre)"
+}
+"3D Platformer (Genre)" ->
+{
+    "Billie Bust-Up"
+}
+
+"Super Mario (Media Franchise)" ->
+{
+    "Super Mario Bros. (Platforming Game)"
+    "Mario & Luigi (RPG Series)"
+}
+
+"Character-Swapping Mechanics" ->
+{
+    "Exclusive Unique Abilities"
+    "Collaboration"
+}
+
+"My Little Pony" ->
+{
+    Unicorn
+    Pegasus
+    "Earth Pony"
+    "Billie Bust-Up"
+    "Magic"
+    "Cuteness"
+    "Light-hearted & Playful"
+    "Humorous"
+    "Inclusive"
+    "Morality & Ethics"
+    "Wholesome"
+    "Optimistic & Uplifting"
+    "Whimsical"
+    "Fantastical"
+    "Adventure & Courage"
+    "Heartfelt & Heartwarming"
+    "Friendship"
+    "Kindness"
+    "Generosity"
+    "Understanding"
+    "Forgiveness & Redemption"
+    "Acceptance & Diversity"
+    "Teamwork & Cooperation"
+    "Perseverance & Resilience"
+    "Magic & Wonder"
+    "Empathy & Compassion"
+    "Pastel Colours"
+    "Cute & Approachable"
+    "Cartoonish"
+    "Cosy"
+}
+"Earth Pony" ->
+{
+    "Equine with Phytoturgy"
+}
+
+"Equine with Phytoturgy" ->
+{
+    Gæahippos
+}
+Gæahippos ->
+{
+    "Character-Swapping Mechanics"
+}
+"Religion & Mythology" ->
+{
+    "Magic"
+    "Greek Mythology"
+    "Celtic Paganism"
+    "Nordic Mythology"
+}
+"Celtic Paganism" ->
+{
+    "Druid (Celtic Paganism)"
+}
+"Druid (Celtic Paganism)" ->
+{
+    "Druid (Dungeons & Dragons)"
+}
+"Druid (Dungeons & Dragons)" ->
+{
+    "Phytoturgy (Plant Magic)"
+}
+
+"Phytoturgy (Plant Magic)" ->
+{
+    "Equine with Phytoturgy"
+}
+
+"Nordic Mythology" ->
+{
+    Sleipnir
+}
+Sleipnir ->
+{
+    Gæahippos
+}
+"History" ->
+{
+    "Ancient Greece"
+    "The United Kingdom"
+}
+
+Philosophy ->
+{
+    "Non-Violence"
+    "Altruism"
+}
+"Ancient Greece" ->
+{
+    "Greek Mythology"
+    "Ancient Greek"
+    "Ancient Greek Architecture"
+}
+"Ancient Greek" ->
+{
+    "Γαῖα (Gaîa)"
+    "ἵππος (híppos)"
+} 
+"Γαῖα (Gaîa)" ->
+{
+    Gæahippos
+}
+"ἵππος (híppos)" ->
+{
+    Gæahippos
+}
+"Greek Mythology" ->
+{
+    Unicorn
+    Pegasus
+}
+
+"The United Kingdom" ->
+{
+    "Witch Hunts"
+    "Georgian Era Britain"
+}
+
+"Georgian Era Britain" ->
+{
+    "1714-1837"
+    "Agricultural Revolution"
+    "Industrial Revolution"
+    "Age of Enlightenment"
+    Colonialism
+    "Grand Tours"
+    "Witchcraft Act of 1735"
+}
+"Age of Enlightenment" ->
+{
+    "Reason"
+    "Order"
+    "Classical Learning"
+}
+Colonialism ->
+{
+    "Sport Hunting"
+}
+"Sport Hunting" ->
+{
+    "Sport Hunters"
+}
+"Magic-Science Contrast" -> 
+{
+    "Georgian Era Britain"
+    "Isaac Newton and the Occult"
+}
+"Science" ->
+{
+    "Isaac Newton"
+    "Magic-Science Contrast"
+}
+
+Unicorn ->
+{
+    "Magic"
+}
+
+"Magic" ->
+{
+    "Magic-Science Contrast"
+    "Witch Hunts"
+}
+"Witch Hunts" ->
+{
+    "Witchcraft Acts"
+}
+"Witchcraft Acts" ->
+{
+    "Witchcraft Act of 1735"
+}
+"Witchcraft Act of 1735" ->
+{
+    "Sporadic Witch-Hunts after 1750"
+}
+
+"Deltarune" -> "Non-Violence"
+"Undertale" -> "Non-Violence"
+
+# Hover over color names to get a color picker
+# b -- b [color=blue]
+#b -- d [color="#ff0000"];
+# Get completion when assigning a shape or color
+# b [shape=box, color=yellow];
+
+
+#que se desenlazaría en un mundo inspirado en la Gran Bretaña de inicios del siglo 19, donde el jugador o jugadora navega niveles cuyos entornos requieren de su pensamiento abstracto. Esto se lograría alternando entre 3 personajes, cada uno con habilidades únicas. La narrativa yuxtapondría el pensamiento mágico de los siglos anteriores —representado por los personajes mitológicos con un aspecto dulce y pueril— con el pensamiento científico traído por la reciente revolución científica y la revolución industrial, manteniendo una narrativa no-violenta con la intención de comunicar que uno no tiene por qué dejar atrás a su niño o niña interior.
+
+}
