@@ -197,7 +197,17 @@ subgraph cluster_history
 subgraph cluster_myths
 {
     "Religion & Mythology" [color=none fontsize="20pt"]
-    "Magic"
+
+    subgraph cluster_magic
+    {
+        "Magic"
+        "Magic-Science Contrast"
+        "Witch Hunts"
+        "Witchcraft Acts"
+        "Witchcraft Act of 1735"
+        "Sporadic Witch-Hunts after 1750"
+    }
+
     "Greek Mythology"
     "Celtic Paganism"
     "Druid (Celtic Paganism)"
@@ -215,15 +225,7 @@ subgraph cluster_honse
     Gæahippos [color=none]
 }
 
-subgraph cliuster_magic
-{
-    "Magic"
-    "Magic-Science Contrast"
-    "Witch Hunts"
-    "Witchcraft Acts"
-    "Witchcraft Act of 1735"
-    "Sporadic Witch-Hunts after 1750"
-}
+
 }
 "Lost Little Horsies" ->
 {
