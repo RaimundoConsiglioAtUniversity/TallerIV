@@ -67,8 +67,8 @@
 {
     :elements =>
     [
-        ["Inspiration", "h2", "ti"],
-        ["Lost Little Horsies was born out of my love for platforming games ...", "p", "p1"]
+        ["Motives", "h2", "ti"],
+        ["I've always had a passion for seeing other people's joy, to the point that my first dream job when I was like 5 years old was to have a toy factory powered by bubbles in the Andes mountains on top of the border of Argentina and Chile so that kids from both countries could have the toys I've made. Of course, despite now knowing how silly it was in retrospect, I can't help but see my passion to game making as an evolution of young me's whimsical dreams.", "p", "p1"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
@@ -79,11 +79,72 @@
 {
     :elements =>
     [
-        ["", "h2", "ti"],
-        ["", "p", "p1"]
+        ["Inspiration - Concept", "h2", "ti"],
+        ["Lost Little Horsies was born out of my love for platforming games, as well as my passion for My Little Pony.", "p", "p1"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Inspiration - Character Swapping", "h2", "ti"],
+        ["The key mechanic of swapping between characters to complete platforming challenges came to me while playing Mario & Luigi: Superstar Saga, where you swap between the titular characters to navigate the world using their unique field abilities, which all have them cooperate to perform these.", "p", "p1"],
+        ["My brain then made the connection that this could be used in platforming games, and it has been used in games like Sonic Heroes and The Lost Vikings. Beyond those two examples, I feel that this still is fertile grounds for exploration of the concept, since not many other games feature this as a core gameplay mechanic.", "p", "p2"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'
+                'p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2'"
+}) %>
+
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Inspiration - Non-Violence", "h2", "ti"],
+        ["Before having the character swapping mechanic pop into my mind, though, the concept initially came to my mind as a simple question: How would a platforming game where you don't inflict violence play like? Because, even if cartoony, games like Mario, Kirby, and Sonic feature some type of violence as core gameplay mechanics, be it Mario's stomp, Kirby's inhaling, or Sonic's spin dash. I though it could make for an interesting design challenge, and the character swapping mechanics came not long after.", "p", "p1"],
+        ["These two ideas also perfectly fit a game inspired by My Little Pony, since core messages of the series include the importance of friendship and collaboration, as well as perseverance and understanding.", "p", "p2"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'
+                'p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2'"
+}) %>
+
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Inspiration - Plot", "h2", "ti"],
+        ["I needed a compelling narrative for the game, though, so I got thinking: What if three little ponies got stranded in the human world? After all, the idea of being stranded in a world that's not your own is quite common in anime, to the point that this trope has earned itself a name: Isekai, meaning \"Other-World\". Even classical western literature isn't exempt from this, a couple of examples being Alice in Wonderland and The Chronicles of Narnia. Many fanfics in the My Little Pony community feature humans being accidentally transported to Equestria as well!", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Inspiration - Plot", "h2", "ti"],
+        ["The trope usually plays out with humans being stuck in fantasy worlds, but despite being less common, it can also play out in reverse; heck, a few of the aforementioned fanfics feature ponies being stranded in earth, so why not play with the trope myself? It gives our protagonists a sympathetic, yet easy to understand motive: Who hasn't felt alienated, strange sometimes when in a new environment, be it a new school, a new workplace, or a country your visiting?", "p", "p1"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Inspiration - Setting", "h2", "ti"],
+        ["With that established, I then had to come up with an appropriate setting.", "p", "p1"],
+        ["I quickly came up with the concept of these ponies being stuck in a period loosely taking place in 18th century Britain, while taking elements from between the 16th and 19th century as well, since it could pose for an interesting juxtaposition with my characters. In a time of transition from magical thinking to staunch rationalism, what's better to upset the status quo than three mythical creatures popping up unannounced?", "p", "p2"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'
+                'p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2'"
 }) %>
 
 <%# INVESTIGACIÓN: Escenarios sistémicos (diagrama de Venn) %>
@@ -127,8 +188,10 @@
 {
     :elements =>
     [
-        ["", "h2", "ti"],
-        ["", "p", "p1"]
+        ["Problemática y Oportunidad de Diseño y Producción", "h2", "ti"],
+        ["First I had to ask myself: Is there even a demand for this kind of game? So I have done some preliminary research using online tools. De la gente que contestó mi encuesta, hay tres fuentes de origen principales: A mis amigos y los amigos de mis hermanos irl, a mis amigos online en una comunidad en Discord, y a mis seguidores en BlueSky.
+        
+        Estas fueron recopiladas usando Google Forms, lo que me facilita el análisis de estas, y me permite compilarlas en una <a href='https://docs.google.com/spreadsheets/d/1l7BUJlMEoFmfsp2X5rgmGM8ot6mrsDGTtDa1F4QhcW'>hoja de calculo de google.</a>", "p", "p1"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
@@ -139,11 +202,23 @@
 {
     :elements =>
     [
-        ["Incluir Estado del Arte (juegos de los últimos 5 años que tengan alguna o varias características que se acercan a la propuesta presentada — entre más, mejor): Billie Bust Up, Deltarune, ", "h2", "ti"],
-        ["", "p", "p1"]
+        ["Existe un Público para esto?", "h2", "ti"],
+        ["Si quieren ver más detalladamente mis conclusiones, pueden hacerlo <a href=''>en este archivo</a>, pero el cuento corto es que de los participantes, en cuanto concierne a la acción y la violencia, un 25% respondió que no les gusta la violencia, o que solo les gusta en pequeñas dosis. Además, a un 50% de nuestro sub-grupo que prefiere evitar la violencia les gusta la acción, a un 33% les gusta esta siempre y cuando el medio en cuestión tenga algo más, y un 17% mostró ambivalencia hacia esta, lo que demuestra que, al menos 6 de las 24 personas encuestadas, tienen un potencial interés en juegos de acción no-violentos.", "p", "p1"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Existe un Público para esto?", "h2", "ti"],
+        ["Además, estos suelen corresponder a un cluster de personas quienes prefieren narrativas optimistas y ligeras, con estéticas tiernas y personajes afables.", "p", "p1"],
+        ["Esto también se puede observar debido al interes a juegos con estética tiernas como Kirby, o incluso inspiradas en My Little Pony como Them's Fighting Herd o Billie Bust Up; y al nteres a juegos con narrativas que exploran temas de esperanza, optimismo y amistad como el muy anticipado Deltarune.", "p", "p2"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'
+                'p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2'"
 }) %>
 
 <%# IDEACIÓN: Público Objetivo %>
@@ -151,11 +226,89 @@
 {
     :elements =>
     [
-        ["", "h2", "ti"],
-        ["", "p", "p1"]
+        ["Público Objetivo - Buyer Persona", "h2", "ti"],
+        ["<p>A partir de lo recopilado, siento que este sería mi Buyer Persona:</p>
+
+        <h3>Esperanza (♀️), 21 años</h3>", "div", "p1"],
+        ["<ul><p><b>Valores y Personalidad:</b></p>
+        <li><p>Optimista hacia un futuro mejor, mas reconoce la necesidad de un gran trabajo para alcanzarlo</p></li>
+        <li><p>Valora la inclusión y diversidad sincera</p></li>
+        <li><p>Aprecia la vida; rechaza el cinismo</p></li>
+        </ul>", "div", "p2"],
+        ["<ul><p><b>Intereses y Pasatiempos:</b></p>
+            <li><p>Videojuegos (géneros favoritos siendo Puzzle, RPG, Aventura, y Plataformas)</p></li>
+            <li><p>Lectura</p></li>
+            <li><p>Series de TV</p></li>
+        </ul>", "div", "p3"],
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'
+                'p2 p2 p2 p2 p2 p2 p3 p3 p3 p3 p3 p3'"
+}) %>
+
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Público Objetivo - Buyer Persona", "h2", "ti"],
+        ["<h3>Esperanza (♀️), 21 años</h3>
+
+        <ul><p><b>Preferencias de Entretenimiento:</b></p>
+            <li><p>Fanática de la ficción</p></li>
+            <li><p>Prefiere consumir su contenido en casa, a través de un mix entre streaming y physical media</p></li>
+            <li><p>Prefiere medios menos violentos, aunque no rechaza la violencia de fantasía si tiene mensajes optimistas, pro-libertad, y pro-paz</p></li>
+            <li><p>Valora historias con un buen worldbuilding</p></li>
+            <li><p>Aprecia tanto lo mainstream como lo alternativo</p></li>
+        </ul>", "div", "p1"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+}) %>
+
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Público Objetivo - Buyer Persona", "h2", "ti"],
+        ["Esperanza (♀️), 21 años", "h3", "st"],
+        ["<ul><p><b>Libros o Historias Escritas Favoritas:</b></p>
+            <li><p>El Señor de los Anillos</p></li>
+            <li><p>The Enchanted Library</p></li>
+            <li><p>El Principito</p></li>
+        </ul>", "div", "p2"],
+        ["<ul><p><b>Potenciales Motivos de Compra:</b></p>
+            <li><p>Juegos y series que presenten historias inclusivas</p></li>
+            <li><p>Medios con apariencia tierna</p></li>
+            <li><p>Literatura y contenido visual que exalten valores del optimismo y la lucha por un mejor futuro</p></li>
+        </ul>", "div", "p3"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'st st st st st st st st st st st st'
+                'p2 p2 p2 p2 p2 p2 p3 p3 p3 p3 p3 p3'"
+}) %>
+
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Público Objetivo - Buyer Persona", "h2", "ti"],
+        ["Esperanza (♀️), 21 años", "h3", "st"],
+        ["<ul><p><b>Videojuegos Favoritos:</b></p>
+            <li><p>Kirby</p></li>
+            <li><p>Portal 2</p></li>
+            <li><p>Super Mario</p></li>
+            <li><p>Stardew Valley</p></li>
+            <li><p>Tetris</p></li>
+        </ul>", "div", "p2"],
+        ["<ul><p><b>Series Favoritas:</b></p>
+            <li><p>My Little Pony (Creció con esta)</p></li>
+            <li><p>Bluey (Lo ve con su hermanita chica)</p></li>
+            <li><p>The Owl House</p></li>
+        </ul>", "div", "p3"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'st st st st st st st st st st st st'
+                'p2 p2 p2 p2 p2 p2 p3 p3 p3 p3 p3 p3'"
 }) %>
 
 <%# IDEACIÓN: Objetivo Principal %>
