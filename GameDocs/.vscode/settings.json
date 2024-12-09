@@ -11,5 +11,6 @@
     "cSpell.language": "en, en-GB, es",
     "cSpell.words": [
         "Gæahippos"
-    ]
+    ],
+    "graphviz-interactive-preview.renderLockAdditionalTimeout": -1
 }

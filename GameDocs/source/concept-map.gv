@@ -13,6 +13,8 @@ digraph
 subgraph cluster_traits
 {
     peripheries=0
+    style=filled
+    fillcolor=blue
     "Game Traits" [fontsize="24pt"]
     subgraph cluster_game_aesthetics
 {
@@ -22,9 +24,15 @@ subgraph cluster_traits
     "Sound Design"
 }
     "Game Narrative"
+    subgraph cluster_gameplay
+    {
     "Gameplay"
+    "Level Design"
+    }
     subgraph cluster_characters
     {
+        style=filled
+        fillcolor=green
         "Characters"
         "Protagonists"
         "Antagonists"
@@ -36,126 +44,325 @@ subgraph cluster_traits
 subgraph cluster_references
 {
     peripheries=0
+    style=filled
+    fillcolor=green
     "References & Inspiration" [fontsize="24pt"]
     "Gameplay Inspiration"
+    "Narrative Inspiration" { rank=min};
+    "Gameplay-Narrative Inspiration"
+    "Aesthetic-WorldBuilding-Gameplay-Narrative Inspiration"
     "Aesthetic Inspiration"
-    "Narrative Inspiration"
     "Musical Inspiration"
+    "World-building"
 
     subgraph cluster_media_references
     {
+        style=filled
+        fillcolor=yellow
+
         "My Little Pony"
+
+        "DeltarUndertale"
         "Deltarune"
         "Undertale"
         "Billie Bust-Up"
+
         subgraph cluster_mario
         {
-            "Super Mario (Franchise)"
+            style=filled
+            fillcolor=red
+            "Super Mario (Media Franchise)"
             "Mario & Luigi (RPG Series)"
             "Super Mario Bros. (Platforming Game)"
         }
-
     }
 }
 
 subgraph cluster_attributes
 {
-subgraph cluster_themes
-{
-    peripheries=0
-    "Deltarune Themes"
-    "Undertale Themes"
-    "Mario & Luigi Themes"
-    "My Little Pony Themes"
-    "Altruism"
-    "Acceptance & Diversity"
-    "Adventure & Courage"
-    "Brotherhood"
-    "Choice & Free Will"
-    "Consequence of Actions"
-    "Curiosity & Creativity"
-    "Empathy & Compassion"
-    "Existentialism"
-    "Forgiveness & Redemption"
-    "Friendship"
-    "Friendship"
-    "Generosity"
-    "Good vs. Evil"
-    "Heroism"
-    "Hope & Optimism"
-    "Identity & Self-Discovery"
-    "Kindness"
-    "Light vs. Dark"
-    "Loyalty"
-    "Magic & Wonder"
-    "Morality & Ethics"
-    "Non-Violence"
-    "Pacifism vs. Violence"
-    "Perseverance & Resilience"
-    "Teamwork & Cooperation"
-    "Understanding"
-}
-subgraph cluster_tone
-{
-    peripheries=0
-    "Adventurous"
-    "Cartoonish"
-    "Cosy"
-    "Cute & Approachable"
-    "Fantastical"
-    "Heartfelt & Heartwarming"
-    "Humorous"
-    "Inclusive"
-    "Light-hearted & Playful"
-    "Optimistic & Uplifting"
-    "Parodical & Satirical"
-    "Whimsical"
-    "Wholesome"
-}
-subgraph cluster_visual_aesthetics
-{
-    peripheries=0
-    "Pastel Colours"
-    "Cute & Approachable"
-    "Cartoonish"
-    "Pixel Art"
-    "Cosy"
-}
+    style=filled
+    fillcolor=red
+    Philosophy
+    "Mario & Luigi Attributes"
+    "My Little Pony Attributes"
+    "Narrative Attributes"
+
+    subgraph cluster_themes
+    {
+        peripheries=0
+        style=filled
+        fillcolor=purple
+        "Collaboration"
+
+
+        subgraph cluster_themes_shared_by_my_game_mlp
+        {
+            style=filled
+            fillcolor=yellow
+            "Acceptance & Diversity"
+        }
+        subgraph cluster_themes_shared_by_my_game_mlp_undertale_deltarune_mario_luigi
+        {
+            style=filled
+            fillcolor=greenyellow
+            "Friendship"
+            "Perseverance & Resilience"
+        }
+        subgraph cluster_themes_shared_by_my_game_mlp_deltarune_mario_luigi
+        {
+            style=filled
+            fillcolor=yellow
+            "Teamwork & Cooperation"
+        }
+        subgraph cluster_themes_shared_by_my_game_mlp_mario_luigi
+        {
+            style=filled
+            fillcolor=greenyellow
+            "Adventure & Courage"
+            "Magic & Wonder"
+        }
+            style=filled
+            fillcolor=yellow
+        subgraph cluster_themes_shared_by_my_game_mlp_deltarune
+        {
+            style=filled
+            fillcolor=greenyellow
+            "Hope & Optimism"
+        }
+        subgraph cluster_themes_shared_by_my_game_mlp_undertale
+        {
+            style=filled
+            fillcolor=yellow
+            "Empathy & Compassion"
+        }
+        subgraph cluster_themes_shared_by_my_game_undertale
+        {
+            style=filled
+            fillcolor=greenyellow
+            "Pacifism vs. Violence"
+        }
+        subgraph cluster_themes_shared_by_my_game_mario_luigi
+        {
+            style=filled
+            fillcolor=yellow
+           "Curiosity & Creativity"
+        }
+        subgraph cluster_themes_shared_by_deltarune_mlp
+        {
+            style=filled
+            fillcolor=greenyellow
+            "Morality & Ethics"
+        }
+        subgraph cluster_themes_shared_by_mlp_undertale
+        {
+            style=filled
+            fillcolor=greenyellow
+            "Empathy & Compassion"
+            "Forgiveness & Redemption"
+            "Understanding"
+        }
+        subgraph cluster_themes_shared_by_mlp_mario_luigi
+        {
+            style=filled
+            fillcolor=yellow
+            "Loyalty"
+        }
+        subgraph cluster_themes_only_in_mario_luigi
+        {
+            style=filled
+            fillcolor=greenyellow
+            "Brotherhood"
+            "Good vs. Evil"
+            "Heroism"
+        }
+        subgraph cluster_themes_only_in_deltarune
+        {   
+            style=filled
+            fillcolor=greenyellow
+            "Choice & Free Will"
+            "Light vs. Dark"
+        }
+        subgraph cluster_themes_only_in_undertale
+        {
+            style=filled
+            fillcolor=yellow
+            "Consequence of Actions"
+           "Existentialism"
+        }
+        subgraph cluster_themes_only_in_mlp
+        {
+            style=filled
+            fillcolor=greenyellow
+           "Generosity"
+            "Kindness"
+        }
+        subgraph cluster_themes_shared_by_mlp_undertale_deltarune
+        {
+            style=filled
+            fillcolor=yellow
+           "Identity & Self-Discovery"
+        }
+        subgraph cluster_themes_shared_by_undertale_deltarune
+        {
+            style=filled
+            fillcolor=greenyellow
+           "Non-Violence"
+        }
+        "Altruism"
+
+        "Narrative Themes"
+        "My Little Pony Themes"
+        "Undertale Themes"
+        "Deltarune Themes"
+        "Mario & Luigi Themes"
+    }
+
+    subgraph cluster_tone_aesthetics
+    {
+        style=filled
+        fillcolor=purple
+
+        "My Little Pony Tone-Aesthetics"
+        "My Game Tone-Aesthetics"
+        subgraph cluster_tone_aethetics_shared_by_my_game_mlp
+        {
+            style=filled
+            fillcolor=pink
+            "My Game & MLP Tone-Aesthetics"
+            "Cosy"
+            "Cute & Approachable"
+        }
+
+        subgraph cluster_tone
+        {
+            peripheries=0
+            style=filled
+            fillcolor=white
+
+            "Mario & Luigi Tone"
+            "My Little Pony Tone"
+            "Narrative Tone"
+
+            subgraph cluster_tone_shared_by_my_game_mlp_mario_luigi
+            {
+                style=filled
+                fillcolor=cadetblue
+                "My Game, MLP, & Mario & Luigi Shared Tone"
+                "Fantastical"
+                "Heartfelt & Heartwarming"
+                "Humorous"
+                "Light-hearted & Playful"
+                "Whimsical"
+            }
+            subgraph cluster_tone_shared_by_my_game_mlp
+            {
+                style=filled
+                fillcolor=palevioletred
+                "My Game & MLP Shared Tone"
+                "Inclusive"
+                "Optimistic & Uplifting"
+                "Wholesome"
+            }
+            subgraph cluster_tone_shared_by_my_game_mario_luigi
+            {
+                style=filled
+                fillcolor=cadetblue
+                "My Game & Mario & Luigi Shared Tone"
+                "Adventurous"
+            }
+            subgraph cluster_tone_only_mario_luigi
+            {
+                style=filled
+                fillcolor=palevioletred
+                "Parodical & Satirical"
+            }
+        }
+        subgraph cluster_visual_aesthetics
+        {
+            peripheries=0
+                style=filled
+                fillcolor=red
+                "Visual Aesthetics"
+                "My Little Pony Aesthetics"
+            "Pixel Art"
+
+            subgraph cluster_aesthetics_shared_my_game_mlp
+            {
+                "My Game & MLP Shared Aesthetics"
+                "Pastel Colours"
+                "Cartoonish"
+
+            }
+        }
+    }
+    subgraph cluster_mechanics
+        {
+                style=filled
+                fillcolor=mintcream
+                
+                "Mechanics"
+    "Mario & Luigi Mechanics"
+            "Character-Swapping Mechanics"
+            "Exclusive Unique Abilities"
+        }
+
 }
 
+subgraph cluster_genres
+    {
+        style=filled
+        fillcolor=powderblue
+        "Puzzle-Platformer (Genre)"
+        "Action Games (Genre)"
+        "2D Platformer (Genre)"
+        "Puzzle-Platformer (Genre)"
+        "3D Platformer (Genre)"
+    }
 
 subgraph cluster_context
 {
+                style=filled
+                fillcolor=orange
+        "Druid (Dungeons & Dragons)"
+        "Game Narrative Context"
+
 subgraph cluster_history
 {
     History
+                style=filled
+                fillcolor=aquamarine
     subgraph cluster_uk
 {
+    
+                style=filled
+                fillcolor=blue
     "The United Kingdom"
     subgraph cluster_georgian_era
 {
+                style=filled
+                fillcolor=beige
     "Georgian Era Britain" [color=none fontsize="20pt"]
-"Brick/Stone Construction"
-"Churches and Cathedrals with Columns and Domes"
-"Common Building in Georgian Cities"
-"Fanlights"
-"Georgian Architecture"
-"Georgian City Layouts"
-"Georgian Interior Design"
-"Grand Public Buildings"
-"Grand Squares and Circles"
-"Harmonious & Understated Ornamentation"
-"Hipped & Side-Gabled Roofs"
-"Marketplaces and Shop"
-"Orderly"
-"Refined Elegance, with high attention to detail"
-"Sash Windows"
-"Stately Homes with Landscaped Gardens"
-"Symmetrical Buildings"
-"Symmetry & Balance"
-"Terraced Houses"
-"Woodwork"
-"1714-1837"
+    "Brick/Stone Construction"
+    "Churches and Cathedrals with Columns and Domes"
+    "Common Building in Georgian Cities"
+    "Fanlights"
+    "Georgian Architecture"
+    "Georgian City Layouts"
+    "Georgian Interior Design"
+    "Grand Public Buildings"
+    "Grand Squares and Circles"
+    "Harmonious & Understated Ornamentation"
+    "Hipped & Side-Gabled Roofs"
+    "Marketplaces and Shop"
+    "Orderly"
+    "Refined Elegance, with high attention to detail"
+    "Sash Windows"
+    "Stately Homes with Landscaped Gardens"
+    "Symmetrical Buildings"
+    "Symmetry & Balance"
+    "Terraced Houses"
+    "Woodwork"
+    "1714-1837"
     "Agricultural Revolution"
     Colonialism
     "Sport Hunting"
@@ -165,15 +372,28 @@ subgraph cluster_history
 }
     subgraph cluster_greece
     {
+                style=filled
+                fillcolor=gold
         "Ancient Greece"
+        subgraph cluster_greek_language
+        {
+            "Ancient Greek"
+            "Γαῖα (Gaîa)"
+            "ἵππος (híppos)"
+            "Gæahippos Etymology"
+        }
         subgraph cluster_greek_architecture
     {
+                style=filled
+                fillcolor=goldenrod
         "Ancient Greek Architecture" [color=none fontsize="20pt"]
         "Classical Elements" [color=none]
         "Classical Proportion" [color=none]
 
         subgraph cluster_classical_elements
         {
+                style=filled
+                fillcolor=silver
             "Classical Elements"
             "Columns" [color=none]
             "Pediments" [color=none]
@@ -201,11 +421,11 @@ subgraph cluster_myths
     subgraph cluster_magic
     {
         "Magic"
-        "Magic-Science Contrast"
         "Witch Hunts"
         "Witchcraft Acts"
         "Witchcraft Act of 1735"
         "Sporadic Witch-Hunts after 1750"
+        "Phytoturgy (Plant Magic)"
     }
 
     "Greek Mythology"
@@ -214,9 +434,30 @@ subgraph cluster_myths
     "Nordic Mythology"
 }
 
+subgraph cluster_science
+{
+    "Science"
+    "Isaac Newton"
+    subgraph cluster_enlightenment
+    {
+        "Age of Enlightenment"
+        "Reason"
+        "Order"
+        "Classical Learning"
+    }
+}
+
+subgraph clusters_magic_science
+{
+    "Magic-Science Contrast"
+    "Isaac Newton and the Occult"
+}
 subgraph cluster_honse
 {
     "Horses & Ponies" [color=none fontsize="20pt"]
+    "My Little Pony Ponies"
+    "Greek Mythology Horses"
+    "Protagonist Ponies"
     Unicorn [color=none]
     Pegasus [color=none]
     Sleipnir [color=none]
@@ -251,29 +492,23 @@ subgraph cluster_honse
 }
 
 
-
-"Game Aesthetics" ->
+"Game Aesthetics" -> "Visual Aesthetics"
+"Visual Aesthetics" ->
 {
     "Pastel Colours"
-    "Cute & Approachable"
+    "My Game & MLP Tone-Aesthetics"
     "Cartoonish"
     "Pixel Art"
-    "Cosy"
     "Non-Violence"
     "Collaboration"
-    "Environmental Design"
-    "Sound Design"
 }
 
+"My Game & MLP Tone-Aesthetics" ->
+{
+    "Cute & Approachable"
+    "Cosy"
+}
 
-
-
-"Altruism" -> "Non-Violence" -> "Acceptance & Diversity" -> "Adventure & Courage" -> "Brotherhood" -> "Choice & Free Will" -> "Consequence of Actions" -> "Curiosity & Creativity" -> "Empathy & Compassion" -> "Existentialism" -> "Forgiveness & Redemption" -> "Friendship" -> "Friendship" -> "Generosity" [style=invis]
-
-"Altruism" -> "Good vs. Evil" -> "Heroism" -> "Hope & Optimism" -> "Identity & Self-Discovery" -> "Kindness" -> "Light vs. Dark" -> "Loyalty" -> "Magic & Wonder" -> "Morality & Ethics" -> "Pacifism vs. Violence" -> "Perseverance & Resilience" -> "Teamwork & Cooperation" -> "Understanding" [style=invis]
-
-
-"Adventurous" -> "Cartoonish" -> "Cosy" -> "Cute & Approachable" -> "Fantastical" -> "Heartfelt & Heartwarming" -> "Humorous" -> "Inclusive" -> "Light-hearted & Playful" -> "Optimistic & Uplifting" -> "Parodical & Satirical" -> "Whimsical" -> "Wholesome"  [style=invis]
 
 "Environmental Design" ->
 {
@@ -292,7 +527,9 @@ subgraph cluster_honse
     "Cornices"
 }
 
-"Game Narrative" ->
+"Game Narrative" -> "Game Narrative Context"
+
+"Game Narrative Context" ->
 {
     "Magic-Science Contrast"
     "Sport Hunting"
@@ -308,11 +545,15 @@ subgraph cluster_honse
 
 "Protagonists" ->
 {
+    "Protagonist Ponies"
+}
+
+"Protagonist Ponies" ->
+{
     Unicorn
     Pegasus
     Gæahippos
 }
-
 "Antagonists" ->
 {
     "Sport Hunters"
@@ -337,26 +578,42 @@ subgraph cluster_honse
 
 "Aesthetic Inspiration" ->
 {
-    "My Little Pony"
+    "Aesthetic-WorldBuilding-Gameplay-Narrative Inspiration"
     "Georgian Era Britain"
 }
 
 "Gameplay Inspiration" ->
 {
-    "My Little Pony"
+    "Gameplay-Narrative Inspiration"
     "Super Mario Bros. (Platforming Game)"
-    "Mario & Luigi (RPG Series)"
 }
 
 "Narrative Inspiration" ->
 {
     "World-building"
-    "Narrative Tone"
-    "Narrative Themes"
-    "Mario & Luigi (RPG Series)"
-    "My Little Pony"
+    "Narrative Attributes"
+    "Gameplay-Narrative Inspiration"
+    "DeltarUndertale"
 }
 
+"DeltarUndertale" ->
+{
+    "Deltarune"
+    "Undertale"
+}
+
+    "Narrative Attributes" ->
+{
+    "Narrative Tone"
+    "Narrative Themes"
+}
+"Gameplay-Narrative Inspiration" ->
+{
+"Mario & Luigi (RPG Series)"
+"Aesthetic-WorldBuilding-Gameplay-Narrative Inspiration"
+}
+
+"Aesthetic-WorldBuilding-Gameplay-Narrative Inspiration" -> "My Little Pony"
 "Narrative Themes" ->
 {
     "Friendship"
@@ -383,6 +640,7 @@ subgraph cluster_honse
     "Existentialism"
     "Perseverance & Resilience"
     "Empathy & Compassion"
+    "Non-Violence"
 }
 
 "Deltarune" -> "Deltarune Themes"
@@ -396,40 +654,54 @@ subgraph cluster_honse
     "Morality & Ethics"
     "Perseverance & Resilience"
     "Hope & Optimism"
+    "Non-Violence"
 }
 
 "World-building" ->
 {
     "Religion & Mythology"
-    "My Little Pony"
+    "Aesthetic-WorldBuilding-Gameplay-Narrative Inspiration"
 }
 
 "Narrative Tone" ->
 {
-    "Light-hearted & Playful"
-    "Humorous"
-    "Inclusive"
-    "Wholesome"
-    "Optimistic & Uplifting"
-    "Whimsical"
-    "Fantastical"
+    "My Game, MLP, & Mario & Luigi Shared Tone"
+    "My Game & Mario & Luigi Shared Tone"
+    "My Game & MLP Shared Tone"
+}
+
+"My Game & Mario & Luigi Shared Tone" ->
+{
     "Adventurous"
-    "Heartfelt & Heartwarming"
+}
+"My Game, MLP, & Mario & Luigi Shared Tone" ->
+{
+                "Fantastical"
+                "Heartfelt & Heartwarming"
+                "Humorous"
+                "Light-hearted & Playful"
+                "Whimsical"
 }
 
 "Mario & Luigi (RPG Series)" ->
 {
-    "Character-Swapping Mechanics"
-    "Mario & Luigi Themes"
+     "Mario & Luigi Attributes"
 }
+
+"Mario & Luigi Attributes" ->
+{
+    "Mario & Luigi Tone"
+    "Mario & Luigi Themes"
+    "Mario & Luigi Mechanics"
+}
+
+"Mario & Luigi Mechanics" ->
+{
+    "Character-Swapping Mechanics"
+}
+
 "Mario & Luigi Themes" ->
 {
-    "Light-hearted & Playful"
-"Humorous"
-"Whimsical"
-"Adventurous"
-"Heartfelt & Heartwarming"
-"Parodical & Satirical"
 "Brotherhood"
 "Friendship"
 "Loyalty"
@@ -438,9 +710,15 @@ subgraph cluster_honse
 "Adventure & Courage"
 "Heroism"
 "Good vs. Evil"
-"Fantastical"
 "Magic & Wonder"
 "Curiosity & Creativity"
+}
+
+"Mario & Luigi Tone" ->
+{
+    "My Game, MLP, & Mario & Luigi Shared Tone"
+    "My Game & Mario & Luigi Shared Tone"
+"Parodical & Satirical"
 }
 
 "Action Games (Genre)" ->
@@ -472,12 +750,24 @@ subgraph cluster_honse
 
 "My Little Pony" ->
 {
+    "My Little Pony Ponies"
+    
+    "Billie Bust-Up"
+    
+    "My Little Pony Attributes"
+}
+
+"My Little Pony Ponies" ->
+{
     Unicorn
     Pegasus
     "Earth Pony"
-    "Billie Bust-Up"
+}
+
+"My Little Pony Attributes" ->
+{
+    "My Little Pony Tone-Aesthetics"
     "My Little Pony Themes"
-    "My Little Pony Tone"
 }
 
 "My Little Pony Themes" ->
@@ -494,24 +784,39 @@ subgraph cluster_honse
     "Perseverance & Resilience"
     "Magic & Wonder"
     "Empathy & Compassion"
+    "Hope & Optimism"
+    "Identity & Self-Discovery"
+    "Loyalty"
 }
 
-"My Little Pony tone" ->
+"My Little Pony Tone-Aesthetics" ->
+{
+    "My Little Pony Tone"
+    "My Little Pony Aesthetics"
+}
+"My Little Pony Tone" ->
 {
     
-    "Magic"
-    "Light-hearted & Playful"
-    "Humorous"
-    "Inclusive"
-    "Wholesome"
-    "Optimistic & Uplifting"
-    "Whimsical"
-    "Fantastical"
-    "Heartfelt & Heartwarming"
+    "My Game & MLP Shared Tone"
+    "My Game, MLP, & Mario & Luigi Shared Tone"
+}
+    "My Game & MLP Shared Tone" ->
+    {
+        "Inclusive"
+        "Optimistic & Uplifting"
+        "Wholesome"
+        "My Game & MLP Tone-Aesthetics"
+    }
+
+"My Little Pony Aesthetics" ->
+{
+    "My Game & MLP Shared Aesthetics"
+}
+
+"My Game & MLP Shared Aesthetics" ->
+{
     "Pastel Colours"
-    "Cute & Approachable"
-    "Cartoonish"
-    "Cosy"
+    "My Game & MLP Tone-Aesthetics"
 }
 
 "Earth Pony" ->
@@ -523,11 +828,6 @@ subgraph cluster_honse
 {
     Gæahippos
 }
-Gæahippos ->
-{
-    "Character-Swapping Mechanics"
-}
-
 
 "Horses & Ponies" -> Unicorn -> Pegasus ->  Sleipnir ->  "Earth Pony" ->  "Equine with Phytoturgy" -> Gæahippos [style=invis]
 
@@ -587,13 +887,22 @@ Philosophy ->
 } 
 "Γαῖα (Gaîa)" ->
 {
-    Gæahippos
+    "Gæahippos Etymology"
 }
 "ἵππος (híppos)" ->
 {
+    "Gæahippos Etymology"
+}
+"Gæahippos Etymology" ->
+{
     Gæahippos
 }
+
 "Greek Mythology" ->
+{
+    "Greek Mythology Horses"
+}
+"Greek Mythology Horses" ->
 {
     Unicorn
     Pegasus
@@ -649,6 +958,7 @@ Philosophy ->
     Colonialism
     "Grand Tours"
     "Witchcraft Act of 1735"
+    "Magic-Science Contrast"
 }
 "Age of Enlightenment" ->
 {
@@ -666,7 +976,6 @@ Colonialism ->
 }
 "Magic-Science Contrast" -> 
 {
-    "Georgian Era Britain"
     "Isaac Newton and the Occult"
 }
 "Science" ->
@@ -697,9 +1006,6 @@ Unicorn ->
 {
     "Sporadic Witch-Hunts after 1750"
 }
-
-"Deltarune" -> "Non-Violence"
-"Undertale" -> "Non-Violence"
 
 # Hover over color names to get a color picker
 # b -- b [color=blue]
