@@ -16,11 +16,19 @@ public class PlayerController : MonoBehaviour
     public float downGravity;
 
     public float coyoteTimeS = 0.05f;
-    float coyoteTimeCounter;
+    public float coyoteTimeCounter {get; private set; }
 
-    public bool isJumping => Input.GetButtonDown("Jump");
-    public bool calledAction1 => Input.GetButtonDown("Action1");
-    public bool calledAction2 => Input.GetButtonDown("Action2");
+
+    public FriendInput inputAI;
+    public FollowAI logicAI;
+    public BaseInput inputController;
+    public bool isDucking => vInput.SteppedValue == 1 && groundCheck.isGrounded;
+    public bool isJumping => inputController.pressedJump;
+    public bool isHoldingJump => inputController.heldJump;
+    public bool isRunning => inputController.pressedRun;
+    public InputAxis hInput = new(0f, 0.2f);
+    public InputAxis vInput = new(0f, 0.2f);
+
 
     public float jumpBufferTimeS = 0.05f;
     float jumpBufferCounter;
@@ -35,11 +43,6 @@ public class PlayerController : MonoBehaviour
     public bool canPlant;
 
     //Walk-Run Related Vars
-    public bool isRunning => Input.GetButton("Run");
-    public float hInput =>  Input.GetAxis("Horizontal");
-    public InputAxis hAxis = new(0f, 0.2f);
-    public float vInput => Input.GetAxis("Vertical");
-    public InputAxis vAxis = new(0f, 0.2f);
     public float accelPow = 2f;
     public float minAccel = 3f;
     [SerializeField] private float speedChange;
@@ -64,9 +67,27 @@ public class PlayerController : MonoBehaviour
         groundCheck.OnAirActions -= OnAirActions;
     }
 
+    void Awake()
+    {
+        inputAI = GetComponent<FriendInput>();
+        logicAI = GetComponent<FollowAI>();
+    }
+
     void Start()
     {
-        
+        if (PlayerInput.Instance.activePony == this)
+        {
+            inputController = PlayerInput.Instance;
+            inputAI.enabled = false;
+            logicAI.enabled = false;
+        }
+        else
+        {
+            inputController = inputAI;
+            inputAI.enabled = true;
+            logicAI.enabled = true;
+        }
+
     }
 
     void Update()
@@ -96,8 +117,8 @@ public class PlayerController : MonoBehaviour
 
     void WalkInput()
     {
-        hAxis.value = hInput;
-        vAxis.value = vInput;
+        hInput.value = inputController.hInput;
+        vInput.value = inputController.vInput;
 
         Accelerate();
         charRB.velocity = new(moveSpeed, charRB.velocity.y);
@@ -105,7 +126,7 @@ public class PlayerController : MonoBehaviour
 
     void ActionInput()
     {
-        if (calledAction1)
+        if (inputController.pressedAction1)
         {
             if (canTeleport)
             {
@@ -158,7 +179,7 @@ public class PlayerController : MonoBehaviour
         //Changes Gravity for Tighter Jump Arc, and allows Short & High Jumps
         if (charRB.velocity.y > 0)
         {
-            if (Input.GetButton("Jump"))
+            if (isHoldingJump)
                 Physics2D.gravity = new Vector2(Physics2D.gravity.x, -upGravity);
             else
             {
@@ -186,21 +207,16 @@ public class PlayerController : MonoBehaviour
     {
         get
         {
-            if (hAxis.Pressed)
+            if (hInput.Pressed)
             {
-                if (vAxis.SteppedValue == 1 && groundCheck.isGrounded)
-                    return duckMultiplier * walkSpeed * hAxis.Sign;
-                else if (vAxis.Pressed && vAxis.Sign == -1 && !groundCheck.isGrounded && canGroundPound)
-                {
-                        DoGroundPound();
-                    return 0;
-                }
+                if (isDucking)
+                    return duckMultiplier * walkSpeed * hInput.Sign;
             
                 else if (isRunning)
-                    return runMultiplier * walkSpeed * hAxis.Sign;
+                    return runMultiplier * walkSpeed * hInput.Sign;
 
                 else
-                    return walkSpeed * hAxis.Sign;
+                    return walkSpeed * hInput.Sign;
             }
 
             else
@@ -225,7 +241,7 @@ public class PlayerController : MonoBehaviour
         }
 
         if (targetMoveSpeed == 0f)
-            accel += (accelPow / 2);
+            accel += accelPow / 2;
 
         speedChange = Mathf.Clamp(Mathf.Pow(difference, accel), minAccel, 10000f);
         moveSpeed += speedChange * Time.deltaTime * sign;

@@ -1,33 +1,67 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 
 public class FollowAI : MonoBehaviour
 {
+    public PlayerController thisPony;
+    public PlayerInput player;
     public Transform target;
-    public float speed = 200;
     public float nextWaypointDistance = 3;
+    public float waypointDistance = 0f;
+    public Vector2 waypointDirection = Vector2.zero;
+    public float targetDistance = 2f;
+    public Vector2 targetDirection = Vector2.left;
 
     private Path path;
-    int currentWaypointIndex = 0;
-    bool reachedEndOfPath = false;
+    int currentWaypoint = 0;
+    bool reachedPathEnd = false;
 
     Seeker seeker;
     Rigidbody2D rb;
 
+
+    public float hInput;
+    public float vInput;
+    public bool tryTapJump = false;
+    public bool tryHoldJump = false;
+    public bool tryRun = false;
+
+    public float jumpCooldown = 0.1f;
+    public float jumpCooldownTimer = 0f;
+
+    void IncrementJumpTimer() => jumpCooldownTimer += Time.deltaTime;
+    void ResetJumpTimer() => jumpCooldownTimer = 0f;
+
     void Awake()
     {
+        thisPony = GetComponent<PlayerController>();
+
+        // if (thisPony == player.activePony)
+        // {
+        //     thisPony.enabled = false;
+        // }
+
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
-
-        InvokeRepeating("UpdatePath", 0f, Time.fixedDeltaTime);
     }
 
-    void UpdatePath()
+    void Start()
     {
+        player = PlayerInput.Instance;
+
+        StartCoroutine(UpdatePath()); // Recursively calls itself
+    }
+
+    IEnumerator UpdatePath()
+    {
+        print("Entered Update Path Method");
         if (seeker.IsDone())
             seeker.StartPath(rb.position, target.position, OnPathComplete);
+
+        yield return new WaitForSeconds(Time.fixedDeltaTime);
+
+        StartCoroutine(UpdatePath()); // Recursively calls itself
     }
     void OnPathComplete(Path p)
     {
@@ -35,7 +69,7 @@ public class FollowAI : MonoBehaviour
             return;
 
         path = p;
-        currentWaypointIndex = 0;
+        currentWaypoint = 0;
     }
 
     void Update()
@@ -43,28 +77,67 @@ public class FollowAI : MonoBehaviour
         if (path == null)
             return;
 
-        if(currentWaypointIndex >= path.vectorPath.Count)
+        if (currentWaypoint < path.vectorPath.Count)
+            reachedPathEnd = false;
+        else
         {
-            reachedEndOfPath = true;
+            reachedPathEnd = true;
             return;
+        }
+
+        UpdatePathProgress();
+
+        hInput = Mathf.Abs(waypointDirection.x) > 0.2f && Mathf.Abs(targetDistance) > 2f ? Mathf.Sign(waypointDirection.x) : 0f;
+        vInput = player.activePony.isDucking ? -1 : 0;
+        tryRun = player.activePony.isRunning;
+
+        if (thisPony.groundCheck.isGrounded)
+            IncrementJumpTimer();
+        else
+            ResetJumpTimer();
+
+        if (jumpCooldownTimer > jumpCooldown || !thisPony.groundCheck.isGrounded)
+        {
+            if ((tryTapJump || tryHoldJump) && target.position.y - rb.position.y > 1f)
+            {
+                tryHoldJump = true;
+                tryTapJump = false;
+            }
+            else if (!tryTapJump && !tryHoldJump && target.position.y - rb.position.y > 0.8f && rb.velocity.y < 0.01f)
+            {
+                tryHoldJump = false;
+                tryTapJump = true;
+            }
         }
 
         else
         {
-            reachedEndOfPath = false;
+            tryHoldJump = false;
+            tryTapJump = false;
         }
+    }
 
-        Vector2 direction = ((Vector2)path.vectorPath[currentWaypointIndex] - rb.position).normalized;
+    private void UpdatePathProgress()
+    {
+        Vector2 CurrentWaypointPath = (Vector2)path.vectorPath[currentWaypoint];
 
-        Vector2 force = direction * speed * Time.deltaTime;
+        if ((CurrentWaypointPath - rb.position).normalized.magnitude > 0.1f)
+            waypointDirection = (CurrentWaypointPath - rb.position).normalized;
 
-        rb.AddForce(force);
+        if (((Vector2)target.position - rb.position).normalized.magnitude > 0.1f)
+            targetDirection = ((Vector2)target.position - rb.position).normalized;
 
-        float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypointIndex]);
+        waypointDistance = Vector2.Distance(rb.position, CurrentWaypointPath);
+        targetDistance = Vector2.Distance(rb.position, target.position);
 
-        if (distance < nextWaypointDistance)
+        if (waypointDistance < 0.1f)
+            waypointDistance = 0.1f;
+
+
+        if (waypointDistance < nextWaypointDistance)
         {
-            currentWaypointIndex++;
+            currentWaypoint++;
+            print("Incremented Waypoint");
         }
     }
 }
