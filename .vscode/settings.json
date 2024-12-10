@@ -56,7 +56,7 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "LostLittleCritters.sln",
+    "dotnet.defaultSolution": "TallerIV.sln",
     "cSpell.words": [
         "platformer"
     ]

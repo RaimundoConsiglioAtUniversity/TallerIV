@@ -18,6 +18,10 @@ public class PlayerController : MonoBehaviour
     public float coyoteTimeS = 0.05f;
     float coyoteTimeCounter;
 
+    public bool isJumping => Input.GetButtonDown("Jump");
+    public bool calledAction1 => Input.GetButtonDown("Action1");
+    public bool calledAction2 => Input.GetButtonDown("Action2");
+
     public float jumpBufferTimeS = 0.05f;
     float jumpBufferCounter;
 
@@ -32,10 +36,10 @@ public class PlayerController : MonoBehaviour
 
     //Walk-Run Related Vars
     public bool isRunning => Input.GetButton("Run");
-    public float hAxis =>  Input.GetAxis("Horizontal");
-    public Axis hInput = new(0f, 0.2f);
-    public float vAxis => Input.GetAxis("Vertical");
-    public Axis vInput = new(0f, 0.2f);
+    public float hInput =>  Input.GetAxis("Horizontal");
+    public InputAxis hAxis = new(0f, 0.2f);
+    public float vInput => Input.GetAxis("Vertical");
+    public InputAxis vAxis = new(0f, 0.2f);
     public float accelPow = 2f;
     public float minAccel = 3f;
     [SerializeField] private float speedChange;
@@ -92,8 +96,8 @@ public class PlayerController : MonoBehaviour
 
     void WalkInput()
     {
-        hInput.value = hAxis;
-        vInput.value = vAxis;
+        hAxis.value = hInput;
+        vAxis.value = vInput;
 
         Accelerate();
         charRB.velocity = new(moveSpeed, charRB.velocity.y);
@@ -101,7 +105,7 @@ public class PlayerController : MonoBehaviour
 
     void ActionInput()
     {
-        if (Input.GetButtonDown("Action"))
+        if (calledAction1)
         {
             if (canTeleport)
             {
@@ -130,7 +134,7 @@ public class PlayerController : MonoBehaviour
     }
     void JumpInput()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (isJumping)
         {
             jumpBufferCounter = jumpBufferTimeS;
             print("Jump!");
@@ -182,21 +186,21 @@ public class PlayerController : MonoBehaviour
     {
         get
         {
-            if (hInput.IsPressed)
+            if (hAxis.Pressed)
             {
-                if (vInput.SteppedValue == 1 && groundCheck.isGrounded)
-                    return duckMultiplier * walkSpeed * hInput.Sign;
-                else if (vInput.IsPressed && vInput.Sign == -1 && !groundCheck.isGrounded && canGroundPound)
+                if (vAxis.SteppedValue == 1 && groundCheck.isGrounded)
+                    return duckMultiplier * walkSpeed * hAxis.Sign;
+                else if (vAxis.Pressed && vAxis.Sign == -1 && !groundCheck.isGrounded && canGroundPound)
                 {
                         DoGroundPound();
                     return 0;
                 }
             
                 else if (isRunning)
-                    return runMultiplier * walkSpeed * hInput.Sign;
+                    return runMultiplier * walkSpeed * hAxis.Sign;
 
                 else
-                    return walkSpeed * hInput.Sign;
+                    return walkSpeed * hAxis.Sign;
             }
 
             else
