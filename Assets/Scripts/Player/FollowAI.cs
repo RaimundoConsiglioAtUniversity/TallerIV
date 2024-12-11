@@ -13,6 +13,7 @@ public class FollowAI : MonoBehaviour
     public float targetDistance = 2f;
     public Vector2 targetDirection = Vector2.left;
 
+    public LayerMask obstacleLayers;
     private Path path;
     int currentWaypoint = 0;
     bool reachedPathEnd = false;
@@ -29,6 +30,7 @@ public class FollowAI : MonoBehaviour
 
     public float jumpCooldown = 0.1f;
     public float jumpCooldownTimer = 0f;
+    float targetJumpHeight;
 
     void IncrementJumpTimer() => jumpCooldownTimer += Time.deltaTime;
     void ResetJumpTimer() => jumpCooldownTimer = 0f;
@@ -36,12 +38,6 @@ public class FollowAI : MonoBehaviour
     void Awake()
     {
         thisPony = GetComponent<PlayerController>();
-
-        // if (thisPony == player.activePony)
-        // {
-        //     thisPony.enabled = false;
-        // }
-
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
     }
@@ -55,7 +51,6 @@ public class FollowAI : MonoBehaviour
 
     IEnumerator UpdatePath()
     {
-        print("Entered Update Path Method");
         if (seeker.IsDone())
             seeker.StartPath(rb.position, target.position, OnPathComplete);
 
@@ -63,6 +58,7 @@ public class FollowAI : MonoBehaviour
 
         StartCoroutine(UpdatePath()); // Recursively calls itself
     }
+    
     void OnPathComplete(Path p)
     {
         if (p.error)
@@ -96,25 +92,63 @@ public class FollowAI : MonoBehaviour
         else
             ResetJumpTimer();
 
-        if (jumpCooldownTimer > jumpCooldown || !thisPony.groundCheck.isGrounded)
+        // Raycast to check for obstacles in front
+        RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.right * Mathf.Sign(waypointDirection.x), 1f, obstacleLayers);
+
+        /*
+        if (hit.collider != null)
         {
-            if ((tryTapJump || tryHoldJump) && target.position.y - rb.position.y > 1f)
+            if (target.position.y - rb.position.y > 0.2f)
             {
-                tryHoldJump = true;
-                tryTapJump = false;
+                targetJumpHeight = target.position.y - rb.position.y;
             }
-            else if (!tryTapJump && !tryHoldJump && target.position.y - rb.position.y > 0.8f && rb.velocity.y < 0.01f)
+            else
             {
-                tryHoldJump = false;
-                tryTapJump = true;
+                // Cast the ray
+                RaycastHit2D obstacleHit = Physics2D.Raycast(new Vector2(rb.position.x + Mathf.Sign(waypointDirection.x), 10f), Vector2.down, 11f, obstacleLayers);
+                // Make the raycast visible
+                Debug.DrawRay(new Vector2(rb.position.x + Mathf.Sign(waypointDirection.x), 10f), Vector2.down * 11f, Color.red);
+                if (obstacleHit.collider != null)
+                {
+                    float frontObstacleHeightDifference = obstacleHit.point.y;
+                    targetJumpHeight = frontObstacleHeightDifference - rb.position.y;
+                // Your existing code to handle the raycast hit...
+                }
+            }
+
+            print ($"{thisPony.name}'s Target Jump Height: {targetJumpHeight}");
+            float holdJumpDuration = CalculateHoldJumpDuration(targetJumpHeight);
+            
+
+            if (thisPony.groundCheck.isGrounded || (!thisPony.groundCheck.isGrounded && thisPony.canFly && thisPony.charRB.velocity.y < 0.1f && (thisPony.currentAirJumps < thisPony.maxAirJumps)))
+            {
+                if (targetJumpHeight < 0.8f && rb.velocity.y < 0.01f)
+                {
+                    tryTapJump = true;
+                }
+                else if (targetJumpHeight >= 0.8f)
+                {
+                    tryHoldJump = true;
+                    StartCoroutine(HoldJump(holdJumpDuration));
+                }
             }
         }
-
         else
         {
-            tryHoldJump = false;
             tryTapJump = false;
         }
+        */
+    }
+    
+    private IEnumerator HoldJump(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        tryHoldJump = false;
+    }
+
+    private float CalculateHoldJumpDuration(float targetHeight)
+    {
+        return Mathf.Clamp(targetHeight / 3.5f, 0.01f, 0.25f);
     }
 
     private void UpdatePathProgress()
@@ -133,11 +167,8 @@ public class FollowAI : MonoBehaviour
         if (waypointDistance < 0.1f)
             waypointDistance = 0.1f;
 
-
         if (waypointDistance < nextWaypointDistance)
-        {
             currentWaypoint++;
-            print("Incremented Waypoint");
-        }
+        
     }
 }

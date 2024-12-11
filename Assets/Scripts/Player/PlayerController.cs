@@ -253,8 +253,6 @@ public class PlayerController : MonoBehaviour
             return;
 
 
-        print($"{gameObject.name} Ground!");
-
         ResetCoyoteTimer();
         ResetAirJumps();
     }
@@ -264,7 +262,6 @@ public class PlayerController : MonoBehaviour
         if(gO != gameObject)
             return;
 
-        print($"{gameObject.name} Not Ground!");
 
         DecrementCoyoteTimer();
     }
