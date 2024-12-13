@@ -1,33 +1,38 @@
 using UnityEngine;
 using System;
+using Unity.VisualScripting;
 
 public class GroundCheck : MonoBehaviour
 {
-    
-    //Ground Check Vars
-    public bool isGrounded => groundCheck.IsTouchingLayers(groundLayer);
+    public PlayerController pony;
+    public bool IsGrounded => groundCheck.IsTouchingLayers(groundLayer);
     public Collider2D groundCheck;
     public LayerMask groundLayer;
 
     public event Action<GameObject> OnGroundActions;
     public event Action<GameObject> OnAirActions;
-    
-    void Update()
+
+    //--- Methods ---//
+
+    void Awake()
     {
-        Check();
+        pony = transform.parent.parent.GetComponent<PlayerController>();
+        print($"Pony: {pony.name}");
     }
+
+    void Update() => Check();
 
     void Check()
     {
-        if (isGrounded)
+        if (IsGrounded)
         {
-            OnGroundActions(gameObject);
+            OnGroundActions(pony.gameObject);
             //player.anim.SetBool("jump", false);
             //player.anim.SetBool("isFalling", false);
         }
         else
         {
-            OnAirActions(gameObject);
+            OnAirActions(pony.gameObject);
         }
     }
 }
