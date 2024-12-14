@@ -74,7 +74,7 @@ Vector2 positionDifference;
 
     void Update()
     {
-        debugStr = $"Pony: {pony.name}  ";
+        // debugStr = $"Pony: {pony.name}  ";
 
         if (path == null)
             return;
@@ -90,25 +90,25 @@ Vector2 positionDifference;
 
         UpdatePathProgress();
 
-        hInput = Mathf.Abs(waypointDirection.x) > 0.2f && Mathf.Abs(targetDistance) > 2f ? Mathf.Sign(waypointDirection.x) : 0f;
-        vInput = Mathf.Abs(targetDistance) > 1f ? -1 : 0;
-        tryRun = Mathf.Abs(targetDistance) > 2.5f;
+        hInput = Mathf.Abs(waypointDirection.x) > 0.2f && Mathf.Abs(targetDistance) > 1f ? Mathf.Sign(waypointDirection.x) : 0f;
+        vInput = Mathf.Abs(targetDistance) > 1.2f ? -1 : 0;
+        tryRun = Mathf.Abs(targetDistance) > 2f;
 
         HandleJumpLogic();
 
-        print(debugStr);
+        // print(debugStr);
     }
 
     void HandleJumpLogic()
     {
-        //debugStr += "Entered HandleJumpLogic\n";
+        // debugStr += "Entered HandleJumpLogic\n";
         
         CalcJumpHeight();
             jumpTime += Time.deltaTime;
 
         if (ShouldJump())
         {
-            //debugStr += "Should Jump Returned True\n";
+            // debugStr += "Should Jump Returned True\n";
             if (!isJumping)
             {
                 tryTapJump = true;
@@ -119,7 +119,7 @@ Vector2 positionDifference;
             {
                 float holdJumpDuration = Mathf.Clamp(targetJumpHeight/(3.9f/pony.stats.maxJumpTime), 0.01f, pony.stats.maxJumpTime);
                 float f = Mathf.Pow(holdJumpDuration, 1f/(pony.stats.maxJumpTime * 0.8f));
-                
+
                 if (targetJumpHeight > 3.5)
                     f += 0.2f;
                 
@@ -127,18 +127,18 @@ Vector2 positionDifference;
                     f += 0.1f;
                 
 
-                debugStr += $"Hold Jump Duration: {f}\n";
+                // debugStr += $"Hold Jump Duration: {f}\n";
                 StartCoroutine(HoldJump(f));
             }
         }
         else
         {
-            //debugStr += "Should Jump Returned False\n";
+            // debugStr += "Should Jump Returned False\n";
             jumpTime = 0f;
             isJumping = false;
             tryTapJump = false;
         }
-            //debugStr += $"Jump Time: {jumpTime}\n";
+            // debugStr += $"Jump Time: {jumpTime}\n";
     }
 
     private IEnumerator HoldJump(float duration)
@@ -168,12 +168,12 @@ Vector2 positionDifference;
 
         else if (obstacleHit.collider != null && positionDifference.y < 0.1f && Mathf.Abs(positionDifference.x) > 1.2f)
         {
-                //debugStr += $"frontObstacleHeightDifference {frontObstacleHeightDifference}\n";
+                // debugStr += $"frontObstacleHeightDifference {frontObstacleHeightDifference}\n";
                 targetJumpHeight = Mathf.Abs(frontObstacleHeightDifference.y) + 1f;
         }
         
-        //debugStr += $"positionDifference {positionDifference}\n";
-        debugStr += $"targetJumpHeight {targetJumpHeight}\n";
+        // debugStr += $"positionDifference {positionDifference}\n";
+        // debugStr += $"targetJumpHeight {targetJumpHeight}\n";
 
         return targetJumpHeight;
     }
@@ -192,13 +192,13 @@ Vector2 positionDifference;
 
         if (pony.groundC.IsGrounded)
         {
-            //debugStr += $"pony.groundC.IsGrounded: {pony.groundC.IsGrounded}\n";
+            // debugStr += $"pony.groundC.IsGrounded: {pony.groundC.IsGrounded}\n";
             return true;
         }
             
         else if (!pony.groundC.IsGrounded && pony.rb.velocity.y < 0.01f)
         {
-            //debugStr += $"pony.tribe is PonyPegasus && (pony.currentFlaps < pony.stats.maxFlaps) : {pony.tribe is PonyPegasus && (pony.currentFlaps < pony.stats.maxFlaps)}\n";
+            // debugStr += $"pony.tribe is PonyPegasus && (pony.currentFlaps < pony.stats.maxFlaps) : {pony.tribe is PonyPegasus && (pony.currentFlaps < pony.stats.maxFlaps)}\n";
             return pony.tribe is PonyPegasus && (pony.currentFlaps < pony.stats.maxFlaps);
         }
         

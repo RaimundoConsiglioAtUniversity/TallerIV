@@ -9,4 +9,12 @@ public class PonyGaea : PonyType
     {
         //
     }
+
+    public override void OnDisableAI()
+    {
+    }
+
+    public override void OnEnableAI()
+    {
+    }
 }

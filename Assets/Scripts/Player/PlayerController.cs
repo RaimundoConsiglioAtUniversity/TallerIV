@@ -54,6 +54,15 @@ public class PlayerController : MonoBehaviour
         groundC.OnAirActions -= OnAirActions;
     }
 
+    public void OnEnableAI()
+    {
+        tribe.OnEnableAI();
+    }
+    public void OnDisableAI()
+    {
+        
+    }
+
     void Awake()
     {
         inputAI = GetComponentInChildren<FriendInput>();

@@ -20,9 +20,10 @@ public class PlayerInput : BaseInput
         set => ponyIdx = value % ponies.Length;
     }
 
-
     public static PlayerInput Instance => instance;
     private static PlayerInput instance;
+
+    public bool StayToggle { get; private set; }= false;
 
     void Awake ()
     {
@@ -40,21 +41,27 @@ public class PlayerInput : BaseInput
 
     }
 
-    void Start()
-    {
-        ChangePony(pony);
-    }
+    void Start() => ChangePony(pony);
 
     void Update ()
+    {
+        ChangePonyInput();
+        
+        if (Input.GetButtonDown("StayToggle"))
+            StayToggle = !StayToggle;
+    
+    }
+
+    private void ChangePonyInput ()
     {
         if (Input.GetAxis("Change") > 0.2f)
         {
             PonyIdx++;
             ChangePony (ponies[Mathf.Abs(PonyIdx)]);
         }
+
         if (Input.GetAxis("Change") < -0.2f)
         {
-
             PonyIdx--;
             ChangePony (ponies[Mathf.Abs(PonyIdx)]);
         }
@@ -66,19 +73,22 @@ public class PlayerInput : BaseInput
         {
             if (pony == newPony)
             {
+                pony.OnDisableAI();
                 pony.inputController = Instance;
                 pony.inputAI.enabled = false;
                 pony.logicAI.enabled = false;
+                this.pony = pony;
             }
 
             else
             {
+                pony.OnEnableAI();
                 pony.inputController = pony.inputAI;
                 pony.inputAI.enabled = true;
                 pony.logicAI.enabled = true;
             }
         }
+
         print($"Changed to {newPony}");
-        // Add Visual Indicator
     }
 }
