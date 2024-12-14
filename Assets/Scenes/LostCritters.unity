@@ -291,7 +291,7 @@ MonoBehaviour:
   maxFlaps: 3
   obstacleLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   maxJumpTime: 0.59
 --- !u!1001 &1417199052
 PrefabInstance:

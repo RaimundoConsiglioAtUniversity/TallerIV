@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
             float r = isRunning ? stats.runMultiplier : 1f;
             float d = isDucking ? stats.duckMultiplier : 1f;
 
-            print($"Name: {gameObject.name}\nH: {h}\nR: {r}\nD: {d}\nWalkSpeed: {stats.walkSpeed}\nSign: {hInput.Sign}");
+            //print($"Name: {gameObject.name}\nH: {h}\nR: {r}\nD: {d}\nWalkSpeed: {stats.walkSpeed}\nSign: {hInput.Sign}");
             return h * r * d * stats.walkSpeed * hInput.Sign;
         }
     }

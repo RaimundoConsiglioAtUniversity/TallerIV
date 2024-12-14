@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using Pathfinding;
+using Unity.VisualScripting;
 
 public class FollowAI : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class FollowAI : MonoBehaviour
     public Vector2 waypointDirection = Vector2.zero;
     public float targetDistance = 2f;
     public Vector2 targetDirection = Vector2.left;
+    public float targetJumpHeight;
     public Rigidbody2D rb;
 
     private Path path;
@@ -29,6 +31,12 @@ public class FollowAI : MonoBehaviour
     private bool isJumping = false;
 
     private Transform Target => pony.tribe.target.transform;
+
+    Vector2 frontObstacleHeightDifference;
+
+    string debugStr = "";
+
+Vector2 positionDifference;
 
 
     void Awake()
@@ -66,6 +74,8 @@ public class FollowAI : MonoBehaviour
 
     void Update()
     {
+        debugStr = $"Pony: {pony.name}  ";
+
         if (path == null)
             return;
 
@@ -82,15 +92,23 @@ public class FollowAI : MonoBehaviour
 
         hInput = Mathf.Abs(waypointDirection.x) > 0.2f && Mathf.Abs(targetDistance) > 2f ? Mathf.Sign(waypointDirection.x) : 0f;
         vInput = Mathf.Abs(targetDistance) > 1f ? -1 : 0;
-        tryRun = Mathf.Abs(targetDistance) > 5f;
+        tryRun = Mathf.Abs(targetDistance) > 2.5f;
 
         HandleJumpLogic();
+
+        print(debugStr);
     }
 
     void HandleJumpLogic()
     {
+        //debugStr += "Entered HandleJumpLogic\n";
+        
+        CalcJumpHeight();
+            jumpTime += Time.deltaTime;
+
         if (ShouldJump())
         {
+            //debugStr += "Should Jump Returned True\n";
             if (!isJumping)
             {
                 tryTapJump = true;
@@ -99,28 +117,92 @@ public class FollowAI : MonoBehaviour
             }
             else
             {
-                jumpTime += Time.deltaTime;
-                tryHoldJump = jumpTime < pony.stats.maxJumpTime;
+                float holdJumpDuration = Mathf.Clamp(targetJumpHeight/(3.9f/pony.stats.maxJumpTime), 0.01f, pony.stats.maxJumpTime);
+                float f = Mathf.Pow(holdJumpDuration, 1f/(pony.stats.maxJumpTime * 0.8f));
+                
+                if (targetJumpHeight > 3.5)
+                    f += 0.2f;
+                
+                else if (targetJumpHeight > 3)
+                    f += 0.1f;
+                
+
+                debugStr += $"Hold Jump Duration: {f}\n";
+                StartCoroutine(HoldJump(f));
             }
         }
         else
         {
+            //debugStr += "Should Jump Returned False\n";
+            jumpTime = 0f;
             isJumping = false;
             tryTapJump = false;
-            tryHoldJump = false;
         }
+            //debugStr += $"Jump Time: {jumpTime}\n";
+    }
+
+    private IEnumerator HoldJump(float duration)
+    {
+        tryHoldJump = true;
+
+        yield return new WaitForSeconds(duration);
+
+        tryHoldJump = false;
+    }
+
+    float CalcJumpHeight()
+    {
+        RaycastHit2D obstacleHit = Physics2D.Raycast(new Vector2(rb.position.x + Mathf.Sign(waypointDirection.x), rb.position.y + 10f), Vector2.down, 11f, pony.stats.obstacleLayers);
+        Debug.DrawRay(new Vector2(rb.position.x + Mathf.Sign(waypointDirection.x), rb.position.y + 10f), Vector2.down * 11f, Color.red);
+
+        if (pony.groundC.IsGrounded || (!pony.groundC.IsGrounded && pony.tribe is PonyPegasus && (pony.currentFlaps < pony.stats.maxFlaps)))
+        {
+            frontObstacleHeightDifference = obstacleHit.point - rb.position;
+            positionDifference = (Vector2)Target.position - rb.position;
+        }
+
+        
+        if (positionDifference.y > 0.2f)
+            targetJumpHeight =  Mathf.Abs(positionDifference.y);
+        
+
+        else if (obstacleHit.collider != null && positionDifference.y < 0.1f && Mathf.Abs(positionDifference.x) > 1.2f)
+        {
+                //debugStr += $"frontObstacleHeightDifference {frontObstacleHeightDifference}\n";
+                targetJumpHeight = Mathf.Abs(frontObstacleHeightDifference.y) + 1f;
+        }
+        
+        //debugStr += $"positionDifference {positionDifference}\n";
+        debugStr += $"targetJumpHeight {targetJumpHeight}\n";
+
+        return targetJumpHeight;
     }
 
     bool ShouldJump()
     {
-        Vector2 vec = new(rb.position.x + Mathf.Sign(waypointDirection.x), rb.position.y + 10f);
+        // Raycast to check for obstacles in front
+        RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.right * Mathf.Sign(waypointDirection.x), 1f, pony.stats.obstacleLayers);
+        Debug.DrawRay(rb.position, Mathf.Sign(waypointDirection.x) * 1f * Vector2.right, Color.magenta);
 
-        RaycastHit2D ObstacleHeight = Physics2D.Raycast(vec, Vector2.down, 11f, pony.stats.obstacleLayers);
-        Debug.DrawRay(vec, Vector2.down * 12f, Color.red);
+        
+        if (hit.collider == null)
+            return false;
+        
 
-        bool canFlap = pony.tribe is PonyPegasus && !pony.groundC.IsGrounded && pony.rb.velocity.y < -0.01f && pony.currentFlaps < pony.stats.maxFlaps;
 
-        return (pony.groundC.IsGrounded || canFlap) && (ObstacleHeight.point.y - rb.position.y) > 0.1f;
+        if (pony.groundC.IsGrounded)
+        {
+            //debugStr += $"pony.groundC.IsGrounded: {pony.groundC.IsGrounded}\n";
+            return true;
+        }
+            
+        else if (!pony.groundC.IsGrounded && pony.rb.velocity.y < 0.01f)
+        {
+            //debugStr += $"pony.tribe is PonyPegasus && (pony.currentFlaps < pony.stats.maxFlaps) : {pony.tribe is PonyPegasus && (pony.currentFlaps < pony.stats.maxFlaps)}\n";
+            return pony.tribe is PonyPegasus && (pony.currentFlaps < pony.stats.maxFlaps);
+        }
+        
+        return false;
     }
 
     private void UpdatePathProgress()
