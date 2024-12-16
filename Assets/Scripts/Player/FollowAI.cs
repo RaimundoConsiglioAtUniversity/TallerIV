@@ -152,8 +152,8 @@ Vector2 positionDifference;
 
     float CalcJumpHeight()
     {
-        RaycastHit2D obstacleHit = Physics2D.Raycast(new Vector2(rb.position.x + Mathf.Sign(waypointDirection.x), rb.position.y + 10f), Vector2.down, 11f, pony.stats.obstacleLayers);
-        Debug.DrawRay(new Vector2(rb.position.x + Mathf.Sign(waypointDirection.x), rb.position.y + 10f), Vector2.down * 11f, Color.red);
+        RaycastHit2D obstacleHit = Physics2D.Raycast(new Vector2(rb.position.x + Mathf.Sign(waypointDirection.x), rb.position.y + 4.5f), Vector2.down, 11f, pony.stats.obstacleLayers);
+        Debug.DrawRay(new Vector2(rb.position.x + Mathf.Sign(waypointDirection.x), rb.position.y + 4.5f), Vector2.down * 5f, Color.red);
 
         if (pony.groundC.IsGrounded || (!pony.groundC.IsGrounded && pony.tribe is PonyPegasus && (pony.currentFlaps < pony.stats.maxFlaps)))
         {

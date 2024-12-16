@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class PonyUnicorn : PonyType
@@ -13,7 +14,7 @@ public class PonyUnicorn : PonyType
     {
         //<-< TELEKINESIS >->//
 
-        print("Attempted Telekinesis");
+        // print("Attempted Telekinesis");
 
         if (!heldObject)
             SelectObject();
@@ -25,39 +26,40 @@ public class PonyUnicorn : PonyType
 
     public override void Action2()
     {
-        //
+        Teleport();
     }
 
 
     private void SelectObject()
     {
-        print("Entered Select Object");
+        // print("Entered Select Object");
         // Fetch the first collider.
         // NOTE: We could do this for multiple colliders.
         Collider2D collider = Physics2D.OverlapPoint(worldPos);
         if (!collider)
         {    
-            print("No Collider Found!");
+            // print("No Collider Found!");
             return;
         }
 
-        Draggable newHeldObject = collider.gameObject.GetComponent<Draggable>();
+        Draggable newHeldObject = collider.gameObject.GetComponentInParent<Draggable>();
 
         if (!newHeldObject)
         {    
-            print($"Clicked Object <{collider.name}> Has no Draggable Component!");
+            // print($"Clicked Object <{collider.name}> Has no Draggable Component!");
             return;
         }
-
+    
+        newHeldObject.gameObject.layer = LayerMask.NameToLayer("Holding");
         // Fetch the collider body.
         var rb = collider.attachedRigidbody;
         if (!rb)
         {    
-            print($"Clicked Object <{collider.name}> Has no RigidBody!");
+            // print($"Clicked Object <{collider.name}> Has no RigidBody!");
             return;
         }
 
-        print($"<{collider.name}> Passed all Checks!");
+        // print($"<{collider.name}> Passed all Checks!");
         heldObject = newHeldObject;
 
         // Add a target joint to the Rigidbody2D GameObject.
@@ -73,15 +75,40 @@ public class PonyUnicorn : PonyType
         if(!heldObject)
             return;
         
+        heldObject.gameObject.layer = heldObject.layer;
         heldObject.joint.enabled = false;
         heldObject = null;
     }
     
+    void Teleport()
+    {
+        Vector2 direction = (worldPos - transform.position).normalized;
+        float distance = Vector2.Distance(transform.position, worldPos);
+
+        RaycastHit2D[] tpLine = Physics2D.RaycastAll(transform.position, direction, distance);
+        bool tpSuccessful = true;
+
+        foreach(var hit in tpLine)
+        {
+            if (((pony.stats.obstacleLayers.value & (1 << hit.transform.gameObject.layer)) != 0) && !hit.collider.isTrigger && !hit.transform.TryGetComponent(out Permeable _))
+            {
+                print($"{hit.transform.name} an impassable object, aborting teleport");
+                tpSuccessful = false;
+            }
+        }
+
+        if(tpSuccessful)
+        {
+            print("Teleported Successfully!");
+            pony.rb.position = worldPos;
+        }
+    }
 
     void Update()
     {
 		// Calculate the world position for the mouse.
 		worldPos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+        Debug.DrawLine(transform.position, worldPos);
 
         if (!heldObject)
             return;

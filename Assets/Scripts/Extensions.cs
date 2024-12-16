@@ -25,4 +25,40 @@ public static class Extensions
             a = b;
         }
     }
+
+    public static T[] AddUniqueItems<T>(this T[] originalArray, T[] newItems)
+    {
+        // Convert array to list for flexibility
+        List<T> list = new List<T>(originalArray);
+
+        // Loop through new items and add them if they're not already in the list
+        foreach (T item in newItems)
+        {
+            if (!list.Contains(item))
+            {
+                list.Add(item);
+            }
+        }
+
+        // Convert the list back to an array and return
+        return list.ToArray();
+    }
+
+    public static T GetOrAddComponent<T>(this GameObject gameObject) where T : Component
+    {
+        T component = gameObject.GetComponent<T>();
+        
+        if (component == null)
+            component = gameObject.AddComponent<T>();
+
+        return component;
+    }
+
+    public static T EnsureComponent<T>(this GameObject gameObject, ref T component) where T : Component
+    {
+        if (component == null)
+            component = gameObject.AddComponent<T>();
+        
+        return component;
+    }
 }

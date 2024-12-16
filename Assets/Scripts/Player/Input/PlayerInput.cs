@@ -88,7 +88,5 @@ public class PlayerInput : BaseInput
                 pony.logicAI.enabled = true;
             }
         }
-
-        print($"Changed to {newPony}");
     }
 }

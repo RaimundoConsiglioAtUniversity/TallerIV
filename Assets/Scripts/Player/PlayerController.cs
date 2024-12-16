@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
     }
     public void OnDisableAI()
     {
-        
+        tribe.OnDisableAI();
     }
 
     void Awake()
@@ -129,7 +129,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void DoJump(float jumpStrength)
+    public void DoJump(float jumpStrength)
     {
         //audioS.PlayOneShot(jumpSFX);
         rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
