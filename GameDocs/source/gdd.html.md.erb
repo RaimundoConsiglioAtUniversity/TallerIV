@@ -44,25 +44,24 @@
     :elements =>
     [
         ["About My Proposal", "h2", "ti"],
-        ["Lost Little Horsies is a 
-        <a href='https://en.wikipedia.org/wiki/Nonviolent_video_game'>non-violent</a><a href='https://en.wikipedia.org/wiki/Nonviolence'>¹</a>, 
-        2D platforming game where a&nbsp;group of three horsies 
-        —a Unicorn, a Pegasus, and a <span class='tooltip'>Gæahippos—</span>
+        ["Lost Little Horsies es un Plataformero 2D <a href='https://en.wikipedia.org/wiki/Nonviolent_video_game'>no-violento</a><a href='https://en.wikipedia.org/wiki/Nonviolence'>¹</a>donde un grupo de tres ponis 
+        —una Unicornio, una Pegaso, y una <span class='tooltip'>Gæahippos—</span>
         <span class='rel'><span class='info'>
-            pronounced <span class='ipa'>/ˈge.ɪp.ɒs/</span> from Greek Γαῖα (Earth), and ίππος (Horse)
+            pronunciado <span class='ipa'>/ˈge.ɪp.ɒs/</span> del Γαῖα (Earth), e ίππος (Horse)
         </span></span>
-        try&nbsp;to find their way home after being lost in early 19th century Britain.", "p", "p1"],
-        ["They journey through the land while working together, taking advantage of each of their unique abilities, avoiding magic hunters who want to keep them for their collections, and making friends along the way.", "p", "p2"],
-        ["Rated E/E+10, for PC and consoles.", "p", "p3", "small"],
-        ["icons/english-flag.gif", "img", "im"]
+        tratan de encontrar el camino de vuelta a casa tras perderse en la Gran Bretaña de inicios del siglo 19.", "p", "p1"],
+        ["Trabajando en grupo y aprovechando cada una de sus habilidades unicas, conocen a nuevos amigos y evitan cazadores de magia —quienes desean capturar al grupo para sus colecciones personales.", "p", "p2"],
+        ["Calificado E/E+10, para PC y consolas.", "p", "p3", "small"],
+        ["icons/Bluesky.gif", "img", "im"],
+        ["icons/english-flag.gif", "img", "i2"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
-                'p1 p1 p1 p1 p1 p1 p1 im im im im im'
-                'p1 p1 p1 p1 p1 p1 p1 im im im im im'
-                'p1 p1 p1 p1 p1 p1 p1 im im im im im'
-                'p2 p2 p2 p2 p2 p2 p2 im im im im im'
-                'p2 p2 p2 p2 p2 p2 p2 im im im im im'
-                'p2 p2 p2 p2 p2 p2 p2 p3 p3 p3 p3 p3'"
+                'i2 i2 i2 p1 p1 p1 p1 p1 p1 p1 p1 p1'
+                'i2 i2 i2 p1 p1 p1 p1 p1 p1 p1 p1 p1'
+                'p2 p2 p2 p2 p2 p2 p2 p2 im im im im'
+                'p2 p2 p2 p2 p2 p2 p2 p2 im im im im'
+                'p2 p2 p2 p2 p2 p2 p2 p2 im im im im'
+                'p3 p3 p3 p3 p3 p3 nl nl im im im im'"
 }) %>
 
 <%# INTRODUCCIÓN: Motivaciones preliminares %>
@@ -70,11 +69,15 @@
 {
     :elements =>
     [
-        ["Motives", "h2", "ti"],
-        ["I've always had a passion for seeing other people's joy, to the point that my first dream job when I was like 5 years old was to have a toy factory powered by bubbles in the Andes mountains on top of the border of Argentina and Chile so that kids from both countries could have the toys I've made. Of course, despite now knowing how silly it was in retrospect, I can't help but see my passion to game making as an evolution of young me's whimsical dreams.", "p", "p1"]
+        ["Motivación", "h2", "ti"],
+        ["Siempre me ha apasionado darle alegría a los demás. Cuando tenía como 5 años, el trabajo de mis sueños era tener una fábrica de juguetes impulsada por burbujas en la cima de la cordillera de los Andes en la frontera entre Argentina y Chile, para que los niños de ambos países pudieran disfrutar de los juguetes que he haría.", "p", "p1"],
+        ["En retrospectiva, esta pasión nunca desapareció, sino que esta evolucionó a mi actual pasaion por la creación de juegos.", "p", "p2"],
+        ["train.png", "img", "im"],
+        ["gamecube.png", "img", "i2"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
-                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+                'p1 p1 p1 p1 p1 p1 p1 p1 i2 i2 i2 i2'
+                'im im im im p2 p2 p2 p2 p2 p2 p2 p2'"
 }) %>
 
 <%# INVESTIGACIÓN: Marco conceptual: Antecedentes Relevantes %>
@@ -89,7 +92,7 @@
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
 }) %>
 
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -102,7 +105,7 @@
                 'p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2'"
 }) %>
 
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -119,14 +122,30 @@
 {
     :elements =>
     [
-        ["Inspiration - Plot", "h2", "ti"],
-        ["I needed a compelling narrative for the game, though, so I got thinking: What if three little ponies got stranded in the human world? After all, the idea of being stranded in a world that's not your own is quite common in anime, to the point that this trope has earned itself a name: Isekai, meaning \"Other-World\". Even classical western literature isn't exempt from this, a couple of examples being Alice in Wonderland and The Chronicles of Narnia. Many fanfics in the My Little Pony community feature humans being accidentally transported to Equestria as well!", "p", "p1"]
+        ["Inspiración - No-Violencia y Cambios de Personaje", "h2", "ti"],
+        ["¿Cómo sería un juego de plataformas en el que no se inflige violencia? Porque, incluso si son caricaturescos, juegos como Mario, Kirby y Sonic presentan igual violencia como mecánicas centrales de sus juegos, ya sea el pisotón de Mario, la inhalación de Kirby o el spindash de Sonic.", "p", "p1"],
+        ["De esta idea y el juego 'Mario & Luigi: Superstar Saga' nació la idea de cambiar entre los personajes para completar desafíos y navegar por el mundo.
+        Estas dos ideas también encajan perfectamente en un juego inspirado en My Little Pony, ya que los mensajes centrales de la serie incluyen la importancia de la amistad y la colaboración, así como la perseverancia y la comprensión.", "p", "p2"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
-                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'
+                'p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2'"
 }) %>
 
 <%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["Inspiración - Trama", "h2", "ti"],
+        ["¿Qué pasaría si tres pequeños ponis quedaran varados en el mundo humano? Después de todo, la idea de estar atrapado en un mundo que no es el tuyo es bastante común en el anime, hasta el punto de que este tropo se ha ganado un nombre: Isekai, que significa 'Otro Mundo'.", "p", "p1"],
+        ["Esta trama le da a nuestros protagonistas un motivo creíble, pero fácil de entender: ¿Quién no se ha sentido alienado, extraño a veces cuando se encuentra en un entorno nuevo, ya sea una nueva escuela, un nuevo lugar de trabajo o un país que visita?", "p", "p2"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
+                'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'
+                'p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2'"
+}) %>
+
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -141,9 +160,9 @@
 {
     :elements =>
     [
-        ["Inspiration - Setting", "h2", "ti"],
-        ["With that established, I then had to come up with an appropriate setting.", "p", "p1"],
-        ["I quickly came up with the concept of these ponies being stuck in a period loosely taking place in 18th century Britain, while taking elements from between the 16th and 19th century as well, since it could pose for an interesting juxtaposition with my characters. In a time of transition from magical thinking to staunch rationalism, what's better to upset the status quo than three mythical creatures popping up unannounced?", "p", "p2"]
+        ["Inspiración - Lugar", "h2", "ti"],
+        ["Se me ocurrió la idea de que estos ponis estuvieran atrapados en la Gran Bretaña del siglo XVIII, en un periodo felxible entre entre los siglos XVI y XIX también, ya que esto me permite representar una yuxtaposición interesante con mis personajes.", "p", "p1"],
+        ["En una época de transición del pensamiento mágico al racionalismo acérrimo, ¿qué mejor para alterar el status quo que tres criaturas míticas que aparecen sin previo aviso?", "p", "p2"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'
@@ -151,7 +170,7 @@
 }) %>
 
 <%# INVESTIGACIÓN: Escenarios sistémicos (diagrama de Venn) %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -163,7 +182,7 @@
 }) %>
 
 <%# INVESTIGACIÓN: Marco conceptual: Definicion de Conceptos/Mapa Conceptual %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -180,7 +199,7 @@
     :elements =>
     [
         ["What <em>is</em> a Puzzle Platformer?", "h2", "ti"],
-        ["Lost Little Horsies is a 2D puzzle-platformer. In his blog, <a href='https://www.kelleherbros.com/blog/2024/3/4/defining-the-platformer-genre'>kelleherbros.com</a>, video game designer Lucas Kelleher defines platformers as \"game[s] where the primary action revolves around running and jumping.\" steoretipically, these are \"2D side-scrolling game[s] in which the main character navigates horizontal space by running and vertical space with jumping,\" and then goes on to define puzzle-platformers as \"platforming game[s] built around puzzle-solving, as opposed to combat/action or freewheeling traversal.\" Lucas then gives us Donkey Kong '94 as an example of such games, describing its gameplay as such: \"[Mario's] objective is almost always to bring a key back to a locked door, so that he might proceed to the next challenge. It’s platforming gameplay, but always [as] a means to solve [a] puzzle\", which I feel is a very apt description of what I plan to do with Lost Little Horsies.", "p", "p1"]
+        ["Lost Little Horsies es un juego de plataformas y rompecabezas en 2D. En su blog, <a href='https://www.kelleherbros.com/blog/2024/3/4/defining-the-platformer-genre'>kelleherbros.com</a>, el diseñador de videojuegos Lucas Kelleher define Los juegos de plataformas son \"juegos en los que la acción principal gira en torno a correr y saltar\". Estereotípicamente, se trata de \"juegos de desplazamiento lateral en 2D en los que el personaje principal navega por el espacio horizontal corriendo y por el espacio vertical saltando\", y luego define los juegos de plataformas y rompecabezas como \"juegos de plataformas construidos en torno a la resolución de acertijos, en contraposición al combate/acción o el recorrido libre\". Lucas luego nos da Donkey Kong '94 como ejemplo de este tipo de juegos, describiendo su modo de juego de la siguiente manera: \"El objetivo [de Mario] es casi siempre traer una llave a una puerta cerrada, para poder pasar al siguiente desafío. Es un juego de plataformas. jugabilidad, pero siempre [como] un medio para resolver [un] rompecabezas\", lo cual creo que es una descripción muy adecuada de lo que planeo hacer con Lost Little Horsies.", "p", "p1"]
     ],
     :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
@@ -192,7 +211,7 @@
     :elements =>
     [
         ["Problemática y Oportunidad de Diseño y Producción", "h2", "ti"],
-        ["First I had to ask myself: Is there even a demand for this kind of game? So I have done some preliminary research using online tools. De la gente que contestó mi encuesta, hay tres fuentes de origen principales: A mis amigos y los amigos de mis hermanos irl, a mis amigos online en una comunidad en Discord, y a mis seguidores en BlueSky.
+        ["Primero tuve que preguntarme: ¿Existe siquiera demanda para este tipo de juego? Así que hice una investigación preliminar utilizando herramientas en línea. De la gente que contestó mi encuesta, hay tres fuentes de origen principales: A mis amigos y los amigos de mis hermanos irl, a mis amigos online en una comunidad en Discord, y a mis seguidores en BlueSky.
         
         Estas fueron recopiladas usando Google Forms, lo que me facilita el análisis de estas, y me permite compilarlas en una <a href='https://docs.google.com/spreadsheets/d/1l7BUJlMEoFmfsp2X5rgmGM8ot6mrsDGTtDa1F4QhcW'>hoja de calculo de google.</a>", "p", "p1"]
     ],
@@ -225,7 +244,7 @@
 }) %>
 
 <%# IDEACIÓN: Público Objetivo %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -249,7 +268,7 @@
                 'p2 p2 p2 p2 p2 p2 p3 p3 p3 p3 p3 p3'"
 }) %>
 
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -268,7 +287,7 @@
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
 }) %>
 
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -290,7 +309,7 @@
                 'p2 p2 p2 p2 p2 p2 p3 p3 p3 p3 p3 p3'"
 }) %>
 
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -363,7 +382,7 @@
 }) %>
 
 <%# IDEACIÓN: Moodboard/Bocetaje del Juego (Narrativo) %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -375,7 +394,7 @@
 }) %>
 
 <%# IDEACIÓN: Moodboard/Bocetaje del Juego (Visual) %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -387,7 +406,7 @@
 }) %>
 
 <%# IDEACIÓN: Moodboard/Bocetaje del Juego (Sonoro) %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -399,7 +418,7 @@
 }) %>
 
 <%# IDEACIÓN: Referentes Narrativos %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -411,7 +430,7 @@
 }) %>
 
 <%# IDEACIÓN: Diseño Narrativo %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -423,7 +442,7 @@
 }) %>
 
 <%# IDEACIÓN: Referentes de mecánicas: On-The-Fly Character Swapping %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -442,7 +461,7 @@
 }) %>
 
 <%# IDEACIÓN: Diseño de mecánicas: On-The-Fly Character Swapping %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -454,7 +473,7 @@
 }) %>
 
 <%# IDEACIÓN: Referentes de mecánicas: Pegasus Flight %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -473,7 +492,7 @@
 }) %>
 
 <%# IDEACIÓN: Diseño de mecánicas: Pegasus Flight %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -487,7 +506,7 @@
 
 
 <%# IDEACIÓN: Referentes de mecánicas: Pegasus Thunder %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -506,7 +525,7 @@
 }) %>
 
 <%# IDEACIÓN: Diseño de mecánicas: Pegasus Thunder %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -518,7 +537,7 @@
 }) %>
 
 <%# IDEACIÓN: Referentes de mecánicas: Unicorn Teleportation %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -537,7 +556,7 @@
 }) %>
 
 <%# IDEACIÓN: Diseño de mecánicas: Unicorn Teleportation %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -551,7 +570,7 @@
 
 
 <%# IDEACIÓN: Referentes de mecánicas: Unicorn Telekinesis %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -570,7 +589,7 @@
 }) %>
 
 <%# IDEACIÓN: Diseño de mecánicas: Unicorn Telekinesis %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -582,7 +601,7 @@
 }) %>
 
 <%# IDEACIÓN: Referentes de mecánicas: Gæahippos Ground Pound %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -601,7 +620,7 @@
 }) %>
 
 <%# IDEACIÓN: Diseño de mecánicas: Gæahippos Ground Pound %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -613,7 +632,7 @@
 }) %>
 
 <%# IDEACIÓN: Referentes de mecánicas: Gæahippos Phytoturgy %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -632,7 +651,7 @@
 }) %>
 
 <%# IDEACIÓN: Diseño de mecánicas: Gæahippos Phytoturgy %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -646,7 +665,7 @@
 <%# Descripción del resto de mecánicas principales, a traves de la repetición de las dos anteriores diapositivas (Se debe complementar con bocetos propios, imágenes y/o video de otros productos como juegos, animaciones, películas, etc) %>
 
 <%# IDEACIÓN: Referentes conceptuales y artísticos %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -658,7 +677,7 @@
 }) %>
 
 <%# IDEACIÓN: Diseño visual (assets, personajes, entornos, GUI/HUD) %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -670,7 +689,7 @@
 }) %>
 
 <%# IDEACIÓN: Referentes sonoros %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -682,7 +701,7 @@
 }) %>
 
 <%# IDEACIÓN: Diseño Sonoro %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -694,7 +713,7 @@
 }) %>
 
 <%# IDEACIÓN: Modelo de negocio y escalabilidad del proyecto: Definición de parámetros de audiencia %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -706,7 +725,7 @@
 }) %>
 
 <%# IMPLEMENTACIÓN: PRODUCTO ACADÉMICO: Prototipo con placeholders y mecánicas funcionales/Ejemplos de Gameplay %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -718,7 +737,7 @@
 }) %>
 
 <%# IMPLEMENTACIÓN: Implementación con placeholders: Resultados esperados e impacto de la propuesta %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -790,7 +809,7 @@
 }) %>
 
 <%# CONCLUSIONES: Proyección de nuevas etapas de desarrollo del proyecto %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -802,7 +821,7 @@
 }) %>
 
 <%# CONCLUSIONES: Grado de avance y potenciales desafíos del proceso, junto a posibles soluciones %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -814,7 +833,7 @@
 }) %>
 
 <%# CONCLUSIONES: Grado de avance y potenciales desafíos del proceso, junto a posibles soluciones %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -850,7 +869,7 @@
 }) %>
 
 <%# ANEXOS %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -862,7 +881,7 @@
 }) %>
 
 <%# BIBLIOGRAFÍA %>
-<%= partial(:"partials/slide-reg", :locals => 
+<%#= partial(:"partials/slide-reg", :locals => 
 {
     :elements =>
     [
@@ -873,7 +892,16 @@
                 'p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1'"
 }) %>
 
+<%= partial(:"partials/slide-reg", :locals => 
+{
+    :elements =>
+    [
+        ["gameplay.gif", "img", "ti"]
+    ],
+    :layout => "'ti ti ti ti ti ti ti ti ti ti ti ti'"
+}) %>
 
+<%# 
 https://www.giantbomb.com/on-the-fly-character-switching/3015-4385/
 
 
@@ -890,3 +918,4 @@ https://www.giantbomb.com/on-the-fly-character-switching/3015-4385/
 (otros juegos, libros, películas, discos, etc) (indicar que es lo que se está referenciando de cada uno)
 
 Añadir un archivo chiquito que permita ver los controles del juego
+%>
