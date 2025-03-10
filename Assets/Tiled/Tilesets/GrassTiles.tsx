@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tileset version="1.10" tiledversion="1.11.0" name="Grass" tilewidth="16" tileheight="16" tilecount="112" columns="7">
+ <image source="../../Sprites/tilesets/grass.png" width="112" height="112"/>
+ <tile id="0">
+  <properties>
+   <property name="unity:layer" value="Ground"/>
+  </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
+</tileset>

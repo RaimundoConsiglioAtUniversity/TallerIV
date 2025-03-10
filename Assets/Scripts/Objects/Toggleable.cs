@@ -9,6 +9,18 @@ public class Toggleable : InteractiveObject
 
     public bool isActive;
 
+    public void OnEnable()
+    {
+        InteractableToggle.ToggleLinkedObjects += Toggle;
+    }
+
+    public void Toggle(int ID)
+    {
+        if (ID == this.ID)
+            InteractedWith();
+        
+    }
+    
     public override void InteractedWith()
     {
         isActive = !isActive;

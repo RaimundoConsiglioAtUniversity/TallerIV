@@ -1,0 +1,210 @@
+{
+    "automappingRulesFile": "rules.txt",
+    "commands": [
+    ],
+    "compatibilityVersion": 1100,
+    "extensionsPath": "extensions",
+    "folders": [
+        "."
+    ],
+    "properties": [
+    ],
+    "propertyTypes": [
+        {
+            "color": "#ffff0000",
+            "drawFill": true,
+            "id": 6,
+            "members": [
+            ],
+            "name": "AIAvoid",
+            "type": "class",
+            "useAs": [
+                "object",
+                "project"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 8,
+            "members": [
+                {
+                    "name": "ID",
+                    "type": "int",
+                    "value": 0
+                }
+            ],
+            "name": "Lever",
+            "type": "class",
+            "useAs": [
+                "object",
+                "project"
+            ]
+        },
+        {
+            "color": "#fffceaff",
+            "drawFill": true,
+            "id": 7,
+            "members": [
+            ],
+            "name": "MetalBox",
+            "type": "class",
+            "useAs": [
+                "object",
+                "project"
+            ]
+        },
+        {
+            "color": "#ffff007f",
+            "drawFill": true,
+            "id": 12,
+            "members": [
+                {
+                    "name": "ID",
+                    "type": "int",
+                    "value": 0
+                },
+                {
+                    "name": "PathPoint",
+                    "type": "int",
+                    "value": 0
+                }
+            ],
+            "name": "MovementTarget",
+            "type": "class",
+            "useAs": [
+                "object",
+                "project"
+            ]
+        },
+        {
+            "color": "#ff0055ff",
+            "drawFill": true,
+            "id": 2,
+            "members": [
+                {
+                    "name": "Height",
+                    "type": "int",
+                    "value": 180
+                },
+                {
+                    "name": "Width",
+                    "type": "int",
+                    "value": 320
+                }
+            ],
+            "name": "Screen",
+            "type": "class",
+            "useAs": [
+                "object",
+                "project"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 10,
+            "members": [
+                {
+                    "name": "ID",
+                    "type": "int",
+                    "value": 0
+                }
+            ],
+            "name": "Seedling",
+            "type": "class",
+            "useAs": [
+                "object",
+                "project"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 11,
+            "members": [
+                {
+                    "name": "ID",
+                    "type": "int",
+                    "value": 0
+                }
+            ],
+            "name": "SeedlingTarget",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object",
+                "project"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 13,
+            "members": [
+            ],
+            "name": "Soil",
+            "type": "class",
+            "useAs": [
+                "property",
+                "map",
+                "layer",
+                "object",
+                "tile",
+                "tileset",
+                "wangcolor",
+                "wangset",
+                "project"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 4,
+            "members": [
+            ],
+            "name": "Teleportable",
+            "type": "class",
+            "useAs": [
+                "object",
+                "project"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 9,
+            "members": [
+                {
+                    "name": "ID",
+                    "type": "int",
+                    "value": 0
+                },
+                {
+                    "name": "on",
+                    "type": "bool",
+                    "value": false
+                }
+            ],
+            "name": "Toggleable",
+            "type": "class",
+            "useAs": [
+                "object",
+                "project"
+            ]
+        },
+        {
+            "color": "#ff865534",
+            "drawFill": true,
+            "id": 3,
+            "members": [
+            ],
+            "name": "WoodenBox",
+            "type": "class",
+            "useAs": [
+                "object",
+                "project"
+            ]
+        }
+    ]
+}

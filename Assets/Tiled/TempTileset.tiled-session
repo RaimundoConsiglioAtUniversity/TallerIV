@@ -1,0 +1,324 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "automapping.whileDrawing": false,
+    "expandedProjectPaths": [
+        ".",
+        "Maps",
+        "classes",
+        "Rules",
+        "Tilesets",
+        "rules"
+    ],
+    "fileStates": {
+        ":/automap-tiles.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "D:/Raimundo Consiglio/Downloads/MovingPlatformMap.tmx": {
+            "scale": 3,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 66.99999999999999,
+                "y": 101.66666666666667
+            }
+        },
+        "D:/Raimundo Consiglio/Downloads/omega.tsx": {
+            "scaleInDock": 1
+        },
+        "D:/Raimundo Consiglio/Downloads/tracks.tsx": {
+            "scaleInDock": 1
+        },
+        "D:/Raimundo Consiglio/My Projects/TallerIV/Assets/Tilesets/generic_platformer_tiles_1_CC0_by_Surt_OpenGameArt.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "Maps/ProtoTiles.tsx": {
+            "scaleInDock": 1
+        },
+        "Maps/TempTiles.tsx": {
+            "scaleInDock": 1
+        },
+        "Maps/TestMap (2).tmx": {
+            "expandedGroupLayers": [
+                37
+            ],
+            "expandedObjectLayers": [
+                4
+            ],
+            "scale": 1,
+            "selectedLayer": 22,
+            "viewCenter": {
+                "x": 215,
+                "y": 232
+            }
+        },
+        "Maps/TestMap.tmx": {
+            "expandedObjectLayers": [
+                4
+            ],
+            "scale": 3,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 605.3333333333333,
+                "y": 212.33333333333331
+            }
+        },
+        "Maps/Tilesets/generic_platformer_tiles_1_CC0_by_Surt_OpenGameArt.tsx": {
+            "scaleInDock": 1
+        },
+        "ProtoTiles.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1.5,
+            "scaleInEditor": 3
+        },
+        "Rules/auto_back_rocks.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": -24,
+                "y": 147.99999999999997
+            }
+        },
+        "Rules/auto_blue_grass.tmx": {
+            "expandedObjectLayers": [
+                4
+            ],
+            "scale": 5.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 190.36363636363637,
+                "y": 43.45454545454546
+            }
+        },
+        "Rules/auto_bounds.tmx": {
+            "scale": 0.9909482758620689,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 263.3840800347978,
+                "y": 240.17398869073514
+            }
+        },
+        "Rules/auto_cage.tmx": {
+            "expandedObjectLayers": [
+                4
+            ],
+            "scale": 2,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 14.5,
+                "y": 69
+            }
+        },
+        "Rules/auto_grass.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 85.33333333333326,
+                "y": 214.66666666666663
+            }
+        },
+        "Rules/auto_leaves.tmx": {
+            "expandedObjectLayers": [
+                4
+            ],
+            "scale": 2,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 239,
+                "y": 165
+            }
+        },
+        "Rules/auto_objects.tmx": {
+            "expandedObjectLayers": [
+                4,
+                7,
+                6,
+                3,
+                5,
+                9
+            ],
+            "scale": 4,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 105,
+                "y": 81.25
+            }
+        },
+        "Rules/auto_pillars.tmx": {
+            "expandedObjectLayers": [
+                6
+            ],
+            "scale": 1.5,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 182.66666666666663,
+                "y": 177.99999999999997
+            }
+        },
+        "Rules/auto_proto.tmx": {
+            "scale": 0.33,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": -142.4242424242425,
+                "y": 415.151515151515
+            }
+        },
+        "Rules/auto_red_grass.tmx": {
+            "expandedObjectLayers": [
+                4
+            ],
+            "scale": 16,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 156.0625,
+                "y": 104.4375
+            }
+        },
+        "Rules/auto_tree.tmx": {
+            "expandedObjectLayers": [
+                4
+            ],
+            "scale": 1.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 263.33333333333337,
+                "y": 120.66666666666663
+            }
+        },
+        "TempTiles.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1.5
+        },
+        "TestMap.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": -23.5,
+                "y": 185.5
+            }
+        },
+        "Tilesets/BackRockTiles.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tilesets/BarrierTiles.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tilesets/BlueGrass.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tilesets/BlueGrassOff.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tilesets/BoundsTiles.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1.5
+        },
+        "Tilesets/CageTiles.tsx": {
+            "scaleInDock": 2,
+            "scaleInEditor": 1.5
+        },
+        "Tilesets/GenericPlatformerTilesBySurtOpenGameArt.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tilesets/GrassTiles.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "Tilesets/LeafTiles.tsx": {
+            "scaleInEditor": 5.5
+        },
+        "Tilesets/MetalTiles.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 3
+        },
+        "Tilesets/Objects.tsx": {
+            "scaleInDock": 0.75,
+            "scaleInEditor": 4
+        },
+        "Tilesets/Pillars.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 4
+        },
+        "Tilesets/PlacehoderTiles.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1.5
+        },
+        "Tilesets/ProtoTiles.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        },
+        "Tilesets/RedGrass.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 5.5
+        },
+        "Tilesets/RedGrassOff.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 5.5
+        },
+        "Tilesets/TempTiles.tsx": {
+            "scaleInDock": 0.75,
+            "scaleInEditor": 2
+        },
+        "Tilesets/TemporaryTileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        },
+        "Tilesets/TreeTiles.tsx": {
+            "scaleInEditor": 3
+        },
+        "Tilesets/generic_platformer_tiles_1_CC0_by_Surt_OpenGameArt.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "rules/auto_grass.tmx": {
+            "scale": 1,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 145.5,
+                "y": 120.5
+            }
+        }
+    },
+    "last.externalTilesetPath": "D:/Raimundo Consiglio/My Projects/TallerIV/Assets/Tiled/Tilesets",
+    "last.imagePath": "D:/Raimundo Consiglio/My Projects/TallerIV/Assets/Sprites/tilesets",
+    "last.objectTypesPath": "D:/Raimundo Consiglio/My Projects/TallerIV/Assets/Tiled/Objects/propertytypes.xml",
+    "map.height": 24,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 24,
+    "openFiles": [
+    ],
+    "project": "TempTileset.tiled-project",
+    "property.type": "object",
+    "recentFiles": [
+        "D:/Raimundo Consiglio/Downloads/MovingPlatformMap.tmx",
+        "Tilesets/TreeTiles.tsx",
+        "Tilesets/LeafTiles.tsx",
+        "Maps/TestMap.tmx",
+        "Rules/auto_blue_grass.tmx",
+        "Rules/auto_red_grass.tmx",
+        "Rules/auto_cage.tmx",
+        "Rules/auto_bounds.tmx",
+        "Rules/auto_grass.tmx",
+        "Rules/auto_pillars.tmx",
+        "Rules/auto_proto.tmx",
+        "Rules/auto_objects.tmx"
+    ],
+    "tileset.lastUsedFilter": "Archivos de conjuntos de patrones Tiled (*.tsx *.xml)",
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}

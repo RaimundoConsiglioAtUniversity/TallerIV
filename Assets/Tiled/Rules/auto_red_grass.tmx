@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="29" height="29" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="191">
+ <properties>
+  <property name="MatchOutsideMap" type="bool" value="true"/>
+  <property name="OverflowBorder" type="bool" value="true"/>
+ </properties>
+ <tileset firstgid="1" source=":/automap-tiles.tsx"/>
+ <tileset firstgid="6" source="../Tilesets/RedGrass.tsx"/>
+ <tileset firstgid="55" source="../Tilesets/RedGrassOff.tsx"/>
+ <layer id="2" name="input_Blocking_Red" width="29" height="29">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,4,0,0,0,4,0,0,0,4,0,0,0,4,0,0,0,4,0,0,0,4,0,0,0,4,0,0,
+0,4,6,4,0,4,6,3,0,3,6,3,0,3,6,4,0,4,6,3,0,3,6,3,0,3,6,4,0,
+0,0,4,0,0,0,4,0,0,0,4,0,0,0,4,0,0,0,3,4,0,4,3,4,0,4,3,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,4,0,0,0,4,0,0,0,4,0,0,0,4,0,0,0,3,4,0,4,3,4,0,4,3,0,0,
+0,4,6,4,0,4,6,3,0,3,6,3,0,3,6,4,0,4,6,3,0,3,6,3,0,3,6,4,0,
+0,0,3,0,0,0,3,3,0,3,3,3,0,3,3,0,0,0,3,4,0,4,3,4,0,4,3,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,3,0,0,0,3,3,0,3,3,3,0,3,3,0,0,0,3,4,0,4,3,4,0,4,3,0,0,
+0,4,6,4,0,4,6,3,0,3,6,3,0,3,6,4,0,4,6,3,0,3,6,3,0,3,6,4,0,
+0,0,3,0,0,0,3,3,0,3,3,3,0,3,3,0,0,0,4,0,0,0,4,0,0,0,4,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,3,0,0,0,3,3,0,3,3,3,0,3,3,0,0,3,3,4,0,4,3,4,0,4,3,3,0,
+0,4,6,4,0,4,6,3,0,3,6,3,0,3,6,4,0,3,6,3,0,3,6,3,0,3,6,3,0,
+0,0,4,0,0,0,4,0,0,0,4,0,0,0,4,0,0,4,3,3,0,3,3,3,0,3,3,4,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,3,3,3,0,3,3,3,0,0,4,0,0,0,4,0,0,4,3,3,0,3,3,3,0,3,3,4,0,
+0,3,6,3,0,3,6,3,0,3,6,3,0,3,6,3,0,3,6,3,0,3,6,3,0,3,6,3,0,
+0,3,3,4,0,4,3,3,0,3,3,4,0,4,3,3,0,4,3,3,0,4,3,4,0,3,3,4,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,3,3,4,0,4,3,3,0,3,3,4,0,4,3,3,0,0,3,3,0,3,3,0,0,0,0,0,0,
+0,3,6,3,0,3,6,3,0,3,6,3,0,3,6,3,0,4,6,3,0,3,6,4,0,0,0,0,0,
+0,3,3,3,0,3,3,3,0,0,4,0,0,0,4,0,0,0,3,4,0,4,3,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,4,3,4,0,4,3,4,0,3,3,4,0,4,3,3,0,0,3,4,0,4,3,0,0,0,0,0,0,
+0,3,6,3,0,3,6,3,0,3,6,3,0,3,6,3,0,4,6,3,0,3,6,4,0,0,0,0,0,
+0,3,3,4,0,4,3,3,0,4,3,4,0,4,3,4,0,0,3,3,0,3,3,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="output_Red">
+  <object id="48" type="Toggleable" gid="6" x="32" y="48" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="49" type="Toggleable" gid="7" x="96" y="48" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="50" type="Toggleable" gid="8" x="160" y="48" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="51" type="Toggleable" gid="9" x="224" y="48" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="52" type="Toggleable" gid="10" x="288" y="48" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="53" type="Toggleable" gid="11" x="352" y="48" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="54" type="Toggleable" gid="12" x="416" y="48" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="55" type="Toggleable" gid="19" x="416" y="112" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="56" type="Toggleable" gid="18" x="352" y="112" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="57" type="Toggleable" gid="17" x="288" y="112" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="58" type="Toggleable" gid="16" x="224" y="112" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="59" type="Toggleable" gid="15" x="160" y="112" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="60" type="Toggleable" gid="14" x="96" y="112" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="61" type="Toggleable" gid="13" x="32" y="112" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="62" type="Toggleable" gid="20" x="32" y="176" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="63" type="Toggleable" gid="21" x="96" y="176" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="64" type="Toggleable" gid="22" x="160" y="176" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="65" type="Toggleable" gid="23" x="224" y="176" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="66" type="Toggleable" gid="24" x="288" y="176" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="67" type="Toggleable" gid="25" x="352" y="176" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="68" type="Toggleable" gid="26" x="416" y="176" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="69" type="Toggleable" gid="33" x="416" y="240" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="70" type="Toggleable" gid="32" x="352" y="240" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="71" type="Toggleable" gid="31" x="288" y="240" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="72" type="Toggleable" gid="30" x="224" y="240" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="73" type="Toggleable" gid="29" x="160" y="240" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="74" type="Toggleable" gid="28" x="96" y="240" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="75" type="Toggleable" gid="27" x="32" y="240" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="76" type="Toggleable" gid="34" x="32" y="304" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="77" type="Toggleable" gid="35" x="96" y="304" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="78" type="Toggleable" gid="36" x="160" y="304" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="79" type="Toggleable" gid="37" x="224" y="304" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="80" type="Toggleable" gid="38" x="288" y="304" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="81" type="Toggleable" gid="39" x="352" y="304" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="82" type="Toggleable" gid="40" x="416" y="304" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="85" type="Toggleable" gid="46" x="352" y="368" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="86" type="Toggleable" gid="45" x="288" y="368" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="87" type="Toggleable" gid="44" x="224" y="368" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="88" type="Toggleable" gid="43" x="160" y="368" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="89" type="Toggleable" gid="42" x="96" y="368" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="90" type="Toggleable" gid="41" x="32" y="368" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="91" type="Toggleable" gid="48" x="32" y="432" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="92" type="Toggleable" gid="49" x="96" y="432" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="93" type="Toggleable" gid="50" x="160" y="432" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="94" type="Toggleable" gid="51" x="224" y="432" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="95" type="Toggleable" gid="52" x="288" y="432" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="96" type="Toggleable" gid="53" x="352" y="432" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+    <property name="on" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="144" type="Toggleable" gid="55" x="32" y="48" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="145" type="Toggleable" gid="56" x="96" y="48" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="146" type="Toggleable" gid="57" x="160" y="48" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="147" type="Toggleable" gid="58" x="224" y="48" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="148" type="Toggleable" gid="59" x="288" y="48" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="149" type="Toggleable" gid="60" x="352" y="48" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="150" type="Toggleable" gid="61" x="416" y="48" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="151" type="Toggleable" gid="68" x="416" y="112" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="152" type="Toggleable" gid="67" x="352" y="112" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="153" type="Toggleable" gid="66" x="288" y="112" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="154" type="Toggleable" gid="65" x="224" y="112" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="155" type="Toggleable" gid="64" x="160" y="112" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="156" type="Toggleable" gid="63" x="96" y="112" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="157" type="Toggleable" gid="62" x="32" y="112" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="158" type="Toggleable" gid="69" x="32" y="176" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="159" type="Toggleable" gid="70" x="96" y="176" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="160" type="Toggleable" gid="71" x="160" y="176" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="161" type="Toggleable" gid="72" x="224" y="176" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="162" type="Toggleable" gid="73" x="288" y="176" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="163" type="Toggleable" gid="74" x="352" y="176" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="164" type="Toggleable" gid="75" x="416" y="176" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="165" type="Toggleable" gid="82" x="416" y="240" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="166" type="Toggleable" gid="81" x="352" y="240" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="167" type="Toggleable" gid="80" x="288" y="240" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="168" type="Toggleable" gid="79" x="224" y="240" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="169" type="Toggleable" gid="78" x="160" y="240" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="170" type="Toggleable" gid="77" x="96" y="240" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="171" type="Toggleable" gid="76" x="32" y="240" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="172" type="Toggleable" gid="83" x="32" y="304" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="173" type="Toggleable" gid="84" x="96" y="304" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="174" type="Toggleable" gid="85" x="160" y="304" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="175" type="Toggleable" gid="86" x="224" y="304" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="176" type="Toggleable" gid="87" x="288" y="304" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="177" type="Toggleable" gid="88" x="352" y="304" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="178" type="Toggleable" gid="89" x="416" y="304" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="179" type="Toggleable" gid="95" x="352" y="368" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="180" type="Toggleable" gid="94" x="288" y="368" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="181" type="Toggleable" gid="93" x="224" y="368" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="182" type="Toggleable" gid="92" x="160" y="368" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="183" type="Toggleable" gid="91" x="96" y="368" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="184" type="Toggleable" gid="90" x="32" y="368" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="185" type="Toggleable" gid="97" x="32" y="432" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="186" type="Toggleable" gid="98" x="96" y="432" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="187" type="Toggleable" gid="99" x="160" y="432" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="188" type="Toggleable" gid="100" x="224" y="432" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="189" type="Toggleable" gid="101" x="288" y="432" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="190" type="Toggleable" gid="102" x="352" y="432" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

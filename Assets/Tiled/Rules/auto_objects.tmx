@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="11" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="9">
+ <tileset firstgid="1" source="../Tilesets/Objects.tsx"/>
+ <tileset firstgid="26" source=":/automap-tiles.tsx"/>
+ <layer id="1" name="input_Blocking_Objects" width="11" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,
+0,3,0,1,0,2,0,10,0,25,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,3,3,0,2,2,0,15,0,21,0,
+0,3,3,0,2,2,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,22,0,
+0,16,0,17,0,4,0,5,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="10" name="output_Decor" width="11" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,
+0,3,0,0,0,2,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,8,9,0,6,7,0,0,0,21,0,
+0,13,14,0,11,12,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,22,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="7" name="output_Soil">
+  <object id="6" gid="15" x="112" y="64" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup id="3" name="output_WoodenBoxes">
+  <object id="1" gid="16" x="16" y="112" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup id="4" name="output_MetalBoxes">
+  <object id="2" type="MetalBox" gid="17" x="48" y="112" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup id="5" name="output_AiAvoid">
+  <object id="5" type="AIAvoid" gid="1" x="48" y="32" width="16" height="16">
+   <properties>
+    <property name="unity:layer" value="Holes"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="output_Levers">
+  <object id="3" type="Lever" gid="4" x="80" y="112" width="16" height="16"/>
+  <object id="4" type="Lever" gid="5" x="112" y="112" width="16" height="16">
+   <properties>
+    <property name="ID" type="int" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="output_Seedling">
+  <object id="7" type="Seedling" gid="25" x="144" y="32" width="16" height="16"/>
+ </objectgroup>
+</map>

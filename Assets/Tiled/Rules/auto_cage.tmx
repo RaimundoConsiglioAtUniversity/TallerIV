@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="29" height="29" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="97">
+ <properties>
+  <property name="MatchOutsideMap" type="bool" value="true"/>
+  <property name="OverflowBorder" type="bool" value="true"/>
+ </properties>
+ <tileset firstgid="1" source=":/automap-tiles.tsx"/>
+ <tileset firstgid="6" source="../Tilesets/CageTiles.tsx"/>
+ <layer id="2" name="input_Blocking_Cage" width="29" height="29">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,4,0,0,0,4,0,0,0,4,0,0,0,4,0,0,0,4,0,0,0,4,0,0,0,4,0,0,
+0,4,6,4,0,4,6,3,0,3,6,3,0,3,6,4,0,4,6,3,0,3,6,3,0,3,6,4,0,
+0,0,4,0,0,0,4,0,0,0,4,0,0,0,4,0,0,0,3,4,0,4,3,4,0,4,3,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,4,0,0,0,4,0,0,0,4,0,0,0,4,0,0,0,3,4,0,4,3,4,0,4,3,0,0,
+0,4,6,4,0,4,6,3,0,3,6,3,0,3,6,4,0,4,6,3,0,3,6,3,0,3,6,4,0,
+0,0,3,0,0,0,3,3,0,3,3,3,0,3,3,0,0,0,3,4,0,4,3,4,0,4,3,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,3,0,0,0,3,3,0,3,3,3,0,3,3,0,0,0,3,4,0,4,3,4,0,4,3,0,0,
+0,4,6,4,0,4,6,3,0,3,6,3,0,3,6,4,0,4,6,3,0,3,6,3,0,3,6,4,0,
+0,0,3,0,0,0,3,3,0,3,3,3,0,3,3,0,0,0,4,0,0,0,4,0,0,0,4,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,3,0,0,0,3,3,0,3,3,3,0,3,3,0,0,3,3,4,0,4,3,4,0,4,3,3,0,
+0,4,6,4,0,4,6,3,0,3,6,3,0,3,6,4,0,3,6,3,0,3,6,3,0,3,6,3,0,
+0,0,4,0,0,0,4,0,0,0,4,0,0,0,4,0,0,4,3,3,0,3,3,3,0,3,3,4,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,3,3,3,0,3,3,3,0,0,4,0,0,0,4,0,0,4,3,3,0,3,3,3,0,3,3,4,0,
+0,3,6,3,0,3,6,3,0,3,6,3,0,3,6,3,0,3,6,3,0,3,6,3,0,3,6,3,0,
+0,3,3,4,0,4,3,3,0,3,3,4,0,4,3,3,0,4,3,3,0,4,3,4,0,3,3,4,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,3,3,4,0,4,3,3,0,3,3,4,0,4,3,3,0,0,3,3,0,3,3,0,0,0,0,0,0,
+0,3,6,3,0,3,6,3,0,3,6,3,0,3,6,3,0,4,6,3,0,3,6,4,0,0,0,0,0,
+0,3,3,3,0,3,3,3,0,0,4,0,0,0,4,0,0,0,3,4,0,4,3,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,4,3,4,0,4,3,4,0,3,3,4,0,4,3,3,0,0,3,4,0,4,3,0,0,0,0,0,0,
+0,3,6,3,0,3,6,3,0,3,6,3,0,3,6,3,0,4,6,3,0,3,6,4,0,0,0,0,0,
+0,3,3,4,0,4,3,3,0,4,3,4,0,4,3,4,0,0,3,3,0,3,3,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="output_Cage">
+  <object id="48" type="Teleportable" gid="6" x="32" y="48" width="16" height="16"/>
+  <object id="49" type="Teleportable" gid="7" x="96" y="48" width="16" height="16"/>
+  <object id="50" type="Teleportable" gid="8" x="160" y="48" width="16" height="16"/>
+  <object id="51" type="Teleportable" gid="9" x="224" y="48" width="16" height="16"/>
+  <object id="52" type="Teleportable" gid="10" x="288" y="48" width="16" height="16"/>
+  <object id="53" type="Teleportable" gid="11" x="352" y="48" width="16" height="16"/>
+  <object id="54" type="Teleportable" gid="12" x="416" y="48" width="16" height="16"/>
+  <object id="55" type="Teleportable" gid="19" x="416" y="112" width="16" height="16"/>
+  <object id="56" type="Teleportable" gid="18" x="352" y="112" width="16" height="16"/>
+  <object id="57" type="Teleportable" gid="17" x="288" y="112" width="16" height="16"/>
+  <object id="58" type="Teleportable" gid="16" x="224" y="112" width="16" height="16"/>
+  <object id="59" type="Teleportable" gid="15" x="160" y="112" width="16" height="16"/>
+  <object id="60" type="Teleportable" gid="14" x="96" y="112" width="16" height="16"/>
+  <object id="61" type="Teleportable" gid="13" x="32" y="112" width="16" height="16"/>
+  <object id="62" type="Teleportable" gid="20" x="32" y="176" width="16" height="16"/>
+  <object id="63" type="Teleportable" gid="21" x="96" y="176" width="16" height="16"/>
+  <object id="64" type="Teleportable" gid="22" x="160" y="176" width="16" height="16"/>
+  <object id="65" type="Teleportable" gid="23" x="224" y="176" width="16" height="16"/>
+  <object id="66" type="Teleportable" gid="24" x="288" y="176" width="16" height="16"/>
+  <object id="67" type="Teleportable" gid="25" x="352" y="176" width="16" height="16"/>
+  <object id="68" type="Teleportable" gid="26" x="416" y="176" width="16" height="16"/>
+  <object id="69" type="Teleportable" gid="33" x="416" y="240" width="16" height="16"/>
+  <object id="70" type="Teleportable" gid="32" x="352" y="240" width="16" height="16"/>
+  <object id="71" type="Teleportable" gid="31" x="288" y="240" width="16" height="16"/>
+  <object id="72" type="Teleportable" gid="30" x="224" y="240" width="16" height="16"/>
+  <object id="73" type="Teleportable" gid="29" x="160" y="240" width="16" height="16"/>
+  <object id="74" type="Teleportable" gid="28" x="96" y="240" width="16" height="16"/>
+  <object id="75" type="Teleportable" gid="27" x="32" y="240" width="16" height="16"/>
+  <object id="76" type="Teleportable" gid="34" x="32" y="304" width="16" height="16"/>
+  <object id="77" type="Teleportable" gid="35" x="96" y="304" width="16" height="16"/>
+  <object id="78" type="Teleportable" gid="36" x="160" y="304" width="16" height="16"/>
+  <object id="79" type="Teleportable" gid="37" x="224" y="304" width="16" height="16"/>
+  <object id="80" type="Teleportable" gid="38" x="288" y="304" width="16" height="16"/>
+  <object id="81" type="Teleportable" gid="39" x="352" y="304" width="16" height="16"/>
+  <object id="82" type="Teleportable" gid="40" x="416" y="304" width="16" height="16"/>
+  <object id="85" type="Teleportable" gid="46" x="352" y="368" width="16" height="16"/>
+  <object id="86" type="Teleportable" gid="45" x="288" y="368" width="16" height="16"/>
+  <object id="87" type="Teleportable" gid="44" x="224" y="368" width="16" height="16"/>
+  <object id="88" type="Teleportable" gid="43" x="160" y="368" width="16" height="16"/>
+  <object id="89" type="Teleportable" gid="42" x="96" y="368" width="16" height="16"/>
+  <object id="90" type="Teleportable" gid="41" x="32" y="368" width="16" height="16"/>
+  <object id="91" type="Teleportable" gid="48" x="32" y="432" width="16" height="16"/>
+  <object id="92" type="Teleportable" gid="49" x="96" y="432" width="16" height="16"/>
+  <object id="93" type="Teleportable" gid="50" x="160" y="432" width="16" height="16"/>
+  <object id="94" type="Teleportable" gid="51" x="224" y="432" width="16" height="16"/>
+  <object id="95" type="Teleportable" gid="52" x="288" y="432" width="16" height="16"/>
+  <object id="96" type="Teleportable" gid="53" x="352" y="432" width="16" height="16"/>
+ </objectgroup>
+</map>

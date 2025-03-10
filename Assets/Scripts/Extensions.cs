@@ -17,6 +17,38 @@ public static class Extensions
         newLerpVal = lerpVal;
     }
 
+    public static Vector3 ArrayProduct(this Vector3 a, Vector3 b)
+    {
+        float width = a.x * b.x;
+        float height = a.y * b.y;
+        float depth = a.z * b.z;
+
+        Vector3 product = new(width, height, depth);
+
+        return product;
+    }
+
+    public static Vector3 ArrayProduct(this Vector3 a, Vector2 b)
+    {
+        float width = a.x * b.x;
+        float height = a.y * b.y;
+        float depth = a.z;
+
+        Vector3 product = new(width, height, depth);
+
+        return product;
+    }
+
+    public static Vector2 ArrayProduct(this Vector2 a, Vector2 b)
+    {
+        float width = a.x * b.x;
+        float height = a.y * b.y;
+
+        Vector2 product = new(width, height);
+
+        return product;
+    }
+
     public static void ResetOnChange(this float f, float a, float b, float def = 0f)
     {
         if(a != b)
