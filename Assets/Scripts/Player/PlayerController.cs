@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public BaseInput inputController;
     public PonyType tribe;
     public Rigidbody2D rb;
+    public Collider2D col;
     public GroundCheck groundC;
 
 
