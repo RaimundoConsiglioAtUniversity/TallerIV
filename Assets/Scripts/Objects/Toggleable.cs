@@ -1,40 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Toggleable : InteractiveObject
 {
-    [SerializeField] SpriteRenderer sprite;
-    [SerializeField] Collider2D col;
+    public GameObject onState;
+    public GameObject offState;
 
     public bool isActive;
+    public void DefaultOn(bool isOn) => isActive = isOn;
 
-    public void OnEnable()
-    {
-        InteractableToggle.ToggleLinkedObjects += Toggle;
-    }
+    public void OnEnable() => InteractableToggle.ToggleLinkedObjects += Toggle;
+    public void OnDisable() => InteractableToggle.ToggleLinkedObjects -= Toggle;
 
     public void Toggle(int ID)
     {
         if (ID == this.ID)
             InteractedWith();
-        
     }
-    
+
     public override void InteractedWith()
     {
         isActive = !isActive;
-        
-        col.enabled = isActive;
-        sprite.enabled = isActive;
+        SwitchStates();
     }
 
-    public override void Awake()
-    {
-        col = GetComponentInChildren<Collider2D>();
-        sprite = GetComponentInChildren<SpriteRenderer>();
+    public override void Awake() => SwitchStates();
 
-        col.enabled = isActive;
-        sprite.enabled = isActive;
+    public void SwitchStates()
+    {
+        onState.SetActive(isActive);
+        offState.SetActive(!isActive);
     }
 }

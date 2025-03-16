@@ -1,24 +1,27 @@
 using UnityEngine;
 using Cinemachine;
+
 public class PlayerCam : MonoBehaviour
 {
-    CinemachineVirtualCamera vCam;
-    bool follow = false;
+    private CinemachineVirtualCamera vCam;
 
-    void Start()
+    private void SetVCamReference()
     {
+        if (vCam != null)
+            return;
+        
         vCam = GetComponentInChildren<CinemachineVirtualCamera>();
     }
 
-    void Update()
+    public void Enable()
     {
-        if (!follow)
-            return;
-        
-        vCam.Follow = PlayerInput.Instance.pony.transform;
+        SetVCamReference();
+        vCam.enabled = true;
     }
-
-    public void doesFollow(bool value) => follow = value;
-    public void Enable() => vCam.enabled = true;
-    public void Disable() => vCam.enabled = false;
+    
+    public void Disable()
+    {
+        SetVCamReference();
+        vCam.enabled = false;
+    }
 }

@@ -57,12 +57,18 @@ MonoBehaviour:
   - m_Name: AIAvoid
     m_Color: {r: 1, g: 0, b: 0, a: 1}
     m_CustomProperties: []
+  - m_Name: InteractiveObject
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties:
+    - m_Name: GroupID
+      m_Type: int
+      m_Value: 0
   - m_Name: Lever
     m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
     m_CustomProperties:
-    - m_Name: ID
-      m_Type: int
-      m_Value: 0
+    - m_Name: Interactive
+      m_Type: class
+      m_Value: 
   - m_Name: MetalBox
     m_Color: {r: 0.9882353, g: 0.91764706, b: 1, a: 1}
     m_CustomProperties: []
@@ -75,12 +81,21 @@ MonoBehaviour:
     - m_Name: PathPoint
       m_Type: int
       m_Value: 0
+  - m_Name: RedPost
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties:
+    - m_Name: Toggle
+      m_Type: class
+      m_Value: 
   - m_Name: Screen
     m_Color: {r: 0, g: 0.33333334, b: 1, a: 1}
     m_CustomProperties:
     - m_Name: Height
       m_Type: int
       m_Value: 180
+    - m_Name: IsStartingScreen
+      m_Type: bool
+      m_Value: false
     - m_Name: Width
       m_Type: int
       m_Value: 320
@@ -105,12 +120,12 @@ MonoBehaviour:
   - m_Name: Toggleable
     m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
     m_CustomProperties:
-    - m_Name: ID
-      m_Type: int
-      m_Value: 0
-    - m_Name: on
+    - m_Name: DefaultOn
       m_Type: bool
       m_Value: false
+    - m_Name: Interactive
+      m_Type: class
+      m_Value: 
   - m_Name: WoodenBox
     m_Color: {r: 0.5254902, g: 0.33333334, b: 0.20392157, a: 1}
     m_CustomProperties: []
@@ -126,7 +141,7 @@ MonoBehaviour:
   - m_TypeName: Lever
     m_Prefab: {fileID: 1724122362409390793, guid: 963167fe17b3c7a459b55e769b2e0326, type: 3}
   - m_TypeName: MetalBox
-    m_Prefab: {fileID: 0}
+    m_Prefab: {fileID: 3818888220949203678, guid: 993620d9a647f7a4ba10edc7dfd40337, type: 3}
   - m_TypeName: MovementTarget
     m_Prefab: {fileID: 0}
   - m_TypeName: Seedling
@@ -136,4 +151,8 @@ MonoBehaviour:
   - m_TypeName: Soil
     m_Prefab: {fileID: 0}
   - m_TypeName: Toggleable
+    m_Prefab: {fileID: 0}
+  - m_TypeName: RedPost
+    m_Prefab: {fileID: 5886396888621100430, guid: 0d2c01e20f9ac1b4e9c0d5ecbfa261a4, type: 3}
+  - m_TypeName: InteractiveObject
     m_Prefab: {fileID: 0}

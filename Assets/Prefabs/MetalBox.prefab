@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2001055559155108849}
   - component: {fileID: 1750213383926454811}
   - component: {fileID: 7785871418142887019}
-  - component: {fileID: 241770975211990962}
+  - component: {fileID: 926843491514892736}
   m_Layer: 9
-  m_Name: WoodenBox
+  m_Name: MetalBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: -1151602829
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -753840005, guid: 94f65125736d9e74baa58c4422e4a644, type: 3}
+  m_Sprite: {fileID: 1403152736, guid: e08327eff30fad649a6163c31f26c760, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -144,9 +144,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 10
+  m_LinearDrag: 0.25
+  m_AngularDrag: 1
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -157,9 +157,9 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 7
---- !u!114 &241770975211990962
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!114 &926843491514892736
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,7 +168,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3818888220949203678}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07194440bda0dcb42b2eab5dc3fcfc90, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ea8425e1436242498d280a8b78e3b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: -1
+  damping: 1
+  frequency: 1
+  joint: {fileID: 0}
+  layer:
+    serializedVersion: 2
+    m_Bits: 0

@@ -3,15 +3,16 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "",
+    "activeFile": "Maps/TestMap (2).tmx",
     "automapping.whileDrawing": false,
     "expandedProjectPaths": [
-        ".",
-        "Maps",
         "classes",
-        "Rules",
+        "Objects",
         "Tilesets",
-        "rules"
+        "Rules",
+        ".",
+        "rules",
+        "Maps"
     ],
     "fileStates": {
         ":/automap-tiles.tsx": {
@@ -47,24 +48,26 @@
                 37
             ],
             "expandedObjectLayers": [
-                4
+                36,
+                4,
+                115
             ],
-            "scale": 1,
-            "selectedLayer": 22,
+            "scale": 2,
+            "selectedLayer": 12,
             "viewCenter": {
-                "x": 215,
-                "y": 232
+                "x": 543,
+                "y": 186.75
             }
         },
         "Maps/TestMap.tmx": {
             "expandedObjectLayers": [
                 4
             ],
-            "scale": 3,
+            "scale": 2,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 605.3333333333333,
-                "y": 212.33333333333331
+                "x": 881.5,
+                "y": 266.25
             }
         },
         "Maps/Tilesets/generic_platformer_tiles_1_CC0_by_Surt_OpenGameArt.tsx": {
@@ -235,6 +238,7 @@
             "scaleInEditor": 1
         },
         "Tilesets/LeafTiles.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 5.5
         },
         "Tilesets/MetalTiles.tsx": {
@@ -274,6 +278,7 @@
             "scaleInEditor": 2
         },
         "Tilesets/TreeTiles.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 3
         },
         "Tilesets/generic_platformer_tiles_1_CC0_by_Surt_OpenGameArt.tsx": {
@@ -292,16 +297,18 @@
     "last.externalTilesetPath": "D:/Raimundo Consiglio/My Projects/TallerIV/Assets/Tiled/Tilesets",
     "last.imagePath": "D:/Raimundo Consiglio/My Projects/TallerIV/Assets/Sprites/tilesets",
     "last.objectTypesPath": "D:/Raimundo Consiglio/My Projects/TallerIV/Assets/Tiled/Objects/propertytypes.xml",
-    "map.height": 24,
+    "map.height": 8,
     "map.lastUsedFormat": "tmx",
     "map.tileHeight": 16,
     "map.tileWidth": 16,
-    "map.width": 24,
+    "map.width": 1,
     "openFiles": [
+        "Maps/TestMap (2).tmx"
     ],
     "project": "TempTileset.tiled-project",
-    "property.type": "object",
+    "property.type": "int",
     "recentFiles": [
+        "Maps/TestMap (2).tmx",
         "D:/Raimundo Consiglio/Downloads/MovingPlatformMap.tmx",
         "Tilesets/TreeTiles.tsx",
         "Tilesets/LeafTiles.tsx",
@@ -312,8 +319,7 @@
         "Rules/auto_bounds.tmx",
         "Rules/auto_grass.tmx",
         "Rules/auto_pillars.tmx",
-        "Rules/auto_proto.tmx",
-        "Rules/auto_objects.tmx"
+        "Rules/auto_proto.tmx"
     ],
     "tileset.lastUsedFilter": "Archivos de conjuntos de patrones Tiled (*.tsx *.xml)",
     "tileset.lastUsedFormat": "tsx",

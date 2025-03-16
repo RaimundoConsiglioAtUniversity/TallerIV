@@ -24,6 +24,7 @@ public class PlayerInput : BaseInput
     private static PlayerInput instance;
 
     public bool StayToggle { get; private set; }= false;
+    public Collider2D screenTrigger;
 
     void Awake ()
     {
@@ -78,6 +79,7 @@ public class PlayerInput : BaseInput
                 pony.inputAI.enabled = false;
                 pony.logicAI.enabled = false;
                 this.pony = pony;
+                transform.SetParent(pony.transform, false);
             }
 
             else

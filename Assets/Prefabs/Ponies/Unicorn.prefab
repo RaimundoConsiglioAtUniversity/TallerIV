@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 909510397
-  m_SortingLayer: -1
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 808887270, guid: 9c3b50bb9545b294db139e931b96e9f3, type: 3}
   m_Color: {r: 0.9372549, g: 0.77254903, b: 0.88235295, a: 1}
@@ -164,6 +164,7 @@ MonoBehaviour:
   inputController: {fileID: 0}
   tribe: {fileID: 0}
   rb: {fileID: 0}
+  col: {fileID: 5985719951809582351}
   groundC: {fileID: 0}
   hInput:
     _value: 0
@@ -248,7 +249,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 909510397
-  m_SortingLayer: -1
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 1136992312, guid: 762f01e8b9b435740afca6c16c3b1971, type: 3}
   m_Color: {r: 0.9372549, g: 0.77254903, b: 0.88235295, a: 1}
@@ -310,6 +311,9 @@ MonoBehaviour:
   pony: {fileID: 0}
   heldObject: {fileID: 0}
   worldPos: {x: 0, y: 0, z: 0}
+  tkLayers:
+    serializedVersion: 2
+    m_Bits: 521
   m_DrawDragLine: 1
   m_Color: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &5815846576887365852
@@ -383,7 +387,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 909510397
-  m_SortingLayer: -1
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: -1695611078, guid: 398e52cd415f9d24da0805e35688dcd7, type: 3}
   m_Color: {r: 0.9339623, g: 0.77095944, b: 0.8820977, a: 1}
@@ -456,5 +460,10 @@ PrefabInstance:
 --- !u!4 &1731106181001975608 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1727556223860828509, guid: 6a7cc275652b12a4f9b788a482583cd7, type: 3}
+  m_PrefabInstance: {fileID: 1152812506249854565}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &5985719951809582351 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6696307600779275114, guid: 6a7cc275652b12a4f9b788a482583cd7, type: 3}
   m_PrefabInstance: {fileID: 1152812506249854565}
   m_PrefabAsset: {fileID: 0}

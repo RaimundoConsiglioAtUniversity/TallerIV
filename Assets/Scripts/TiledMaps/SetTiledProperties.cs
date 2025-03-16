@@ -26,10 +26,8 @@ public class SetTiledProperties : MonoBehaviour
     {
         customProperties = FindObjectsOfType<SuperCustomProperties>();
         int objectIdx = 0;
-        int draggableIdx = 0;
         int buttonIdx = 0;
         int toggleIdx = 0;
-        int stompIdx = 0;
         int tpIdx = 0;
         int elecIdx = 0;
         int plantIdx = 0;
@@ -37,12 +35,10 @@ public class SetTiledProperties : MonoBehaviour
         foreach (var customProperty in customProperties)
         {
             objectIdx++;
-            bool isDraggable   = customProperty.TryGetCustomProperty("Draggable", out CustomProperty _);
-            bool startAwake      = customProperty.TryGetCustomProperty("IsActive", out CustomProperty StartAwake);
+            bool startAwake    = customProperty.TryGetCustomProperty("IsActive", out CustomProperty StartAwake);
             bool canToggleWall = customProperty.TryGetCustomProperty("ToggleableWall", out CustomProperty ToggleableWall);
             bool hasWallNumber = customProperty.TryGetCustomProperty("WallNumber", out CustomProperty WallNumber);
             bool isButton      = customProperty.TryGetCustomProperty("ButtonWall", out CustomProperty ButtonWall);
-            bool isBreakable   = customProperty.TryGetCustomProperty("Breakable", out CustomProperty Breakable);
             bool isElectric    = customProperty.TryGetCustomProperty("Electric", out CustomProperty Electric);
             bool canTpThrough  = customProperty.TryGetCustomProperty("CanTeleportThrough", out CustomProperty CanTpThrough);
             bool isGrowable    = customProperty.TryGetCustomProperty("GrowPlant", out CustomProperty GrowPlant);
@@ -53,24 +49,6 @@ public class SetTiledProperties : MonoBehaviour
             Rigidbody2D rb = myObject.GetComponentInChildren<Rigidbody2D>();
             Collider2D collider = myObject.GetComponentInChildren<Collider2D>();
 
-
-            // Draggable
-            if (isDraggable)
-            {
-                draggableIdx++;
-                myObject.name = $"DraggableObject_{draggableIdx}";
-
-                myObject.EnsureComponent(ref collider);
-                myObject.EnsureComponent(ref rb);
-                
-                rb.mass = 10;
-                rb.drag = 0.25f;
-                rb.angularDrag = 1f;
-                rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
-                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-                
-                Draggable draggable = myObject.AddComponent<Draggable>();
-            }
 
             int wallID = hasWallNumber ? WallNumber.GetValueAsInt() : 0;
 
@@ -111,20 +89,6 @@ public class SetTiledProperties : MonoBehaviour
 
                 wall.ID = wallID;
                 wall.isActive = isActive;
-            }
-
-            if (isBreakable)
-            {
-                stompIdx++;
-                myObject.name = $"StompObject_{stompIdx}";
-
-                myObject.EnsureComponent(ref collider);
-                myObject.EnsureComponent(ref rb);
-                
-                rb.isKinematic = false;
-                rb.constraints = RigidbodyConstraints2D.FreezeAll;
-
-                Stompable GroundPound = myObject.GetOrAddComponent<Stompable>();
             }
 
             if (canTpThrough)

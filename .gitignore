@@ -73,3 +73,5 @@ crashlytics-build.properties
 Packages/packages-lock.json
 ProjectSettings/ProjectVersion.txt
 Assets/SuperTiled2Unity/Editor/Config/ST2U Settings.asset
+/WinBuild
+/WebGL Build

@@ -26,10 +26,27 @@
         {
             "color": "#ffa0a0a4",
             "drawFill": true,
+            "id": 16,
+            "members": [
+                {
+                    "name": "GroupID",
+                    "type": "int",
+                    "value": 0
+                }
+            ],
+            "name": "InteractiveObject",
+            "type": "class",
+            "useAs": [
+                "property"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
             "id": 8,
             "members": [
                 {
-                    "name": "ID",
+                    "name": "GroupID",
                     "type": "int",
                     "value": 0
                 }
@@ -78,6 +95,36 @@
             ]
         },
         {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 15,
+            "members": [
+                {
+                    "name": "DefaultOn",
+                    "type": "bool",
+                    "value": false
+                },
+                {
+                    "name": "GroupID",
+                    "type": "int",
+                    "value": 0
+                }
+            ],
+            "name": "RedPost",
+            "type": "class",
+            "useAs": [
+                "property",
+                "map",
+                "layer",
+                "object",
+                "tile",
+                "tileset",
+                "wangcolor",
+                "wangset",
+                "project"
+            ]
+        },
+        {
             "color": "#ff0055ff",
             "drawFill": true,
             "id": 2,
@@ -86,6 +133,11 @@
                     "name": "Height",
                     "type": "int",
                     "value": 180
+                },
+                {
+                    "name": "IsStartingScreen",
+                    "type": "bool",
+                    "value": false
                 },
                 {
                     "name": "Width",
@@ -176,19 +228,20 @@
             "id": 9,
             "members": [
                 {
-                    "name": "ID",
-                    "type": "int",
-                    "value": 0
-                },
-                {
-                    "name": "on",
+                    "name": "DefaultOn",
                     "type": "bool",
                     "value": false
+                },
+                {
+                    "name": "GroupID",
+                    "type": "int",
+                    "value": 0
                 }
             ],
             "name": "Toggleable",
             "type": "class",
             "useAs": [
+                "property",
                 "object",
                 "project"
             ]

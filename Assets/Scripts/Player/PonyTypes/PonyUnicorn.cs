@@ -1,10 +1,10 @@
-using System.Linq;
 using UnityEngine;
 
 public class PonyUnicorn : PonyType
 {
     public Draggable heldObject = null;
     public Vector3 worldPos;
+    public LayerMask tkLayers;
 
 
 	public bool m_DrawDragLine = true;
@@ -35,14 +35,14 @@ public class PonyUnicorn : PonyType
         // print("Entered Select Object");
         // Fetch the first collider.
         // NOTE: We could do this for multiple colliders.
-        Collider2D collider = Physics2D.OverlapPoint(worldPos);
+        Collider2D collider = Physics2D.OverlapPoint(worldPos, tkLayers);
         if (!collider)
         {    
             // print("No Collider Found!");
             return;
         }
 
-        Draggable newHeldObject = collider.gameObject.GetComponentInParent<Draggable>();
+        Draggable newHeldObject = collider.gameObject.GetComponent<Draggable>();
 
         if (!newHeldObject)
         {    

@@ -5,19 +5,20 @@ public class InteractableToggle : InteractiveObject
 {
     public static Action<int> ToggleLinkedObjects;
 
-    void OnTriggerEnter2D(Collider2D other)
+    protected virtual void OnTriggerEnter2D(Collider2D other)
+    {
+        if (ToggleTrigger(other))
+            InteractedWith();
+    }
+
+    protected virtual bool ToggleTrigger(Collider2D trigger)
     {
         PonyType pony = PlayerInput.Instance.pony.tribe;
-        
-        if (other == pony.pony.groundC.groundCheck)
-            InteractedWith();
-        
+        return trigger == pony.pony.groundC.groundCheck;
     }
 
     public override void InteractedWith()
     {
         ToggleLinkedObjects(ID);
     }
-
-
 }

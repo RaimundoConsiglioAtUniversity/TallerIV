@@ -80,6 +80,7 @@ MonoBehaviour:
   inputController: {fileID: 0}
   tribe: {fileID: 0}
   rb: {fileID: 0}
+  col: {fileID: 3256521811541372223}
   groundC: {fileID: 0}
   hInput:
     _value: 0
@@ -162,7 +163,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 909510397
-  m_SortingLayer: -1
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 808887270, guid: 9c3b50bb9545b294db139e931b96e9f3, type: 3}
   m_Color: {r: 0.8207547, g: 0.44931853, b: 0.2206746, a: 1}
@@ -247,7 +248,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 909510397
-  m_SortingLayer: -1
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 1136992312, guid: 762f01e8b9b435740afca6c16c3b1971, type: 3}
   m_Color: {r: 0.8235294, g: 0.4509804, b: 0.22352941, a: 1}
@@ -414,6 +415,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a7cc275652b12a4f9b788a482583cd7, type: 3}
+--- !u!61 &3256521811541372223 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6696307600779275114, guid: 6a7cc275652b12a4f9b788a482583cd7, type: 3}
+  m_PrefabInstance: {fileID: 8205397020619195989}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7360832488827203336 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1727556223860828509, guid: 6a7cc275652b12a4f9b788a482583cd7, type: 3}

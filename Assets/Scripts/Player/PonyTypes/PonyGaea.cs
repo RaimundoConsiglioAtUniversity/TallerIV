@@ -10,7 +10,7 @@ public class PonyGaea : PonyType
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        print($"OnTriggerEnter: {other.name}");
+        // print($"OnTriggerEnter: {other.name}");
 
         if (other.GetComponentInParent<GrowPlant>() != null)
         {
@@ -21,7 +21,7 @@ public class PonyGaea : PonyType
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        print($"OnTriggerExit: {other.name}");
+        // print($"OnTriggerExit: {other.name}");
         if (other.GetComponentInParent<GrowPlant>() != null)
         {
             print($"Plant Away");
