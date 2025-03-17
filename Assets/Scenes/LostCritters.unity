@@ -1494,6 +1494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectID: 2
+  linkedObjects: []
 --- !u!50 &828105172
 Rigidbody2D:
   serializedVersion: 4
@@ -1574,6 +1575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectID: 3
+  linkedObjects: []
   triggerArea: {fileID: 871740681}
 --- !u!50 &871740683
 Rigidbody2D:
@@ -3571,6 +3573,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 1759525251}
   - {fileID: 876265419}
+  interactives: []
   objectPrefab: {fileID: 1442406967}
 --- !u!4 &1760153053
 Transform:
@@ -4235,43 +4238,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44230651c92a3d84698fd9cb9582f2f9, type: 3}
---- !u!1001 &7313829832942987709
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5886396888621100430, guid: 0d2c01e20f9ac1b4e9c0d5ecbfa261a4, type: 3}
-      propertyPath: m_Name
-      value: RedPost
-      objectReference: {fileID: 0}
-    - target: {fileID: 5886396888621100430, guid: 0d2c01e20f9ac1b4e9c0d5ecbfa261a4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8923738604857149309, guid: 0d2c01e20f9ac1b4e9c0d5ecbfa261a4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8923738604857149309, guid: 0d2c01e20f9ac1b4e9c0d5ecbfa261a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8923738604857149309, guid: 0d2c01e20f9ac1b4e9c0d5ecbfa261a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8923738604857149309, guid: 0d2c01e20f9ac1b4e9c0d5ecbfa261a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0d2c01e20f9ac1b4e9c0d5ecbfa261a4, type: 3}
 --- !u!1001 &7653091759559882214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4416,4 +4382,3 @@ SceneRoots:
   - {fileID: 1253984421}
   - {fileID: 1760153053}
   - {fileID: 348913628}
-  - {fileID: 7313829832942987709}

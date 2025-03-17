@@ -26,32 +26,20 @@
         {
             "color": "#ffa0a0a4",
             "drawFill": true,
-            "id": 16,
-            "members": [
-                {
-                    "name": "GroupID",
-                    "type": "int",
-                    "value": 0
-                }
-            ],
-            "name": "InteractiveObject",
-            "type": "class",
-            "useAs": [
-                "property"
-            ]
-        },
-        {
-            "color": "#ffa0a0a4",
-            "drawFill": true,
             "id": 8,
             "members": [
                 {
+                    "name": "Color",
+                    "type": "color",
+                    "value": ""
+                },
+                {
                     "name": "GroupID",
                     "type": "int",
                     "value": 0
                 }
             ],
-            "name": "Lever",
+            "name": "LeverTrigger",
             "type": "class",
             "useAs": [
                 "object",
@@ -97,30 +85,13 @@
         {
             "color": "#ffa0a0a4",
             "drawFill": true,
-            "id": 15,
+            "id": 4,
             "members": [
-                {
-                    "name": "DefaultOn",
-                    "type": "bool",
-                    "value": false
-                },
-                {
-                    "name": "GroupID",
-                    "type": "int",
-                    "value": 0
-                }
             ],
-            "name": "RedPost",
+            "name": "PermeableTile",
             "type": "class",
             "useAs": [
-                "property",
-                "map",
-                "layer",
                 "object",
-                "tile",
-                "tileset",
-                "wangcolor",
-                "wangset",
                 "project"
             ]
         },
@@ -155,7 +126,7 @@
         {
             "color": "#ffa0a0a4",
             "drawFill": true,
-            "id": 10,
+            "id": 11,
             "members": [
                 {
                     "name": "ID",
@@ -173,7 +144,7 @@
         {
             "color": "#ffa0a0a4",
             "drawFill": true,
-            "id": 11,
+            "id": 10,
             "members": [
                 {
                     "name": "ID",
@@ -181,10 +152,9 @@
                     "value": 0
                 }
             ],
-            "name": "SeedlingTarget",
+            "name": "SeedlingTrigger",
             "type": "class",
             "useAs": [
-                "property",
                 "object",
                 "project"
             ]
@@ -198,51 +168,8 @@
             "name": "Soil",
             "type": "class",
             "useAs": [
-                "property",
-                "map",
-                "layer",
                 "object",
                 "tile",
-                "tileset",
-                "wangcolor",
-                "wangset",
-                "project"
-            ]
-        },
-        {
-            "color": "#ffa0a0a4",
-            "drawFill": true,
-            "id": 4,
-            "members": [
-            ],
-            "name": "Teleportable",
-            "type": "class",
-            "useAs": [
-                "object",
-                "project"
-            ]
-        },
-        {
-            "color": "#ffa0a0a4",
-            "drawFill": true,
-            "id": 9,
-            "members": [
-                {
-                    "name": "DefaultOn",
-                    "type": "bool",
-                    "value": false
-                },
-                {
-                    "name": "GroupID",
-                    "type": "int",
-                    "value": 0
-                }
-            ],
-            "name": "Toggleable",
-            "type": "class",
-            "useAs": [
-                "property",
-                "object",
                 "project"
             ]
         },
@@ -256,6 +183,19 @@
             "type": "class",
             "useAs": [
                 "object",
+                "project"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 19,
+            "members": [
+            ],
+            "name": "Toggleable",
+            "type": "class",
+            "useAs": [
+                "layer",
                 "project"
             ]
         }

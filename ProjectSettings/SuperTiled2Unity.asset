@@ -57,18 +57,15 @@ MonoBehaviour:
   - m_Name: AIAvoid
     m_Color: {r: 1, g: 0, b: 0, a: 1}
     m_CustomProperties: []
-  - m_Name: InteractiveObject
+  - m_Name: LeverTrigger
     m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
     m_CustomProperties:
+    - m_Name: Color
+      m_Type: color
+      m_Value: 
     - m_Name: GroupID
       m_Type: int
       m_Value: 0
-  - m_Name: Lever
-    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
-    m_CustomProperties:
-    - m_Name: Interactive
-      m_Type: class
-      m_Value: 
   - m_Name: MetalBox
     m_Color: {r: 0.9882353, g: 0.91764706, b: 1, a: 1}
     m_CustomProperties: []
@@ -81,12 +78,9 @@ MonoBehaviour:
     - m_Name: PathPoint
       m_Type: int
       m_Value: 0
-  - m_Name: RedPost
+  - m_Name: PermeableTile
     m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
-    m_CustomProperties:
-    - m_Name: Toggle
-      m_Type: class
-      m_Value: 
+    m_CustomProperties: []
   - m_Name: Screen
     m_Color: {r: 0, g: 0.33333334, b: 1, a: 1}
     m_CustomProperties:
@@ -105,7 +99,7 @@ MonoBehaviour:
     - m_Name: ID
       m_Type: int
       m_Value: 0
-  - m_Name: SeedlingTarget
+  - m_Name: SeedlingTrigger
     m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
     m_CustomProperties:
     - m_Name: ID
@@ -114,18 +108,9 @@ MonoBehaviour:
   - m_Name: Soil
     m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
     m_CustomProperties: []
-  - m_Name: Teleportable
-    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
-    m_CustomProperties: []
   - m_Name: Toggleable
     m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
-    m_CustomProperties:
-    - m_Name: DefaultOn
-      m_Type: bool
-      m_Value: false
-    - m_Name: Interactive
-      m_Type: class
-      m_Value: 
+    m_CustomProperties: []
   - m_Name: WoodenBox
     m_Color: {r: 0.5254902, g: 0.33333334, b: 0.20392157, a: 1}
     m_CustomProperties: []
@@ -155,4 +140,12 @@ MonoBehaviour:
   - m_TypeName: RedPost
     m_Prefab: {fileID: 5886396888621100430, guid: 0d2c01e20f9ac1b4e9c0d5ecbfa261a4, type: 3}
   - m_TypeName: InteractiveObject
+    m_Prefab: {fileID: 0}
+  - m_TypeName: LeverTrigger
+    m_Prefab: {fileID: 0}
+  - m_TypeName: PermeableTile
+    m_Prefab: {fileID: 0}
+  - m_TypeName: SeedlingTrigger
+    m_Prefab: {fileID: 0}
+  - m_TypeName: ToggleableLayer
     m_Prefab: {fileID: 0}

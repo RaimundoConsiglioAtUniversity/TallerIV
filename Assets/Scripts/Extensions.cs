@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public static class Extensions
@@ -76,6 +77,18 @@ public static class Extensions
         return list.ToArray();
     }
 
+    public static T[] AddUniqueItems<T>(this T[] originalArray, T newItem)
+    {
+        // Convert array to list for flexibility
+        List<T> list = new List<T>(originalArray);
+
+        if (!list.Contains(newItem))
+            list.Add(newItem);
+
+        // Convert the list back to an array and return
+        return list.ToArray();
+    }
+
     public static T GetOrAddComponent<T>(this GameObject gameObject) where T : Component
     {
         T component = gameObject.GetComponent<T>();
@@ -92,5 +105,21 @@ public static class Extensions
             component = gameObject.AddComponent<T>();
         
         return component;
+    }
+
+    public static GameObject[] SearchChildrenByName(this Transform parent, string searchString)
+    {
+        GameObject[] children = {};
+
+        foreach (Transform child in parent)
+        {
+            if (child.name.Contains(searchString))
+                children.AddUniqueItems(child.gameObject);
+
+            // Recursively search in the child's children
+            children.AddUniqueItems(child.SearchChildrenByName(searchString));
+        }
+
+        return children;
     }
 }

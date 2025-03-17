@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objecttypes>
  <objecttype name="AIAvoid" color="#ff0000"/>
- <objecttype name="InteractiveObject" color="#a0a0a4">
-  <property name="GroupID" type="int" default="0"/>
- </objecttype>
- <objecttype name="Lever" color="#a0a0a4">
+ <objecttype name="LeverTrigger" color="#a0a0a4">
+  <property name="Color" type="color" default=""/>
   <property name="GroupID" type="int" default="0"/>
  </objecttype>
  <objecttype name="MetalBox" color="#fceaff"/>
@@ -12,10 +10,7 @@
   <property name="ID" type="int" default="0"/>
   <property name="PathPoint" type="int" default="0"/>
  </objecttype>
- <objecttype name="RedPost" color="#a0a0a4">
-  <property name="DefaultOn" type="bool" default="false"/>
-  <property name="GroupID" type="int" default="0"/>
- </objecttype>
+ <objecttype name="PermeableTile" color="#a0a0a4"/>
  <objecttype name="Screen" color="#0055ff">
   <property name="Height" type="int" default="180"/>
   <property name="IsStartingScreen" type="bool" default="false"/>
@@ -24,14 +19,10 @@
  <objecttype name="Seedling" color="#a0a0a4">
   <property name="ID" type="int" default="0"/>
  </objecttype>
- <objecttype name="SeedlingTarget" color="#a0a0a4">
+ <objecttype name="SeedlingTrigger" color="#a0a0a4">
   <property name="ID" type="int" default="0"/>
  </objecttype>
  <objecttype name="Soil" color="#a0a0a4"/>
- <objecttype name="Teleportable" color="#a0a0a4"/>
- <objecttype name="Toggleable" color="#a0a0a4">
-  <property name="DefaultOn" type="bool" default="false"/>
-  <property name="GroupID" type="int" default="0"/>
- </objecttype>
+ <objecttype name="Toggleable" color="#a0a0a4"/>
  <objecttype name="WoodenBox" color="#865534"/>
 </objecttypes>
