@@ -59,8 +59,14 @@ public static class Extensions
         }
     }
 
-    public static T[] AddUniqueItems<T>(this T[] originalArray, T[] newItems)
+    public static IEnumerable<T> AddUniqueItems<T>(this IEnumerable<T> originalArray, IEnumerable<T> newItems)
     {
+        if (originalArray == null)
+            originalArray = new List<T>();  // Initialize if null
+
+        if (newItems == null)
+            newItems = new List<T>();  // Initialize if null
+
         // Convert array to list for flexibility
         List<T> list = new List<T>(originalArray);
 
@@ -77,8 +83,11 @@ public static class Extensions
         return list.ToArray();
     }
 
-    public static T[] AddUniqueItems<T>(this T[] originalArray, T newItem)
+    public static IEnumerable<T> AddUniqueItems<T>(this IEnumerable<T> originalArray, T newItem)
     {
+        if (originalArray == null)
+            originalArray = new T[0];  // Initialize if null
+
         // Convert array to list for flexibility
         List<T> list = new List<T>(originalArray);
 
@@ -107,17 +116,29 @@ public static class Extensions
         return component;
     }
 
-    public static GameObject[] SearchChildrenByName(this Transform parent, string searchString)
+  // marker
+public static List<GameObject> SearchChildrenByName(this Transform parent, string searchString)
     {
-        GameObject[] children = {};
+    List<GameObject> children = new List<GameObject>();
 
         foreach (Transform child in parent)
         {
-            if (child.name.Contains(searchString))
+            if (child.gameObject.name.Contains(searchString))
+            {
                 children.AddUniqueItems(child.gameObject);
+                Debug.Log($"Found {child.gameObject.name} as a child of {parent.gameObject.name}");
+            }
 
             // Recursively search in the child's children
-            children.AddUniqueItems(child.SearchChildrenByName(searchString));
+        children.AddRange(child.SearchChildrenByName(searchString));
+        }
+
+    if (children.Count > 0)
+        {
+            Debug.Log($"{parent.gameObject.name}'s children:");
+
+            foreach (var child in children)
+                Debug.Log(child.gameObject.name);
         }
 
         return children;

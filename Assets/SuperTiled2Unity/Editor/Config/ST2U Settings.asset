@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff72ddc2da234e244a8e96eb44e4c03d, type: 3}
   m_Name: ST2U Settings
   m_EditorClassIdentifier: 
-  m_PixelsPerUnit: 100
-  m_EdgesPerEllipse: 32
+  m_DefaultPixelsPerUnit: 16
+  m_DefaultEdgesPerEllipse: 32
   m_AnimationFramerate: 20
   m_DefaultMaterial: {fileID: 0}
   m_MaterialMatchings: []
-  m_ObjectTypesXml: {fileID: 0}
+  m_ObjectTypesXml: {fileID: 4900000, guid: 30fcc9c26d18f0f45a92be02717b94d0, type: 3}
   m_ParseXmlError: 
   m_CollisionGeometryType: 1
   m_LayerColors:
@@ -53,5 +53,87 @@ MonoBehaviour:
   - {r: 1, g: 0.64705884, b: 0, a: 1}
   - {r: 0, g: 1, b: 1, a: 1}
   - {r: 0.7372549, g: 0.56078434, b: 0.56078434, a: 1}
-  m_CustomObjectTypes: []
-  m_PrefabReplacements: []
+  m_CustomObjectTypes:
+  - m_Name: AIAvoid
+    m_Color: {r: 1, g: 0, b: 0, a: 1}
+    m_CustomProperties: []
+  - m_Name: Lever
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties:
+    - m_Name: ID
+      m_Type: int
+      m_Value: 0
+  - m_Name: MetalBox
+    m_Color: {r: 0.9882353, g: 0.91764706, b: 1, a: 1}
+    m_CustomProperties: []
+  - m_Name: MovementTarget
+    m_Color: {r: 1, g: 0, b: 0.49803922, a: 1}
+    m_CustomProperties:
+    - m_Name: ID
+      m_Type: int
+      m_Value: 0
+    - m_Name: PathPoint
+      m_Type: int
+      m_Value: 0
+  - m_Name: Screen
+    m_Color: {r: 0, g: 0.33333334, b: 1, a: 1}
+    m_CustomProperties:
+    - m_Name: Height
+      m_Type: int
+      m_Value: 180
+    - m_Name: Width
+      m_Type: int
+      m_Value: 320
+  - m_Name: Seedling
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties:
+    - m_Name: ID
+      m_Type: int
+      m_Value: 0
+  - m_Name: SeedlingTarget
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties:
+    - m_Name: ID
+      m_Type: int
+      m_Value: 0
+  - m_Name: Soil
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties: []
+  - m_Name: Teleportable
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties: []
+  - m_Name: Toggleable
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties:
+    - m_Name: ID
+      m_Type: int
+      m_Value: 0
+    - m_Name: on
+      m_Type: bool
+      m_Value: false
+  - m_Name: WoodenBox
+    m_Color: {r: 0.5254902, g: 0.33333334, b: 0.20392157, a: 1}
+    m_CustomProperties: []
+  m_PrefabReplacements:
+  - m_TypeName: AIAvoid
+    m_Prefab: {fileID: 1757236145437947767, guid: 7193997532d0d694ea6c5ca9e9ee2af6, type: 3}
+  - m_TypeName: Lever
+    m_Prefab: {fileID: 1724122362409390793, guid: 963167fe17b3c7a459b55e769b2e0326, type: 3}
+  - m_TypeName: MetalBox
+    m_Prefab: {fileID: 0}
+  - m_TypeName: MovementTarget
+    m_Prefab: {fileID: 0}
+  - m_TypeName: Screen
+    m_Prefab: {fileID: 2336568113750305416, guid: ff82970acc11714419cc138486e922f6, type: 3}
+  - m_TypeName: Seedling
+    m_Prefab: {fileID: 0}
+  - m_TypeName: SeedlingTarget
+    m_Prefab: {fileID: 0}
+  - m_TypeName: Soil
+    m_Prefab: {fileID: 0}
+  - m_TypeName: Teleportable
+    m_Prefab: {fileID: 0}
+  - m_TypeName: Toggleable
+    m_Prefab: {fileID: 0}
+  - m_TypeName: WoodenBox
+    m_Prefab: {fileID: 3818888220949203678, guid: 3664d3072a5353a4ea91134731911e2a, type: 3}
