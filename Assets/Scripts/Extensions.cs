@@ -51,11 +51,11 @@ public static class Extensions
 
     public static void ResetOnChange(this float f, float a, float b, float def = 0f)
     {
-        if(a != b)
-        {
-            f = def;
-            a = b;
-        }
+        if (a == b)
+            return;
+        
+        f = def;
+        a = b;
     }
 
     // Can use both assignment form `list = list.AddIfUnique(item)` and in-place modification form `list.AddIfUnique(item)`
@@ -65,7 +65,6 @@ public static class Extensions
             return list;
         
         list.Add(item);
-        // // Debug.Log($"Added {item} to list");
 
         return list;
     }
@@ -112,34 +111,18 @@ public static class Extensions
         return array;
     }
 
-  // marker
     public static List<GameObject> SearchChildrenByName(this Transform parent, string searchString)
     {
-        // Initialize an empty list
         List<GameObject> children = new();
 
         foreach (Transform child in parent)
         {
             if (child.gameObject.name.Contains(searchString))
-            {
-                // Capture the result of the extension method
-                children = children.AddIfUnique(child.gameObject);
-                // //Debug.Log($"Found {child.gameObject.name} as a child of {parent.gameObject.name}");
-            }
+                children = children.AddIfUnique(child.gameObject); // Capture the result of the extension method
 
-            // //Recursively search in the child's children
+            // Recursively search in the child's children
             children.AddRange(child.SearchChildrenByName(searchString));
         }
-
-        /*
-        if (children.Count > 0)
-        {
-            // Debug.Log($"{parent.gameObject.name}'s children:");
-
-            foreach (var child in children)
-                // Debug.Log(child.gameObject.name);
-        }
-        */
 
         return children;
     }
