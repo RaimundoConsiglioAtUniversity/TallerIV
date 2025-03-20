@@ -1,7 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using System.Linq;
 
 public static class Extensions
 {
@@ -59,50 +58,95 @@ public static class Extensions
         }
     }
 
-    public static IEnumerable<T> AddUniqueItems<T>(this IEnumerable<T> originalArray, IEnumerable<T> newItems)
+    // Can use both assignment form `list = list.AddIfUnique(item)` and in-place modification form `list.AddIfUnique(item)`
+    public static List<T> AddIfUnique<T>(this List<T> list, T item)
     {
-        if (originalArray == null)
-            originalArray = new List<T>();  // Initialize if null
+        if (list.Contains(item))
+            return list;
+        
+        list.Add(item);
+        // // Debug.Log($"Added {item} to list");
 
-        if (newItems == null)
-            newItems = new List<T>();  // Initialize if null
+        return list;
+    }
 
-        // Convert array to list for flexibility
-        List<T> list = new List<T>(originalArray);
+    public static List<T> AddIfUnique<T>(this List<T> list, List<T> items)
+    {
+        foreach (var item in items)
+            list = list.AddIfUnique(item);
 
-        // Loop through new items and add them if they're not already in the list
-        foreach (T item in newItems)
-        {
-            if (!list.Contains(item))
-            {
-                list.Add(item);
-            }
-        }
+        return list;
+    }
 
-        // Convert the list back to an array and return
+    public static List<T> AddIfUnique<T>(this List<T> list, T[] items)
+    {
+        foreach (var item in items)
+            list = list.AddIfUnique(item);
+
+        return list;
+    }
+
+    // Must use assignment form `array = array.AddIfUnique(item)`
+    public static T[] AddIfUnique<T>(this T[] array, T item)
+    {
+        List<T> list = array.ToList();
+
+        list = list.AddIfUnique(item);
+
         return list.ToArray();
     }
 
-    public static IEnumerable<T> AddUniqueItems<T>(this IEnumerable<T> originalArray, T newItem)
+    public static T[] AddIfUnique<T>(this T[] array, List<T> items)
     {
-        if (originalArray == null)
-            originalArray = new T[0];  // Initialize if null
+        foreach (var item in items)
+            array = array.AddIfUnique(item);
 
-        // Convert array to list for flexibility
-        List<T> list = new List<T>(originalArray);
+        return array;
+    }
 
-        if (!list.Contains(newItem))
-            list.Add(newItem);
+    public static T[] AddIfUnique<T>(this T[] array, T[] items)
+    {
+        foreach (var item in items)
+            array = array.AddIfUnique(item);
 
-        // Convert the list back to an array and return
-        return list.ToArray();
+        return array;
+    }
+
+  // marker
+    public static List<GameObject> SearchChildrenByName(this Transform parent, string searchString)
+    {
+        // Initialize an empty list
+        List<GameObject> children = new();
+
+        foreach (Transform child in parent)
+        {
+            if (child.gameObject.name.Contains(searchString))
+            {
+                // Capture the result of the extension method
+                children = children.AddIfUnique(child.gameObject);
+                // //Debug.Log($"Found {child.gameObject.name} as a child of {parent.gameObject.name}");
+            }
+
+            // //Recursively search in the child's children
+            children.AddRange(child.SearchChildrenByName(searchString));
+        }
+
+        /*
+        if (children.Count > 0)
+        {
+            // Debug.Log($"{parent.gameObject.name}'s children:");
+
+            foreach (var child in children)
+                // Debug.Log(child.gameObject.name);
+        }
+        */
+
+        return children;
     }
 
     public static T GetOrAddComponent<T>(this GameObject gameObject) where T : Component
     {
-        T component = gameObject.GetComponent<T>();
-        
-        if (component == null)
+        if (!gameObject.TryGetComponent<T>(out var component))
             component = gameObject.AddComponent<T>();
 
         return component;
@@ -114,33 +158,5 @@ public static class Extensions
             component = gameObject.AddComponent<T>();
         
         return component;
-    }
-
-  // marker
-public static List<GameObject> SearchChildrenByName(this Transform parent, string searchString)
-    {
-    List<GameObject> children = new List<GameObject>();
-
-        foreach (Transform child in parent)
-        {
-            if (child.gameObject.name.Contains(searchString))
-            {
-                children.AddUniqueItems(child.gameObject);
-                Debug.Log($"Found {child.gameObject.name} as a child of {parent.gameObject.name}");
-            }
-
-            // Recursively search in the child's children
-        children.AddRange(child.SearchChildrenByName(searchString));
-        }
-
-    if (children.Count > 0)
-        {
-            Debug.Log($"{parent.gameObject.name}'s children:");
-
-            foreach (var child in children)
-                Debug.Log(child.gameObject.name);
-        }
-
-        return children;
     }
 }

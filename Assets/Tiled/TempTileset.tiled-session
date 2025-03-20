@@ -48,22 +48,22 @@
                 37
             ],
             "expandedObjectLayers": [
-                117,
+                4,
+                112,
                 116,
+                117,
+                130,
                 36,
                 114,
-                4,
-                113,
                 115,
-                112,
-                109,
-                130
+                113,
+                109
             ],
             "scale": 0.75,
-            "selectedLayer": 2,
+            "selectedLayer": 12,
             "viewCenter": {
-                "x": 998,
-                "y": 378.66666666666674
+                "x": 1540.6666666666665,
+                "y": 650.6666666666667
             }
         },
         "Maps/TestMap.tmx": {
@@ -195,8 +195,8 @@
             "scale": 2,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 477.25,
-                "y": 354
+                "x": 456,
+                "y": 456.25
             }
         },
         "Rules/auto_tree.tmx": {

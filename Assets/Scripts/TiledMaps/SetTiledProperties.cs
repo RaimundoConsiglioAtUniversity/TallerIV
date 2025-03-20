@@ -139,7 +139,7 @@ public class SetTiledProperties : MonoBehaviour
             }
         }
         
-        interactives = (InteractiveObject[])interactives.AddUniqueItems(FindObjectsOfType<InteractiveObject>());
+        interactives = (InteractiveObject[])interactives.AddIfUnique(FindObjectsOfType<InteractiveObject>());
 
         foreach (InteractiveObject interactive in interactives)
         {

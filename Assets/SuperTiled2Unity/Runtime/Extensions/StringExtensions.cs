@@ -32,7 +32,7 @@ namespace SuperTiled2Unity
                 return new Color32(r, g, b, 255);
             }
 
-            Debug.LogErrorFormat("Could not convert '{0}' to a color.", htmlString);
+            Debug.LogWarningFormat("Could not convert '{0}' to a color. Defaulting to Magenta.", htmlString);
             return Color.magenta;
         }
 

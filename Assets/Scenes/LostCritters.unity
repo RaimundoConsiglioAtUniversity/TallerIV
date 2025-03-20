@@ -168,8 +168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &45332081 stripped
 GameObject:
@@ -216,8 +216,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!114 &55128232 stripped
 MonoBehaviour:
@@ -286,8 +286,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &123176269
 GameObject:
@@ -378,8 +378,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &253308864 stripped
 GameObject:
@@ -426,8 +426,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &258460346 stripped
 GameObject:
@@ -474,8 +474,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &259145537 stripped
 GameObject:
@@ -522,8 +522,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 1
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &294512197 stripped
 GameObject:
@@ -543,8 +543,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 1
 --- !u!50 &294512199
 Rigidbody2D:
@@ -618,8 +618,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &309507416 stripped
 GameObject:
@@ -666,8 +666,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1001 &348913628
 PrefabInstance:
@@ -720,10 +720,6 @@ PrefabInstance:
     - target: {fileID: 2055379622874393345, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
       propertyPath: m_Priority
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2266697165860370510, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2895561224334280694, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
       propertyPath: m_LocalScale.x
@@ -837,10 +833,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.0625
       objectReference: {fileID: 0}
-    - target: {fileID: 8384169569898891240, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -891,8 +883,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &386014596 stripped
 GameObject:
@@ -939,8 +931,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &445690444 stripped
 GameObject:
@@ -987,8 +979,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!114 &478584349 stripped
 MonoBehaviour:
@@ -1046,8 +1038,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 1
 --- !u!1 &519420028
 GameObject:
@@ -1222,8 +1214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &592411320 stripped
 GameObject:
@@ -1270,8 +1262,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &625490331 stripped
 GameObject:
@@ -1318,8 +1310,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!114 &663631456 stripped
 MonoBehaviour:
@@ -1377,8 +1369,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 1
 --- !u!1 &724957329 stripped
 GameObject:
@@ -1425,8 +1417,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &819865733 stripped
 GameObject:
@@ -1473,8 +1465,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 1
 --- !u!1 &828105169 stripped
 GameObject:
@@ -1665,8 +1657,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &1125060674 stripped
 GameObject:
@@ -1713,8 +1705,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &1151794895 stripped
 GameObject:
@@ -1761,8 +1753,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &1153813159 stripped
 GameObject:
@@ -1809,8 +1801,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &1161602934 stripped
 GameObject:
@@ -1857,8 +1849,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 1
 --- !u!1 &1174490103 stripped
 GameObject:
@@ -1905,8 +1897,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &1176464095 stripped
 GameObject:
@@ -1953,8 +1945,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &1247353715 stripped
 GameObject:
@@ -2001,8 +1993,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 1
 --- !u!1 &1253984416
 GameObject:
@@ -2247,8 +2239,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &1393962258 stripped
 GameObject:
@@ -2295,8 +2287,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 1
 --- !u!1 &1415964059 stripped
 GameObject:
@@ -2343,8 +2335,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1001 &1417199052
 PrefabInstance:
@@ -3032,8 +3024,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &1484523565 stripped
 GameObject:
@@ -3080,8 +3072,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &1557355397 stripped
 GameObject:
@@ -3128,8 +3120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 1
 --- !u!1 &1594983233 stripped
 GameObject:
@@ -3176,8 +3168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 1
 --- !u!1 &1610491874 stripped
 GameObject:
@@ -3224,8 +3216,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &1613960689 stripped
 GameObject:
@@ -3272,8 +3264,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &1648932342 stripped
 GameObject:
@@ -3320,8 +3312,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &1682262759 stripped
 GameObject:
@@ -3368,8 +3360,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!114 &1718453555 stripped
 MonoBehaviour:
@@ -3427,8 +3419,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 1
 --- !u!114 &1759525251 stripped
 MonoBehaviour:
@@ -3646,8 +3638,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 1
 --- !u!1 &1864950577 stripped
 GameObject:
@@ -3694,8 +3686,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &1930718057 stripped
 GameObject:
@@ -3742,8 +3734,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &1939596342 stripped
 GameObject:
@@ -3790,8 +3782,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!1 &1988177433 stripped
 GameObject:
@@ -3838,8 +3830,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!114 &2019906988 stripped
 MonoBehaviour:
@@ -3897,8 +3889,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!114 &2051104733 stripped
 MonoBehaviour:
@@ -3956,8 +3948,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!114 &2066130471 stripped
 MonoBehaviour:
@@ -4102,8 +4094,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 1
-  onState: {fileID: 0}
-  offState: {fileID: 0}
+  onState: []
+  offState: []
   isActive: 0
 --- !u!114 &2790090107168328776 stripped
 MonoBehaviour:
