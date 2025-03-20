@@ -4,29 +4,33 @@ using UnityEngine.Tilemaps;
 
 public class Toggleable : InteractiveObject
 {
-    public List<GameObject> onState;
-    public List<GameObject> offState;
+    public List<GameObject> onState = new();
+    public List<GameObject> offState = new();
 
     public bool isActive;
 
     public void OnEnable() => InteractableToggle.ToggleLinkedObjects += Toggle;
     public void OnDisable() => InteractableToggle.ToggleLinkedObjects -= Toggle;
 
-
-    public void MakeToggleFromMap(int ID, GameObject workingLayer, bool layerState, Color layerColor, bool usesColor)
+    public void MakeToggleFromMap(ToggleData toggle)
     {
-        this.ID = ID;
+        ID = toggle.ID;
         
-        workingLayer.transform.parent = gameObject.transform;
+        toggle.layer.transform.parent = gameObject.transform;
 
-        if (layerState == true)
-            onState.Add(workingLayer);
+        if (toggle.state)
+            onState.Add(toggle.layer);
+        else
+            offState.Add(toggle.layer);
 
-        if (layerState == false)
-            offState.Add(workingLayer);
+        if (toggle.usesColour)
+        {
+            if (toggle.layer.TryGetComponent<Tilemap>(out var tilemap))
+                tilemap.color = toggle.colour;
+            else
+                Debug.LogWarning($"{toggle.layer.name} is marked to use colour but has no Tilemap component!");
+        }
 
-        if (usesColor == true)
-            workingLayer.GetComponent<Tilemap>().color = layerColor;
     }
 
     public void Toggle(int ID)

@@ -1,23 +1,16 @@
 using SuperTiled2Unity;
 using SuperTiled2Unity.Editor;
 using UnityEngine;
-using System.Linq;
+using UnityEditor;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEngine.UI;
 
 [AutoCustomTmxImporter()]
 public class ToggleImporter : CustomTmxImporter
 {
     private SuperMap map;
 
-    //ToggleData;
-
     GameObject[] toggleableLayers = {};
-    List<int> toggleIDs = new();
-    List<bool> toggleStates = new();
-    List<Color> toggleColours = new();
-    List<bool> toggleUsesCustomColour = new();
+    List<ToggleData> toggles = new();
 
     int[] uniqueIDs = {};
 
@@ -65,97 +58,45 @@ public class ToggleImporter : CustomTmxImporter
     {
         if (!mapLayer.TryGetComponent(out SuperCustomProperties props))
             return;
+        
+        ToggleData toggle = new(mapLayer);
 
         if (props.TryGetCustomProperty("GroupID", out var a))
-        {
-            //Debug.Log($"{mapLayer.name}'s \"GroupID\" is {a.GetValueAsInt()}");
-            toggleIDs.Add(a.GetValueAsInt());
-            uniqueIDs = uniqueIDs.AddIfUnique(a.GetValueAsInt());
-        }
-        else
-        {
-            //Debug.Log($"Found no \"GroupID\" in {mapLayer.name}, defaulting to '-1'");
-            toggleIDs.Add(-1);
-        }
+            toggle.ID = a.GetValueAsInt();
+            uniqueIDs = uniqueIDs.AddIfUnique(toggle.ID);
 
         if (props.TryGetCustomProperty("IsOnState", out var b))
-        {
-            //Debug.Log($"{mapLayer.name}'s \"IsOnState\" is {b.GetValueAsBool()}");
-            toggleStates.Add(b.GetValueAsBool());
-        }
-        else
-        {
-            //Debug.Log($"Found no \"IsOnState\" in {mapLayer.name}, defaulting to 'false'");
-            toggleStates.Add(false);
-        }
+            toggle.state = b.GetValueAsBool();
 
         if (props.TryGetCustomProperty("Color", out var c))
-        {
-            //Debug.Log($"{mapLayer.name}'s \"Color\" is {c.GetValueAsColor().ToHexString()}");
-            toggleColours.Add(c.GetValueAsColor());
-        }
-        else
-        {
-            //Debug.Log($"Found no \"Color\" in {mapLayer.name}, defaulting to '#FFFFFFFF'");
-            toggleColours.Add(Color.white);
-        }
-
+            toggle.colour = c.GetValueAsColor();
 
         if (props.TryGetCustomProperty("UseCustomColor", out var d))
-        {
-            //Debug.Log($"{mapLayer.name}'s \"UseCustomColor\" is {d.GetValueAsBool()}");
-            toggleUsesCustomColour.Add(d.GetValueAsBool());
-        }
-        else
-        {
-            //Debug.Log($"Found no \"UseCustomColor\" in {mapLayer.name}, defaulting to 'false'");
-            toggleUsesCustomColour.Add(false);
-        }
+            toggle.usesColour = d.GetValueAsBool();
 
-
-        // toggleIDs.Add(props.TryGetCustomProperty("GroupID", out var a) ? a.GetValueAsInt(): -1);
-        // toggleStates.Add(props.TryGetCustomProperty("IsOnState", out var b) && b.GetValueAsBool());
-        // toggleColours.Add(props.TryGetCustomProperty("Color", out var c) ? c.GetValueAsColor() : Color.white);
-        // toggleUsesCustomColour.Add(props.TryGetCustomProperty("UseCustomColor", out var d) && d.GetValueAsBool());
-
+        toggles.Add(toggle);
     }
 
     private void CreateNewToggleGroup(int toggleGroup)
     {
+        // Create the new GameObject
         GameObject toggleObject = new($"ToggleLayer_{toggleGroup}");
+        
+        // Parent it under the main map to embed it in the prefab hierarchy.
+        toggleObject.transform.SetParent(map.transform);
+        
+        // Optionally, clear hide flags to ensure visibility in the Hierarchy.
+        toggleObject.hideFlags = HideFlags.None;
+
         Debug.Log($"instantiated new ToggleLayer: ToggleLayer_{toggleGroup}, which should have the name {toggleObject.name}");
         var toggleScript = toggleObject.AddComponent<Toggleable>();
 
-        foreach (var layer in toggleableLayers)
+        foreach (var toggle in toggles)
         {
-
-            if (!toggleIDs.Contains(toggleGroup))
+            if (toggle.ID != toggleGroup)
                 continue;
 
-            List<int> groupIDs = toggleIDs.FindAll(i => i == toggleGroup);
-            
-
-                
-            }
-
-            if (i != toggleGroup)
-                continue;
-
-            var workingLayer = toggleableLayers[i];
-            var layerState = toggleStates[i];
-            var layerColor = toggleColours[i];
-            var usesColor = toggleUsesCustomColour[i];
-
-            toggleScript.MakeToggleFromMap(toggleGroup, workingLayer, layerState, layerColor, usesColor);
+            toggleScript.MakeToggleFromMap(toggle);
         }
     }
-}
-
-public class ToggleData
-{
-    GameObject layer;
-    int ID;
-    bool states;
-    Color colour;
-    bool usesColour;
 }
