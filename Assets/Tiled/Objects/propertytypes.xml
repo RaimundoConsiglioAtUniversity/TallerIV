@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objecttypes>
  <objecttype name="AIAvoid" color="#ff0000"/>
- <objecttype name="LeverTrigger" color="#a0a0a4">
-  <property name="Color" type="color" default=""/>
-  <property name="GroupID" type="int" default="0"/>
- </objecttype>
+ <objecttype name="Lever" color="#a0a0a4"/>
  <objecttype name="MetalBox" color="#fceaff"/>
  <objecttype name="MovementTarget" color="#ff007f">
   <property name="ID" type="int" default="0"/>

@@ -28,18 +28,8 @@
             "drawFill": true,
             "id": 8,
             "members": [
-                {
-                    "name": "Color",
-                    "type": "color",
-                    "value": ""
-                },
-                {
-                    "name": "GroupID",
-                    "type": "int",
-                    "value": 0
-                }
             ],
-            "name": "LeverTrigger",
+            "name": "Lever",
             "type": "class",
             "useAs": [
                 "object",
@@ -174,19 +164,6 @@
             ]
         },
         {
-            "color": "#ff865534",
-            "drawFill": true,
-            "id": 3,
-            "members": [
-            ],
-            "name": "WoodenBox",
-            "type": "class",
-            "useAs": [
-                "object",
-                "project"
-            ]
-        },
-        {
             "color": "#ffa0a0a4",
             "drawFill": true,
             "id": 19,
@@ -196,6 +173,19 @@
             "type": "class",
             "useAs": [
                 "layer",
+                "project"
+            ]
+        },
+        {
+            "color": "#ff865534",
+            "drawFill": true,
+            "id": 3,
+            "members": [
+            ],
+            "name": "WoodenBox",
+            "type": "class",
+            "useAs": [
+                "object",
                 "project"
             ]
         }

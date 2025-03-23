@@ -110,12 +110,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: red_0
+      name: lever_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 24
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,19 +124,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66a8c8e73b549774bac6630ac3835326
-      internalID: 537486742
+      spriteID: 4f1e9d274833ab34ab9c018541703cb4
+      internalID: 905819910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_1
+      name: lever_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 24
         y: 0
-        width: 32
+        width: 24
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -145,19 +145,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e85498aea6e96fd4697b0eb4d1d88aa0
-      internalID: -873218321
+      spriteID: b700be82e78fddb4a951c29bb46fa1cf
+      internalID: 137494304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_2
+      name: lever_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 48
         y: 0
-        width: 32
+        width: 24
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,19 +166,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfb0ed6c087e4ae4f8916bdf4df863b3
-      internalID: 1044177251
+      spriteID: 37ad3a3868506874b8575e622616dd3c
+      internalID: 875109884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_3
+      name: lever_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe75daa4d8d16942ae55a73b34f2e78
+      internalID: -1621385466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lever_4
       rect:
         serializedVersion: 2
         x: 96
         y: 0
-        width: 32
+        width: 24
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -187,19 +208,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aac88428ab9881b4dbfe6a234055392d
-      internalID: 698516293
+      spriteID: a6c9b56e1c31d8341a643e6d10aafae9
+      internalID: 974361903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_4
+      name: lever_5
       rect:
         serializedVersion: 2
-        x: 128
+        x: 120
         y: 0
-        width: 32
+        width: 24
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -208,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b740614d6db9b84fa602701cc9b0f37
-      internalID: 2122243016
+      spriteID: 3e0ccd2e50942e64296b9d9717e06888
+      internalID: -1003788647
       vertices: []
       indices: 
       edges: []
@@ -225,11 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      red_0: 537486742
-      red_1: -873218321
-      red_2: 1044177251
-      red_3: 698516293
-      red_4: 2122243016
+      lever_0: 905819910
+      lever_1: 137494304
+      lever_2: 875109884
+      lever_3: -1621385466
+      lever_4: 974361903
+      lever_5: -1003788647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

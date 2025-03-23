@@ -8,13 +8,17 @@ public class ToggleImporter : CustomTmxImporter
 {
     private SuperMap map;
 
+    ToggleTrigger[] toggleTriggers = {};
     GameObject[] toggleableLayers = {};
     List<ToggleData> toggles = new();
     int[] uniqueIDs = {};
 
     public override void TmxAssetImported(TmxAssetImportedArgs args)
     {
-        FindToggleableLayers(args);
+        map = args.ImportedSuperMap;
+
+        FindToggleableLayers();
+        FindToggleTriggers();
         
         foreach (var mapLayer in toggleableLayers)
             GetLayerProperties(mapLayer);
@@ -22,12 +26,12 @@ public class ToggleImporter : CustomTmxImporter
         foreach (var toggleGroup in uniqueIDs)
             CreateNewToggleGroup(toggleGroup);
 
+        foreach (var toggle in toggleTriggers)
+            toggle.SetColour();
     }
 
-    private void FindToggleableLayers(TmxAssetImportedArgs args)
+    private void FindToggleableLayers()
     {
-        map = args.ImportedSuperMap;
-
         var foundLayers = map.transform.GetChild(0).SearchChildrenByName("Toggle");
 
         toggleableLayers = toggleableLayers.AddIfUnique(foundLayers);
@@ -41,17 +45,29 @@ public class ToggleImporter : CustomTmxImporter
         ToggleData toggle = new(mapLayer);
 
         if (props.TryGetCustomProperty("GroupID", out var a))
+        {
             toggle.ID = a.GetValueAsInt();
-            uniqueIDs = uniqueIDs.AddIfUnique(toggle.ID);
+            // props.RemoveCustomProperty("GroupID");
+        }
+        
+        uniqueIDs = uniqueIDs.AddIfUnique(toggle.ID);
 
         if (props.TryGetCustomProperty("IsOnState", out var b))
+        {
             toggle.state = b.GetValueAsBool();
+            // props.RemoveCustomProperty("IsOnState");
+        }
 
-        if (props.TryGetCustomProperty("Color", out var c))
-            toggle.colour = c.GetValueAsColor();
+        if (props.TryGetCustomProperty("UseTint", out var c))
+        {
+            toggle.usesColour = c.GetValueAsBool();
+            // props.RemoveCustomProperty("UseTint");
+        }
+        else
+            toggle.usesColour = false;
 
-        if (props.TryGetCustomProperty("UseCustomColor", out var d))
-            toggle.usesColour = d.GetValueAsBool();
+        // if (props.m_Properties.Count == 0)
+        //     Object.DestroyImmediate(props);
 
         toggles.Add(toggle);
     }
@@ -70,5 +86,13 @@ public class ToggleImporter : CustomTmxImporter
 
             toggleScript.MakeToggleFromMap(toggle);
         }
+    }
+
+    private void FindToggleTriggers()
+    {
+
+        var triggers = map.transform.GetComponentsInChildren<ToggleTrigger>();
+
+        toggleTriggers = toggleTriggers.AddIfUnique(triggers);
     }
 }

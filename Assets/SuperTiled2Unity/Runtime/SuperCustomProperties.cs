@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace SuperTiled2Unity
 {
-    // A simple component for storing custom properites
+    // A simple component for storing custom properties
     // Ideally, custom import scripts should use these in the import process and then strip them from the final prefab
     public class SuperCustomProperties : MonoBehaviour
     {

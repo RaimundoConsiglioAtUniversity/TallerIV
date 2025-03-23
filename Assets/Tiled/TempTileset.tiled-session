@@ -3,16 +3,16 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "Maps/TestMap (2).tmx",
+    "activeFile": "Tilesets/Pillars.tsx",
     "automapping.whileDrawing": false,
     "expandedProjectPaths": [
-        "Objects",
-        "classes",
-        "rules",
-        ".",
         "Maps",
+        "rules",
+        "Objects",
         "Tilesets",
-        "Rules"
+        "Rules",
+        ".",
+        "classes"
     ],
     "fileStates": {
         ":/automap-tiles.tsx": {
@@ -45,36 +45,26 @@
         },
         "Maps/TestMap (2).tmx": {
             "expandedGroupLayers": [
-                37
+                37,
+                135,
+                136
             ],
-            "expandedObjectLayers": [
-                4,
-                112,
-                116,
-                117,
-                130,
-                36,
-                114,
-                115,
-                113,
-                109
-            ],
-            "scale": 0.75,
-            "selectedLayer": 12,
+            "scale": 3,
+            "selectedLayer": 16,
             "viewCenter": {
-                "x": 1540.6666666666665,
-                "y": 650.6666666666667
+                "x": 457.3333333333333,
+                "y": 182.83333333333331
             }
         },
         "Maps/TestMap.tmx": {
             "expandedObjectLayers": [
                 4
             ],
-            "scale": 2,
+            "scale": 0.125,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 1023.25,
-                "y": 339
+                "x": 3880,
+                "y": 712
             }
         },
         "Maps/Tilesets/generic_platformer_tiles_1_CC0_by_Surt_OpenGameArt.tsx": {
@@ -159,14 +149,11 @@
             }
         },
         "Rules/auto_pillars.tmx": {
-            "expandedObjectLayers": [
-                6
-            ],
             "scale": 1.5,
-            "selectedLayer": 3,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 182.66666666666663,
-                "y": 177.99999999999997
+                "x": 115.99999999999997,
+                "y": 82
             }
         },
         "Rules/auto_proto.tmx": {
@@ -192,11 +179,11 @@
             "expandedObjectLayers": [
                 69
             ],
-            "scale": 2,
-            "selectedLayer": 6,
+            "scale": 1,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 456,
-                "y": 456.25
+                "x": 628,
+                "y": 582
             }
         },
         "Rules/auto_tree.tmx": {
@@ -240,11 +227,11 @@
             "scaleInEditor": 1
         },
         "Tilesets/BoundsTiles.tsx": {
-            "scaleInDock": 1,
+            "scaleInDock": 1.5,
             "scaleInEditor": 1.5
         },
         "Tilesets/CageTiles.tsx": {
-            "scaleInDock": 2,
+            "scaleInDock": 0.75,
             "scaleInEditor": 1.5
         },
         "Tilesets/GenericPlatformerTilesBySurtOpenGameArt.tsx": {
@@ -256,7 +243,7 @@
             "scaleInEditor": 1
         },
         "Tilesets/LeafTiles.tsx": {
-            "scaleInDock": 1,
+            "scaleInDock": 1.5,
             "scaleInEditor": 5.5
         },
         "Tilesets/MetalTiles.tsx": {
@@ -264,10 +251,14 @@
             "scaleInEditor": 3
         },
         "Tilesets/Objects.tsx": {
-            "scaleInDock": 0.75,
+            "scaleInDock": 1,
             "scaleInEditor": 4
         },
         "Tilesets/Pillars.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 16
+        },
+        "Tilesets/Pillars_color.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 4
         },
@@ -328,31 +319,33 @@
     "last.externalTilesetPath": "D:/Raimundo Consiglio/My Projects/TallerIV/Assets/Tiled/Tilesets",
     "last.imagePath": "D:/Raimundo Consiglio/My Projects/TallerIV/Assets/Sprites/tilesets",
     "last.objectTypesPath": "D:/Raimundo Consiglio/My Projects/TallerIV/Assets/Tiled/Objects/propertytypes.xml",
+    "map.fixedSize": false,
     "map.height": 8,
     "map.lastUsedFormat": "tmx",
     "map.tileHeight": 16,
     "map.tileWidth": 16,
     "map.width": 1,
     "openFiles": [
-        "Maps/TestMap (2).tmx",
-        "Maps/TestMap.tmx",
-        "Rules/auto_toggle_grass.tmx"
+        "Tilesets/Pillars.tsx",
+        "Rules/auto_toggle_grass.tmx",
+        "Rules/auto_pillars.tmx",
+        "Maps/TestMap (2).tmx"
     ],
     "project": "TempTileset.tiled-project",
     "property.type": "bool",
     "recentFiles": [
-        "Rules/auto_toggle_grass.tmx",
-        "Maps/TestMap.tmx",
         "Maps/TestMap (2).tmx",
-        "Tilesets/GrassTiles.tsx",
-        "Tilesets/ToggleGrassColour.tsx",
-        "Tilesets/ToggleGrassTops.tsx",
-        "Rules/auto_grass.tmx",
-        "Tilesets/ToggleGrassOff.tsx",
-        "D:/Raimundo Consiglio/Downloads/MovingPlatformMap.tmx",
-        "Tilesets/TreeTiles.tsx",
+        "Rules/auto_pillars.tmx",
+        "Tilesets/Pillars.tsx",
+        "Rules/auto_toggle_grass.tmx",
+        "Tilesets/BackRockTiles.tsx",
+        "Tilesets/BlueGrassOff.tsx",
+        "Tilesets/BoundsTiles.tsx",
+        "Tilesets/CageTiles.tsx",
         "Tilesets/LeafTiles.tsx",
-        "Rules/auto_blue_grass.tmx"
+        "Tilesets/RedGrass.tsx",
+        "Tilesets/ToggleGrassTops.tsx",
+        "Maps/TestMap.tmx"
     ],
     "tileset.lastUsedFilter": "All Files (*)",
     "tileset.lastUsedFormat": "tsx",

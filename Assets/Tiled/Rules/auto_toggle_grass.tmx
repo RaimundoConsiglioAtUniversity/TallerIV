@@ -11,10 +11,8 @@
  <tileset firstgid="153" source="../Tilesets/Objects.tsx"/>
  <layer id="53" name="input_Blocking_Toggle_0" class="Toggleable" width="57" height="57">
   <properties>
-   <property name="Color" type="color" value=""/>
    <property name="GroupID" type="int" value="0"/>
    <property name="IsOnState" type="bool" value="true"/>
-   <property name="UseCustomColor" type="bool" value="false"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -78,10 +76,9 @@
  </layer>
  <layer id="59" name="output_Toggle_0_Off" class="Toggleable" width="57" height="57">
   <properties>
-   <property name="Color" type="color" value="#ffff5050"/>
    <property name="GroupID" type="int" value="0"/>
    <property name="IsOnState" type="bool" value="false"/>
-   <property name="UseCustomColor" type="bool" value="true"/>
+   <property name="UseTint" type="bool" value="true"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -145,10 +142,9 @@
  </layer>
  <layer id="57" name="output_Toggle_0_On_Colour" class="Toggleable" width="57" height="57">
   <properties>
-   <property name="Color" type="color" value="#ffff5050"/>
    <property name="GroupID" type="int" value="0"/>
    <property name="IsOnState" type="bool" value="true"/>
-   <property name="UseCustomColor" type="bool" value="true"/>
+   <property name="UseTint" type="bool" value="true"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -212,10 +208,8 @@
  </layer>
  <layer id="58" name="output_Toggle_0_On_Neutral" class="Toggleable" width="57" height="57">
   <properties>
-   <property name="Color" type="color" value=""/>
    <property name="GroupID" type="int" value="0"/>
    <property name="IsOnState" type="bool" value="true"/>
-   <property name="UseCustomColor" type="bool" value="false"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -279,10 +273,8 @@
  </layer>
  <objectgroup id="69" name="output_Toggle_0_AiAvoid" class="Toggleable">
   <properties>
-   <property name="Color" type="color" value=""/>
    <property name="GroupID" type="int" value="0"/>
    <property name="IsOnState" type="bool" value="true"/>
-   <property name="UseCustomColor" type="bool" value="false"/>
   </properties>
   <object id="1" type="AIAvoid" gid="153" x="416" y="368" width="16" height="16">
    <properties>
@@ -292,10 +284,8 @@
  </objectgroup>
  <layer id="54" name="input_Blocking_Toggle_1" class="Toggleable" width="57" height="57">
   <properties>
-   <property name="Color" type="color" value=""/>
    <property name="GroupID" type="int" value="1"/>
    <property name="IsOnState" type="bool" value="true"/>
-   <property name="UseCustomColor" type="bool" value="false"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -359,10 +349,9 @@
  </layer>
  <layer id="62" name="output_Toggle_1_Off" class="Toggleable" width="57" height="57">
   <properties>
-   <property name="Color" type="color" value="#ff5050ff"/>
    <property name="GroupID" type="int" value="1"/>
    <property name="IsOnState" type="bool" value="false"/>
-   <property name="UseCustomColor" type="bool" value="true"/>
+   <property name="UseTint" type="bool" value="true"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -426,10 +415,9 @@
  </layer>
  <layer id="60" name="output_Toggle_1_On_Colour" class="Toggleable" width="57" height="57">
   <properties>
-   <property name="Color" type="color" value="#ff5050ff"/>
    <property name="GroupID" type="int" value="1"/>
    <property name="IsOnState" type="bool" value="true"/>
-   <property name="UseCustomColor" type="bool" value="true"/>
+   <property name="UseTint" type="bool" value="true"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -493,10 +481,8 @@
  </layer>
  <layer id="61" name="output_Toggle_1_On_Neutral" class="Toggleable" width="57" height="57">
   <properties>
-   <property name="Color" type="color" value=""/>
    <property name="GroupID" type="int" value="1"/>
    <property name="IsOnState" type="bool" value="true"/>
-   <property name="UseCustomColor" type="bool" value="false"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -560,10 +546,8 @@
  </layer>
  <objectgroup id="70" name="output_Toggle_1_AiAvoid" class="Toggleable">
   <properties>
-   <property name="Color" type="color" value=""/>
    <property name="GroupID" type="int" value="1"/>
    <property name="IsOnState" type="bool" value="true"/>
-   <property name="UseCustomColor" type="bool" value="false"/>
   </properties>
   <object id="2" type="AIAvoid" gid="153" x="864" y="368" width="16" height="16">
    <properties>
@@ -573,10 +557,8 @@
  </objectgroup>
  <layer id="55" name="input_Blocking_Toggle_2" class="Toggleable" width="57" height="57">
   <properties>
-   <property name="Color" type="color" value=""/>
    <property name="GroupID" type="int" value="2"/>
    <property name="IsOnState" type="bool" value="true"/>
-   <property name="UseCustomColor" type="bool" value="false"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -640,10 +622,9 @@
  </layer>
  <layer id="65" name="output_Toggle_2_Off" class="Toggleable" width="57" height="57">
   <properties>
-   <property name="Color" type="color" value="#ff50ff50"/>
    <property name="GroupID" type="int" value="2"/>
    <property name="IsOnState" type="bool" value="false"/>
-   <property name="UseCustomColor" type="bool" value="true"/>
+   <property name="UseTint" type="bool" value="true"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -707,10 +688,9 @@
  </layer>
  <layer id="63" name="output_Toggle_2_On_Colour" class="Toggleable" width="57" height="57">
   <properties>
-   <property name="Color" type="color" value="#ff50ff50"/>
    <property name="GroupID" type="int" value="2"/>
    <property name="IsOnState" type="bool" value="true"/>
-   <property name="UseCustomColor" type="bool" value="true"/>
+   <property name="UseTint" type="bool" value="true"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -774,10 +754,8 @@
  </layer>
  <layer id="64" name="output_Toggle_2_On_Neutral" class="Toggleable" width="57" height="57">
   <properties>
-   <property name="Color" type="color" value=""/>
    <property name="GroupID" type="int" value="2"/>
    <property name="IsOnState" type="bool" value="true"/>
-   <property name="UseCustomColor" type="bool" value="false"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -841,10 +819,8 @@
  </layer>
  <objectgroup id="71" name="output_Toggle_2_AiAvoid" class="Toggleable">
   <properties>
-   <property name="Color" type="color" value=""/>
    <property name="GroupID" type="int" value="2"/>
    <property name="IsOnState" type="bool" value="true"/>
-   <property name="UseCustomColor" type="bool" value="false"/>
   </properties>
   <object id="3" type="AIAvoid" gid="153" x="416" y="816" width="16" height="16">
    <properties>
@@ -854,10 +830,8 @@
  </objectgroup>
  <layer id="56" name="input_Blocking_Toggle_3" class="Toggleable" width="57" height="57">
   <properties>
-   <property name="Color" type="color" value=""/>
    <property name="GroupID" type="int" value="3"/>
    <property name="IsOnState" type="bool" value="true"/>
-   <property name="UseCustomColor" type="bool" value="false"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -921,10 +895,9 @@
  </layer>
  <layer id="68" name="output_Toggle_3_Off" class="Toggleable" width="57" height="57">
   <properties>
-   <property name="Color" type="color" value="#ffffff50"/>
    <property name="GroupID" type="int" value="3"/>
    <property name="IsOnState" type="bool" value="false"/>
-   <property name="UseCustomColor" type="bool" value="true"/>
+   <property name="UseTint" type="bool" value="true"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -988,10 +961,9 @@
  </layer>
  <layer id="66" name="output_Toggle_3_On_Colour" class="Toggleable" width="57" height="57">
   <properties>
-   <property name="Color" type="color" value="#ffffff50"/>
    <property name="GroupID" type="int" value="3"/>
    <property name="IsOnState" type="bool" value="true"/>
-   <property name="UseCustomColor" type="bool" value="true"/>
+   <property name="UseTint" type="bool" value="true"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -1055,10 +1027,8 @@
  </layer>
  <layer id="67" name="output_Toggle_3_On_Neutral" class="Toggleable" width="57" height="57">
   <properties>
-   <property name="Color" type="color" value=""/>
    <property name="GroupID" type="int" value="3"/>
    <property name="IsOnState" type="bool" value="true"/>
-   <property name="UseCustomColor" type="bool" value="false"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -1122,10 +1092,8 @@
  </layer>
  <objectgroup id="72" name="output_Toggle_3_AiAvoid" class="Toggleable">
   <properties>
-   <property name="Color" type="color" value=""/>
    <property name="GroupID" type="int" value="3"/>
    <property name="IsOnState" type="bool" value="true"/>
-   <property name="UseCustomColor" type="bool" value="false"/>
   </properties>
   <object id="4" type="AIAvoid" gid="153" x="864" y="816" width="16" height="16">
    <properties>

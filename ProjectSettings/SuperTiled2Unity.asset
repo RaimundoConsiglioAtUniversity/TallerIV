@@ -57,15 +57,9 @@ MonoBehaviour:
   - m_Name: AIAvoid
     m_Color: {r: 1, g: 0, b: 0, a: 1}
     m_CustomProperties: []
-  - m_Name: LeverTrigger
+  - m_Name: Lever
     m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
-    m_CustomProperties:
-    - m_Name: Color
-      m_Type: color
-      m_Value: 
-    - m_Name: GroupID
-      m_Type: int
-      m_Value: 0
+    m_CustomProperties: []
   - m_Name: MetalBox
     m_Color: {r: 0.9882353, g: 0.91764706, b: 1, a: 1}
     m_CustomProperties: []
@@ -115,12 +109,6 @@ MonoBehaviour:
     m_Color: {r: 0.5254902, g: 0.33333334, b: 0.20392157, a: 1}
     m_CustomProperties: []
   m_PrefabReplacements:
-  - m_TypeName: Screen
-    m_Prefab: {fileID: 2336568113750305416, guid: ff82970acc11714419cc138486e922f6, type: 3}
-  - m_TypeName: WoodenBox
-    m_Prefab: {fileID: 3818888220949203678, guid: 3664d3072a5353a4ea91134731911e2a, type: 3}
-  - m_TypeName: Teleportable
-    m_Prefab: {fileID: 0}
   - m_TypeName: AIAvoid
     m_Prefab: {fileID: 1757236145437947767, guid: 7193997532d0d694ea6c5ca9e9ee2af6, type: 3}
   - m_TypeName: Lever
@@ -129,23 +117,15 @@ MonoBehaviour:
     m_Prefab: {fileID: 3818888220949203678, guid: 993620d9a647f7a4ba10edc7dfd40337, type: 3}
   - m_TypeName: MovementTarget
     m_Prefab: {fileID: 0}
-  - m_TypeName: Seedling
-    m_Prefab: {fileID: 0}
-  - m_TypeName: SeedlingTarget
-    m_Prefab: {fileID: 0}
-  - m_TypeName: Soil
-    m_Prefab: {fileID: 0}
-  - m_TypeName: Toggleable
-    m_Prefab: {fileID: 0}
-  - m_TypeName: RedPost
-    m_Prefab: {fileID: 5886396888621100430, guid: 0d2c01e20f9ac1b4e9c0d5ecbfa261a4, type: 3}
-  - m_TypeName: InteractiveObject
-    m_Prefab: {fileID: 0}
-  - m_TypeName: LeverTrigger
-    m_Prefab: {fileID: 0}
   - m_TypeName: PermeableTile
+    m_Prefab: {fileID: 0}
+  - m_TypeName: Screen
+    m_Prefab: {fileID: 2336568113750305416, guid: ff82970acc11714419cc138486e922f6, type: 3}
+  - m_TypeName: Seedling
     m_Prefab: {fileID: 0}
   - m_TypeName: SeedlingTrigger
     m_Prefab: {fileID: 0}
-  - m_TypeName: ToggleableLayer
+  - m_TypeName: Soil
     m_Prefab: {fileID: 0}
+  - m_TypeName: WoodenBox
+    m_Prefab: {fileID: 3818888220949203678, guid: 3664d3072a5353a4ea91134731911e2a, type: 3}

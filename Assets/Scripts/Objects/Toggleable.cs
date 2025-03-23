@@ -9,8 +9,8 @@ public class Toggleable : InteractiveObject
 
     public bool isActive;
 
-    public void OnEnable() => InteractableToggle.ToggleLinkedObjects += Toggle;
-    public void OnDisable() => InteractableToggle.ToggleLinkedObjects -= Toggle;
+    public void OnEnable() => ToggleTrigger.ToggleLinkedObjects += Toggle;
+    public void OnDisable() => ToggleTrigger.ToggleLinkedObjects -= Toggle;
 
     public void MakeToggleFromMap(ToggleData toggle)
     {
@@ -26,11 +26,11 @@ public class Toggleable : InteractiveObject
         if (toggle.usesColour)
         {
             if (toggle.layer.TryGetComponent<Tilemap>(out var tilemap))
-                tilemap.color = toggle.colour;
+                tilemap.color = ToggleData.colours[ID];
+                //tilemap.color = toggle.colour;
             else
                 Debug.LogWarning($"{toggle.layer.name} is marked to use colour but has no Tilemap component!");
         }
-
     }
 
     public void Toggle(int ID)
@@ -45,7 +45,7 @@ public class Toggleable : InteractiveObject
         SwitchStates();
     }
 
-    public override void Awake() => SwitchStates();
+    // public override void Awake() => SwitchStates();
 
     public void SwitchStates()
     {
