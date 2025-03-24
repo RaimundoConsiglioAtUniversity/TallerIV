@@ -9,11 +9,13 @@ public class ToggleData
     public Color colour;
     public static Dictionary<int, Color> colours = new()
     {
-        {-1, Color.white},
-        {0, Color.red},
-        {1, Color.blue},
-        {2, Color.green},
-        {3, Color.yellow}
+       {-1, new Color32(0xFF, 0xFF, 0xFF, 0xFF)}, // White
+        {0, new Color32(0xFF, 0x60, 0x60, 0xFF)}, // Red
+        {1, new Color32(0x60, 0x60, 0xFF, 0xFF)}, // Blue
+        {2, new Color32(0x60, 0xFF, 0x60, 0xFF)}, // Green
+        {3, new Color32(0xFF, 0xFF, 0x60, 0xFF)}, // Yellow
+        {4, new Color32(0xFF, 0x60, 0xFF, 0xFF)}, // Magenta
+        {5, new Color32(0x60, 0xFF, 0xFF, 0xFF)}  // Cyan
     };
     public bool usesColour;
 

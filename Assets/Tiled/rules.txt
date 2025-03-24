@@ -5,8 +5,6 @@ Rules\auto_back_rocks.tmx
 Rules\auto_cage.tmx
 Rules\auto_objects.tmx
 Rules\auto_pillars.tmx
-Rules\auto_red_grass.tmx
-Rules\auto_blue_grass.tmx
 Rules\auto_tree.tmx
 Rules\auto_leaves.tmx
 Rules\auto_toggle_grass.tmx

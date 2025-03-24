@@ -27,30 +27,30 @@
 </data>
  </layer>
  <objectgroup id="7" name="output_Soil">
-  <object id="6" gid="15" x="112" y="64" width="16" height="16"/>
+  <object id="6" name="Soil" type="Soil" gid="15" x="112" y="64" width="16" height="16"/>
  </objectgroup>
  <objectgroup id="3" name="output_WoodenBoxes">
-  <object id="1" gid="16" x="16" y="112" width="16" height="16"/>
+  <object id="1" name="WoodenBox" gid="16" x="16" y="112" width="16" height="16"/>
  </objectgroup>
  <objectgroup id="4" name="output_MetalBoxes">
-  <object id="2" type="MetalBox" gid="17" x="48" y="112" width="16" height="16"/>
+  <object id="2" name="MetalBox" type="MetalBox" gid="17" x="48" y="112" width="16" height="16"/>
  </objectgroup>
  <objectgroup id="5" name="output_AiAvoid">
-  <object id="5" type="AIAvoid" gid="1" x="48" y="32" width="16" height="16">
+  <object id="5" name="AiAvoid" type="AIAvoid" gid="1" x="48" y="32" width="16" height="16">
    <properties>
     <property name="unity:layer" value="Holes"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="6" name="output_Levers">
-  <object id="3" type="Lever" gid="4" x="80" y="112" width="16" height="16"/>
-  <object id="4" type="Lever" gid="5" x="112" y="112" width="16" height="16">
+  <object id="4" name="Lever" type="Lever" gid="5" x="112" y="112" width="16" height="16">
    <properties>
-    <property name="ID" type="int" value="1"/>
+    <property name="GroupID" type="int" value="-1"/>
+    <property name="StartActive" type="bool" value="false"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="9" name="output_Seedling">
-  <object id="7" type="Seedling" gid="25" x="144" y="32" width="16" height="16"/>
+  <object id="7" name="Seedling" type="Seedling" gid="25" x="144" y="32" width="16" height="16"/>
  </objectgroup>
 </map>
