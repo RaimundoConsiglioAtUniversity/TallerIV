@@ -1,18 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
+using SuperTiled2Unity;
+using SuperTiled2Unity.Editor;
 using UnityEngine;
+using System.Collections.Generic;
+using System.Linq;
 
-public class ScreenImporter : MonoBehaviour
+
+[AutoCustomTmxImporter()]
+public class ScreenImporter : CustomTmxImporter
 {
-    // Start is called before the first frame update
-    void Start()
+    private SuperMap map;
+    private Screen[] screens = {};
+    private Collider2D[] colliders = {};
+
+    public override void TmxAssetImported(TmxAssetImportedArgs args)
     {
-        
+        map = args.ImportedSuperMap;
+
+        GetAllScreens();
+
+        foreach (var screen in screens)
+        {
+            if (screen.TryGetComponent(out Collider2D col))
+                colliders = colliders.AddIfUnique(col);
+        }
+
+        Screen.levelArea = colliders;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void GetAllScreens()
     {
-        
+        var importedScreens = map.transform.GetComponentsInChildren<Screen>();
+        screens = screens.AddIfUnique(importedScreens);
     }
 }

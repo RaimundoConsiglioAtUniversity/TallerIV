@@ -6,6 +6,8 @@ public class Screen : MonoBehaviour
     [SerializeField] private bool isStartScreen;
     public Vector3 screenSize = new(1, 1, 1);
 
+    public static Collider2D[] levelArea = {};
+
     public void Width(int width) => screenSize.x = width;
     public void Height(int height) => screenSize.y = height;
     public void IsStartingScreen(bool startScreen) => isStartScreen = startScreen;
@@ -53,7 +55,7 @@ public class Screen : MonoBehaviour
     
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col != PlayerInput.Instance.screenTrigger)
+        if (col != PlayerInput.Instance.screenTrigger || !PlayerInput.Instance.withinBounds)
             return;
 
         cam.Disable();

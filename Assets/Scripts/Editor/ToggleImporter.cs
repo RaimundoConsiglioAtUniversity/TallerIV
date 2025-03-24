@@ -16,12 +16,14 @@ public class ToggleImporter : CustomTmxImporter
 
     public override void TmxAssetImported(TmxAssetImportedArgs args)
     {
-        GetAllToggleTriggers(args);
+        map = args.ImportedSuperMap;
+
+        GetAllToggleTriggers();
         
         foreach (var toggle in toggleTriggers)
             toggle.SetColour();
         
-        GetAllToggleLayers(args);
+        GetAllToggleLayers();
         
         foreach (var mapLayer in toggleLayers)
             GetLayerProperties(mapLayer);
@@ -31,10 +33,8 @@ public class ToggleImporter : CustomTmxImporter
 
     }
 
-    private void GetAllToggleLayers(TmxAssetImportedArgs args)
+    private void GetAllToggleLayers()
     {
-        map = args.ImportedSuperMap;
-
         var foundLayers = map.transform.GetChild(0).SearchChildrenByName("Toggle_");
         toggleLayers = toggleLayers.AddIfUnique(foundLayers);
     }
@@ -73,9 +73,7 @@ public class ToggleImporter : CustomTmxImporter
 
     private void MakeNewToggleGroup(int toggleGroup)
     {
-        GameObject toggleObject = new($"ToggleLayer_{toggleGroup}"); // Create the new GameObject
-        toggleObject.transform.SetParent(map.transform.GetChild(0)); // Parent it under the map's grid to embed it in the prefab's hierarchy. 'Tis necessary to parent it to the grid since that handles the tiles' positioning.
-        toggleObject.hideFlags = HideFlags.None; // Clear hide flags to ensure visibility in the Hierarchy.
+        var toggleObject = new GameObject($"ToggleLayer_{toggleGroup}").ParentToPrefab(map.transform.GetChild(0)); // Create the new GameObject
         var toggleScript = toggleObject.AddComponent<Toggleable>();
 
         foreach (var toggle in toggles)
@@ -87,10 +85,8 @@ public class ToggleImporter : CustomTmxImporter
         }
     }
 
-    private void GetAllToggleTriggers(TmxAssetImportedArgs args)
+    private void GetAllToggleTriggers()
     {
-        map = args.ImportedSuperMap;
-        
         var triggers = map.transform.GetComponentsInChildren<ToggleTrigger>();
         toggleTriggers = toggleTriggers.AddIfUnique(triggers);
     }

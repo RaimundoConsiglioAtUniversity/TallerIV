@@ -142,4 +142,11 @@ public static class Extensions
         
         return component;
     }
+
+    public static GameObject ParentToPrefab(this GameObject gameObject, Transform parent)
+    {
+        gameObject.transform.SetParent(parent); // Parent it under the map's grid to embed it in the prefab's hierarchy. 'Tis necessary to parent it to the grid since that handles the tiles' positioning.
+        gameObject.hideFlags = HideFlags.None; // Clear hide flags to ensure visibility in the Hierarchy.
+        return gameObject;
+    }
 }
