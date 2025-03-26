@@ -20,6 +20,7 @@
   <property name="ID" type="int" default="0"/>
  </objecttype>
  <objecttype name="Soil" color="#a0a0a4"/>
+ <objecttype name="SpawnPoint" color="#a0a0a4"/>
  <objecttype name="Toggleable" color="#a0a0a4"/>
  <objecttype name="WoodenBox" color="#865534"/>
 </objecttypes>

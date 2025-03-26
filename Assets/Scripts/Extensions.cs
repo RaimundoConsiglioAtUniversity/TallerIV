@@ -59,54 +59,61 @@ public static class Extensions
     }
 
     // Can use both assignment form `list = list.AddIfUnique(item)` and in-place modification form `list.AddIfUnique(item)`
-    public static List<T> AddIfUnique<T>(this List<T> list, T item)
+    public static List<T> AddIfUnique<T>(this List<T> list, T item, bool log = false)
     {
         if (list.Contains(item))
+        {
+            if (log)
+                Debug.Log($"Already Contained {item}");
             return list;
+        }
         
         list.Add(item);
+        
+        if (log)
+            Debug.Log($"Added {item}");
 
         return list;
     }
 
-    public static List<T> AddIfUnique<T>(this List<T> list, List<T> items)
+    public static List<T> AddIfUnique<T>(this List<T> list, List<T> items, bool log = false)
     {
         foreach (var item in items)
-            list = list.AddIfUnique(item);
+            list = list.AddIfUnique(item, log);
 
         return list;
     }
 
-    public static List<T> AddIfUnique<T>(this List<T> list, T[] items)
+    public static List<T> AddIfUnique<T>(this List<T> list, T[] items, bool log = false)
     {
         foreach (var item in items)
-            list = list.AddIfUnique(item);
+            list = list.AddIfUnique(item, log);
 
         return list;
     }
 
     // Must use assignment form `array = array.AddIfUnique(item)`
-    public static T[] AddIfUnique<T>(this T[] array, T item)
+    public static T[] AddIfUnique<T>(this T[] array, T item, bool log = false)
     {
         List<T> list = array.ToList();
 
-        list = list.AddIfUnique(item);
+        list = list.AddIfUnique(item, log);
 
         return list.ToArray();
     }
 
-    public static T[] AddIfUnique<T>(this T[] array, List<T> items)
+    public static T[] AddIfUnique<T>(this T[] array, List<T> items, bool log = false)
     {
         foreach (var item in items)
-            array = array.AddIfUnique(item);
+            array = array.AddIfUnique(item, log);
 
         return array;
     }
 
-    public static T[] AddIfUnique<T>(this T[] array, T[] items)
+    public static T[] AddIfUnique<T>(this T[] array, T[] items, bool log = false)
     {
         foreach (var item in items)
-            array = array.AddIfUnique(item);
+            array = array.AddIfUnique(item, log);
 
         return array;
     }

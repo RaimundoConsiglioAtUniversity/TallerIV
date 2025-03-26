@@ -28,34 +28,6 @@
 </data>
  </layer>
  <objectgroup id="4" name="Objects">
-  <object id="3" gid="8" x="848" y="176" width="16" height="16"/>
-  <object id="4" gid="8" x="720" y="160" width="16" height="16"/>
-  <object id="16" gid="9" x="896" y="192" width="16" height="16"/>
-  <object id="17" gid="9" x="912" y="192" width="16" height="16"/>
-  <object id="18" gid="9" x="928" y="192" width="16" height="16"/>
-  <object id="19" gid="9" x="896" y="208" width="16" height="16"/>
-  <object id="20" gid="9" x="912" y="208" width="16" height="16"/>
-  <object id="21" gid="9" x="928" y="208" width="16" height="16"/>
-  <object id="24" gid="437" x="1136" y="304" width="16" height="16"/>
-  <object id="25" gid="437" x="1136" y="288" width="16" height="16"/>
-  <object id="26" gid="437" x="1136" y="272" width="16" height="16"/>
-  <object id="28" gid="12" x="1184" y="304" width="16" height="16">
-   <properties>
-    <property name="WallNumber" type="int" value="1"/>
-   </properties>
-  </object>
-  <object id="30" gid="13" x="1120" y="256" width="16" height="16">
-   <properties>
-    <property name="IsActive" type="bool" value="false"/>
-    <property name="WallNumber" type="int" value="1"/>
-   </properties>
-  </object>
-  <object id="31" gid="13" x="1104" y="256" width="16" height="16">
-   <properties>
-    <property name="IsActive" type="bool" value="false"/>
-    <property name="WallNumber" type="int" value="1"/>
-   </properties>
-  </object>
   <object id="32" gid="10" x="1360" y="192" width="16" height="16">
    <properties>
     <property name="WallNumber" type="int" value="2"/>

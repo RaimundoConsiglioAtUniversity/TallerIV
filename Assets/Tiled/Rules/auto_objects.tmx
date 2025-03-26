@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="11" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="9">
+ <properties>
+  <property name="DeleteTiles" type="bool" value="true"/>
+ </properties>
  <tileset firstgid="1" source="../Tilesets/Objects.tsx"/>
  <tileset firstgid="26" source=":/automap-tiles.tsx"/>
  <layer id="1" name="input_Blocking_Objects" width="11" height="8">

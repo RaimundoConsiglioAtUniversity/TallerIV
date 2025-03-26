@@ -166,6 +166,19 @@
         {
             "color": "#ffa0a0a4",
             "drawFill": true,
+            "id": 20,
+            "members": [
+            ],
+            "name": "SpawnPoint",
+            "type": "class",
+            "useAs": [
+                "object",
+                "project"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
             "id": 19,
             "members": [
             ],

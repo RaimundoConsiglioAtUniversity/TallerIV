@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 using Pathfinding;
-using Unity.VisualScripting;
 
 public class FollowAI : MonoBehaviour
 {

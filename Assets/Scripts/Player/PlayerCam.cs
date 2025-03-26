@@ -13,15 +13,12 @@ public class PlayerCam : MonoBehaviour
         vCam = GetComponentInChildren<CinemachineVirtualCamera>();
     }
 
-    public void Enable()
+    public void Enable() => Active(true);
+    public void Disable() => Active(false);
+    public bool Active() => vCam.enabled;
+    public void Active(bool b)
     {
         SetVCamReference();
-        vCam.enabled = true;
-    }
-    
-    public void Disable()
-    {
-        SetVCamReference();
-        vCam.enabled = false;
+        vCam.enabled = b;
     }
 }

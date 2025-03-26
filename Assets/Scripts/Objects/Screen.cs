@@ -6,7 +6,10 @@ public class Screen : MonoBehaviour
     [SerializeField] private bool isStartScreen;
     public Vector3 screenSize = new(1, 1, 1);
 
-    public static Collider2D[] levelArea = {};
+    public static Screen[] levelArea = {};
+    public static int levelAreaOverlapCount = 0;
+
+    public bool WithinBounds => levelAreaOverlapCount > 0;
 
     public void Width(int width) => screenSize.x = width;
     public void Height(int height) => screenSize.y = height;
@@ -41,23 +44,29 @@ public class Screen : MonoBehaviour
                 screen.cam.Disable();
         }
     }
-    
-    #endif
+
+#endif
+
+    private void Awake() => levelArea = FindObjectsOfType<Screen>();
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col != PlayerInput.Instance.screenTrigger)
             return;
 
-        cam.Enable();
+        levelAreaOverlapCount++;
+        
+        foreach (var screen in levelArea)
+            screen.cam.Active(screen == this); // Only active camera is the most recent to be entered to
     }
 
     
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col != PlayerInput.Instance.screenTrigger || !PlayerInput.Instance.withinBounds)
+        if (col != PlayerInput.Instance.screenTrigger)
             return;
 
-        cam.Disable();
+        levelAreaOverlapCount--;
+        // print(levelAreaOverlapCount);
     }
 }
