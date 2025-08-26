@@ -6,13 +6,13 @@
     "activeFile": "Maps/TestMap (2).tmx",
     "automapping.whileDrawing": false,
     "expandedProjectPaths": [
-        "Tilesets",
-        ".",
         "rules",
-        "classes",
-        "Objects",
         "Rules",
-        "Maps"
+        ".",
+        "Maps",
+        "classes",
+        "Tilesets",
+        "Objects"
     ],
     "fileStates": {
         ":/automap-tiles.tsx": {
@@ -59,8 +59,8 @@
         "Maps/TestMap (2).tmx": {
             "expandedGroupLayers": [
                 136,
-                135,
-                37
+                37,
+                135
             ],
             "expandedObjectLayers": [
                 36
@@ -68,19 +68,19 @@
             "scale": 1,
             "selectedLayer": 27,
             "viewCenter": {
-                "x": 208,
-                "y": 262
+                "x": 724,
+                "y": 174.5
             }
         },
         "Maps/TestMap.tmx": {
             "expandedObjectLayers": [
                 4
             ],
-            "scale": 0.75,
+            "scale": 0.25,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 1290.6666666666665,
-                "y": 89.33333333333331
+                "x": 816,
+                "y": 176
             }
         },
         "Maps/Tilesets/generic_platformer_tiles_1_CC0_by_Surt_OpenGameArt.tsx": {
@@ -175,15 +175,15 @@
         "Rules/auto_pillars.tmx": {
             "expandedObjectLayers": [
                 31,
-                26,
                 27,
+                26,
                 35
             ],
             "scale": 1.5,
             "selectedLayer": 15,
             "viewCenter": {
-                "x": -145.33333333333331,
-                "y": 99.33333333333331
+                "x": 200,
+                "y": 136
             }
         },
         "Rules/auto_proto.tmx": {
@@ -207,16 +207,16 @@
         },
         "Rules/auto_toggle_grass.tmx": {
             "expandedObjectLayers": [
+                70,
                 69,
-                72,
                 71,
-                70
+                72
             ],
             "scale": 0.33,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 836.3636363636365,
-                "y": 551.5151515151516
+                "x": 454.5454545454545,
+                "y": 454.5454545454546
             }
         },
         "Rules/auto_tree.tmx": {
@@ -375,18 +375,18 @@
     "project": "TempTileset.tiled-project",
     "property.type": "string",
     "recentFiles": [
-        "Maps/TestMap.tmx",
-        "Rules/auto_pillars.tmx",
-        "Rules/auto_toggle_grass.tmx",
-        "Tilesets/Objects.tsx",
+        "Tilesets/Pillars.tsx",
         "Tilesets/GrassTiles.tsx",
-        "Rules/auto_grass.tmx",
-        "Tilesets/ToggleGrassTops.tsx",
         "Tilesets/ToggleGrassColour.tsx",
+        "Tilesets/ToggleGrassTops.tsx",
+        "Rules/auto_toggle_grass.tmx",
+        "Rules/auto_pillars.tmx",
+        "Maps/TestMap.tmx",
+        "Maps/TestMap (2).tmx",
+        "Tilesets/Objects.tsx",
+        "Rules/auto_grass.tmx",
         "Tilesets/BackRockTiles.tsx",
-        "Tilesets/BoundsTiles.tsx",
-        "Tilesets/CageTiles.tsx",
-        "Rules/auto_proto.tmx"
+        "Tilesets/BoundsTiles.tsx"
     ],
     "tileset.lastUsedFilter": "All Files (*)",
     "tileset.lastUsedFormat": "tsx",
