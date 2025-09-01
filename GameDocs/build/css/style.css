@@ -1,0 +1,462 @@
+/* based off Sadgrl's Layout Builder style section, + a lot of learning CSS ^c^" */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fef7fb;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  text-wrap: wrap;
+  text-wrap: balance;
+}
+
+:root {
+  interpolate-size: allow-keywords;
+}
+
+body {
+  background-color: #5e50a0;
+  background-size: 132px;
+  font-family: "Fresca", sans-serif;
+  margin: 0px auto;
+  max-width: 100%;
+  min-width: 900px;
+  text-underline-offset: 4px;
+  width: 900px;
+}
+
+.bgGradient {
+  background-image: -webkit-gradient(linear, left top, right top, from(#383366), color-stop(1%, rgba(56, 51, 102, 0.6)), color-stop(10%, rgba(0, 0, 0, 0)), color-stop(90%, rgba(0, 0, 0, 0)), color-stop(99%, rgba(56, 51, 102, 0.6)), to(#383366));
+  background-image: linear-gradient(to right, #383366, rgba(56, 51, 102, 0.6) 1%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgba(56, 51, 102, 0.6) 99%, #383366);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.container {
+  -ms-grid-row-align: center;
+      align-self: center;
+  display: -ms-grid;
+  display: grid;
+  width: 900px;
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
+  -ms-grid-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+.headerArea {
+  -webkit-box-shadow: 0px 0px 7px 0px #12162c;
+          box-shadow: 0px 0px 7px 0px #12162c;
+  margin-bottom: 24px;
+}
+
+.darkGradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#12162c), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(#12162c, rgba(0, 0, 0, 0));
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 20px;
+  margin-bottom: -20px;
+  position: sticky;
+  width: 100%;
+  z-index: 1;
+}
+
+.slideFlex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.slideFlex .slide {
+  background-color: #e880b0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: auto;
+  gap: 24px;
+  justify-items: center;
+  align-content: center;
+  width: 900px;
+  height: 675px;
+  margin-bottom: 24px;
+  padding: 24px;
+  min-width: 0px;
+  min-height: 0px;
+  overflow: hidden;
+}
+.slideFlex .slide p {
+  text-align: start;
+}
+
+.rel {
+  display: inline;
+  position: relative;
+}
+
+.info {
+  text-shadow: 0.56px 0.28px 0 #12162c, 0.56px 0px 0 #12162c, 0.56px 0.56px 0 #12162c, 0px 0.56px 0 #12162c, 0.14px 0.56px 0 #12162c, 0.28px 0.56px 0 #12162c, 0.42px 0.14px 0 #12162c, 0.56px 0.42px 0 #12162c, 0.7px 0.7px 0 #12162c, 0.7px 0.98px 0 #12162c, 0.56px 1.12px 0 #12162c, 0.42px 1.12px 0 #12162c, 0.28px 0.98px 0 #12162c, 0.14px 0.84px 0 #12162c, 0px 0.56px 0 #12162c;
+  padding: 20px 3.9px;
+  border-radius: 6px;
+  background-color: #4f2d75;
+  font-size: 18pt;
+  display: inline;
+  position: absolute;
+  right: -180px;
+  top: 30pt;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  min-width: 300px;
+  max-width: 400px;
+  z-index: 1;
+}
+
+.ipa {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18pt;
+}
+
+.tooltip {
+  font-style: italic;
+  font-weight: 400;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.tooltip:hover {
+  font-size: 25.2pt;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.tooltip:hover + .rel .info {
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.bodyGrid {
+  display: -ms-grid;
+  display: grid;
+  gap: 0px;
+      grid-template-areas: "left main right";
+  -ms-grid-columns: auto 0px 1fr 0px auto;
+  grid-template-columns: auto 1fr auto;
+}
+
+main {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: main;
+  margin: 96px 0px;
+  min-width: 0px;
+}
+
+p {
+  text-shadow: 0.96px 0.48px 0 #12162c, 0.96px 0px 0 #12162c, 0.96px 0.96px 0 #12162c, 0px 0.96px 0 #12162c, 0.24px 0.96px 0 #12162c, 0.48px 0.96px 0 #12162c, 0.72px 0.24px 0 #12162c, 0.96px 0.72px 0 #12162c, 1.2px 1.2px 0 #12162c, 1.2px 1.68px 0 #12162c, 0.96px 1.92px 0 #12162c, 0.72px 1.92px 0 #12162c, 0.48px 1.68px 0 #12162c, 0.24px 1.44px 0 #12162c, 0px 0.96px 0 #12162c;
+  font-size: 24pt;
+  padding: 6px;
+  line-height: 27.6pt;
+}
+p.small {
+  font-size: 18pt;
+}
+
+strong {
+  /* this styles bold text */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color);
+}
+
+h1 {
+  text-shadow: 1.6px 0.8px 0 #12162c, 1.6px 0px 0 #12162c, 1.6px 1.6px 0 #12162c, 0px 1.6px 0 #12162c, 0.4px 1.6px 0 #12162c, 0.8px 1.6px 0 #12162c, 1.2px 0.4px 0 #12162c, 1.6px 1.2px 0 #12162c, 2px 2px 0 #12162c, 2px 2.8px 0 #12162c, 1.6px 3.2px 0 #12162c, 1.2px 3.2px 0 #12162c, 0.8px 2.8px 0 #12162c, 0.4px 2.4px 0 #12162c, 0px 1.6px 0 #12162c;
+  font-size: 62.4pt;
+  font-weight: bolder;
+  letter-spacing: 0.1px;
+  margin: 8.4px 0px;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-shadow: 0.72px 0.36px 0 #12162c, 0.72px 0px 0 #12162c, 0.72px 0.72px 0 #12162c, 0px 0.72px 0 #12162c, 0.18px 0.72px 0 #12162c, 0.36px 0.72px 0 #12162c, 0.54px 0.18px 0 #12162c, 0.72px 0.54px 0 #12162c, 0.9px 0.9px 0 #12162c, 0.9px 1.26px 0 #12162c, 0.72px 1.44px 0 #12162c, 0.54px 1.44px 0 #12162c, 0.36px 1.26px 0 #12162c, 0.18px 1.08px 0 #12162c, 0px 0.72px 0 #12162c;
+  font-size: 39.84pt;
+  font-weight: bolder;
+  letter-spacing: 0.1px;
+  margin: 6px 0px;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-shadow: 0.72px 0.36px 0 #12162c, 0.72px 0px 0 #12162c, 0.72px 0.72px 0 #12162c, 0px 0.72px 0 #12162c, 0.18px 0.72px 0 #12162c, 0.36px 0.72px 0 #12162c, 0.54px 0.18px 0 #12162c, 0.72px 0.54px 0 #12162c, 0.9px 0.9px 0 #12162c, 0.9px 1.26px 0 #12162c, 0.72px 1.44px 0 #12162c, 0.54px 1.44px 0 #12162c, 0.36px 1.26px 0 #12162c, 0.18px 1.08px 0 #12162c, 0px 0.72px 0 #12162c;
+  font-size: 34.8pt;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  margin: 6px 0px;
+  text-transform: uppercase;
+}
+
+h4 {
+  text-shadow: 0.72px 0.36px 0 #12162c, 0.72px 0px 0 #12162c, 0.72px 0.72px 0 #12162c, 0px 0.72px 0 #12162c, 0.18px 0.72px 0 #12162c, 0.36px 0.72px 0 #12162c, 0.54px 0.18px 0 #12162c, 0.72px 0.54px 0 #12162c, 0.9px 0.9px 0 #12162c, 0.9px 1.26px 0 #12162c, 0.72px 1.44px 0 #12162c, 0.54px 1.44px 0 #12162c, 0.36px 1.26px 0 #12162c, 0.18px 1.08px 0 #12162c, 0px 0.72px 0 #12162c;
+  font-size: 34.8pt;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+
+a {
+  text-shadow: 0.96px 0.48px 0 #12162c, 0.96px 0px 0 #12162c, 0.96px 0.96px 0 #12162c, 0px 0.96px 0 #12162c, 0.24px 0.96px 0 #12162c, 0.48px 0.96px 0 #12162c, 0.72px 0.24px 0 #12162c, 0.96px 0.72px 0 #12162c, 1.2px 1.2px 0 #12162c, 1.2px 1.68px 0 #12162c, 0.96px 1.92px 0 #12162c, 0.72px 1.92px 0 #12162c, 0.48px 1.68px 0 #12162c, 0.24px 1.44px 0 #12162c, 0px 0.96px 0 #12162c;
+  color: #e7498c;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  line-height: 28.5pt;
+}
+a img {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: brightness(1) saturate(1) drop-shadow(0 0 0 rgba(0, 0, 0, 0)) drop-shadow(0.05rem 0.09rem 0 #12162c);
+          filter: brightness(1) saturate(1) drop-shadow(0 0 0 rgba(0, 0, 0, 0)) drop-shadow(0.05rem 0.09rem 0 #12162c);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+a:hover {
+  text-shadow: 1.2px 0.6px 0 #12162c, 1.2px 0px 0 #12162c, 1.2px 1.2px 0 #12162c, 0px 1.2px 0 #12162c, 0.3px 1.2px 0 #12162c, 0.6px 1.2px 0 #12162c, 0.9px 0.3px 0 #12162c, 1.2px 0.9px 0 #12162c, 1.5px 1.5px 0 #12162c, 1.5px 2.1px 0 #12162c, 1.2px 2.4px 0 #12162c, 0.9px 2.4px 0 #12162c, 0.6px 2.1px 0 #12162c, 0.3px 1.8px 0 #12162c, 0px 1.2px 0 #12162c;
+  font-size: 110%;
+  color: #b72075;
+  text-decoration: underline;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+a:hover img {
+  -webkit-transform: scale(1.35);
+      -ms-transform: scale(1.35);
+          transform: scale(1.35);
+  -webkit-filter: brightness(1.1) saturate(1.1) drop-shadow(0 0 0 #12162c) drop-shadow(0.06rem 0.1rem 0 #12162c);
+          filter: brightness(1.1) saturate(1.1) drop-shadow(0 0 0 #12162c) drop-shadow(0.06rem 0.1rem 0 #12162c);
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+ul {
+  list-style-type: none;
+  padding: 8.4px;
+}
+
+li {
+  text-shadow: 0.48px 0.24px 0 #12162c, 0.48px 0px 0 #12162c, 0.48px 0.48px 0 #12162c, 0px 0.48px 0 #12162c, 0.12px 0.48px 0 #12162c, 0.24px 0.48px 0 #12162c, 0.36px 0.12px 0 #12162c, 0.48px 0.36px 0 #12162c, 0.6px 0.6px 0 #12162c, 0.6px 0.84px 0 #12162c, 0.48px 0.96px 0 #12162c, 0.36px 0.96px 0 #12162c, 0.24px 0.84px 0 #12162c, 0.12px 0.72px 0 #12162c, 0px 0.48px 0 #12162c;
+  font-size: 24pt;
+  margin: 3.9px 0px 3.9px 8.4px;
+  text-decoration: none;
+}
+
+img {
+  -webkit-filter: drop-shadow(0 0 0 #12162c) drop-shadow(0.05rem 0.09rem 0 #12162c);
+          filter: drop-shadow(0 0 0 #12162c) drop-shadow(0.05rem 0.09rem 0 #12162c);
+  max-height: 100%;
+  max-width: 100%;
+}
+img.ui {
+  min-height: -moz-fit-content;
+  min-height: -webkit-fit-content;
+  min-height: fit-content;
+  min-width: -moz-fit-content;
+  min-width: -webkit-fit-content;
+  min-width: fit-content;
+}
+img.slide-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.svg-font {
+  -webkit-filter: brightness(0) invert(1) drop-shadow(0 0 0 #12162c) drop-shadow(0.05rem 0.09rem 0 #12162c);
+          filter: brightness(0) invert(1) drop-shadow(0 0 0 #12162c) drop-shadow(0.05rem 0.09rem 0 #12162c);
+  display: inline;
+  height: 16.8pt;
+  margin-left: -2px;
+  max-width: 16.8pt;
+  scale: 1.1 1;
+}
+.svg-font img {
+  display: inline;
+}
+
+.box {
+  border: 3px solid #12162c;
+  border-top-width: 3px;
+  border-top-left-radius: 6px;
+  border-left-width: 3px;
+  border-bottom-left-radius: 6px;
+  border-bottom-width: 3px;
+  border-bottom-right-radius: 6px;
+  border-right-width: 3px;
+  border-top-right-radius: 6px;
+  background-color: #5e50a0;
+  margin: 14px 0px;
+  padding: 6px;
+}
+
+/*
+.TableShrink
+{
+	flex: 1 1 46%;
+	min-width: 170px;
+	max-width: 100%;
+	height: 100%;
+	margin: size.$nil;
+	padding: 0px;
+	align-self:flex-end;
+
+	h4
+	{
+		margin-bottom: size.$padding;
+	}
+}
+
+table
+{
+	border: size.$border-l solid $shadow;
+	border-spacing: 0;
+	border-collapse: separate;
+	border-radius: size.$padding;
+
+	color: $text;
+
+	margin: 0px;
+	height: auto;
+	max-width: auto;
+	padding: 0px;
+	width: 100%;
+
+	tbody
+	{
+		font-size: small;
+	}
+}
+
+tr
+{
+	height:1px;
+	margin: 0px;
+	padding: 0px;
+
+	th
+	{
+		&:first-child
+		{
+			border-top-left-radius: size.$border-l;
+		}
+
+		&:last-child
+		{
+			border-top-right-radius: size.$border-l;
+		}
+	}
+
+	&:not(:last-child) td, th
+	{
+		border-bottom: size.$border solid $shadow;
+	}
+
+	&:last-child td
+	{
+		&:first-child
+		{
+			border-bottom-left-radius: size.$border-l;
+		}
+
+		&:last-child
+		{
+			border-bottom-right-radius: size.$border-l;
+		}
+	}
+}
+
+td, th
+{
+	@include text-shade(1.4);
+
+	align-content: center;
+	margin: 0px;
+	min-height: 5px;
+	padding: size.$padding-s;
+	text-align: right;
+	width: min-content;
+}
+
+td
+{
+	background-color: colour.$base2;
+	background-image: linear-gradient(to right, colour.$base2, colour.$base3);
+
+	&:not(:last-child)
+	{
+		border-right: size.$border solid colour.$baseB;
+	}
+
+	&.bar
+	{
+		background-color: colour.$base3;
+		background-image: linear-gradient(to right, colour.$base3, colour.$base2);
+		width: 100%;
+		height: inherit;
+		padding: 0px;
+		padding-right: size.$padding-s;
+
+		.barInside
+		{
+			height: 100%;
+			padding: size.$border-l 0px;
+
+			.barFill
+			{
+				@include border(size.$border, colour.$base3, 1, 1, 1, 1, 1, $radius:5px);
+				@include text-shade(1.4);
+
+				margin: 0px;
+				align-content: center;
+				background-color: colour.$base1;
+				background-image: linear-gradient(to right, colour.$base2, colour.$base1);
+				min-width: 6%;
+				height: 100%;
+				padding: auto 0px;
+				padding-right: size.$padding-s;
+			}
+		}
+	}
+}
+
+th
+{	
+	font-size: size.$smaller;
+
+	&:first-child
+	{
+		background-image: radial-gradient(farthest-side at 100% 100%, colour.$accent4, colour.$accent2);
+	}
+
+	&:not(:first-child)
+	{
+		background-image: linear-gradient(colour.$accent2, colour.$accent4);
+		text-align: left;
+	}
+}
+*/
