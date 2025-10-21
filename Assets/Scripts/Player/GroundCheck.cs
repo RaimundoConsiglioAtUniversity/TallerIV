@@ -24,14 +24,10 @@ public class GroundCheck : MonoBehaviour
     void Check()
     {
         if (IsGrounded)
-        {
             OnGroundActions(pony.gameObject);
-            //player.anim.SetBool("jump", false);
-            //player.anim.SetBool("isFalling", false);
-        }
+
         else
-        {
             OnAirActions(pony.gameObject);
-        }
+            
     }
 }

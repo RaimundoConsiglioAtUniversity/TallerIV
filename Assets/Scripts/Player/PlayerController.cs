@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public Collider2D col;
     public GroundCheck groundC;
+    public PonyAnim anim;
 
 
     public bool isDucking => vInput.SteppedValue == 1 && groundC.IsGrounded;
@@ -71,6 +72,7 @@ public class PlayerController : MonoBehaviour
         groundC = GetComponentInChildren<GroundCheck>();
         tribe = GetComponentInChildren<PonyType>();
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponentInChildren<PonyAnim>();
     }
 
     void Start()
@@ -80,6 +82,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        CheckAnimationState();
         currentTargetSpeed = TargetMoveSpeed;
         WalkInput();
         JumpInput();
@@ -105,7 +108,7 @@ public class PlayerController : MonoBehaviour
         vInput.value = inputController.vInput;
 
         Accelerate();
-        rb.velocity = new(moveSpeed, rb.velocity.y);
+        rb.linearVelocity = new(moveSpeed, rb.linearVelocity.y);
     }
 
     void JumpInput()
@@ -120,11 +123,15 @@ public class PlayerController : MonoBehaviour
         if (jumpBufferCounter > 0f)
         {
             if (coyoteTimeCounter > 0f)
+            {
                 DoJump(stats.jumpStrength);
+                anim.Play(Animations.Jump_Rise);
+            }
             
             else if (tribe is PonyPegasus && currentFlaps < stats.maxFlaps)
             {
                 DoJump(stats.flapStrength);
+                anim.Play(Animations.Flap);
                 currentFlaps++;
             }
         }
@@ -133,7 +140,8 @@ public class PlayerController : MonoBehaviour
     public void DoJump(float jumpStrength)
     {
         //audioS.PlayOneShot(jumpSFX);
-        rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
+
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpStrength);
 
         jumpBufferCounter = 0f;
     }
@@ -142,7 +150,7 @@ public class PlayerController : MonoBehaviour
     void ApplyCustomGravity()
     {
         float gravityScale;
-        if (rb.velocity.y > 0)
+        if (rb.linearVelocity.y > 0)
         {
             if (isHoldingJump)
             {
@@ -161,14 +169,48 @@ public class PlayerController : MonoBehaviour
 
         rb.AddForce(gravityScale * Time.deltaTime * Vector2.down, ForceMode2D.Force);
     }
+
+    void CheckAnimationState()
+    {
+        if (groundC.IsGrounded && Mathf.Abs(rb.linearVelocity.y) < 0.1f)
+        {
+            float speed = Mathf.Abs(moveSpeed);
+
+            if (speed >= stats.walkSpeed * stats.runMultiplier * 0.98f)
+            {
+                anim.Play(Animations.Gallop);
+            }
+            else if (speed >= stats.walkSpeed * 1.1f)
+            {
+                anim.Play(Animations.Trot);
+            }
+            else if (speed >= 0.1f)
+            {
+                anim.Play(Animations.Walk);
+            }
+            else
+                anim.Play(Animations.Idle);
+
+        }
+        else
+        {
+            if (Mathf.Abs(rb.linearVelocity.y) < 1.5f)
+                anim.Play(Animations.Jump_Peak);
+
+            else if (rb.linearVelocity.y <= -1.5f)
+                anim.Play(Animations.Fall);
+
+        }
+    }
     
     void DoActions()
     {
         if (inputController.pressedAction1)
             tribe.Action1();
-        
+
         if (inputController.pressedAction2)
             tribe.Action2();
+        
     }
 
     void ResetAirJumps() => currentFlaps = 0;
@@ -198,7 +240,6 @@ public class PlayerController : MonoBehaviour
     {
         if (gO != gameObject)
             return;
-
 
         ResetCoyoteTimer();
         ResetAirJumps();

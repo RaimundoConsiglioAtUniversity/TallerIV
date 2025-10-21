@@ -31,7 +31,7 @@ public class Screen : MonoBehaviour
     [UnityEditor.Callbacks.DidReloadScripts]
     public static void SetScreenSize()
     {
-        Screen[] screens = FindObjectsOfType<Screen>();
+        Screen[] screens = Object.FindObjectsByType<Screen>(FindObjectsSortMode.None);
     
         foreach (var screen in screens)
         {
@@ -47,7 +47,7 @@ public class Screen : MonoBehaviour
 
 #endif
 
-    private void Awake() => levelArea = FindObjectsOfType<Screen>();
+    private void Awake() => levelArea = Object.FindObjectsByType<Screen>(FindObjectsSortMode.None);
 
     private void OnTriggerEnter2D(Collider2D col)
     {

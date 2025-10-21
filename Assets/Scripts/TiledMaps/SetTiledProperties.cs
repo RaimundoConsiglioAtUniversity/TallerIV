@@ -24,22 +24,18 @@ public class SetTiledProperties : MonoBehaviour
 
     public void Initialize()
     {
-        customProperties = FindObjectsOfType<SuperCustomProperties>();
+        customProperties = FindObjectsByType<SuperCustomProperties>(FindObjectsSortMode.None);
         int objectIdx = 0;
         int buttonIdx = 0;
-        int toggleIdx = 0;
         int tpIdx = 0;
-        int elecIdx = 0;
         int plantIdx = 0;
 
         foreach (var customProperty in customProperties)
         {
             objectIdx++;
             bool startAwake    = customProperty.TryGetCustomProperty("IsActive", out CustomProperty StartAwake);
-            bool canToggleWall = customProperty.TryGetCustomProperty("ToggleableWall", out CustomProperty ToggleableWall);
             bool hasWallNumber = customProperty.TryGetCustomProperty("WallNumber", out CustomProperty WallNumber);
             bool isButton      = customProperty.TryGetCustomProperty("ButtonWall", out CustomProperty ButtonWall);
-            bool isElectric    = customProperty.TryGetCustomProperty("Electric", out CustomProperty Electric);
             bool canTpThrough  = customProperty.TryGetCustomProperty("CanTeleportThrough", out CustomProperty CanTpThrough);
             bool isGrowable    = customProperty.TryGetCustomProperty("GrowPlant", out CustomProperty GrowPlant);
             
@@ -60,7 +56,7 @@ public class SetTiledProperties : MonoBehaviour
                 myObject.EnsureComponent(ref collider);
                 myObject.EnsureComponent(ref rb);
 
-                rb.isKinematic = true;
+                rb.bodyType = RigidbodyType2D.Kinematic;
 
                 PlayerButton button = myObject.GetOrAddComponent<PlayerButton>();
 
@@ -74,51 +70,14 @@ public class SetTiledProperties : MonoBehaviour
                 isActive = StartAwake.GetValueAsBool();
             }
 
-            if (canToggleWall)
-            {
-                toggleIdx++;
-                myObject.name = $"ToggleableObject_{toggleIdx}";
-
-                myObject.EnsureComponent(ref collider);
-                myObject.EnsureComponent(ref rb);
-                
-                rb.isKinematic = false;
-                rb.constraints = RigidbodyConstraints2D.FreezeAll;
-
-                Toggleable wall = myObject.GetOrAddComponent<Toggleable>();
-
-                wall.ID = wallID;
-                wall.isActive = isActive;
-            }
-
             if (canTpThrough)
             {
                 tpIdx++;
                 myObject.name = $"PermeableObject_{tpIdx}";
 
                 myObject.EnsureComponent(ref collider);
-                myObject.EnsureComponent(ref rb);
-                
-                rb.isKinematic = false;
-                rb.constraints = RigidbodyConstraints2D.FreezeAll;
 
                 Permeable permeable = myObject.GetOrAddComponent<Permeable>();
-            }
-
-            if (isElectric)
-            {
-                elecIdx++;
-                myObject.name = $"ElecObject_{elecIdx}";
-
-                myObject.EnsureComponent(ref collider);
-                myObject.EnsureComponent(ref rb);
-                
-                rb.isKinematic = false;
-                rb.constraints = RigidbodyConstraints2D.FreezeAll;
-
-                Electric electric = myObject.GetOrAddComponent<Electric>();
-
-                electric.objectID = wallID;
             }
 
             if (isGrowable)
@@ -127,10 +86,6 @@ public class SetTiledProperties : MonoBehaviour
                 myObject.name = $"PlantObject_{plantIdx}";
 
                 myObject.EnsureComponent(ref collider);
-                myObject.EnsureComponent(ref rb);
-                
-                rb.isKinematic = false;
-                rb.constraints = RigidbodyConstraints2D.FreezeAll;
 
                 GrowPlant plant = myObject.GetOrAddComponent<GrowPlant>();
 
@@ -139,7 +94,7 @@ public class SetTiledProperties : MonoBehaviour
             }
         }
         
-        interactives = (InteractiveObject[])interactives.AddIfUnique(FindObjectsOfType<InteractiveObject>());
+        interactives = (InteractiveObject[])interactives.AddIfUnique(FindObjectsByType<InteractiveObject>(FindObjectsSortMode.None));
 
         foreach (InteractiveObject interactive in interactives)
         {

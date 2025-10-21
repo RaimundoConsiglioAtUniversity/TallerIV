@@ -16,7 +16,7 @@ public class FollowAI : MonoBehaviour
 
     private Path path;
     int currentWaypoint = 0;
-    bool reachedPathEnd = false;
+    // bool reachedPathEnd = false;
 
     Seeker seeker;
 
@@ -33,7 +33,7 @@ public class FollowAI : MonoBehaviour
 
     Vector2 frontObstacleHeightDifference;
 
-    string debugStr = "";
+    // string debugStr = "";
 
 Vector2 positionDifference;
 
@@ -79,11 +79,13 @@ Vector2 positionDifference;
             return;
 
         if (currentWaypoint < path.vectorPath.Count)
-            reachedPathEnd = false;
-        
+        {
+            // reachedPathEnd = false;
+        }
+
         else
         {
-            reachedPathEnd = true;
+            // reachedPathEnd = true;
             return;
         }
 
@@ -195,7 +197,7 @@ Vector2 positionDifference;
             return true;
         }
             
-        else if (!pony.groundC.IsGrounded && pony.rb.velocity.y < 0.01f)
+        else if (!pony.groundC.IsGrounded && pony.rb.linearVelocity.y < 0.01f)
         {
             // debugStr += $"pony.tribe is PonyPegasus && (pony.currentFlaps < pony.stats.maxFlaps) : {pony.tribe is PonyPegasus && (pony.currentFlaps < pony.stats.maxFlaps)}\n";
             return pony.tribe is PonyPegasus && (pony.currentFlaps < pony.stats.maxFlaps);

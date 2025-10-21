@@ -52,7 +52,7 @@ public class PonyGaea : PonyType
         if (preJump)
             pony.DoJump(pony.stats.jumpStrength * 1.2f);
         
-        if (pony.rb.velocity.y > 0f)
+        if (pony.rb.linearVelocity.y > 0f)
         {
             yield return null;
             StartCoroutine(GroundPound());
