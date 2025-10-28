@@ -48,7 +48,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
-  anim: 0
 --- !u!1 &4665896590050416311
 GameObject:
   m_ObjectHideFlags: 0

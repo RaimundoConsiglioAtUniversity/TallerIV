@@ -1,0 +1,2308 @@
+fileFormatVersion: 2
+guid: 31b2d3378d2b12e4b928cb43389fc75c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8445302251077972156
+    second: Batpony_0
+  - first:
+      213: 1664657811214500212
+    second: Batpony_1
+  - first:
+      213: 647787978945590781
+    second: Batpony_2
+  - first:
+      213: 7057880445330679508
+    second: Batpony_3
+  - first:
+      213: 4222784715918976142
+    second: Batpony_4
+  - first:
+      213: 6704104583506656989
+    second: Batpony_5
+  - first:
+      213: 1849946999712106870
+    second: Batpony_6
+  - first:
+      213: -8210380017223467723
+    second: Batpony_7
+  - first:
+      213: -3753690294164808629
+    second: Batpony_8
+  - first:
+      213: -6696139859511074691
+    second: Batpony_9
+  - first:
+      213: -6935249518754762223
+    second: Batpony_10
+  - first:
+      213: -7871313163287652242
+    second: Batpony_11
+  - first:
+      213: -1474800049582737495
+    second: Batpony_12
+  - first:
+      213: -3674875890124201248
+    second: Batpony_13
+  - first:
+      213: 1177728907315397499
+    second: Batpony_14
+  - first:
+      213: -6887084306463029728
+    second: Batpony_15
+  - first:
+      213: 6938692674460305645
+    second: Batpony_16
+  - first:
+      213: 4565142555828991286
+    second: Batpony_17
+  - first:
+      213: -4277200879474699291
+    second: Batpony_18
+  - first:
+      213: -1190303014074055842
+    second: Batpony_19
+  - first:
+      213: -3192084660599413841
+    second: Batpony_20
+  - first:
+      213: -1284479026111139433
+    second: Batpony_21
+  - first:
+      213: 8846232169618230789
+    second: Batpony_22
+  - first:
+      213: 7772585753949088433
+    second: Batpony_23
+  - first:
+      213: -6931689632183038103
+    second: Batpony_24
+  - first:
+      213: -8248605214927735157
+    second: Batpony_25
+  - first:
+      213: -5209443718201687818
+    second: Batpony_26
+  - first:
+      213: 5411627350747984891
+    second: Batpony_27
+  - first:
+      213: 6150768468946968797
+    second: Batpony_28
+  - first:
+      213: -6594815551926732441
+    second: Batpony_29
+  - first:
+      213: 6333486597377235594
+    second: Batpony_30
+  - first:
+      213: 4808070922887470867
+    second: Batpony_31
+  - first:
+      213: -3881886767520068125
+    second: Batpony_32
+  - first:
+      213: 8327935553362567687
+    second: Batpony_33
+  - first:
+      213: -7548401733868958691
+    second: Batpony_34
+  - first:
+      213: 1939125353926486140
+    second: Batpony_35
+  - first:
+      213: 4105678380169888292
+    second: Batpony_36
+  - first:
+      213: 2003392569299362781
+    second: Batpony_37
+  - first:
+      213: -5499800205600969002
+    second: Batpony_38
+  - first:
+      213: -4249706495066713977
+    second: Batpony_39
+  - first:
+      213: 5347134523744549252
+    second: Batpony_40
+  - first:
+      213: 22595498905767990
+    second: Batpony_41
+  - first:
+      213: 4867225589757698911
+    second: Batpony_42
+  - first:
+      213: 1780132185210195291
+    second: Batpony_43
+  - first:
+      213: -2559416677289782564
+    second: Batpony_44
+  - first:
+      213: 6255725736674587621
+    second: Batpony_45
+  - first:
+      213: -4902674938952805485
+    second: Batpony_46
+  - first:
+      213: -5655783732813408922
+    second: Batpony_47
+  - first:
+      213: 4759072338909485995
+    second: Batpony_48
+  - first:
+      213: -770385442811327990
+    second: Batpony_49
+  - first:
+      213: 5705589682173984817
+    second: Batpony_50
+  - first:
+      213: 5666443749930138047
+    second: Batpony_51
+  - first:
+      213: 7615248077192687302
+    second: Batpony_52
+  - first:
+      213: 4018497267052333299
+    second: Batpony_53
+  - first:
+      213: -6153960663616868875
+    second: Batpony_54
+  - first:
+      213: 2953889351014567655
+    second: Batpony_55
+  - first:
+      213: -130105419318385170
+    second: Batpony_56
+  - first:
+      213: 7636430315212596134
+    second: Batpony_57
+  - first:
+      213: -8160783533875908045
+    second: Batpony_58
+  - first:
+      213: -809529917441229607
+    second: Batpony_59
+  - first:
+      213: 7428197319845309744
+    second: Batpony_60
+  - first:
+      213: 1873522140465703706
+    second: Batpony_61
+  - first:
+      213: -8733449341040983782
+    second: Batpony_62
+  - first:
+      213: 177312079707655178
+    second: Batpony_63
+  - first:
+      213: 23373991149713168
+    second: Batpony_64
+  - first:
+      213: -1835437439181120382
+    second: Batpony_65
+  - first:
+      213: -4380270019054528964
+    second: Batpony_66
+  - first:
+      213: 6208194503986125679
+    second: Batpony_67
+  - first:
+      213: 7549444216870130576
+    second: Batpony_68
+  - first:
+      213: -8882414486857186251
+    second: Batpony_69
+  - first:
+      213: 5115122747376094700
+    second: Batpony_70
+  - first:
+      213: 4236117707611510734
+    second: Batpony_71
+  - first:
+      213: -3784737759633850435
+    second: Batpony_72
+  - first:
+      213: -5914615554484452061
+    second: Batpony_73
+  - first:
+      213: 7110165570169722188
+    second: Batpony_74
+  - first:
+      213: -6529243804703083641
+    second: Batpony_75
+  - first:
+      213: -8760060018496662143
+    second: Batpony_76
+  - first:
+      213: -2999940842741794626
+    second: Batpony_77
+  - first:
+      213: 5179290677507313751
+    second: Batpony_78
+  - first:
+      213: 5085519647058606514
+    second: Batpony_79
+  - first:
+      213: -6786894024406939361
+    second: Batpony_80
+  - first:
+      213: -1708997351362710089
+    second: Batpony_81
+  - first:
+      213: -6998968373371399321
+    second: Batpony_82
+  - first:
+      213: 6708490574589147880
+    second: Batpony_83
+  - first:
+      213: 2896240534013492416
+    second: Batpony_84
+  - first:
+      213: 5025648060652076409
+    second: Batpony_85
+  - first:
+      213: 8406719443054356221
+    second: Batpony_86
+  - first:
+      213: -5788580485467818535
+    second: Batpony_87
+  - first:
+      213: -6785138051082069400
+    second: Batpony_88
+  - first:
+      213: -2290906578049151693
+    second: Batpony_89
+  - first:
+      213: -8419840213050573997
+    second: Batpony_90
+  - first:
+      213: 1375466926258431366
+    second: Batpony_91
+  - first:
+      213: -2024599164012285741
+    second: Batpony_92
+  - first:
+      213: 2068292378391328654
+    second: Batpony_93
+  - first:
+      213: 5827454278725794599
+    second: Batpony_94
+  - first:
+      213: -8732041352064204241
+    second: Batpony_95
+  - first:
+      213: 2823451873230565466
+    second: Batpony_96
+  - first:
+      213: 7952443105751844059
+    second: Batpony_97
+  - first:
+      213: 1683998426910175158
+    second: Batpony_98
+  - first:
+      213: 1720756686465157282
+    second: Batpony_99
+  - first:
+      213: -7121560690106851406
+    second: Batpony_100
+  - first:
+      213: 7983391812099307108
+    second: Batpony_101
+  - first:
+      213: -4429182252618984510
+    second: Batpony_102
+  - first:
+      213: 7637004179358946083
+    second: Batpony_103
+  - first:
+      213: -8197799781142684160
+    second: Batpony_104
+  - first:
+      213: 7405380771467199059
+    second: Batpony_105
+  - first:
+      213: 5885648007865220306
+    second: Batpony_106
+  - first:
+      213: 88399837999630926
+    second: Batpony_107
+  - first:
+      213: -4688219075114610141
+    second: Batpony_108
+  - first:
+      213: -2336214508319912507
+    second: Batpony_109
+  - first:
+      213: -2184188125947914602
+    second: Batpony_110
+  - first:
+      213: 3743126360090896677
+    second: Batpony_111
+  - first:
+      213: 5799416477522719014
+    second: Batpony_112
+  - first:
+      213: 2125957286848330727
+    second: Batpony_113
+  - first:
+      213: -8317897689103110245
+    second: Batpony_114
+  - first:
+      213: 153511487212555754
+    second: Batpony_115
+  - first:
+      213: 7616356381447466142
+    second: Batpony_116
+  - first:
+      213: -7597597933988661265
+    second: Batpony_117
+  - first:
+      213: -4164216494528903168
+    second: Batpony_118
+  - first:
+      213: 2120356128202115703
+    second: Batpony_119
+  - first:
+      213: -8062092795001303443
+    second: Batpony_120
+  - first:
+      213: -5960249443232133477
+    second: Batpony_121
+  - first:
+      213: -3321797829248896434
+    second: Batpony_122
+  - first:
+      213: 8475396432813783834
+    second: Batpony_123
+  - first:
+      213: 5215332123389417617
+    second: Batpony_124
+  - first:
+      213: 8700991707937041561
+    second: Batpony_125
+  - first:
+      213: -3761341537566631274
+    second: Batpony_126
+  - first:
+      213: 3073159770847172243
+    second: Batpony_127
+  - first:
+      213: 3446336256157454474
+    second: Batpony_128
+  - first:
+      213: -6976817278509215466
+    second: Batpony_129
+  - first:
+      213: 6458300012265329549
+    second: Batpony_130
+  - first:
+      213: 6422165894170929790
+    second: Batpony_131
+  - first:
+      213: 650960070358917307
+    second: Batpony_132
+  - first:
+      213: -6330059524676428821
+    second: Batpony_133
+  - first:
+      213: 5399695599344345768
+    second: Batpony_134
+  - first:
+      213: -189557984639119749
+    second: Batpony_135
+  - first:
+      213: 6068897064612834317
+    second: Batpony_136
+  - first:
+      213: -8310635500238260303
+    second: Batpony_137
+  - first:
+      213: -2022075787332096348
+    second: Batpony_138
+  - first:
+      213: -7067805501388313338
+    second: Batpony_139
+  - first:
+      213: -6154746698119130201
+    second: Batpony_140
+  - first:
+      213: 4743673973651735733
+    second: Batpony_141
+  - first:
+      213: -8338061777377324455
+    second: Batpony_142
+  - first:
+      213: -4892138427114016698
+    second: Batpony_143
+  - first:
+      213: 290643542210316259
+    second: Batpony_144
+  - first:
+      213: -2151694246531569887
+    second: Batpony_145
+  - first:
+      213: -5093769360269273849
+    second: Batpony_146
+  - first:
+      213: -5400195715145352994
+    second: Batpony_147
+  - first:
+      213: -5634747143289159070
+    second: Batpony_148
+  - first:
+      213: 2580880326870778415
+    second: Batpony_149
+  - first:
+      213: -5687751846787684652
+    second: Batpony_150
+  - first:
+      213: -1524857358641919899
+    second: Batpony_151
+  - first:
+      213: 4575640189147249102
+    second: Batpony_152
+  - first:
+      213: -1914736012008098642
+    second: Batpony_153
+  - first:
+      213: -8697534714212973255
+    second: Batpony_154
+  - first:
+      213: 2208973757823014317
+    second: Batpony_155
+  - first:
+      213: -4593752598092019841
+    second: Batpony_156
+  - first:
+      213: -1520533854209526878
+    second: Batpony_157
+  - first:
+      213: -3576874422847161686
+    second: Batpony_158
+  - first:
+      213: 6735960314153975520
+    second: Batpony_159
+  - first:
+      213: -515659439528940020
+    second: Batpony_160
+  - first:
+      213: 3475214289543989267
+    second: Batpony_161
+  - first:
+      213: 2705346730752478803
+    second: Batpony_162
+  - first:
+      213: -1288021852749250610
+    second: Batpony_163
+  - first:
+      213: 2896979497747348842
+    second: Batpony_164
+  - first:
+      213: 5698347783995399582
+    second: Batpony_165
+  - first:
+      213: -7701610519310722130
+    second: Batpony_166
+  - first:
+      213: 1302790899980493467
+    second: Batpony_167
+  - first:
+      213: -3906948201336558878
+    second: Batpony_168
+  - first:
+      213: 7509326254125259635
+    second: Batpony_169
+  - first:
+      213: -7279152595434781527
+    second: Batpony_170
+  - first:
+      213: 1608499670114487490
+    second: Batpony_171
+  - first:
+      213: -1277404101661860564
+    second: Batpony_172
+  - first:
+      213: 7293521317508354954
+    second: Batpony_173
+  - first:
+      213: -7538773563114721340
+    second: Batpony_174
+  - first:
+      213: 7108891796025641879
+    second: Batpony_175
+  - first:
+      213: -5420862990721841324
+    second: Batpony_176
+  - first:
+      213: 1256381318018685892
+    second: Batpony_177
+  - first:
+      213: 1450138244694753988
+    second: Batpony_178
+  - first:
+      213: 120848563500711052
+    second: Batpony_179
+  - first:
+      213: -2410376536115594087
+    second: Batpony_180
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Batpony_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb03f48f6adb33570800000000000000
+      internalID: 8445302251077972156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 360
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4710506a57d0a1710800000000000000
+      internalID: 1664657811214500212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Resting_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 360
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d66c1beed0a2f160800000000000000
+      internalID: 7057880445330679508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Resting_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 360
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e84ac4b63585a9a30800000000000000
+      internalID: 4222784715918976142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Resting_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 360
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde7bfc4993c90d50800000000000000
+      internalID: 6704104583506656989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Duck_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70228386488213a0800000000000000
+      internalID: -6696139859511074691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Duck_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 320
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1127ce5ae4b01cf90800000000000000
+      internalID: -6935249518754762223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Duck_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 320
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68126ac16a73c290800000000000000
+      internalID: -7871313163287652242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Duck_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 320
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a774e13b25788be0800000000000000
+      internalID: -1474800049582737495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 320
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b734e3a8332285010800000000000000
+      internalID: 1177728907315397499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 320
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0268a1700592c60a0800000000000000
+      internalID: -6887084306463029728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e31ce1367454a4c0800000000000000
+      internalID: -4277200879474699291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_19
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 280
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e530a0717b13b7fe0800000000000000
+      internalID: -1190303014074055842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_20
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 280
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa3afffd9ef63b3d0800000000000000
+      internalID: -3192084660599413841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_21
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 280
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791b437912d9c2ee0800000000000000
+      internalID: -1284479026111139433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 280
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e4ab6f94124ca70800000000000000
+      internalID: 8846232169618230789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_23
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 280
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1baa562ff85cddb60800000000000000
+      internalID: 7772585753949088433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_24
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 280
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96fc8745101bdcf90800000000000000
+      internalID: -6931689632183038103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_25
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 280
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b863ccf8241178d80800000000000000
+      internalID: -8248605214927735157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf33f1a4766f91b40800000000000000
+      internalID: 5411627350747984891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_28
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 240
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0e147955beb5550800000000000000
+      internalID: 6150768468946968797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 240
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7697f2442328a74a0800000000000000
+      internalID: -6594815551926732441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_30
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 240
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8a1e5a018015e750800000000000000
+      internalID: 6333486597377235594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_32
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 240
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed4da35d84c02ac0800000000000000
+      internalID: -3881886767520068125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_33
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 702a5823345c29370800000000000000
+      internalID: 8327935553362567687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_34
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 240
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c4ccebd90be3790800000000000000
+      internalID: -7548401733868958691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_35
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 240
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78edb74c3829ea10800000000000000
+      internalID: 1939125353926486140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4220704ebbc4af830800000000000000
+      internalID: 4105678380169888292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_37
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 200
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3eeb66dea7dcb10800000000000000
+      internalID: 2003392569299362781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_38
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 200
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dea8892ad8cca3b0800000000000000
+      internalID: -5499800205600969002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_39
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 200
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 780d0e965720605c0800000000000000
+      internalID: -4249706495066713977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_40
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 200
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489750ed486d43a40800000000000000
+      internalID: 5347134523744549252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_41
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6301dcd8c76405000800000000000000
+      internalID: 22595498905767990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_42
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 200
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53e23fd2ebdb8340800000000000000
+      internalID: 4867225589757698911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_43
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 200
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d81b87acc44b810800000000000000
+      internalID: 1780132185210195291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3f1cac96dc0d650800000000000000
+      internalID: 6255725736674587621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_46
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 160
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39312865e1336fbb0800000000000000
+      internalID: -4902674938952805485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_47
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 665593f19ae9281b0800000000000000
+      internalID: -5655783732813408922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_48
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 160
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab561dd31f9b0240800000000000000
+      internalID: 4759072338909485995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_49
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a491d758a0f45f0800000000000000
+      internalID: -770385442811327990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_50
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 160
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1304d1026935e2f40800000000000000
+      internalID: 5705589682173984817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_51
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 160
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb97156819043ae40800000000000000
+      internalID: 5666443749930138047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_52
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 160
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ceeb8567cbcea960800000000000000
+      internalID: 7615248077192687302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fda36ba16db89aa0800000000000000
+      internalID: -6153960663616868875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_55
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee4801e6b25ef820800000000000000
+      internalID: 2953889351014567655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_56
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5ac2a7fc5c13ef0800000000000000
+      internalID: -130105419318385170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_57
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3654289ec0af960800000000000000
+      internalID: 7636430315212596134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_58
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33238761d921fbe80800000000000000
+      internalID: -8160783533875908045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_59
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc3dd344d8f3c4f0800000000000000
+      internalID: -809529917441229607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_60
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d63ea2b12461760800000000000000
+      internalID: 7428197319845309744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_61
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ba94dd576100a10800000000000000
+      internalID: 1873522140465703706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c4c55a560f57200800000000000000
+      internalID: 177312079707655178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_64
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 80
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0173677658a035000800000000000000
+      internalID: 23373991149713168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_66
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 80
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3616f510a72633c0800000000000000
+      internalID: -4380270019054528964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_67
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b10aa4200f72650800000000000000
+      internalID: 6208194503986125679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_69
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5340813d5135bb480800000000000000
+      internalID: -8882414486857186251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_70
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 80
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced4fd3a9019cf640800000000000000
+      internalID: 5115122747376094700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513b5e901616a6c47b8bf96591e16b44
+      internalID: -3784737759633850435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_73
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 40
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b3c3e7ac399ed4eb7849d08a9546e3
+      internalID: -5914615554484452061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_76
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 40
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968e099fbb215aa4db497e984dc67303
+      internalID: -8760060018496662143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_77
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 40
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a5af394a6d9f94ba60ee1e634e5183
+      internalID: -2999940842741794626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_78
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 40
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52302ce98432fab499165afff6c399f5
+      internalID: 5179290677507313751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_79
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 40
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc1ced9372a82646b0c8de222117783
+      internalID: 5085519647058606514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8462a946fcf8842b9df1f9a1844e2d
+      internalID: -1708997351362710089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_82
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d8ef5b111fe8248be6c78847c2cc83
+      internalID: -6998968373371399321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_83
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73dd41b72a3f83a4e9c56253bbc5cb36
+      internalID: 6708490574589147880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_84
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b26f1ceac0055646b2190f3ca5005e4
+      internalID: 2896240534013492416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_85
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34ea279e2720ed49a9bbd257eb88520
+      internalID: 5025648060652076409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_86
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65434f0109122c549a49805b706ecc59
+      internalID: 8406719443054356221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_87
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aecdb6ce5d9f2b43a6b615b26cc2f62
+      internalID: -5788580485467818535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_88
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c446b9ba71a646846a25e32a5eda9d93
+      internalID: -6785138051082069400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 07f7d49bcd1fb1749b17b5f07f665644
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":40.0,"y":40.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"slicingType":1,"keepEmptyRects":true,"isAlternate":false}'
+    nameFileIdTable:
+      Batpony_14: 1177728907315397499
+      Batpony_15: -6887084306463029728
+      Batpony_18: -4277200879474699291
+      Batpony_19: -1190303014074055842
+      Batpony_20: -3192084660599413841
+      Batpony_21: -1284479026111139433
+      Batpony_22: 8846232169618230789
+      Batpony_23: 7772585753949088433
+      Batpony_24: -6931689632183038103
+      Batpony_25: -8248605214927735157
+      Batpony_27: 5411627350747984891
+      Batpony_28: 6150768468946968797
+      Batpony_29: -6594815551926732441
+      Batpony_30: 6333486597377235594
+      Batpony_32: -3881886767520068125
+      Batpony_33: 8327935553362567687
+      Batpony_34: -7548401733868958691
+      Batpony_35: 1939125353926486140
+      Batpony_36: 4105678380169888292
+      Batpony_37: 2003392569299362781
+      Batpony_38: -5499800205600969002
+      Batpony_39: -4249706495066713977
+      Batpony_40: 5347134523744549252
+      Batpony_41: 22595498905767990
+      Batpony_42: 4867225589757698911
+      Batpony_43: 1780132185210195291
+      Batpony_45: 6255725736674587621
+      Batpony_46: -4902674938952805485
+      Batpony_47: -5655783732813408922
+      Batpony_48: 4759072338909485995
+      Batpony_49: -770385442811327990
+      Batpony_50: 5705589682173984817
+      Batpony_51: 5666443749930138047
+      Batpony_52: 7615248077192687302
+      Batpony_54: -6153960663616868875
+      Batpony_55: 2953889351014567655
+      Batpony_56: -130105419318385170
+      Batpony_57: 7636430315212596134
+      Batpony_58: -8160783533875908045
+      Batpony_59: -809529917441229607
+      Batpony_60: 7428197319845309744
+      Batpony_61: 1873522140465703706
+      Batpony_63: 177312079707655178
+      Batpony_64: 23373991149713168
+      Batpony_66: -4380270019054528964
+      Batpony_67: 6208194503986125679
+      Batpony_69: -8882414486857186251
+      Batpony_70: 5115122747376094700
+      Batpony_72: -3784737759633850435
+      Batpony_73: -5914615554484452061
+      Batpony_76: -8760060018496662143
+      Batpony_77: -2999940842741794626
+      Batpony_78: 5179290677507313751
+      Batpony_79: 5085519647058606514
+      Batpony_81: -1708997351362710089
+      Batpony_82: -6998968373371399321
+      Batpony_83: 6708490574589147880
+      Batpony_84: 2896240534013492416
+      Batpony_85: 5025648060652076409
+      Batpony_86: 8406719443054356221
+      Batpony_87: -5788580485467818535
+      Batpony_88: -6785138051082069400
+      Batpony_Duck_1: -6696139859511074691
+      Batpony_Duck_2: -6935249518754762223
+      Batpony_Duck_3: -7871313163287652242
+      Batpony_Duck_4: -1474800049582737495
+      Batpony_Idle_1: 8445302251077972156
+      Batpony_Idle_2: 1664657811214500212
+      Batpony_Resting_0: 7057880445330679508
+      Batpony_Resting_1: 4222784715918976142
+      Batpony_Resting_2: 6704104583506656989
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

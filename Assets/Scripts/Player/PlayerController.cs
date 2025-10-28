@@ -185,6 +185,8 @@ public class PlayerController : MonoBehaviour
             {
                 anim.Play(Animations.Walk);
             }
+            else if (isDucking)
+                anim.Play(Animations.Duck);
             else
                 anim.Play(Animations.Idle);
 
