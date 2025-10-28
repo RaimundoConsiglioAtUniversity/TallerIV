@@ -123,25 +123,22 @@ public class PlayerController : MonoBehaviour
         if (jumpBufferCounter > 0f)
         {
             if (coyoteTimeCounter > 0f)
-            {
-                DoJump(stats.jumpStrength);
-                anim.Play(Animations.Jump_Rise);
-            }
+                DoJump(stats.jumpStrength, Animations.Jump_Rise);
             
             else if (tribe is PonyPegasus && currentFlaps < stats.maxFlaps)
             {
-                DoJump(stats.flapStrength);
-                anim.Play(Animations.Flap);
+                DoJump(stats.flapStrength, Animations.Flap);
                 currentFlaps++;
             }
         }
     }
 
-    public void DoJump(float jumpStrength)
+    public void DoJump(float jumpStrength, Animations jumpType)
     {
         //audioS.PlayOneShot(jumpSFX);
 
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpStrength);
+        anim.Play(jumpType);
 
         jumpBufferCounter = 0f;
     }

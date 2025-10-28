@@ -50,7 +50,7 @@ public class PonyGaea : PonyType
     private IEnumerator GroundPound(bool preJump = false)
     {
         if (preJump)
-            pony.DoJump(pony.stats.jumpStrength * 1.2f);
+            pony.DoJump(pony.stats.jumpStrength * 1.2f, Animations.Idle);
         
         if (pony.rb.linearVelocity.y > 0f)
         {

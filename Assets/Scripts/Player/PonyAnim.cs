@@ -23,21 +23,10 @@ public class PonyAnim : MonoBehaviour
         if (currentAnim != anim)
             switch (anim)
             {
-                case Animations.Idle:
-                    currentAnim = Animations.Idle;
-                    controller.SetTrigger("Idle");
-                    break;
-                case Animations.Walk:
-                    currentAnim = Animations.Walk;
-                    controller.SetTrigger("Walk");
-                    break;
-                case Animations.Trot:
-                    currentAnim = Animations.Trot;
-                    controller.SetTrigger("Trot");
-                    break;
-                case Animations.Gallop:
-                    currentAnim = Animations.Gallop;
-                    controller.SetTrigger("Gallop");
+                case Animations.Flap:
+                    currentAnim = Animations.Flap;
+                    controller.SetTrigger("Jump_Flap");
+                    controller.SetTrigger("Jump_Flap");
                     break;
                 case Animations.Jump_Rise:
                     currentAnim = Animations.Jump_Rise;
@@ -51,9 +40,21 @@ public class PonyAnim : MonoBehaviour
                     currentAnim = Animations.Fall;
                     controller.SetTrigger("Fall");
                     break;
-                case Animations.Flap:
-                    currentAnim = Animations.Flap;
-                    controller.SetTrigger("Jump_Flap");
+                case Animations.Gallop:
+                    currentAnim = Animations.Gallop;
+                    controller.SetTrigger("Gallop");
+                    break;
+                case Animations.Trot:
+                    currentAnim = Animations.Trot;
+                    controller.SetTrigger("Trot");
+                    break;
+                case Animations.Walk:
+                    currentAnim = Animations.Walk;
+                    controller.SetTrigger("Walk");
+                    break;
+                case Animations.Idle:
+                    currentAnim = Animations.Idle;
+                    controller.SetTrigger("Idle");
                     break;
                 default:
                     break;
