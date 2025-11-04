@@ -697,11 +697,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_Resting_0
+      name: Batpony_Resting_Tr
       rect:
         serializedVersion: 2
-        x: 120
-        y: 360
+        x: 80
+        y: 80
         width: 40
         height: 40
       alignment: 7
@@ -722,8 +722,8 @@ TextureImporter:
       name: Batpony_Resting_1
       rect:
         serializedVersion: 2
-        x: 160
-        y: 360
+        x: 80
+        y: 40
         width: 40
         height: 40
       alignment: 7
@@ -744,8 +744,8 @@ TextureImporter:
       name: Batpony_Resting_2
       rect:
         serializedVersion: 2
-        x: 200
-        y: 360
+        x: 120
+        y: 40
         width: 40
         height: 40
       alignment: 7
@@ -1247,7 +1247,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_36
+      name: Batpony_Walk_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1269,7 +1269,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_37
+      name: Batpony_Walk_2
       rect:
         serializedVersion: 2
         x: 40
@@ -1291,7 +1291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_38
+      name: Batpony_Walk_3
       rect:
         serializedVersion: 2
         x: 80
@@ -1313,7 +1313,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_39
+      name: Batpony_Walk_4
       rect:
         serializedVersion: 2
         x: 120
@@ -1335,7 +1335,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_40
+      name: Batpony_Walk_5
       rect:
         serializedVersion: 2
         x: 160
@@ -1357,7 +1357,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_41
+      name: Batpony_Walk_6
       rect:
         serializedVersion: 2
         x: 200
@@ -1379,7 +1379,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_42
+      name: Batpony_Walk_7
       rect:
         serializedVersion: 2
         x: 240
@@ -1401,7 +1401,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_43
+      name: Batpony_Walk_8
       rect:
         serializedVersion: 2
         x: 280
@@ -1423,7 +1423,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_45
+      name: Batpony_Trot_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1445,7 +1445,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_46
+      name: Batpony_Trot_2
       rect:
         serializedVersion: 2
         x: 40
@@ -1467,7 +1467,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_47
+      name: Batpony_Trot_3
       rect:
         serializedVersion: 2
         x: 80
@@ -1489,7 +1489,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_48
+      name: Batpony_Trot_4
       rect:
         serializedVersion: 2
         x: 120
@@ -1511,7 +1511,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_49
+      name: Batpony_Trot_5
       rect:
         serializedVersion: 2
         x: 160
@@ -1533,7 +1533,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_50
+      name: Batpony_Trot_6
       rect:
         serializedVersion: 2
         x: 200
@@ -1555,7 +1555,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_51
+      name: Batpony_Trot_7
       rect:
         serializedVersion: 2
         x: 240
@@ -1577,7 +1577,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_52
+      name: Batpony_Trot_8
       rect:
         serializedVersion: 2
         x: 280
@@ -1599,7 +1599,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_54
+      name: Batpony_Gallop_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1621,7 +1621,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_55
+      name: Batpony_Gallop_2
       rect:
         serializedVersion: 2
         x: 40
@@ -1643,7 +1643,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_56
+      name: Batpony_Gallop_3
       rect:
         serializedVersion: 2
         x: 80
@@ -1665,7 +1665,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_57
+      name: Batpony_Gallop_4
       rect:
         serializedVersion: 2
         x: 120
@@ -1687,7 +1687,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_58
+      name: Batpony_Gallop_5
       rect:
         serializedVersion: 2
         x: 160
@@ -1709,7 +1709,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_59
+      name: Batpony_Gallop_6
       rect:
         serializedVersion: 2
         x: 200
@@ -1731,7 +1731,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_60
+      name: Batpony_Gallop_7
       rect:
         serializedVersion: 2
         x: 240
@@ -1753,7 +1753,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_61
+      name: Batpony_Gallop_8
       rect:
         serializedVersion: 2
         x: 280
@@ -1775,7 +1775,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_63
+      name: Batpony_Jump_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1797,7 +1797,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_64
+      name: Batpony_Jump_2
       rect:
         serializedVersion: 2
         x: 40
@@ -1819,7 +1819,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_66
+      name: Batpony_JumpPeak_1
       rect:
         serializedVersion: 2
         x: 120
@@ -1841,7 +1841,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_67
+      name: Batpony_JumpPeak_2
       rect:
         serializedVersion: 2
         x: 160
@@ -1863,7 +1863,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_69
+      name: Batpony_Fall_Tr1
       rect:
         serializedVersion: 2
         x: 240
@@ -1885,7 +1885,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_70
+      name: Batpony_Fall_Tr2
       rect:
         serializedVersion: 2
         x: 280
@@ -1907,7 +1907,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_72
+      name: Batpony_Fall_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1929,7 +1929,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_73
+      name: Batpony_Fall_2
       rect:
         serializedVersion: 2
         x: 40
@@ -2039,7 +2039,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_81
+      name: Batpony_Fly_1
       rect:
         serializedVersion: 2
         x: 0
@@ -2061,7 +2061,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_82
+      name: Batpony_Fly_2
       rect:
         serializedVersion: 2
         x: 40
@@ -2083,7 +2083,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_83
+      name: Batpony_Fly_3
       rect:
         serializedVersion: 2
         x: 80
@@ -2105,7 +2105,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_84
+      name: Batpony_Fly_4
       rect:
         serializedVersion: 2
         x: 120
@@ -2127,7 +2127,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_85
+      name: Batpony_Fly_5
       rect:
         serializedVersion: 2
         x: 160
@@ -2149,7 +2149,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_86
+      name: Batpony_Fly_6
       rect:
         serializedVersion: 2
         x: 200
@@ -2171,7 +2171,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_87
+      name: Batpony_Fly_7
       rect:
         serializedVersion: 2
         x: 240
@@ -2193,7 +2193,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batpony_88
+      name: Batpony_Fly_8
       rect:
         serializedVersion: 2
         x: 280
@@ -2210,6 +2210,1282 @@ TextureImporter:
       bones: []
       spriteID: c446b9ba71a646846a25e32a5eda9d93
       internalID: -6785138051082069400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Up_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 392
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcad5b2a5673d634daf8cd0151f0c5f4
+      internalID: 2034582358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Up_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 392
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d908f4cebbdd34b9442d5ff834f9fb
+      internalID: -647766123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Side_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5355d27de9d9f04c9033741e3f70baa
+      internalID: -35631831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_SlightDown_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 376
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4065ebd255165341b0b5067e5f675fc
+      internalID: -837520973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_MidDown_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 368
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3011a8396b9f97f409599d2803f0aaed
+      internalID: -336963623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Down_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 360
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094c13aa5ac3366418b0980c3f09cfd8
+      internalID: 1859432003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Arch1_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 352
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a0ab6f43eee7e45aec52e5c495f055
+      internalID: 922808931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Arch2_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 344
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb39dd38e38d90458ae1adccb227a7f
+      internalID: -1131745068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_3-4_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 336
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686dd32ade207b943a35e147f5cad2ac
+      internalID: -1684533301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Front_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 328
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c8e20147530574fad8833e3b502789
+      internalID: 69166682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Up_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 392
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442c6897e279ca74ba7a5766ccfaa0d8
+      internalID: -952135767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Up_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 392
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017b84722a55d1b4db9612ef89dac58f
+      internalID: 952352275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Up_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 392
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b495f0c1d485d418ae1d3300aed622
+      internalID: -1848280480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Up_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 392
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf3de4cf9227c54196f795805589279
+      internalID: 1431026097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Front_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 328
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70cbd074524786147988dcba5d40009f
+      internalID: -1023591704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Front_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 328
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df2ba0a6992f654aa6eda754abb19bb
+      internalID: 427463621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Front_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 328
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4ad0b6590bdb6428dab9dd48d7f000
+      internalID: -1743259245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Side_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 384
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88895b0c62a5bb4ab45f0017b4c8c6f
+      internalID: 531403314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_SlightDown_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 376
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9eae6afb1887ad4c95c925f08f706d2
+      internalID: -2088417720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_MidDown_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 368
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60adacef246e06c4eb919b8568873059
+      internalID: 1921156668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Down_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 360
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73e6ff89a60c6d4ca649074f7cf82f1
+      internalID: -1071093592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Arch1_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 352
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91dea146c57b11341b4b49a3ae72d1e8
+      internalID: 293695630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Arch2_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 344
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9539317033359d54598b419adb72df0c
+      internalID: 1858561042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_3-4_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 336
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03104a3e2770b6c489c20474d43e38ef
+      internalID: -1565319209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Side_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 384
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46673d12eb63e654ab5b9b8d3a7a714f
+      internalID: 1492737947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_SlightDown_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 376
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc9a1de03f56534e8f0ebbe179ede35
+      internalID: 977722293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_SlightDown_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 376
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22398b55e7a5d3d429efc3aff8d10e82
+      internalID: 948966817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Side_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 384
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0451a0761bdae4d4ab912adbcb829280
+      internalID: 366197095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Side_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 384
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24de6bf0689b224498f3e440f75a68e6
+      internalID: -1053573474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_SlightDown_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 376
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9900c2bb7d10014bb257badb4da872b
+      internalID: -1953882467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Side_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 384
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e879f9152baa05c4398fd81670cc0ca2
+      internalID: -1253766788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_SlightDown_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 376
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf8cc9138469af4b89334a942fa8211
+      internalID: 1455128931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_MidDown_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 368
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7902231c6631e634c8ce72426ed3b659
+      internalID: 554061511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_MidDown_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 368
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a764329d4f580144e96bce798f546f44
+      internalID: -1614891096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_MidDown_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 368
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69235b1cf769e414e9b1a874a4a1c962
+      internalID: -2086520035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_MidDown_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 368
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b96fc09c9559484ca3745f2ff3d0429
+      internalID: -1011523234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Front_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 328
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abaf3371545939a4d967688fa1185386
+      internalID: -785442620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Front_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 328
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29d1adaf679af840a17d15c6e985ee2
+      internalID: -1094779798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_3-4_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 336
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47184aa8475fcb4885ca8ca9c55cdf3
+      internalID: -121704750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_3-4_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 336
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8aa767bac4a5e4188da5973b3089a3
+      internalID: -964085623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_3-4_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 336
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f317249fef48b74089dbe961994b6c2
+      internalID: -1024548119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_3-4_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 336
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64fb3fb71d1b1ba46883a37ac51b34f4
+      internalID: -278669811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Arch2_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 344
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63f5eae22ee47e4da97f9c835d2d27f
+      internalID: -1757833690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Arch2_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 344
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016db8c717fea0b45a3d605a9f97ab01
+      internalID: -1013158767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Arch2_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 344
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465acd2a9bbf4e7479b3aace4d2c761f
+      internalID: 348636818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Arch2_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 344
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d903d6b7dbdfc644a2cc9218583e0ca
+      internalID: 365775788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Down_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 360
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a14a235ec86aea4c86df0417bd8653c
+      internalID: -142099950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Arch1_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 352
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b155094ee9103a479b497cb55f4d0ab
+      internalID: 991339757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Down_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 360
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65131b8176281ea46a36b0e8c9cc4ebe
+      internalID: 518480379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Arch1_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 352
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5795c14a53a26004eaf3b10bed19ebcc
+      internalID: 460042700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Down_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 360
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ede7321b6fc8646bbe0dba1c04d8ba
+      internalID: 1124086101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Arch1_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 352
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418eaa328a3ea634a9ae8a17101b057c
+      internalID: 1852198895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Arch1_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 352
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e69a4337bbb0b419252ea5fdf3baa9
+      internalID: -1471425337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Eyes_Down_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 360
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7088dd766df1246879d33900e56ce1
+      internalID: -1592609245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 360
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2742092c13c2b4d91bdf559c0198e1
+      internalID: -2107350769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 360
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424b590832bd1ca45b64ecefad43ad8d
+      internalID: -2146418820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 360
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19130c5ef899c9343adf39b13c7be905
+      internalID: -1113178698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batpony_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 360
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02833d7852784a4887f171910a992c6
+      internalID: 337458183
       vertices: []
       indices: 
       edges: []
@@ -2248,59 +3524,117 @@ TextureImporter:
       Batpony_33: 8327935553362567687
       Batpony_34: -7548401733868958691
       Batpony_35: 1939125353926486140
-      Batpony_36: 4105678380169888292
-      Batpony_37: 2003392569299362781
-      Batpony_38: -5499800205600969002
-      Batpony_39: -4249706495066713977
-      Batpony_40: 5347134523744549252
-      Batpony_41: 22595498905767990
-      Batpony_42: 4867225589757698911
-      Batpony_43: 1780132185210195291
-      Batpony_45: 6255725736674587621
-      Batpony_46: -4902674938952805485
-      Batpony_47: -5655783732813408922
-      Batpony_48: 4759072338909485995
-      Batpony_49: -770385442811327990
-      Batpony_50: 5705589682173984817
-      Batpony_51: 5666443749930138047
-      Batpony_52: 7615248077192687302
-      Batpony_54: -6153960663616868875
-      Batpony_55: 2953889351014567655
-      Batpony_56: -130105419318385170
-      Batpony_57: 7636430315212596134
-      Batpony_58: -8160783533875908045
-      Batpony_59: -809529917441229607
-      Batpony_60: 7428197319845309744
-      Batpony_61: 1873522140465703706
-      Batpony_63: 177312079707655178
-      Batpony_64: 23373991149713168
-      Batpony_66: -4380270019054528964
-      Batpony_67: 6208194503986125679
-      Batpony_69: -8882414486857186251
-      Batpony_70: 5115122747376094700
-      Batpony_72: -3784737759633850435
-      Batpony_73: -5914615554484452061
       Batpony_76: -8760060018496662143
       Batpony_77: -2999940842741794626
       Batpony_78: 5179290677507313751
       Batpony_79: 5085519647058606514
-      Batpony_81: -1708997351362710089
-      Batpony_82: -6998968373371399321
-      Batpony_83: 6708490574589147880
-      Batpony_84: 2896240534013492416
-      Batpony_85: 5025648060652076409
-      Batpony_86: 8406719443054356221
-      Batpony_87: -5788580485467818535
-      Batpony_88: -6785138051082069400
       Batpony_Duck_1: -6696139859511074691
       Batpony_Duck_2: -6935249518754762223
       Batpony_Duck_3: -7871313163287652242
       Batpony_Duck_4: -1474800049582737495
+      Batpony_Eyes_3-4_1: -1684533301
+      Batpony_Eyes_3-4_2: -1565319209
+      Batpony_Eyes_3-4_3: -121704750
+      Batpony_Eyes_3-4_4: -964085623
+      Batpony_Eyes_3-4_5: -1024548119
+      Batpony_Eyes_3-4_6: -278669811
+      Batpony_Eyes_Arch1_1: 922808931
+      Batpony_Eyes_Arch1_2: 293695630
+      Batpony_Eyes_Arch1_3: 991339757
+      Batpony_Eyes_Arch1_4: 460042700
+      Batpony_Eyes_Arch1_5: 1852198895
+      Batpony_Eyes_Arch1_6: -1471425337
+      Batpony_Eyes_Arch2_1: -1131745068
+      Batpony_Eyes_Arch2_2: 1858561042
+      Batpony_Eyes_Arch2_3: -1757833690
+      Batpony_Eyes_Arch2_4: -1013158767
+      Batpony_Eyes_Arch2_5: 348636818
+      Batpony_Eyes_Arch2_6: 365775788
+      Batpony_Eyes_Down_1: 1859432003
+      Batpony_Eyes_Down_2: -1071093592
+      Batpony_Eyes_Down_3: -142099950
+      Batpony_Eyes_Down_4: 518480379
+      Batpony_Eyes_Down_5: 1124086101
+      Batpony_Eyes_Down_6: -1592609245
+      Batpony_Eyes_Front_1: 69166682
+      Batpony_Eyes_Front_2: -1023591704
+      Batpony_Eyes_Front_3: 427463621
+      Batpony_Eyes_Front_4: -1743259245
+      Batpony_Eyes_Front_5: -785442620
+      Batpony_Eyes_Front_6: -1094779798
+      Batpony_Eyes_MidDown_1: -336963623
+      Batpony_Eyes_MidDown_2: 1921156668
+      Batpony_Eyes_MidDown_3: 554061511
+      Batpony_Eyes_MidDown_4: -1614891096
+      Batpony_Eyes_MidDown_5: -2086520035
+      Batpony_Eyes_MidDown_6: -1011523234
+      Batpony_Eyes_Side_1: -35631831
+      Batpony_Eyes_Side_2: 531403314
+      Batpony_Eyes_Side_3: 1492737947
+      Batpony_Eyes_Side_4: 366197095
+      Batpony_Eyes_Side_5: -1053573474
+      Batpony_Eyes_Side_6: -1253766788
+      Batpony_Eyes_SlightDown_1: -837520973
+      Batpony_Eyes_SlightDown_2: -2088417720
+      Batpony_Eyes_SlightDown_3: 948966817
+      Batpony_Eyes_SlightDown_4: 977722293
+      Batpony_Eyes_SlightDown_5: -1953882467
+      Batpony_Eyes_SlightDown_6: 1455128931
+      Batpony_Eyes_Up_1: 2034582358
+      Batpony_Eyes_Up_2: -647766123
+      Batpony_Eyes_Up_3: -952135767
+      Batpony_Eyes_Up_4: 952352275
+      Batpony_Eyes_Up_5: -1848280480
+      Batpony_Eyes_Up_6: 1431026097
+      Batpony_Fall_1: -3784737759633850435
+      Batpony_Fall_2: -5914615554484452061
+      Batpony_Fall_Tr1: -8882414486857186251
+      Batpony_Fall_Tr2: 5115122747376094700
+      Batpony_Fly_1: -1708997351362710089
+      Batpony_Fly_2: -6998968373371399321
+      Batpony_Fly_3: 6708490574589147880
+      Batpony_Fly_4: 2896240534013492416
+      Batpony_Fly_5: 5025648060652076409
+      Batpony_Fly_6: 8406719443054356221
+      Batpony_Fly_7: -5788580485467818535
+      Batpony_Fly_8: -6785138051082069400
+      Batpony_Gallop_1: -6153960663616868875
+      Batpony_Gallop_2: 2953889351014567655
+      Batpony_Gallop_3: -130105419318385170
+      Batpony_Gallop_4: 7636430315212596134
+      Batpony_Gallop_5: -8160783533875908045
+      Batpony_Gallop_6: -809529917441229607
+      Batpony_Gallop_7: 7428197319845309744
+      Batpony_Gallop_8: 1873522140465703706
       Batpony_Idle_1: 8445302251077972156
       Batpony_Idle_2: 1664657811214500212
-      Batpony_Resting_0: 7057880445330679508
+      Batpony_Idle_3: -2107350769
+      Batpony_Idle_4: -2146418820
+      Batpony_Idle_5: -1113178698
+      Batpony_Idle_6: 337458183
+      Batpony_JumpPeak_1: -4380270019054528964
+      Batpony_JumpPeak_2: 6208194503986125679
+      Batpony_Jump_1: 177312079707655178
+      Batpony_Jump_2: 23373991149713168
       Batpony_Resting_1: 4222784715918976142
       Batpony_Resting_2: 6704104583506656989
+      Batpony_Resting_Tr: 7057880445330679508
+      Batpony_Trot_1: 6255725736674587621
+      Batpony_Trot_2: -4902674938952805485
+      Batpony_Trot_3: -5655783732813408922
+      Batpony_Trot_4: 4759072338909485995
+      Batpony_Trot_5: -770385442811327990
+      Batpony_Trot_6: 5705589682173984817
+      Batpony_Trot_7: 5666443749930138047
+      Batpony_Trot_8: 7615248077192687302
+      Batpony_Walk_1: 4105678380169888292
+      Batpony_Walk_2: 2003392569299362781
+      Batpony_Walk_3: -5499800205600969002
+      Batpony_Walk_4: -4249706495066713977
+      Batpony_Walk_5: 5347134523744549252
+      Batpony_Walk_6: 22595498905767990
+      Batpony_Walk_7: 4867225589757698911
+      Batpony_Walk_8: 1780132185210195291
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
