@@ -1783,10 +1783,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2131734491406206681, guid: d752f46be6363b64a9a6558b51f88db2, type: 3}
-      propertyPath: target
+    - target: {fileID: 609622566106454990, guid: d752f46be6363b64a9a6558b51f88db2, type: 3}
+      propertyPath: m_Size.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 609622566106454990, guid: d752f46be6363b64a9a6558b51f88db2, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 609622566106454990, guid: d752f46be6363b64a9a6558b51f88db2, type: 3}
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 2051104733}
+      objectReference: {fileID: -35631831, guid: 31b2d3378d2b12e4b928cb43389fc75c, type: 3}
+    - target: {fileID: 609622566106454990, guid: d752f46be6363b64a9a6558b51f88db2, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3180002430797522411, guid: d752f46be6363b64a9a6558b51f88db2, type: 3}
       propertyPath: m_Name
       value: Gaea
@@ -1831,6 +1843,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7396476666936690225, guid: d752f46be6363b64a9a6558b51f88db2, type: 3}
+      propertyPath: m_labelHash
+      value: 4.3501241e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396476666936690225, guid: d752f46be6363b64a9a6558b51f88db2, type: 3}
+      propertyPath: m_CategoryHash
+      value: 0.00014105988
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501764297461174842, guid: d752f46be6363b64a9a6558b51f88db2, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2051104733}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1844,6 +1868,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1268799139071005358, guid: 44230651c92a3d84698fd9cb9582f2f9, type: 3}
+      propertyPath: m_labelHash
+      value: 4.3501241e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268799139071005358, guid: 44230651c92a3d84698fd9cb9582f2f9, type: 3}
+      propertyPath: m_CategoryHash
+      value: 0.00014105988
+      objectReference: {fileID: 0}
     - target: {fileID: 2598427089433892212, guid: 44230651c92a3d84698fd9cb9582f2f9, type: 3}
       propertyPath: m_Name
       value: Pegasus
@@ -1888,7 +1920,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5213852749325529250, guid: 44230651c92a3d84698fd9cb9582f2f9, type: 3}
+    - target: {fileID: 7235146368610553803, guid: 44230651c92a3d84698fd9cb9582f2f9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8445302251077972156, guid: 31b2d3378d2b12e4b928cb43389fc75c, type: 3}
+    - target: {fileID: 7235146368610553803, guid: 44230651c92a3d84698fd9cb9582f2f9, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172686962007101265, guid: 44230651c92a3d84698fd9cb9582f2f9, type: 3}
+      propertyPath: m_Size.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172686962007101265, guid: 44230651c92a3d84698fd9cb9582f2f9, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172686962007101265, guid: 44230651c92a3d84698fd9cb9582f2f9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -35631831, guid: 31b2d3378d2b12e4b928cb43389fc75c, type: 3}
+    - target: {fileID: 9172686962007101265, guid: 44230651c92a3d84698fd9cb9582f2f9, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9216399621109185049, guid: 44230651c92a3d84698fd9cb9582f2f9, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 2790090107168328776}
@@ -1905,13 +1961,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1337345703712449104, guid: e3e6a8cb1db0cac43a0c110f7f2ffbd1, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1718453555}
     - target: {fileID: 1556283321300292847, guid: e3e6a8cb1db0cac43a0c110f7f2ffbd1, type: 3}
       propertyPath: m_Name
       value: Unicorn
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766925731231841793, guid: e3e6a8cb1db0cac43a0c110f7f2ffbd1, type: 3}
+      propertyPath: m_labelHash
+      value: 4.3501241e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766925731231841793, guid: e3e6a8cb1db0cac43a0c110f7f2ffbd1, type: 3}
+      propertyPath: m_CategoryHash
+      value: 0.00014105988
       objectReference: {fileID: 0}
     - target: {fileID: 2665462505312098170, guid: e3e6a8cb1db0cac43a0c110f7f2ffbd1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1953,6 +2013,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7460794835498165229, guid: e3e6a8cb1db0cac43a0c110f7f2ffbd1, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1718453555}
+    - target: {fileID: 8526758569884673022, guid: e3e6a8cb1db0cac43a0c110f7f2ffbd1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 514803329, guid: a0e3a722e2e98c342818b5368adb5328, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

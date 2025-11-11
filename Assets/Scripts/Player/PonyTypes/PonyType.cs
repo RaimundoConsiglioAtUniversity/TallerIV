@@ -10,5 +10,5 @@ public abstract class PonyType : MonoBehaviour
     public abstract void OnEnableAI();
     public abstract void OnDisableAI();
 
-    void Awake() => pony = transform.parent.GetComponent<PlayerController>();
+    void Awake() => pony = transform.GetComponent<PlayerController>();
 }

@@ -1,0 +1,3577 @@
+fileFormatVersion: 2
+guid: a1754dbdca0d9ac4d881c042677fae2a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7587871561562361072
+    second: Terran_0
+  - first:
+      213: -7652295171928698753
+    second: Terran_1
+  - first:
+      213: -4095170483047971059
+    second: Terran_2
+  - first:
+      213: -1695087007259656665
+    second: Terran_3
+  - first:
+      213: 4677583672647053573
+    second: Terran_4
+  - first:
+      213: -6897365635526177541
+    second: Terran_5
+  - first:
+      213: 5580439602985808114
+    second: Terran_6
+  - first:
+      213: 3161901854706092156
+    second: Terran_7
+  - first:
+      213: -5724015278249322645
+    second: Terran_8
+  - first:
+      213: -8647440718914500585
+    second: Terran_9
+  - first:
+      213: 8986865202344652610
+    second: Terran_10
+  - first:
+      213: -3317387069147395660
+    second: Terran_11
+  - first:
+      213: 2788314842360606010
+    second: Terran_12
+  - first:
+      213: -2696748051573297945
+    second: Terran_13
+  - first:
+      213: -677233046413254845
+    second: Terran_14
+  - first:
+      213: 4686417570810812684
+    second: Terran_15
+  - first:
+      213: -728096649463138437
+    second: Terran_16
+  - first:
+      213: -6092661425230741949
+    second: Terran_17
+  - first:
+      213: 5628296361642049211
+    second: Terran_18
+  - first:
+      213: 6061342260140892867
+    second: Terran_19
+  - first:
+      213: 9036058704805865347
+    second: Terran_20
+  - first:
+      213: 1611283698092117355
+    second: Terran_21
+  - first:
+      213: -4433497836679285901
+    second: Terran_22
+  - first:
+      213: -203646391019575284
+    second: Terran_23
+  - first:
+      213: 8908355627135871019
+    second: Terran_24
+  - first:
+      213: 1024231088438159702
+    second: Terran_25
+  - first:
+      213: -3427378505094528709
+    second: Terran_26
+  - first:
+      213: 46282090656537015
+    second: Terran_27
+  - first:
+      213: -395173296011726498
+    second: Terran_28
+  - first:
+      213: 2955724936756812172
+    second: Terran_29
+  - first:
+      213: -6822345894914325066
+    second: Terran_30
+  - first:
+      213: -4238626070699157375
+    second: Terran_31
+  - first:
+      213: 9221579540307420273
+    second: Terran_32
+  - first:
+      213: 930673040109553344
+    second: Terran_33
+  - first:
+      213: -7210214455607004586
+    second: Terran_34
+  - first:
+      213: -5652464332761267460
+    second: Terran_35
+  - first:
+      213: 1714195198840984711
+    second: Terran_36
+  - first:
+      213: -6323103086495021166
+    second: Terran_37
+  - first:
+      213: 5366314116436644339
+    second: Terran_38
+  - first:
+      213: 930245984984160831
+    second: Terran_39
+  - first:
+      213: 1841923227344532376
+    second: Terran_40
+  - first:
+      213: -9138280849735342291
+    second: Terran_41
+  - first:
+      213: 8202132262384943475
+    second: Terran_42
+  - first:
+      213: 1433583053488256045
+    second: Terran_43
+  - first:
+      213: 4469873135871131311
+    second: Terran_44
+  - first:
+      213: -1858928408840460698
+    second: Terran_45
+  - first:
+      213: -801270120930862144
+    second: Terran_46
+  - first:
+      213: -4101451422538317096
+    second: Terran_47
+  - first:
+      213: -8765050960901074412
+    second: Terran_48
+  - first:
+      213: 4669546553176474437
+    second: Terran_49
+  - first:
+      213: -6090173863439744515
+    second: Terran_50
+  - first:
+      213: -2683381686111136470
+    second: Terran_51
+  - first:
+      213: 3097772871668223240
+    second: Terran_52
+  - first:
+      213: 1315259969752290541
+    second: Terran_53
+  - first:
+      213: 4601311528000125848
+    second: Terran_54
+  - first:
+      213: 7917990684745718424
+    second: Terran_55
+  - first:
+      213: -84802765800165152
+    second: Terran_56
+  - first:
+      213: 8454521271379612709
+    second: Terran_57
+  - first:
+      213: 3018708989332590310
+    second: Terran_58
+  - first:
+      213: -4106197304087179858
+    second: Terran_59
+  - first:
+      213: -1345185903510431132
+    second: Terran_60
+  - first:
+      213: -7603737945988938646
+    second: Terran_61
+  - first:
+      213: 6978589195433883699
+    second: Terran_62
+  - first:
+      213: 3455713413022659353
+    second: Terran_63
+  - first:
+      213: -1580659014158888443
+    second: Terran_64
+  - first:
+      213: -1493074454839378444
+    second: Terran_65
+  - first:
+      213: 3958535763038165753
+    second: Terran_66
+  - first:
+      213: 1700452156132804107
+    second: Terran_67
+  - first:
+      213: 8063354858411479924
+    second: Terran_68
+  - first:
+      213: 6468385511739725922
+    second: Terran_69
+  - first:
+      213: 4931289067289111844
+    second: Terran_70
+  - first:
+      213: 1529193529778556999
+    second: Terran_71
+  - first:
+      213: 8195029647824891343
+    second: Terran_72
+  - first:
+      213: 8058878284868977426
+    second: Terran_73
+  - first:
+      213: -2815199372342690622
+    second: Terran_74
+  - first:
+      213: -3269104621091222263
+    second: Terran_75
+  - first:
+      213: -6462103084645563842
+    second: Terran_76
+  - first:
+      213: 8155165333849805738
+    second: Terran_77
+  - first:
+      213: 4843815746276992894
+    second: Terran_78
+  - first:
+      213: -6307004417214070832
+    second: Terran_79
+  - first:
+      213: 6084600582205716151
+    second: Terran_80
+  - first:
+      213: -389018907167855061
+    second: Terran_81
+  - first:
+      213: -6026993874861986769
+    second: Terran_82
+  - first:
+      213: 1420218456140224846
+    second: Terran_83
+  - first:
+      213: -9196783994306497003
+    second: Terran_84
+  - first:
+      213: 5065247689351043602
+    second: Terran_85
+  - first:
+      213: 7802090257443967294
+    second: Terran_86
+  - first:
+      213: 972470180629492058
+    second: Terran_87
+  - first:
+      213: 6336410190856397945
+    second: Terran_88
+  - first:
+      213: 6144755003708815879
+    second: Terran_89
+  - first:
+      213: 3014630933408552970
+    second: Terran_90
+  - first:
+      213: -9040519700492238451
+    second: Terran_91
+  - first:
+      213: -6690957174846508531
+    second: Terran_92
+  - first:
+      213: -5627224038026002677
+    second: Terran_93
+  - first:
+      213: -4766052223741409470
+    second: Terran_94
+  - first:
+      213: -4620176875833709697
+    second: Terran_95
+  - first:
+      213: 2088713264197862726
+    second: Terran_96
+  - first:
+      213: -1480896205179353459
+    second: Terran_97
+  - first:
+      213: 4644577414203552509
+    second: Terran_98
+  - first:
+      213: -4230488117127568627
+    second: Terran_99
+  - first:
+      213: 8646582370188929187
+    second: Terran_100
+  - first:
+      213: -6491539517533771342
+    second: Terran_101
+  - first:
+      213: -8967736707468128172
+    second: Terran_102
+  - first:
+      213: -7951903333222839685
+    second: Terran_103
+  - first:
+      213: 2514521551524211696
+    second: Terran_104
+  - first:
+      213: 3082298529985276890
+    second: Terran_105
+  - first:
+      213: 3095346239557955380
+    second: Terran_106
+  - first:
+      213: -1645352392449799805
+    second: Terran_107
+  - first:
+      213: -7266526605914785184
+    second: Terran_108
+  - first:
+      213: 3165766206205566034
+    second: Terran_109
+  - first:
+      213: 3943984652966969945
+    second: Terran_110
+  - first:
+      213: -7704033466672987884
+    second: Terran_111
+  - first:
+      213: 7646707985481696664
+    second: Terran_112
+  - first:
+      213: -844618387754699043
+    second: Terran_113
+  - first:
+      213: -2968471395742531836
+    second: Terran_114
+  - first:
+      213: 7380830871544385100
+    second: Terran_115
+  - first:
+      213: 4135918123972667336
+    second: Terran_116
+  - first:
+      213: -4094980272016875039
+    second: Terran_117
+  - first:
+      213: 3750825208952217690
+    second: Terran_118
+  - first:
+      213: -5814313496407629141
+    second: Terran_119
+  - first:
+      213: -6603119899459273626
+    second: Terran_120
+  - first:
+      213: 1350737683143199823
+    second: Terran_121
+  - first:
+      213: -4563279996691186414
+    second: Terran_122
+  - first:
+      213: 7426666132125742152
+    second: Terran_123
+  - first:
+      213: -408732466880745135
+    second: Terran_124
+  - first:
+      213: -3621296949283617235
+    second: Terran_125
+  - first:
+      213: -8275206754593664130
+    second: Terran_126
+  - first:
+      213: -8596470317081276484
+    second: Terran_127
+  - first:
+      213: 5209746560906731496
+    second: Terran_128
+  - first:
+      213: 1797324979416670088
+    second: Terran_129
+  - first:
+      213: 2310663471448751210
+    second: Terran_130
+  - first:
+      213: -5836606938972036034
+    second: Terran_131
+  - first:
+      213: -6954389377953327504
+    second: Terran_132
+  - first:
+      213: 5525314715338087739
+    second: Terran_133
+  - first:
+      213: -6604296396330524941
+    second: Terran_134
+  - first:
+      213: 3052707386560600384
+    second: Terran_135
+  - first:
+      213: -2127330150811466521
+    second: Terran_136
+  - first:
+      213: 1250991626166753520
+    second: Terran_137
+  - first:
+      213: 1243783298330823641
+    second: Terran_138
+  - first:
+      213: 3959657328341908844
+    second: Terran_139
+  - first:
+      213: 8301582071418997292
+    second: Terran_140
+  - first:
+      213: 3604712209503962490
+    second: Terran_141
+  - first:
+      213: 3519367784189175345
+    second: Terran_142
+  - first:
+      213: 3596259455066377619
+    second: Terran_143
+  - first:
+      213: 2774381976437244148
+    second: Terran_144
+  - first:
+      213: -7050246186089031190
+    second: Terran_145
+  - first:
+      213: -8330747744377644322
+    second: Terran_146
+  - first:
+      213: -2412529726746296543
+    second: Terran_147
+  - first:
+      213: 3093138579921787911
+    second: Terran_148
+  - first:
+      213: 409998030613104782
+    second: Terran_149
+  - first:
+      213: -648891243451982012
+    second: Terran_150
+  - first:
+      213: -5929421196734483105
+    second: Terran_151
+  - first:
+      213: 3274063820128367635
+    second: Terran_152
+  - first:
+      213: -4728462776026957590
+    second: Terran_153
+  - first:
+      213: -7236771942072656151
+    second: Terran_154
+  - first:
+      213: -2656662471350253978
+    second: Terran_155
+  - first:
+      213: -3277882356200923605
+    second: Terran_156
+  - first:
+      213: -4822884774124935243
+    second: Terran_157
+  - first:
+      213: -6458368079570997636
+    second: Terran_158
+  - first:
+      213: -1593137257385196134
+    second: Terran_159
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Terran_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a354178549d471543a811a4e803ad078
+      internalID: 217175201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 360
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b60b341faf85f47bdca725a6c95292
+      internalID: -407934985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Resting_Tr
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3bf5eee7679da848a089013d0d80b5a
+      internalID: 1341017576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Resting_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 40
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3926f59ae5656243b3f97c5408f009a
+      internalID: 1589039248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Resting_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 40
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef8026ee0412184ea2fa4dad27872a5
+      internalID: -1071532877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Duck_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53623c4daa5313146a02b602ecbc0371
+      internalID: 1162118379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Duck_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 320
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b779deac9a09284db614ec6f4452d82
+      internalID: 1779510548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Duck_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 320
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e4edef892f8db544a68eeec8b5c3455
+      internalID: 356103140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Duck_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 320
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae9bcb6cd632b34e8b1f7f41a3d1ed6
+      internalID: -1217762806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 320
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae15c6d205fe3424194f80a9263e40c6
+      internalID: -1402856643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 320
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b837b5185149c40b6339fd2387f286
+      internalID: 1130006188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b74d26b137110744b964de9813304c3b
+      internalID: 1993844394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_19
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 280
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64237879132826648b67b6055818c67a
+      internalID: -1765373942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_20
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 280
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8b53386e3747cd428b26c339b9bc97e
+      internalID: -602949541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_21
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 280
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88fbf7e4ffeb0149bfde73c7f06b172
+      internalID: 427738231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 280
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86bcf49d09812f44ba860cf8cdc134f
+      internalID: 1785970194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_23
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 280
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7400b0b72441b1848afb8d8c8b00640b
+      internalID: -1987267599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_24
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 280
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d899d33d2c95fd438bf0282ff59b48f
+      internalID: 1786783675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_25
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 280
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b099f471a77484c9cc5b0d35e675d6
+      internalID: -148996403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1be2d7eda4de8344abf9cf89259e577
+      internalID: -1278415236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_28
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 240
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1127be217f28a8944b0ea389fd8ecca0
+      internalID: -1031758911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 240
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86cb41dce3e1eec4f9551e782c83f5d0
+      internalID: -1238927697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_30
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 240
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc7f3d7f893cffc4ba8a52abdf9de0a4
+      internalID: -1127287107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_32
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 240
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9913d50fa5860f74b90a84577e8f44de
+      internalID: 673958927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_33
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187aa090e0785394bb779da13169f5e6
+      internalID: -1077348225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_34
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 240
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcd2609c1eaef5840aebc52a66370be4
+      internalID: -1884879026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_35
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 240
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56bb456938139c948ae51c30acfd2c52
+      internalID: 213965856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67351188a74f67b43b8e8005719ace5e
+      internalID: -1023113524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 200
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aad01cdd7fb805418c5405706c03061
+      internalID: -645326280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 200
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c5b87723f9195d409577beb8dad2aa8
+      internalID: -122265235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Walk_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 200
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062dc2196e241154496377190f1687b3
+      internalID: -618481438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Walk_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 200
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1468e05cd7d084ab708c76c45d66e1
+      internalID: -1422414812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Walk_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8127b42e7eb0d44eaae4e22f8d58e6b
+      internalID: 811824142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Walk_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 200
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d72540cffd81142bfdf2d607ee5d78
+      internalID: 365626561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Walk_8
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 200
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16530ea36d2abaf418797bb291d4c0db
+      internalID: 299489663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Trot_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32919b852aaee3d4e94a1942cefcbea3
+      internalID: -1379994657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Trot_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 160
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6c0fb72232bb84399dc01a3f51c57c
+      internalID: 1691747485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Trot_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f340f4162679843ab0df37e6e4970e
+      internalID: -2034350249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Trot_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 160
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1efafc8db79183940aac9d72ece5f013
+      internalID: -1976233240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Trot_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3442ef6b69041e94b8dc7a2e07d923ce
+      internalID: 1262255182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Trot_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 160
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 038b1ee35dcaf364fa6e2566c2064342
+      internalID: -953790502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Trot_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 160
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd4aaca69a0f99644ab04081e9851b6f
+      internalID: -2115749766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Trot_8
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 160
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065895cc7ead8104a8877f3d713296a3
+      internalID: -473526902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Gallop_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55e0350c05b79a418385a489e818fda
+      internalID: 48805444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Gallop_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82210acb0aa82f746ba7fbd2e85ef09f
+      internalID: -1185074776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Gallop_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee67979327196948aede563f854a399
+      internalID: 155475714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Gallop_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ed9dca3062a8342b008d3d9f17e758
+      internalID: -1427513480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Gallop_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1582201dcfada9d4aa410e9d6f4e5b7d
+      internalID: -1467520659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Gallop_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2746b3c866f5e5248868eca164fbbfe3
+      internalID: -1504031518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Gallop_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a2ac907603b36e4b9d4ac73973dae6c
+      internalID: 677038930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Gallop_8
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fcd74fa80385264097bc9387ea7b841
+      internalID: 2096805745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Jump_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0dd685719c2f14dac8ff61206bf4f0
+      internalID: 1760292107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Jump_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 80
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1741d7187cf309548a8a9ea4615cba63
+      internalID: -862996924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_JumpPeak_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 80
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa98b0adfe42e0f4ca397bfc210aa018
+      internalID: 816108258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_JumpPeak_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8012764028fb48e44b9694a10b9be324
+      internalID: -1282499602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Fall_Tr1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9fefcf7d8e6056458b065aec40522bd
+      internalID: 846406802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Fall_Tr2
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 80
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd2658f2c2eb8649b6a31627f807e0c
+      internalID: -1803151017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Fall_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b964a5245a6e4f4d970525a3a880747
+      internalID: -565622596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Fall_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 40
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0521ffec7714634c9b3c1bf02a87181
+      internalID: 767422915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_76
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 40
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78c00d917bc91249a2f2dd39cff2b70
+      internalID: -358611905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_77
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 40
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e2ae73ba0ebd8e41b03bb4bb837e324
+      internalID: 640114701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_78
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 40
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6940a89c1e436a49b9b8baa503e33b0
+      internalID: 1764167693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_79
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 40
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c990ba8545e6b754e826bb4eb5b25ce0
+      internalID: -1662833275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Fly_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eafa95278effd34298315dba0892334
+      internalID: -1863902324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Fly_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb7410fc3512ce47acd36cee585dac3
+      internalID: -1366981722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Fly_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d83f1d9ef48e247988521c36b34b2a
+      internalID: 1388712131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Fly_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7970b79ae040e7d4bbe18789375e8e4d
+      internalID: -254742687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Fly_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5170050325d44604d8fe5b454c7fe5d4
+      internalID: 1479435814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Fly_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab469770a3a848248b7bdaba569e6aa4
+      internalID: 1511701429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Fly_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6cce8428829dde48ab3401c21e6a085
+      internalID: 1049000912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Fly_8
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a3e9ec478eac945aa27341e283deb0
+      internalID: 522682680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Up_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 392
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2071f9fe135924a827a08386d90342
+      internalID: 2007246173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Up_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 392
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9604f0b1287cc5d4b87742569fcd18ea
+      internalID: -765249511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Side_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5bc7bd7ab9f2c4c982e82c4fd78c0a
+      internalID: -1109172825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_SlightDown_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 376
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c286b502da189564e89bc752c972770d
+      internalID: -1333242069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_MidDown_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 368
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7082f15429977f14288b7d880239896b
+      internalID: -1758494485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Down_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 360
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6466d1c29bdbf42962b562a4edfe5a
+      internalID: 1738868797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Arch1_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 352
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa3db33ee8d0f04ca9fe9d724b617c1
+      internalID: -190115671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Arch2_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 344
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a3f1b3559e8e040bb9652bb8489fe9
+      internalID: -1753610032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_3-4_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 336
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e1cdac4289a174db07885bfe0f0e43
+      internalID: -1177133471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Front_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 328
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e25b4e5fd21fae4e9fcf551efdc74bf
+      internalID: -1606908147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Up_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 392
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba3dfc7f92f6ac4c921cd57b02f9ea9
+      internalID: -1517933150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Up_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 392
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8095253b6258a542ae5c483dc5373c0
+      internalID: 719469013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Up_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 392
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889fa1c5434a187459fe725860080bd1
+      internalID: -1175083549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Up_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 392
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d50f5c153fec949848343894ebcf2f
+      internalID: -1798495382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Front_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 328
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4ea750215c99a47be5caa6d475e84b
+      internalID: -1444227684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Front_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 328
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e5aa26f6093844fa6e40a08cc65ce5
+      internalID: -835641044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Front_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 328
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b2cbd88ab8e1444bcab268c433a05c
+      internalID: -901860300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Side_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 384
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f889b0693ca114c98611574a5c4040
+      internalID: -1420201712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_SlightDown_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 376
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b5e1ca8f1160da458f0af975fa66f78
+      internalID: -540973839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_MidDown_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 368
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 052e6a6eb7ce2b24a8fdaec518a73755
+      internalID: 1830936096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Down_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 360
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288848baecb017d4c98301d76deb4cbd
+      internalID: 1891046446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Arch1_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 352
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ab7f8708c0b554a96eca7fa36d61e4
+      internalID: -1562415794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Arch2_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 344
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d7ef1f3c22b2df4c9eb80bbea9e2376
+      internalID: -1745405570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_3-4_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 336
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48479a23f66e91b43a6b110b4b9d12a0
+      internalID: 1053286840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Side_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 384
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d304fa58f6c994499501edc83e16aff
+      internalID: -297960328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_SlightDown_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 376
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a1c3fa445e32840aa99edfda62d943
+      internalID: 816821571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_SlightDown_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 376
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c678ff234e13544901e69b2b7e158a
+      internalID: -1839172206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Side_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 384
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8700c1501e0c516409fb219a51732c6c
+      internalID: 2089619620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Side_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 384
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a984f37d7df0ca43919715645c7ecd3
+      internalID: -675947332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_SlightDown_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 376
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 066d64509864f024ca7266a6d03b6fab
+      internalID: 1451072424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Side_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 384
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f911925582cb454e834da244213b85f
+      internalID: -2049817732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_SlightDown_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 376
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e109d406f6b6e0843a8b37e60e2ce6e9
+      internalID: -503507554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_MidDown_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 368
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c694bc3da2076b7409738b2ec28d2504
+      internalID: -169351846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_MidDown_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 368
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83478019c7baa83489de32b2585c7c0c
+      internalID: 549928921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_MidDown_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 368
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9ae71d1a579bb4081e19c51ab3b51b
+      internalID: -1122477178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_MidDown_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 368
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed7950e8f0eab064696b419f75169bbb
+      internalID: 1158838672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Front_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 328
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2dae68bba06c1a4f811f4e6f036fe92
+      internalID: -2145051203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Front_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 328
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9bcaa6c36d630242906913482eab2d7
+      internalID: -1006328395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_3-4_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 336
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62928dfad40d77e41a1838cfee8e9bb3
+      internalID: -1801503552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_3-4_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 336
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d02cbe95fc84bd64a94dd8da5d98f8f0
+      internalID: 763565937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_3-4_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 336
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 175f97725af626943828642e16df4091
+      internalID: 104409630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_3-4_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 336
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de5f190a64ac5574f91891eed1ce5d5e
+      internalID: 1863780337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Arch2_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 344
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a660945506e1f45a09ad6a5b4dfa95
+      internalID: 40748218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Arch2_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 344
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bfa911bc95b00146b54b03bb532847c
+      internalID: -1059789823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Arch2_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 344
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ff7ac13072cfb40ba92f1bb604f6d1
+      internalID: 1143297584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Arch2_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 344
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3f179891ac51f0439daab22378994b4
+      internalID: 405236182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Down_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 360
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8655f7ae222e01340a80d8d3fd2d8043
+      internalID: 775563781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Arch1_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 352
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6369336424b56941885e93086e1d7d9
+      internalID: 1412072013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Down_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 360
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d837600496d2e447886362b0e6613f9
+      internalID: -671124915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Arch1_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 352
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b49e84e3418f6c043a70954d69ce1fe0
+      internalID: -486531046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Down_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 360
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5efb6f383359444b36075de6a240d4
+      internalID: 517375382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Arch1_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 352
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6986c7c41d7bbc4aafeb7945f149dee
+      internalID: 366152676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Arch1_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 352
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5a64c71858a2143b86b399e1143e45
+      internalID: -1537943182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Eyes_Down_6
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 360
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.083333336, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce1c9c6dd7c277e47a6eafa3ccbdf6c6
+      internalID: -1915790226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 360
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5acd9add810646945b541fd3009fb7ff
+      internalID: 274766416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 360
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6c65f381c68ce4ca87182f6d5e332d
+      internalID: 578270682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 360
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c76725930a4da7c49a16e7d3f5b431d0
+      internalID: 1062408846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terran_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 360
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7caa38a98e852a4fae341dbb293eaaf
+      internalID: -959352451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 07f7d49bcd1fb1749b17b5f07f665644
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Terran_14: -1402856643
+      Terran_15: 1130006188
+      Terran_18: 1993844394
+      Terran_19: -1765373942
+      Terran_20: -602949541
+      Terran_21: 427738231
+      Terran_22: 1785970194
+      Terran_23: -1987267599
+      Terran_24: 1786783675
+      Terran_25: -148996403
+      Terran_27: -1278415236
+      Terran_28: -1031758911
+      Terran_29: -1238927697
+      Terran_30: -1127287107
+      Terran_32: 673958927
+      Terran_33: -1077348225
+      Terran_34: -1884879026
+      Terran_35: 213965856
+      Terran_76: -358611905
+      Terran_77: 640114701
+      Terran_78: 1764167693
+      Terran_79: -1662833275
+      Terran_Duck_1: 1162118379
+      Terran_Duck_2: 1779510548
+      Terran_Duck_3: 356103140
+      Terran_Duck_4: -1217762806
+      Terran_Eyes_3-4_1: -1177133471
+      Terran_Eyes_3-4_2: 1053286840
+      Terran_Eyes_3-4_3: -1801503552
+      Terran_Eyes_3-4_4: 763565937
+      Terran_Eyes_3-4_5: 104409630
+      Terran_Eyes_3-4_6: 1863780337
+      Terran_Eyes_Arch1_1: -190115671
+      Terran_Eyes_Arch1_2: -1562415794
+      Terran_Eyes_Arch1_3: 1412072013
+      Terran_Eyes_Arch1_4: -486531046
+      Terran_Eyes_Arch1_5: 366152676
+      Terran_Eyes_Arch1_6: -1537943182
+      Terran_Eyes_Arch2_1: -1753610032
+      Terran_Eyes_Arch2_2: -1745405570
+      Terran_Eyes_Arch2_3: 40748218
+      Terran_Eyes_Arch2_4: -1059789823
+      Terran_Eyes_Arch2_5: 1143297584
+      Terran_Eyes_Arch2_6: 405236182
+      Terran_Eyes_Down_1: 1738868797
+      Terran_Eyes_Down_2: 1891046446
+      Terran_Eyes_Down_3: 775563781
+      Terran_Eyes_Down_4: -671124915
+      Terran_Eyes_Down_5: 517375382
+      Terran_Eyes_Down_6: -1915790226
+      Terran_Eyes_Front_1: -1606908147
+      Terran_Eyes_Front_2: -1444227684
+      Terran_Eyes_Front_3: -835641044
+      Terran_Eyes_Front_4: -901860300
+      Terran_Eyes_Front_5: -2145051203
+      Terran_Eyes_Front_6: -1006328395
+      Terran_Eyes_MidDown_1: -1758494485
+      Terran_Eyes_MidDown_2: 1830936096
+      Terran_Eyes_MidDown_3: -169351846
+      Terran_Eyes_MidDown_4: 549928921
+      Terran_Eyes_MidDown_5: -1122477178
+      Terran_Eyes_MidDown_6: 1158838672
+      Terran_Eyes_Side_1: -1109172825
+      Terran_Eyes_Side_2: -1420201712
+      Terran_Eyes_Side_3: -297960328
+      Terran_Eyes_Side_4: 2089619620
+      Terran_Eyes_Side_5: -675947332
+      Terran_Eyes_Side_6: -2049817732
+      Terran_Eyes_SlightDown_1: -1333242069
+      Terran_Eyes_SlightDown_2: -540973839
+      Terran_Eyes_SlightDown_3: -1839172206
+      Terran_Eyes_SlightDown_4: 816821571
+      Terran_Eyes_SlightDown_5: 1451072424
+      Terran_Eyes_SlightDown_6: -503507554
+      Terran_Eyes_Up_1: 2007246173
+      Terran_Eyes_Up_2: -765249511
+      Terran_Eyes_Up_3: -1517933150
+      Terran_Eyes_Up_4: 719469013
+      Terran_Eyes_Up_5: -1175083549
+      Terran_Eyes_Up_6: -1798495382
+      Terran_Fall_1: -565622596
+      Terran_Fall_2: 767422915
+      Terran_Fall_Tr1: 846406802
+      Terran_Fall_Tr2: -1803151017
+      Terran_Fly_1: -1863902324
+      Terran_Fly_2: -1366981722
+      Terran_Fly_3: 1388712131
+      Terran_Fly_4: -254742687
+      Terran_Fly_5: 1479435814
+      Terran_Fly_6: 1511701429
+      Terran_Fly_7: 1049000912
+      Terran_Fly_8: 522682680
+      Terran_Gallop_1: 48805444
+      Terran_Gallop_2: -1185074776
+      Terran_Gallop_3: 155475714
+      Terran_Gallop_4: -1427513480
+      Terran_Gallop_5: -1467520659
+      Terran_Gallop_6: -1504031518
+      Terran_Gallop_7: 677038930
+      Terran_Gallop_8: 2096805745
+      Terran_Idle_1: 217175201
+      Terran_Idle_2: -407934985
+      Terran_Idle_3: 274766416
+      Terran_Idle_4: 578270682
+      Terran_Idle_5: 1062408846
+      Terran_Idle_6: -959352451
+      Terran_JumpPeak_1: 816108258
+      Terran_JumpPeak_2: -1282499602
+      Terran_Jump_1: 1760292107
+      Terran_Jump_2: -862996924
+      Terran_Resting_1: 1589039248
+      Terran_Resting_2: -1071532877
+      Terran_Resting_Tr: 1341017576
+      Terran_Trot_1: -1379994657
+      Terran_Trot_2: 1691747485
+      Terran_Trot_3: -2034350249
+      Terran_Trot_4: -1976233240
+      Terran_Trot_5: 1262255182
+      Terran_Trot_6: -953790502
+      Terran_Trot_7: -2115749766
+      Terran_Trot_8: -473526902
+      Terran_Walk_1: -1023113524
+      Terran_Walk_2: -645326280
+      Terran_Walk_3: -122265235
+      Terran_Walk_4: -618481438
+      Terran_Walk_5: -1422414812
+      Terran_Walk_6: 811824142
+      Terran_Walk_7: 365626561
+      Terran_Walk_8: 299489663
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
