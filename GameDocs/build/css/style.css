@@ -88,7 +88,7 @@ body {
   align-content: center;
   width: 900px;
   height: 675px;
-  margin-bottom: 24px;
+  margin: auto;
   padding: 24px;
   min-width: 0px;
   min-height: 0px;
@@ -97,7 +97,10 @@ body {
 .slideFlex .slide p {
   text-align: start;
 }
-
+.slide
+{
+  display: none;
+} 
 .rel {
   display: inline;
   position: relative;
@@ -156,7 +159,8 @@ main {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: main;
-  margin: 96px 0px;
+  margin: 0px;
+  padding: auto;
   min-width: 0px;
 }
 
@@ -165,6 +169,7 @@ p {
   font-size: 24pt;
   padding: 6px;
   line-height: 27.6pt;
+  text-wrap: balance;
 }
 p.small {
   font-size: 18pt;
@@ -184,30 +189,29 @@ h6 {
 }
 
 h1 {
-  text-shadow: 1.6px 0.8px 0 #12162c, 1.6px 0px 0 #12162c, 1.6px 1.6px 0 #12162c, 0px 1.6px 0 #12162c, 0.4px 1.6px 0 #12162c, 0.8px 1.6px 0 #12162c, 1.2px 0.4px 0 #12162c, 1.6px 1.2px 0 #12162c, 2px 2px 0 #12162c, 2px 2.8px 0 #12162c, 1.6px 3.2px 0 #12162c, 1.2px 3.2px 0 #12162c, 0.8px 2.8px 0 #12162c, 0.4px 2.4px 0 #12162c, 0px 1.6px 0 #12162c;
-  font-size: 62.4pt;
+  text-shadow: 1.6px 0.8px 0 #12162c, 1.6px 0px 0 #12162c, 1.6px 1.6px 0 #12162c, 0px 1.6px 0 #12162c, 0.4px 1.6px 0 #12162c, 0.8px 1.6px 0 #12162c, 1.2px 0.4px 0 #12162c, 1.6px 1.2px 0 #12162c, 2px 2px 0 #12162c, 2px 2.8px 0 #12162c, 1.6px 3.2px 0 #12162c, 1.2px 3.2px 0 #12162c, 0.8px 2.8px 0 #12162c, 0.4px 2.4px 0 #12162c, 0px 1.6px 0 #12162c, 7px 6px 0 #4d4486;
+  font-size: 80pt;
   font-weight: bolder;
   letter-spacing: 0.1px;
   margin: 8.4px 0px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 h2 {
-  text-shadow: 0.72px 0.36px 0 #12162c, 0.72px 0px 0 #12162c, 0.72px 0.72px 0 #12162c, 0px 0.72px 0 #12162c, 0.18px 0.72px 0 #12162c, 0.36px 0.72px 0 #12162c, 0.54px 0.18px 0 #12162c, 0.72px 0.54px 0 #12162c, 0.9px 0.9px 0 #12162c, 0.9px 1.26px 0 #12162c, 0.72px 1.44px 0 #12162c, 0.54px 1.44px 0 #12162c, 0.36px 1.26px 0 #12162c, 0.18px 1.08px 0 #12162c, 0px 0.72px 0 #12162c;
+  text-shadow: 0.72px 0.36px 0 #12162c, 0.72px 0px 0 #12162c, 0.72px 0.72px 0 #12162c, 0px 0.72px 0 #12162c, 0.18px 0.72px 0 #12162c, 0.36px 0.72px 0 #12162c, 0.54px 0.18px 0 #12162c, 0.72px 0.54px 0 #12162c, 0.9px 0.9px 0 #12162c, 0.9px 1.26px 0 #12162c, 0.72px 1.44px 0 #12162c, 0.54px 1.44px 0 #12162c, 0.36px 1.26px 0 #12162c, 0.18px 1.08px 0 #12162c, 0px 0.72px 0 #12162c, 5px 5px 0 #4d4486;
   font-size: 39.84pt;
   font-weight: bolder;
   letter-spacing: 0.1px;
   margin: 6px 0px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 h3 {
-  text-shadow: 0.72px 0.36px 0 #12162c, 0.72px 0px 0 #12162c, 0.72px 0.72px 0 #12162c, 0px 0.72px 0 #12162c, 0.18px 0.72px 0 #12162c, 0.36px 0.72px 0 #12162c, 0.54px 0.18px 0 #12162c, 0.72px 0.54px 0 #12162c, 0.9px 0.9px 0 #12162c, 0.9px 1.26px 0 #12162c, 0.72px 1.44px 0 #12162c, 0.54px 1.44px 0 #12162c, 0.36px 1.26px 0 #12162c, 0.18px 1.08px 0 #12162c, 0px 0.72px 0 #12162c;
-  font-size: 34.8pt;
+  text-shadow: 0.72px 0.36px 0 #12162c, 0.72px 0px 0 #12162c, 0.72px 0.72px 0 #12162c, 0px 0.72px 0 #12162c, 0.18px 0.72px 0 #12162c, 0.36px 0.72px 0 #12162c, 0.54px 0.18px 0 #12162c, 0.72px 0.54px 0 #12162c, 0.9px 0.9px 0 #12162c, 0.9px 1.26px 0 #12162c, 0.72px 1.44px 0 #12162c, 0.54px 1.44px 0 #12162c, 0.36px 1.26px 0 #12162c, 0.18px 1.08px 0 #12162c, 0px 0.72px 0 #12162c, 5px 4px 0 #4d4486;
+  font-size: 36pt;
   font-weight: bold;
   letter-spacing: 0.1px;
   margin: 6px 0px;
-  text-transform: uppercase;
 }
 
 h4 {
