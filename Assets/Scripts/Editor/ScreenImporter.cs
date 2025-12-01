@@ -15,7 +15,7 @@ public class ScreenImporter : CustomTmxImporter
 
     private void GetAllScreens()
     {
-        var importedScreens = map.transform.GetComponentsInChildren<Screen>();
-        Screen.levelArea = Screen.levelArea.AddIfUnique(importedScreens,true);
+        var importedScreens = map.transform.GetComponentsInChildren<Screens>();
+        Screens.levelArea = Screens.levelArea.AddIfUnique(importedScreens,true);
     }
 }

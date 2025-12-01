@@ -35,7 +35,7 @@ public class FollowAI : MonoBehaviour
 
     // string debugStr = "";
 
-Vector2 positionDifference;
+    Vector2 positionDifference;
 
 
     void Awake()
@@ -57,7 +57,7 @@ Vector2 positionDifference;
         if (seeker.IsDone())
             seeker.StartPath(rb.position, Target.position, OnPathComplete);
 
-        yield return new WaitForSeconds(Time.fixedDeltaTime);
+        yield return new WaitForSeconds(5 * Time.fixedDeltaTime);
 
         StartCoroutine(UpdatePath()); // Recursively calls itself
     }
@@ -85,15 +85,14 @@ Vector2 positionDifference;
 
         else
         {
-            // reachedPathEnd = true;
-            return;
+            currentWaypoint = path.vectorPath.Count - 1;
         }
 
         UpdatePathProgress();
 
-        hInput = Mathf.Abs(waypointDirection.x) > 0.2f && Mathf.Abs(targetDistance) > 1f ? Mathf.Sign(waypointDirection.x) : 0f;
+        hInput = Mathf.Abs(waypointDirection.x) > 0.2f && Mathf.Abs(targetDistance) > 2f ? Mathf.Sign(waypointDirection.x) : 0f;
         vInput = Mathf.Abs(targetDistance) > 1.2f ? -1 : 0;
-        tryRun = Mathf.Abs(targetDistance) > 2f;
+        tryRun = pony.tribe.target.inputController.pressedRun;
 
         HandleJumpLogic();
 

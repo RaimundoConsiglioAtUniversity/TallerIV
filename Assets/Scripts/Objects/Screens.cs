@@ -1,12 +1,12 @@
 using UnityEngine;
 
-public class Screen : MonoBehaviour
+public class Screens : MonoBehaviour
 {
     [SerializeField] private PlayerCam cam;
     [SerializeField] private bool isStartScreen;
     public Vector3 screenSize = new(1, 1, 1);
 
-    public static Screen[] levelArea = {};
+    public static Screens[] levelArea = {};
     public static int levelAreaOverlapCount = 0;
 
     public bool WithinBounds => levelAreaOverlapCount > 0;
@@ -14,7 +14,7 @@ public class Screen : MonoBehaviour
     public void Width(int width) => screenSize.x = width;
     public void Height(int height) => screenSize.y = height;
     public void IsStartingScreen(bool startScreen) => isStartScreen = startScreen;
-    public bool IsLargerThanFrustum => screenSize.x > 320 || screenSize.y > 180;
+    public bool IsLargerThanFrustum => screenSize.x > 426 || screenSize.y > 240;
     public void SetDesiredScreenSize(Vector3 size)
     {
         Vector3 newSize = size / 16f;
@@ -31,7 +31,7 @@ public class Screen : MonoBehaviour
     [UnityEditor.Callbacks.DidReloadScripts]
     public static void SetScreenSize()
     {
-        Screen[] screens = Object.FindObjectsByType<Screen>(FindObjectsSortMode.None);
+        Screens[] screens = Object.FindObjectsByType<Screens>(FindObjectsSortMode.None);
     
         foreach (var screen in screens)
         {
@@ -47,7 +47,7 @@ public class Screen : MonoBehaviour
 
 #endif
 
-    private void Awake() => levelArea = Object.FindObjectsByType<Screen>(FindObjectsSortMode.None);
+    private void Awake() => levelArea = Object.FindObjectsByType<Screens>(FindObjectsSortMode.None);
 
     private void OnTriggerEnter2D(Collider2D col)
     {

@@ -254,10 +254,30 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 217175201, guid: a1754dbdca0d9ac4d881c042677fae2a, type: 3}
+    - target: {fileID: 7100263579243191553, guid: 6a7cc275652b12a4f9b788a482583cd7, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7677713063142601041, guid: 6a7cc275652b12a4f9b788a482583cd7, type: 3}
       propertyPath: controller
       value: 
       objectReference: {fileID: 7042845526447332833}
+    - target: {fileID: 8767027860966219163, guid: 6a7cc275652b12a4f9b788a482583cd7, type: 3}
+      propertyPath: m_Size.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8767027860966219163, guid: 6a7cc275652b12a4f9b788a482583cd7, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8767027860966219163, guid: 6a7cc275652b12a4f9b788a482583cd7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -35631831, guid: 31b2d3378d2b12e4b928cb43389fc75c, type: 3}
+    - target: {fileID: 8767027860966219163, guid: 6a7cc275652b12a4f9b788a482583cd7, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8347699236374092071, guid: 6a7cc275652b12a4f9b788a482583cd7, type: 3}
     - {fileID: 9021125919237546648, guid: 6a7cc275652b12a4f9b788a482583cd7, type: 3}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="102" height="24" tilewidth="16" tileheight="16" infinite="0" nextlayerid="251" nextobjectid="6333">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="102" height="24" tilewidth="16" tileheight="16" infinite="0" nextlayerid="251" nextobjectid="6333">
  <tileset firstgid="1" source="../Tilesets/GenericPlatformerTilesBySurtOpenGameArt.tsx"/>
  <tileset firstgid="769" source="../Tilesets/GrassTiles.tsx"/>
  <tileset firstgid="818" source="../Tilesets/BoundsTiles.tsx"/>
@@ -1149,23 +1149,23 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="36" name="Screens" locked="1">
+ <objectgroup id="36" name="Screens">
   <properties>
    <property name="unity:layer" value="Screen"/>
   </properties>
-  <object id="94" name="Screen1" type="Screen" x="16" y="156" width="320" height="180">
+  <object id="94" name="Screen1" type="Screen" x="16" y="96" width="426" height="240">
    <properties>
     <property name="IsStartingScreen" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="95" name="Screen2" type="Screen" x="336" y="64" width="320" height="224">
+  <object id="95" name="Screen2" type="Screen" x="442" y="48" width="426" height="240">
    <properties>
     <property name="Height" type="int" value="224"/>
     <property name="ShouldFollow" type="bool" value="true"/>
     <property name="Width" type="int" value="320"/>
    </properties>
   </object>
-  <object id="96" name="Screen3" type="Screen" x="656" y="64" width="320" height="256">
+  <object id="96" name="Screen3" type="Screen" x="967.333" y="-126.667" width="320" height="256">
    <properties>
     <property name="Height" type="int" value="256"/>
     <property name="ShouldFollow" type="bool" value="true"/>

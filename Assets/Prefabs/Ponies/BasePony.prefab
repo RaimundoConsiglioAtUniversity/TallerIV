@@ -266,7 +266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pony: {fileID: 0}
   player: {fileID: 0}
-  nextWaypointDistance: 3
+  nextWaypointDistance: 8
   waypointDistance: 0
   waypointDirection: {x: 0, y: 0}
   targetDistance: 2

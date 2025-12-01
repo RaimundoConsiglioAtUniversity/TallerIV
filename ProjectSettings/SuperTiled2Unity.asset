@@ -102,6 +102,9 @@ MonoBehaviour:
   - m_Name: Soil
     m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
     m_CustomProperties: []
+  - m_Name: SpawnPoint
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties: []
   - m_Name: Toggleable
     m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
     m_CustomProperties: []
