@@ -3,15 +3,15 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "Maps/TestMap (2).tmx",
+    "activeFile": "/home/rai/Desktop/GitHub/TallerIV/Assets/Tiled/Rules/auto_back_rocks.tmx",
     "automapping.whileDrawing": false,
     "expandedProjectPaths": [
         "rules",
-        "Rules",
         ".",
-        "Maps",
+        "Rules",
         "classes",
         "Tilesets",
+        "Maps",
         "Objects"
     ],
     "fileStates": {
@@ -58,18 +58,18 @@
         },
         "Maps/TestMap (2).tmx": {
             "expandedGroupLayers": [
-                136,
                 37,
-                135
+                135,
+                136
             ],
             "expandedObjectLayers": [
                 36
             ],
-            "scale": 1,
-            "selectedLayer": 27,
+            "scale": 8,
+            "selectedLayer": 30,
             "viewCenter": {
-                "x": 724,
-                "y": 174.5
+                "x": 1640.875,
+                "y": 417.75
             }
         },
         "Maps/TestMap.tmx": {
@@ -174,10 +174,10 @@
         },
         "Rules/auto_pillars.tmx": {
             "expandedObjectLayers": [
-                31,
-                27,
                 26,
-                35
+                31,
+                35,
+                27
             ],
             "scale": 1.5,
             "selectedLayer": 15,
@@ -207,10 +207,10 @@
         },
         "Rules/auto_toggle_grass.tmx": {
             "expandedObjectLayers": [
-                70,
                 69,
                 71,
-                72
+                72,
+                70
             ],
             "scale": 0.33,
             "selectedLayer": 2,
@@ -364,29 +364,29 @@
     "map.width": 8,
     "openFiles": [
         "Maps/TestMap (2).tmx",
-        "Maps/TestMap.tmx",
         "Rules/auto_pillars.tmx",
         "Rules/auto_toggle_grass.tmx",
         "Tilesets/ToggleGrassTops.tsx",
         "Tilesets/ToggleGrassColour.tsx",
         "Tilesets/GrassTiles.tsx",
-        "Tilesets/Pillars.tsx"
+        "Tilesets/Pillars.tsx",
+        "/home/rai/Desktop/GitHub/TallerIV/Assets/Tiled/Rules/auto_back_rocks.tmx"
     ],
     "project": "TempTileset.tiled-project",
     "property.type": "string",
     "recentFiles": [
-        "Tilesets/Pillars.tsx",
-        "Tilesets/GrassTiles.tsx",
-        "Tilesets/ToggleGrassColour.tsx",
-        "Tilesets/ToggleGrassTops.tsx",
-        "Rules/auto_toggle_grass.tmx",
-        "Rules/auto_pillars.tmx",
-        "Maps/TestMap.tmx",
         "Maps/TestMap (2).tmx",
+        "Rules/auto_pillars.tmx",
+        "Rules/auto_toggle_grass.tmx",
+        "Tilesets/ToggleGrassTops.tsx",
+        "Tilesets/ToggleGrassColour.tsx",
+        "Tilesets/GrassTiles.tsx",
+        "Tilesets/Pillars.tsx",
+        "/home/rai/Desktop/GitHub/TallerIV/Assets/Tiled/Rules/auto_back_rocks.tmx",
+        "Maps/TestMap.tmx",
         "Tilesets/Objects.tsx",
         "Rules/auto_grass.tmx",
-        "Tilesets/BackRockTiles.tsx",
-        "Tilesets/BoundsTiles.tsx"
+        "Tilesets/BackRockTiles.tsx"
     ],
     "tileset.lastUsedFilter": "All Files (*)",
     "tileset.lastUsedFormat": "tsx",

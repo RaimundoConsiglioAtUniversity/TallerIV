@@ -19,12 +19,17 @@ public class PlayerStats : MonoBehaviour
     public float jumpBufferTimeS = 0.05f;
     public int maxFlaps = 3;
 
-    
     public LayerMask obstacleLayers;
     public float maxJumpTime = 0.59f;
 
+    //--- Material Vars ---//
+    public Material defaultMaterial;
+    public Material outlineMaterial;
+
+    //--- Singleton Vars ---//
     public static PlayerStats Instance => instance;
     private static PlayerStats instance;
+
     
     void Awake ()
     {

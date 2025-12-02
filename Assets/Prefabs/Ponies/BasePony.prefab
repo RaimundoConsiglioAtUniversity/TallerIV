@@ -129,15 +129,15 @@ SpriteRenderer:
   m_SortingLayerID: 909510397
   m_SortingLayer: -1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -35631831, guid: 31b2d3378d2b12e4b928cb43389fc75c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.5, y: 2.5}
+  m_Size: {x: 0.75, y: 0.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1691943106937897060
@@ -396,6 +396,7 @@ GameObject:
   - component: {fileID: 7100263579243191553}
   - component: {fileID: 8964926463251878166}
   - component: {fileID: 2120032634862031490}
+  - component: {fileID: 7855537134418056857}
   - component: {fileID: 8347699236374092071}
   - component: {fileID: 1180606849516952500}
   m_Layer: 6
@@ -465,7 +466,7 @@ SpriteRenderer:
   m_SortingLayerID: 909510397
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 8445302251077972156, guid: 31b2d3378d2b12e4b928cb43389fc75c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -473,7 +474,7 @@ SpriteRenderer:
   m_Size: {x: 2.5, y: 2.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &8964926463251878166
@@ -506,6 +507,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Library: []
   m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 9c7b31ec802b0854d931e9d700248c47, type: 3}
+--- !u!114 &7855537134418056857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9083212026150480922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd4f781501c3ad763982c58861a5c984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderer2D: {fileID: 7100263579243191553}
 --- !u!114 &8347699236374092071
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -83,6 +83,7 @@ MonoBehaviour:
   col: {fileID: 5985719951809582351}
   groundC: {fileID: 0}
   anim: {fileID: 7310234481394962228}
+  sprite: {fileID: 0}
   hInput:
     _value: 0
     deadZone: 0.2

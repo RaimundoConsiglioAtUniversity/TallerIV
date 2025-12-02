@@ -448,17 +448,9 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 172679087
       objectReference: {fileID: 0}
-    - target: {fileID: -6248503158948407340, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -6173841221505864187, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
       propertyPath: m_Layer
       value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: -3576210189505491258, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
-      propertyPath: m_SortingLayer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1460243346552192212, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
       propertyPath: m_Enabled
@@ -467,10 +459,6 @@ PrefabInstance:
     - target: {fileID: -1460243346552192212, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
       propertyPath: m_Priority
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: -1460243346552192212, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 10.6875
       objectReference: {fileID: 0}
     - target: {fileID: 813784524385770130, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
       propertyPath: m_LocalScale.x
@@ -496,10 +484,6 @@ PrefabInstance:
       propertyPath: m_Priority
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 1973664472389473130, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 7.5
-      objectReference: {fileID: 0}
     - target: {fileID: 2055379622874393345, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
       propertyPath: m_Follow
       value: 
@@ -511,10 +495,6 @@ PrefabInstance:
     - target: {fileID: 2055379622874393345, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
       propertyPath: m_Priority
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2055379622874393345, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 10.6875
       objectReference: {fileID: 0}
     - target: {fileID: 2895561224334280694, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
       propertyPath: m_LocalScale.x
@@ -559,10 +539,6 @@ PrefabInstance:
     - target: {fileID: 3521272827073774109, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
       propertyPath: m_Priority
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3521272827073774109, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 10.6875
       objectReference: {fileID: 0}
     - target: {fileID: 5104613884723906146, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
       propertyPath: m_LocalScale.x
@@ -639,18 +615,6 @@ PrefabInstance:
     - target: {fileID: 7252610526815562680, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
       propertyPath: m_Priority
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7252610526815562680, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 7.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8227268914412745659, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
-      propertyPath: m_SortingLayer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8227268914412745659, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8321073992796070336, guid: a28a29c2e70cc4842a43c18858119706, type: 3}
       propertyPath: m_LocalScale.x
@@ -766,7 +730,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.3124998, y: 0.5000004, z: -10}
+  m_LocalPosition: {x: 3.3125, y: 0.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2026,6 +1990,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1718453555}
+    - target: {fileID: 7887677368222442340, guid: e3e6a8cb1db0cac43a0c110f7f2ffbd1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e8f609dd7db20594cb827aa6b24ba21d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

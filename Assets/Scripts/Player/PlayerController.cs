@@ -11,15 +11,18 @@ public class PlayerController : MonoBehaviour
     public Collider2D col;
     public GroundCheck groundC;
     public PonyAnim anim;
+    public PonySpriteReference sprite;
 
 
-    public bool isDucking => vInput.SteppedValue == 1 && groundC.IsGrounded;
+    public bool isDucking => vInput.SteppedValue == 1 && IsGrounded;
     public bool isJumping => inputController.pressedJump;
     public bool isHoldingJump => inputController.heldJump;
     public bool isRunning => inputController.pressedRun;
     public InputAxis hInput = new(0f, 0.2f);
     public InputAxis vInput = new(0f, 0.2f);
 
+    public bool HasFlapsLeft => currentFlaps < stats.maxFlaps;
+    public bool IsGrounded => groundC.IsGrounded;
 
     public float coyoteTimeCounter { get; private set; }
     float jumpBufferCounter;
@@ -58,10 +61,12 @@ public class PlayerController : MonoBehaviour
 
     public void OnEnableAI()
     {
+        sprite.renderer2D.material = stats.defaultMaterial;
         tribe.OnEnableAI();
     }
     public void OnDisableAI()
     {
+        sprite.renderer2D.material = stats.outlineMaterial;
         tribe.OnDisableAI();
     }
 
@@ -73,6 +78,7 @@ public class PlayerController : MonoBehaviour
         tribe = GetComponentInChildren<PonyType>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<PonyAnim>();
+        sprite = GetComponentInChildren<PonySpriteReference>();
     }
 
     void Start()
@@ -125,7 +131,7 @@ public class PlayerController : MonoBehaviour
             if (coyoteTimeCounter > 0f)
                 DoJump(stats.jumpStrength, Animations.Jump_Rise);
             
-            else if (tribe is PonyPegasus && currentFlaps < stats.maxFlaps)
+            else if (tribe is PonyPegasus && HasFlapsLeft)
             {
                 DoJump(stats.flapStrength, Animations.Flap);
                 currentFlaps++;
@@ -169,7 +175,9 @@ public class PlayerController : MonoBehaviour
 
     void CheckAnimationState()
     {
-        if (groundC.IsGrounded && Mathf.Abs(rb.linearVelocity.y) < 0.1f)
+        float yAbsoluteVelocity = Mathf.Abs(rb.linearVelocity.y);
+
+        if (IsGrounded && yAbsoluteVelocity < 0.1f)
         {
             float speed = Mathf.Abs(moveSpeed);
 
@@ -193,7 +201,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            if (Mathf.Abs(rb.linearVelocity.y) < 1.5f)
+            if (yAbsoluteVelocity < 1.5f)
                 anim.Play(Animations.Jump_Peak);
 
             else if (rb.linearVelocity.y <= -1.5f)

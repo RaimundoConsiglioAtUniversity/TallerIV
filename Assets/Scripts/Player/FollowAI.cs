@@ -4,6 +4,7 @@ using Pathfinding;
 
 public class FollowAI : MonoBehaviour
 {
+    private static readonly WaitForSeconds pathRefreshTime = new(0.5f);
     public PlayerController pony;
     public PlayerInput player;
     public float nextWaypointDistance = 3;
@@ -16,7 +17,6 @@ public class FollowAI : MonoBehaviour
 
     private Path path;
     int currentWaypoint = 0;
-    // bool reachedPathEnd = false;
 
     Seeker seeker;
 
@@ -26,14 +26,13 @@ public class FollowAI : MonoBehaviour
     public bool tryHoldJump = false;
     public bool tryRun = false;
 
-    private float jumpTime = 0f;
     private bool isJumping = false;
 
     private Transform Target => pony.tribe.target.transform;
 
     Vector2 frontObstacleHeightDifference;
 
-    // string debugStr = "";
+    string debugStr = "";
 
     Vector2 positionDifference;
 
@@ -54,12 +53,13 @@ public class FollowAI : MonoBehaviour
 
     IEnumerator UpdatePath()
     {
-        if (seeker.IsDone())
-            seeker.StartPath(rb.position, Target.position, OnPathComplete);
+        while(true)
+        {
+            if (seeker.IsDone())
+                seeker.StartPath(rb.position, Target.position, OnPathComplete);
 
-        yield return new WaitForSeconds(5 * Time.fixedDeltaTime);
-
-        StartCoroutine(UpdatePath()); // Recursively calls itself
+            yield return pathRefreshTime;
+        }
     }
     
     void OnPathComplete(Path p)
@@ -73,26 +73,17 @@ public class FollowAI : MonoBehaviour
 
     void Update()
     {
-        // debugStr = $"Pony: {pony.name}  ";
+        debugStr = $"Pony: {pony.name}  ";
 
-        if (path == null)
+        if (path == null || path.vectorPath == null || path.vectorPath.Count == 0)
             return;
 
-        if (currentWaypoint < path.vectorPath.Count)
-        {
-            // reachedPathEnd = false;
-        }
-
-        else
-        {
-            currentWaypoint = path.vectorPath.Count - 1;
-        }
 
         UpdatePathProgress();
 
-        hInput = Mathf.Abs(waypointDirection.x) > 0.2f && Mathf.Abs(targetDistance) > 2f ? Mathf.Sign(waypointDirection.x) : 0f;
-        vInput = Mathf.Abs(targetDistance) > 1.2f ? -1 : 0;
-        tryRun = pony.tribe.target.inputController.pressedRun;
+        hInput = Mathf.Abs(waypointDirection.x) > 0.2f && targetDistance > 3f ? Mathf.Sign(waypointDirection.x) : 0f;
+        //vInput = Mathf.Abs(targetSqrDistance) > 1.2f ? -1 : 0;
+        tryRun = Mathf.Abs(targetDistance) > 2f;
 
         HandleJumpLogic();
 
@@ -104,7 +95,6 @@ public class FollowAI : MonoBehaviour
         // debugStr += "Entered HandleJumpLogic\n";
         
         CalcJumpHeight();
-            jumpTime += Time.deltaTime;
 
         if (ShouldJump())
         {
@@ -113,7 +103,6 @@ public class FollowAI : MonoBehaviour
             {
                 tryTapJump = true;
                 isJumping = true;
-                jumpTime = 0f;
             }
             else
             {
@@ -134,11 +123,9 @@ public class FollowAI : MonoBehaviour
         else
         {
             // debugStr += "Should Jump Returned False\n";
-            jumpTime = 0f;
             isJumping = false;
             tryTapJump = false;
         }
-            // debugStr += $"Jump Time: {jumpTime}\n";
     }
 
     private IEnumerator HoldJump(float duration)
@@ -155,7 +142,11 @@ public class FollowAI : MonoBehaviour
         RaycastHit2D obstacleHit = Physics2D.Raycast(new Vector2(rb.position.x + Mathf.Sign(waypointDirection.x), rb.position.y + 4.5f), Vector2.down, 11f, pony.stats.obstacleLayers);
         Debug.DrawRay(new Vector2(rb.position.x + Mathf.Sign(waypointDirection.x), rb.position.y + 4.5f), Vector2.down * 5f, Color.red);
 
-        if (pony.groundC.IsGrounded || (!pony.groundC.IsGrounded && pony.tribe is PonyPegasus && (pony.currentFlaps < pony.stats.maxFlaps)))
+
+        if (obstacleHit.collider == null)
+            return targetJumpHeight;
+
+        if (pony.IsGrounded || (!pony.IsGrounded && pony.tribe is PonyPegasus && pony.HasFlapsLeft))
         {
             frontObstacleHeightDifference = obstacleHit.point - rb.position;
             positionDifference = (Vector2)Target.position - rb.position;
@@ -166,10 +157,10 @@ public class FollowAI : MonoBehaviour
             targetJumpHeight =  Mathf.Abs(positionDifference.y);
         
 
-        else if (obstacleHit.collider != null && positionDifference.y < 0.1f && Mathf.Abs(positionDifference.x) > 1.2f)
+        else if (positionDifference.y < 0.1f && Mathf.Abs(positionDifference.x) > 1.2f)
         {
-                // debugStr += $"frontObstacleHeightDifference {frontObstacleHeightDifference}\n";
-                targetJumpHeight = Mathf.Abs(frontObstacleHeightDifference.y) + 1f;
+                debugStr += $"frontObstacleHeightDifference {frontObstacleHeightDifference}\n";
+                targetJumpHeight = Mathf.Abs(frontObstacleHeightDifference.y) + 1f; //???
         }
         
         // debugStr += $"positionDifference {positionDifference}\n";
@@ -180,9 +171,16 @@ public class FollowAI : MonoBehaviour
 
     bool ShouldJump()
     {
+
+        float dir = Mathf.Sign(waypointDirection.x);
+        
+        if (dir == 0)
+            dir = Mathf.Sign(targetDirection.x); // To Avoid Jank
+        
         // Raycast to check for obstacles in front
-        RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.right * Mathf.Sign(waypointDirection.x), 1f, pony.stats.obstacleLayers);
-        Debug.DrawRay(rb.position, Mathf.Sign(waypointDirection.x) * 1f * Vector2.right, Color.magenta);
+        Vector2 rayDir = Vector2.right * dir;
+        RaycastHit2D hit = Physics2D.Raycast(rb.position, rayDir, 1f, pony.stats.obstacleLayers);
+        Debug.DrawRay(rb.position, rayDir, Color.magenta);
 
         
         if (hit.collider == null)
@@ -190,16 +188,16 @@ public class FollowAI : MonoBehaviour
         
 
 
-        if (pony.groundC.IsGrounded)
+        if (pony.IsGrounded)
         {
             // debugStr += $"pony.groundC.IsGrounded: {pony.groundC.IsGrounded}\n";
             return true;
         }
             
-        else if (!pony.groundC.IsGrounded && pony.rb.linearVelocity.y < 0.01f)
+        else if (!pony.IsGrounded && pony.rb.linearVelocity.y < 0.01f)
         {
             // debugStr += $"pony.tribe is PonyPegasus && (pony.currentFlaps < pony.stats.maxFlaps) : {pony.tribe is PonyPegasus && (pony.currentFlaps < pony.stats.maxFlaps)}\n";
-            return pony.tribe is PonyPegasus && (pony.currentFlaps < pony.stats.maxFlaps);
+            return pony.tribe is PonyPegasus && pony.HasFlapsLeft;
         }
         
         return false;
@@ -207,6 +205,8 @@ public class FollowAI : MonoBehaviour
 
     private void UpdatePathProgress()
     {
+        currentWaypoint = Mathf.Clamp(currentWaypoint, 0, path.vectorPath.Count - 1);
+
         Vector2 CurrentWaypointPath = (Vector2)path.vectorPath[currentWaypoint];
 
         if ((CurrentWaypointPath - rb.position).normalized.magnitude > 0.1f)
